@@ -8,7 +8,6 @@ const CardGrid = styled('div')({
   marginInline: 'auto',
   display: 'grid',
   gridGap: '2.4rem',
-  gridTemplateColumns: 'repeat(3, minmax(14rem, 1fr))',
   marginTop: '3.2rem',
 });
 
@@ -20,7 +19,12 @@ const Index = () => {
   return (
     <>
       <YearSelector options={options} year={year} setYear={setYear}/>
-      <CardGrid>
+      <CardGrid sx={{
+        gridTemplateColumns: {
+          lg: 'repeat(3, minmax(14rem, 1fr))',
+          md: 'repeat(2, minmax(14rem, 1fr))',
+          sm: 'repeat(1, minmax(14rem, 1fr))',},
+      }}>
         <Card />
         <Card />
         <Card />

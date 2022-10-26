@@ -1,12 +1,12 @@
 import { styled } from "@mui/material";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { colors, defaultStyles } from "./constants";
+import { defaultStyles } from "./constants";
 import Home from "./pages/Home";
 import Team from "./pages/Team";
 import Projects from "./pages/Projects";
 import Accolades from "./pages/Accolades";
 import Events from "./pages/Events";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 const AppLayout = styled('div')({
   ...defaultStyles,
@@ -40,25 +40,26 @@ const router = createBrowserRouter([
 
 function App() {
 
-  const [loading, setLoading] = useState(true);
   useEffect(() => {
-    setLoading(false);
+    const flyers = document.getElementsByClassName('flyer');
+    Array.prototype.forEach.call(flyers, (element) => {
+      element.style.animationDuration = '1s';
+    })
+    const loadingElement = document.getElementById('loading');
+    loadingElement.style.animation = 'fade 2s forwards';
+    loadingElement.style.animationDelay = '2s';
+    setTimeout(() => {
+      const loader = document.getElementById("loading");
+      loader.remove();
+    }, 2000);
+    // flyers.forEach(element => {
+    // });
   }, []);
 
   return <>
-    {loading ? <div className="lds-roller" >
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div> : (
     <AppLayout>
       <RouterProvider router={router} />
-    </AppLayout>)}
+    </AppLayout>
     </>
   ;
 }

@@ -5,15 +5,18 @@ import {ReactComponent as GitSvg} from '../../../../assets/memberCardSvgs/git.sv
 import {ReactComponent as InSvg} from '../../../../assets/memberCardSvgs/in.svg'
 import {ReactComponent as MailSvg} from '../../../../assets/memberCardSvgs/mail.svg'
 import {ReactComponent as WebSvg} from '../../../../assets/memberCardSvgs/web.svg'
+import { ReactComponent as FlipOne } from '../../../../assets/memberCardSvgs/flipsvg1.svg'
+import { ReactComponent as FlipTwo } from '../../../../assets/memberCardSvgs/flipsvg2.svg'
 
 const CardLayout = styled('div')({
   backgroundColor: colors.dark,
   height: '17.6rem',
   width: '14rem',
   boxShadow: `0 0 16px ${colors.primary}BB`,
-  borderRadius: '0.6rem',
+  borderRadius: '0.8rem',
   transformStyle: 'preserve-3d',
-  perspective: '800px',
+  perspective: '1000px',
+  cursor: 'pointer'
 })
 
 const Front = styled('div')({
@@ -22,12 +25,13 @@ const Front = styled('div')({
   overflow: 'hidden',
   position: 'relative',
   webkitBackfaceVisibility: 'hidden',
-  backfaceVisibility: 'hidden'
+  backfaceVisibility: 'hidden',
+  transformStyle: 'preserve-3d',
 })
 
 const Back = styled('div')({
   backgroundColor: colors.primary,
-  height: '100%',
+  height: '16.4rem',
   width: '100%',
   overflow: 'hidden',
   position: 'absolute',
@@ -35,7 +39,9 @@ const Back = styled('div')({
   backfaceVisibility: 'hidden',
   top: 0,
   transform: 'rotateY(180deg)',
-  borderRadius: '0.6rem',
+  borderRadius: '0.8rem',
+  transformStyle: 'preserve-3d',
+  paddingTop: '1.2rem',
 })
 
 const ImgHolder = styled('div')({
@@ -58,7 +64,7 @@ const Slide = styled('div')(({hover}) => ({
   backgroundColor: colors.dark,
   top: hover ? '0' : '13.6rem',
   zIndex: 2,
-  borderRadius: hover ? '0.6rem' : '0',
+  borderRadius: hover ? '0.8rem' : '0',
 }));
 
 const Slider = styled('div')(({hover}) => ({
@@ -73,7 +79,7 @@ const Slider = styled('div')(({hover}) => ({
 }));
 
 const FirstName = styled('div')({
-  margin: '0',
+  marginBlock: '-0.2rem',
   fontFamily: 'Poppins',
   fontSize: '1rem',
   zIndex: 3,
@@ -92,6 +98,18 @@ const Subtitle = styled('div')({
   margin: '1.2rem 0'
 });
 
+const SubtitleFlip = styled('div')({
+  width: '100%',
+  color: colors.light,
+  backgroundColor: colors.primaryDark,
+  paddingBlock: '0.4rem',
+  fontSize: '0.9rem',
+  textAlign: 'center',
+  fontFamily: 'Gotham',
+  fontWeight: 500,
+  margin: '1.2rem 0'
+});
+
 const Domain = styled('div')({
   width: '100%',
   color: colors.light,
@@ -101,6 +119,17 @@ const Domain = styled('div')({
   margin: '0.4rem 0',
   textAlign: 'center',
 })
+
+const Project = styled('div')({
+  width: '100%',
+  color: colors.dark,
+  fontSize: '0.9rem',
+  fontFamily: 'Gotham',
+  fontWeight: 500,
+  margin: '0.4rem 0',
+  textAlign: 'center',
+})
+
 const Icons = styled('div')({
   display: 'flex',
   width: 'fit-content',
@@ -155,15 +184,49 @@ const Card = () => {
             </Domain>
           ))}
           <Icons>
-            <GitSvg />
+            <a href='https://github.com'><GitSvg /></a>
+            <a href='https://github.com'>
             <InSvg />
+            </a>
+            <a href='https://github.com'>
             <MailSvg />
-            <WebSvg />
+            </a>
+            <a href='https://github.com'><WebSvg />
+            </a>
           </Icons>
+        <FlipOne style={{
+          position: 'absolute',
+          bottom: '-1.8rem',
+          right: 0,
+          zIndex: 2
+        }}/>
         </Slider>
       </Front>
       <Back>
-        Hi
+      <FirstName sx={{
+        color: colors.dark
+      }}>
+            ASWIN
+          </FirstName>
+          <FirstName sx={{
+        color: colors.dark
+      }}>
+            SREEKUMAR
+          </FirstName>
+          <SubtitleFlip>
+            Projects
+          </SubtitleFlip>
+          {domains.map((domain, index) => (
+            <Project key={domain}>
+              {domain}
+            </Project>
+          ))}
+          <FlipTwo style={{
+          position: 'absolute',
+          bottom: 0,
+          right: 0,
+          zIndex: 2
+        }}/>
       </Back>
     </CardLayout>
   )
