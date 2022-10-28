@@ -10,7 +10,7 @@ import Container from '@mui/material/Container';
 import MenuItem from '@mui/material/MenuItem';
 import { styled, Zoom } from '@mui/material';
 import { colors, fontStyles } from '../../constants'
-import logo from '../../assets/logo.png'
+import logo from '../../assets/logoCompressed.png'
 import { Link, useLocation } from 'react-router-dom';
 import {ReactComponent as YoutubeSvg} from '../../assets/youtubeHeader.svg'
 import {ReactComponent as GithubSvg} from '../../assets/githubHeader.svg'
@@ -72,6 +72,15 @@ function ResponsiveAppBar(props) {
   };
 
   const location  = useLocation();
+  let logoAnim;
+  if(location.state === null || (location.state.prevPath !== '/' && location.pathname !== '/')) {
+    logoAnim = 'none';
+  } else if (location.state.prevPath === '/' && location.pathname !== '/') {
+    logoAnim = 'zoomIn 0.4s forwards';
+  } else if (location.state.prevPath !== '/' && location.pathname === '/'){
+    logoAnim = 'zoomIn 0.4s reverse';
+  }
+  // (location.state?.prevPath === '/' && location.pathname !== '/') ? 'zoomIn 0.4s forwards' : 'none';
   console.log(location.state?.prevPath, location.pathname)
 
   return (
@@ -91,9 +100,12 @@ function ResponsiveAppBar(props) {
           height: 'fit-content',
         }}>
           <img src={logo} alt='logo' style={{
-            height: '56px',
-            aspectRatio: '1',
-            padding: '0 16px'
+            display: 'block',
+            margin: location.pathname === '/' ? '0' : '1.8rem',
+            padding: 0,
+            width: location.pathname === '/' ? '0' : '56px',
+            height: location.pathname === '/' ? '0' : '56px',
+            animation: logoAnim,
           }} />
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
@@ -137,6 +149,7 @@ function ResponsiveAppBar(props) {
             flexGrow: 1,
             display: { xs: 'none', md: 'flex' },
             position: 'relative',
+            gap: '0.8rem'
             }}>
 
             {/* <NavItem

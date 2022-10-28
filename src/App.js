@@ -51,7 +51,7 @@ function App() {
     setTimeout(() => {
       const loader = document.getElementById("loading");
       loader.remove();
-    }, 2000);
+    }, 4000);
     // flyers.forEach(element => {
     // });
   }, []);

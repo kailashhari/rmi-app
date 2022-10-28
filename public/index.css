@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body {
   height: 100vh;
 }
@@ -22,10 +27,26 @@ body {
   }
 }
 
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    margin-inline: 0;
+  }
+  100% {
+    opacity: 1;
+    width: 56px;
+    height: 56px;
+    margin-inline: 1.8rem;
+  }
+}
+
 #loading {
   width: 100vw;
   height: 100vh;
   display: flex;
+  position: fixed;
   justify-content: center;
   z-index: 10000;
   background-color: #001011;

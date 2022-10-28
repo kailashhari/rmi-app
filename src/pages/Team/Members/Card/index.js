@@ -31,7 +31,7 @@ const Front = styled('div')({
 
 const Back = styled('div')({
   backgroundColor: colors.primary,
-  height: '16.4rem',
+  height: '100%',
   width: '100%',
   overflow: 'hidden',
   position: 'absolute',

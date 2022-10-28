@@ -3,7 +3,8 @@ export const colors = {
   primary: '#57E2E5',
   light: '#FFFCF9',
   grey: '#C5C5C5',
-  primaryDark: '#006992'
+  primaryDark: '#006992',
+  purple: '#182026'
 }
 
 export const fontStyles = {
