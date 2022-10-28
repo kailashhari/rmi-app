@@ -6,48 +6,47 @@ import Team from "./pages/Team";
 import Projects from "./pages/Projects";
 import Accolades from "./pages/Accolades";
 import Events from "./pages/Events";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 
-const AppLayout = styled('div')({
+const AppLayout = styled("div")({
   ...defaultStyles,
-  width: '100vw',
-  height: 'fit-content',
-  minHeight: '100vh',
+  width: "100vw",
+  height: "fit-content",
+  minHeight: "100vh",
 });
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <Home />,
   },
   {
-    path: '/team',
+    path: "/team",
     element: <Team />,
   },
   {
-    path: '/projects',
+    path: "/projects",
     element: <Projects />,
   },
   {
-    path: '/Events',
+    path: "/Events",
     element: <Events />,
   },
   {
-    path: '/accolades',
+    path: "/accolades",
     element: <Accolades />,
-  }
-])
+  },
+]);
 
 function App() {
-
   useEffect(() => {
-    const flyers = document.getElementsByClassName('flyer');
+    const flyers = document.getElementsByClassName("flyer");
     Array.prototype.forEach.call(flyers, (element) => {
-      element.style.animationDuration = '1s';
-    })
-    const loadingElement = document.getElementById('loading');
-    loadingElement.style.animation = 'fade 2s forwards';
-    loadingElement.style.animationDelay = '2s';
+      element.style.animationDuration = "1s";
+    });
+    const loadingElement = document.getElementById("loading");
+    loadingElement.style.animation = "fade 2s forwards";
+    loadingElement.style.animationDelay = "2s";
     setTimeout(() => {
       const loader = document.getElementById("loading");
       loader.remove();
@@ -56,12 +55,13 @@ function App() {
     // });
   }, []);
 
-  return <>
-    <AppLayout>
-      <RouterProvider router={router} />
-    </AppLayout>
+  return (
+    <>
+      <AppLayout>
+        <RouterProvider router={router} />
+      </AppLayout>
     </>
-  ;
+  );
 }
 
 export default App;

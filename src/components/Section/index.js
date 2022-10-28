@@ -10,7 +10,7 @@ const Section = styled("div")({
   justifyContent: "center",
   height: "80vh",
   // paddingTop: '10vh',
-  paddingBottom: '10vh'
+  paddingBottom: "10vh",
 });
 
 const SectionTitle = styled("div")({
@@ -34,7 +34,7 @@ const index = (props) => {
             lg: "36%",
             md: "60%",
             sm: "80%",
-            xs: '90%'
+            xs: "90%",
           },
         }}
       >

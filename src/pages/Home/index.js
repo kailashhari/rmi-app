@@ -18,7 +18,7 @@ const HeroAnd = styled("span")({
 });
 
 const HeroLineContainer = styled("div")({
-  width: '100%',
+  width: "100%",
   display: "flex",
   flexDirection: "row",
   alignItems: "flex-end",
@@ -39,9 +39,11 @@ const index = () => {
             }}
           />
         </HeroSection>
-        <HeroSection sx={{
-          flexDirection: 'column'
-        }}>
+        <HeroSection
+          sx={{
+            flexDirection: "column",
+          }}
+        >
           <HeroLineContainer>
             <HeroText>ROBOTICS</HeroText>
             <HeroAnd>AND</HeroAnd>

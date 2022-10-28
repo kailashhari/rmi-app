@@ -1,6 +1,6 @@
 import React from "react";
 import { styled } from "@mui/material";
-import { colors } from "../../constants"
+import { colors } from "../../constants";
 import {
   Facebook,
   Instagram,
@@ -9,11 +9,11 @@ import {
   Youtube,
   LinkTree,
 } from "../../assets/followUsIcons/Exporter";
-import logo from '../../assets/logoCompressed.png'
+import logo from "../../assets/logoCompressed.png";
 import FooterRightHolder from "./FooterRight";
 
 const Footer = styled("div")({
-  marginTop: '4rem',
+  marginTop: "4rem",
   width: "100vw",
   backgroundColor: colors.purple,
   display: "flex",
@@ -55,8 +55,8 @@ const FooterLeft = styled("div")({
 const FooterLogo = styled("div")({
   display: "flex",
   flexDirection: "row",
-  gap: '1rem',
-  alignItems: 'center'
+  gap: "1rem",
+  alignItems: "center",
 });
 
 const FooterText = styled("div")({
@@ -93,99 +93,103 @@ const FollowUsLink = styled("a")({
 });
 
 const FooterHolder = () => (
-    <Footer
+  <Footer
+    sx={{
+      padding: {
+        xs: "5% 5%",
+        sm: "5% 5%",
+        md: "5% 5%",
+        lg: "5% 15%",
+      },
+    }}
+  >
+    <FooterMain
       sx={{
-        padding: {
-          xs: "5% 5%",
-          sm: "5% 5%",
-          md: "5% 5%",
-          lg: "5% 15%",
+        flexDirection: {
+          xs: "column",
+          sm: "column",
+          md: "column",
+          lg: "row",
         },
       }}
     >
-      <FooterMain
-        sx={{
-          flexDirection: {
-            xs: "column",
-            sm: "column",
-            md: "column",
-            lg: "row",
-          },
-        }}
-      >
-        <FooterLeft>
-          <FooterLogo>
-            <img src={logo} alt="logo" style={{
-              width: '56px',
-              height: '56px'
-            }}/>
-            <FooterText
-              sx={{
-                fontSize: {
-                  xs: "1rem",
-                  sm: "1rem",
-                  md: "1.2rem",
-                  lg: "1.2rem",
-                },
-              }}
-            >
-              Robotics and
-              <br />
-              Machine Intelligence
-            </FooterText>
-          </FooterLogo>
-          <FollowUsSection>
-            <FollowUs
-              sx={{
-                fontSize: {
-                  xs: "1rem",
-                  sm: "1rem",
-                  md: "1.2rem",
-                  lg: "1.2rem",
-                },
-              }}
-            >
-              Follow Us
-            </FollowUs>
-            <FollowUsLinks
-              sx={{
-                gap: {
-                  xs: "0.5rem",
-                  sm: "0.5rem",
-                  md: "1rem",
-                  lg: "1rem",
-                },
-              }}
-            >
-              <FollowUsLink href="https://www.facebook.com">
-                <Facebook />
-              </FollowUsLink>
-              <FollowUsLink href="https://www.facebook.com">
-                <Instagram />
-              </FollowUsLink>
-              <FollowUsLink href="https://www.facebook.com">
-                <LinkedIn />
-              </FollowUsLink>
-              <FollowUsLink href="https://www.facebook.com">
-                <Github />
-              </FollowUsLink>
-              <FollowUsLink href="https://www.facebook.com">
-                <Youtube />
-              </FollowUsLink>
-              <FollowUsLink href="https://www.facebook.com">
-                <LinkTree />
-              </FollowUsLink>
-            </FollowUsLinks>
-          </FollowUsSection>
-        </FooterLeft>
-        <FooterRightHolder />
-      </FooterMain>
-      <FooterSeparator />
-      <Credits>
-        Site Designed, Developed and Maintained by
-        <CreditLink>RMI Web Team</CreditLink>
-      </Credits>
-    </Footer>
+      <FooterLeft>
+        <FooterLogo>
+          <img
+            src={logo}
+            alt="logo"
+            style={{
+              width: "56px",
+              height: "56px",
+            }}
+          />
+          <FooterText
+            sx={{
+              fontSize: {
+                xs: "1rem",
+                sm: "1rem",
+                md: "1.2rem",
+                lg: "1.2rem",
+              },
+            }}
+          >
+            Robotics and
+            <br />
+            Machine Intelligence
+          </FooterText>
+        </FooterLogo>
+        <FollowUsSection>
+          <FollowUs
+            sx={{
+              fontSize: {
+                xs: "1rem",
+                sm: "1rem",
+                md: "1.2rem",
+                lg: "1.2rem",
+              },
+            }}
+          >
+            Follow Us
+          </FollowUs>
+          <FollowUsLinks
+            sx={{
+              gap: {
+                xs: "0.5rem",
+                sm: "0.5rem",
+                md: "1rem",
+                lg: "1rem",
+              },
+            }}
+          >
+            <FollowUsLink href="https://www.facebook.com">
+              <Facebook />
+            </FollowUsLink>
+            <FollowUsLink href="https://www.facebook.com">
+              <Instagram />
+            </FollowUsLink>
+            <FollowUsLink href="https://www.facebook.com">
+              <LinkedIn />
+            </FollowUsLink>
+            <FollowUsLink href="https://www.facebook.com">
+              <Github />
+            </FollowUsLink>
+            <FollowUsLink href="https://www.facebook.com">
+              <Youtube />
+            </FollowUsLink>
+            <FollowUsLink href="https://www.facebook.com">
+              <LinkTree />
+            </FollowUsLink>
+          </FollowUsLinks>
+        </FollowUsSection>
+      </FooterLeft>
+      <FooterRightHolder />
+    </FooterMain>
+    <FooterSeparator />
+    <Credits>
+      Site Designed, Developed and Maintained by
+      <CreditLink>RMI Web Team</CreditLink>
+    </Credits>
+  </Footer>
 );
 
 export default FooterHolder;
