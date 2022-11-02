@@ -3,6 +3,9 @@ import PageWrapper from "../../components/PageWrapper";
 import { Hero, HeroSection } from "../../components/Hero";
 import logo from "../../assets/logoFull.png";
 import { styled } from "@mui/material";
+import Section from "../../components/Section";
+import sectionContents from "../../content/sectionContents.json";
+import DoubleSection from "../../components/DoubleSection";
 
 const HeroText = styled("div")({
   fontFamily: "Raleway",
@@ -51,8 +54,34 @@ const index = () => {
           <HeroLineContainer>
             <HeroText>MACHINE INTELLIGENCE</HeroText>
           </HeroLineContainer>
+          <HeroLineContainer
+            sx={{
+              marginTop: "0.6rem",
+            }}
+          >
+            <HeroText
+              sx={{
+                fontFamily: "Gotham",
+                fontSize: "1.2rem",
+                fontWeight: "400",
+              }}
+            >
+              The Official Robotics Club of NIT Trichy
+            </HeroText>
+          </HeroLineContainer>
         </HeroSection>
       </Hero>
+      <Section
+        title={"About"}
+        sx={{
+          height: "70vh",
+        }}
+      >
+        {sectionContents.ourTeam}
+      </Section>
+      <DoubleSection title={"Events and Workshops"}>
+        {sectionContents.ourTeam}
+      </DoubleSection>
     </PageWrapper>
   );
 };

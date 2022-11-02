@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /* z-index: inherit; */
 }
 body {
   height: 100vh;
@@ -38,7 +39,7 @@ body {
     opacity: 1;
     width: 56px;
     height: 56px;
-    margin-inline: 1.8rem;
+    margin-inline: 3rem;
   }
 }
 
@@ -110,25 +111,6 @@ body {
   left: 0;
   right: 0;
   margin-inline: auto;
-}
-
-@keyframes loadBar {
-  0% {
-    /* clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%); */
-    width: 0;
-  }
-  100% {
-    /* clip-path: polygon(0% 0%, 0% 0%, 100% 100%, 100% 100%); */
-    width: 100%;
-  }
-}
-
-.barInner {
-  width: 0;
-  height: 100%;
-  background-color: #57E2E5;
-  z-index: 10001;
-  animation: loadBar 2s forwards;
 }
 
 #outerbox div.flyer:nth-child(1) {

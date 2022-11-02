@@ -10,7 +10,7 @@ const Section = styled("div")({
   justifyContent: "center",
   height: "80vh",
   // paddingTop: '10vh',
-  paddingBottom: "10vh",
+  // paddingBottom: "10vh",
 });
 
 const SectionTitle = styled("div")({

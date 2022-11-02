@@ -10,14 +10,12 @@ const footerData = [
       { itemName: "About", itemLink: "/about" },
       { itemName: "Projects", itemLink: "/projects" },
       { itemName: "Accolades", itemLink: "/accolades" },
-      { itemName: "Gallery", itemLink: "/gallery" },
     ],
   },
   {
     columnTitle: "Events",
     columnItems: [
       { itemName: "Genesis", itemLink: "/about" },
-      { itemName: "Inhotts", itemLink: "/projects" },
       { itemName: "Following", itemLink: "/accolades" },
       { itemName: "Hackathon", itemLink: "/gallery" },
     ],
@@ -28,7 +26,6 @@ const footerData = [
       { itemName: "Members", itemLink: "/about" },
       { itemName: "Alumni", itemLink: "/projects" },
       { itemName: "Faculty Advisor", itemLink: "/accolades" },
-      { itemName: "Contact Us", itemLink: "/gallery" },
     ],
   },
 ];

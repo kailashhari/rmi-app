@@ -7,7 +7,7 @@ const CardGrid = styled("div")({
   width: "fit-content",
   marginInline: "auto",
   display: "grid",
-  gridGap: "2.4rem",
+  gridGap: "2.8rem",
   marginTop: "3.2rem",
 });
 
@@ -26,6 +26,12 @@ const Index = () => {
           },
         }}
       >
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
         <Card />
         <Card />
         <Card />

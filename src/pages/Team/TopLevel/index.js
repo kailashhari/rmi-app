@@ -8,7 +8,7 @@ import Facad from "../Facad";
 const Tabs = styled("div")({
   display: "flex",
   flexDirection: "row",
-  gap: "1rem",
+  gap: "2rem",
   width: "fit-content",
   margin: "auto",
   position: "relative",
@@ -47,8 +47,10 @@ const Index = () => {
       coords = facadRef.current.getBoundingClientRect();
     }
     console.log(coords);
-    indicatorRef.current.style.left = `${coords.left - tabsCoords.left}px`;
-    indicatorRef.current.style.width = `${coords.width}px`;
+    indicatorRef.current.style.width = `${coords.width * 0.7}px`;
+    indicatorRef.current.style.left = `${
+      coords.left - tabsCoords.left + coords.width * 0.15
+    }px`;
     indicatorRef.current.style.top = `${
       coords.top - tabsCoords.top + coords.height
     }px`;

@@ -116,7 +116,7 @@ function ResponsiveAppBar() {
             alt="logo"
             style={{
               display: "block",
-              margin: location.pathname === "/" ? "0" : "1.8rem",
+              margin: location.pathname === "/" ? "0" : "3rem",
               padding: 0,
               width: location.pathname === "/" ? "0" : "56px",
               height: location.pathname === "/" ? "0" : "56px",
@@ -171,7 +171,7 @@ function ResponsiveAppBar() {
               flexGrow: 1,
               display: { xs: "none", md: "flex" },
               position: "relative",
-              gap: "0.8rem",
+              gap: "1rem",
             }}
           >
             {/* <NavItem
@@ -205,6 +205,7 @@ function ResponsiveAppBar() {
                   style={{
                     color: "inherit",
                     textDecoration: "none",
+                    fontSize: "1.1rem",
                   }}
                 >
                   {page.text}

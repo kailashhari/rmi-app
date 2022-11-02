@@ -20,7 +20,7 @@ const Footer = styled("div")({
   flexDirection: "column",
   alignItems: "center",
   justifyContent: "center",
-  gap: "1rem",
+  gap: "1.2rem",
 });
 
 const Credits = styled("div")({
@@ -80,15 +80,14 @@ const FollowUs = styled("div")({
 const FollowUsLinks = styled("div")({
   display: "flex",
   flexDirection: "row",
-  gap: "1rem",
 });
 
 const FollowUsLink = styled("a")({
   width: {
-    xs: "1.2rem",
-    sm: "1.2rem",
-    md: "2rem",
-    lg: "2rem",
+    xs: "0.75rem",
+    sm: "0.75rem",
+    md: "1.6rem",
+    lg: "1.6rem",
   },
 });
 
@@ -99,7 +98,7 @@ const FooterHolder = () => (
         xs: "5% 5%",
         sm: "5% 5%",
         md: "5% 5%",
-        lg: "5% 15%",
+        lg: "3% 15%",
       },
     }}
   >
@@ -154,10 +153,10 @@ const FooterHolder = () => (
           <FollowUsLinks
             sx={{
               gap: {
-                xs: "0.5rem",
-                sm: "0.5rem",
-                md: "1rem",
-                lg: "1rem",
+                xs: "0.3rem",
+                sm: "0.3rem",
+                md: "0.6rem",
+                lg: "0.6rem",
               },
             }}
           >

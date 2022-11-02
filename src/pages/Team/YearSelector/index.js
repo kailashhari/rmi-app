@@ -10,9 +10,9 @@ const YearSelector = styled("div")({
   border: `1px solid ${colors.primary}`,
   margin: "2rem auto",
   width: "fit-content",
-  padding: "0.4rem 0.8rem",
+  padding: "0.4rem 20px",
   borderRadius: "0.8rem",
-  gap: "1.6rem",
+  gap: "2rem",
   position: "relative",
 });
 
@@ -38,9 +38,9 @@ const Index = ({ options, year, setYear }) => {
   const selectorRef = useRef(null);
   useEffect(() => {
     const coords = optionRef.current[year].getBoundingClientRect();
-    highlighterRef.current.style.width = `${coords.width + 20}px`;
+    highlighterRef.current.style.width = `${coords.width + 30}px`;
     highlighterRef.current.style.left = `${
-      coords.left - selectorRef.current.getBoundingClientRect().left - 10
+      coords.left - selectorRef.current.getBoundingClientRect().left - 15
     }px`;
   }, [optionRef, highlighterRef, year, selectorRef]);
   return (
