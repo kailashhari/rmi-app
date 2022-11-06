@@ -194,7 +194,10 @@ function ResponsiveAppBar() {
                 style={{
                   ...fontStyles.navlinks,
                   color:
-                    location.pathname === `/${page.route}`
+                    location.pathname === `/${page.route}` ||
+                    (page.route === "projects" &&
+                      location.pathname.length > 8 &&
+                      location.pathname.slice(0, 8) === "/project")
                       ? colors.primary
                       : colors.light,
                 }}
@@ -210,7 +213,10 @@ function ResponsiveAppBar() {
                 >
                   {page.text}
                 </Link>
-                {location.pathname === `/${page.route}` && (
+                {(location.pathname === `/${page.route}` ||
+                  (page.route === "projects" &&
+                    location.pathname.length > 8 &&
+                    location.pathname.slice(0, 8) === "/project")) && (
                   <Indicator active={location.pathname === `/${page.route}`} />
                 )}
               </NavItem>

@@ -8,6 +8,44 @@ import { ReactComponent as WebSvg } from "../../../../assets/memberCardSvgs/web.
 import { ReactComponent as FlipOne } from "../../../../assets/memberCardSvgs/flipsvg1.svg";
 import { ReactComponent as FlipTwo } from "../../../../assets/memberCardSvgs/flipsvg2.svg";
 
+const nameModder = (name) => {
+  const totalLength = name.length;
+  if (totalLength < 14) {
+    return { fname: name, lname: "" };
+  }
+  const parts = name.split(" ");
+  if (parts.length === 1) {
+    return { fname: name, lname: "" };
+  }
+  let lLen = parts[0].length;
+  let rLen = totalLength - lLen - 1;
+  let stopAfter = 0;
+  let min = Math.max(lLen, rLen);
+  let i = 1;
+  while (i < parts.length) {
+    lLen += parts[i].length + 1;
+    rLen -= parts[i].length + 1;
+    if (min > Math.max(lLen, rLen)) {
+      min = Math.max(lLen, rLen);
+      stopAfter = i - 1;
+    }
+    i += 1;
+  }
+  let fName = parts[0],
+    lName = parts[stopAfter + 1];
+  i = 1;
+  while (i <= stopAfter) {
+    fName += " " + parts[i];
+    i += 1;
+  }
+  i = stopAfter + 2;
+  while (i < parts.length) {
+    lName += " " + parts[i];
+    i += 1;
+  }
+  return { fname: fName, lname: lName };
+};
+
 const CardLayout = styled("div")({
   backgroundColor: colors.dark,
   height: "17.6rem",
@@ -53,7 +91,9 @@ const ImgHolder = styled("div")({
   borderRadius: "0.6rem",
 });
 const Img = styled("img")({
-  objectFit: "cover",
+  width: "100%",
+  height: "100%",
+  objectFit: "contain",
 });
 
 const Slide = styled("div")(({ hover }) => ({
@@ -81,11 +121,25 @@ const Slider = styled("div")(({ hover }) => ({
 const FirstName = styled("div")({
   marginBlock: "-0.2rem",
   fontFamily: "Poppins",
-  fontSize: "1rem",
+  fontSize: "1.2rem",
   zIndex: 3,
   fontWeight: 1000,
   width: "100%",
   textAlign: "center",
+  height: "2rem",
+});
+const SingleName = styled("div")({
+  marginBlock: "-0.2rem",
+  fontFamily: "Poppins",
+  fontSize: "1.2rem",
+  zIndex: 3,
+  fontWeight: 1000,
+  width: "100%",
+  textAlign: "center",
+  height: "4rem",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
 });
 
 const Subtitle = styled("div")({
@@ -138,7 +192,7 @@ const Icons = styled("div")({
   marginTop: "1.6rem",
 });
 
-const Card = () => {
+const Card = (props) => {
   const [flip, setFlip] = React.useState(false);
   const [hover, setHover] = React.useState(false);
   const domains = [
@@ -147,6 +201,7 @@ const Card = () => {
     "Humanoid Robotic Systems",
     "Mobile Robotics",
   ];
+  const namesplit = nameModder(props.member.name.toUpperCase());
   return (
     <CardLayout
       onMouseEnter={() => {
@@ -165,16 +220,18 @@ const Card = () => {
     >
       <Front>
         <ImgHolder>
-          <Img
-            src="https://picsum.photos/500/500"
-            alt="profile"
-            loading="lazy"
-          />
+          <Img src={props.member.imageLink} alt="profile" loading="lazy" />
         </ImgHolder>
         <Slide hover={hover} />
         <Slider hover={hover}>
-          <FirstName>ASWIN</FirstName>
-          <FirstName>SREEKUMAR</FirstName>
+          {namesplit.lname === "" ? (
+            <SingleName>{namesplit.fname}</SingleName>
+          ) : (
+            <>
+              <FirstName>{namesplit.fname}</FirstName>
+              <FirstName>{namesplit.lname}</FirstName>
+            </>
+          )}
           <Subtitle>Head of Design and Publicity</Subtitle>
           {domains.map((domain) => (
             <Domain key={domain}>{domain}</Domain>
@@ -209,15 +266,22 @@ const Card = () => {
             color: colors.dark,
           }}
         >
-          ASWIN
+          {props.member.name}
         </FirstName>
         <FirstName
           sx={{
             color: colors.dark,
           }}
         >
-          SREEKUMAR
+          {props.member.name}
         </FirstName>
+        {/* <FirstName
+          sx={{
+            color: colors.dark,
+          }}
+        >
+          SREEKUMAR
+        </FirstName> */}
         <SubtitleFlip>Projects</SubtitleFlip>
         {domains.map((domain) => (
           <Project key={domain}>{domain}</Project>

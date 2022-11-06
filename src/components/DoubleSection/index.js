@@ -1,5 +1,5 @@
 import { styled } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import { colors, fontStyles } from "../../constants";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
@@ -36,28 +36,43 @@ const ImgGrid = styled("div")({
   gap: "0.8rem",
 });
 
-const ImgCard = styled("div")({
+const ImgCardHolder = styled("div")({
   width: "100%",
   aspectRatio: 16 / 9,
   backgroundColor: colors.primary,
-  overflow: "hidden",
   position: "relative",
+  transition: "all 0.2s ease-out",
+  cursor: "pointer",
 });
 
 const Img = styled("img")({
   width: "100%",
+  height: "100%",
 });
 
 const ImgDesc = styled("div")({
-  color: colors.dark,
-  fontSize: "0.8rem",
+  width: "100%",
+  height: "100%",
+  position: "absolute",
+  backgroundColor: `${colors.dark}CC`,
+  textAlign: "center",
+  padding: "auto",
+  top: "0",
+  color: colors.light,
+  border: `2px solid ${colors.primary}`,
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  fontSize: "1.6rem",
+  fontWeight: 700,
 });
 
-const Content = styled("div")({
-  // position: "absolute",
-  // top: 0,
-  widht: "100%",
-  height: "fit-content",
+const ImageBg = styled("div")({
+  width: "100%",
+  position: "absolute",
+  top: 0,
+  border: `2px solid ${colors.primary}`,
+  height: "100%",
 });
 
 const images = [
@@ -68,6 +83,29 @@ const images = [
   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv8fPh6h4X8lOLWrmFoIdwOMm7GmPrCny4eg&usqp=CAU",
   "https://s1.dmcdn.net/v/Bw7Fe1MB5nzUhpBs7/x1080",
 ];
+
+const ImgCard = (props) => {
+  const [hovered, setHovered] = useState(false);
+  return (
+    <ImgCardHolder
+      sx={{
+        transform: hovered ? "scale(1.1)" : "scale(1)",
+        zIndex: hovered ? 100 : "inherit",
+        overflow: hovered ? "visible" : "hidden",
+      }}
+      onMouseEnter={() => {
+        setHovered(true);
+      }}
+      onMouseLeave={() => {
+        setHovered(false);
+      }}
+    >
+      <Img src={props.image} />
+      {hovered && <ImgDesc>Pragyan Exhibition</ImgDesc>}
+      {hovered && <ImageBg />}
+    </ImgCardHolder>
+  );
+};
 
 const Index = (props) => {
   console.log(props);
@@ -89,12 +127,7 @@ const Index = (props) => {
         <Subsection>
           <ImgGrid>
             {images.map((image) => (
-              <ImgCard key={image}>
-                <Content>
-                  <Img src={image} />
-                  <ImgDesc>{image}</ImgDesc>
-                </Content>
-              </ImgCard>
+              <ImgCard key={image} image={image}></ImgCard>
             ))}
           </ImgGrid>
         </Subsection>

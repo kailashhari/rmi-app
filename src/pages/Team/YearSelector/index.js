@@ -7,7 +7,7 @@ const YearSelector = styled("div")({
   flexDirection: "row",
   alignItems: "center",
   justifyContent: "center",
-  border: `1px solid ${colors.primary}`,
+  border: `2px solid ${colors.primary}`,
   margin: "2rem auto",
   width: "fit-content",
   padding: "0.4rem 20px",

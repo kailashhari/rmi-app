@@ -1,6 +1,7 @@
 import React from "react";
 import { styled } from "@mui/material";
 import { colors } from "../../constants";
+import { Link } from "react-router-dom";
 
 const ProjectCard = styled("div")({
   width: "35vw",
@@ -68,39 +69,41 @@ const ProjectCardHolder = () => {
     setOpened((prevOpened) => !prevOpened);
   };
   return (
-    <ProjectCard
-      onMouseEnter={toggleOpened}
-      onMouseLeave={toggleOpened}
-      sx={{
-        width: {
-          xs: "90vw",
-          sm: "90vw",
-          md: "35vw",
-          lg: "30vw",
-        },
-      }}
-    >
-      <CoverSheet
+    <Link to={"/project/1"}>
+      <ProjectCard
+        onMouseEnter={toggleOpened}
+        onMouseLeave={toggleOpened}
         sx={{
-          background: "url('https://picsum.photos/500/400') no-repeat",
-          backgroundSize: "cover",
+          width: {
+            xs: "90vw",
+            sm: "90vw",
+            md: "35vw",
+            lg: "30vw",
+          },
         }}
-        opened={opened}
-      />
-      <Cover opened={opened}>
-        <CoverHeader>
-          <CoverTitle>H.I.D.Q.</CoverTitle>
-          <CoverExpansion>Hybrid Inspection Drive Quadcopter</CoverExpansion>
-        </CoverHeader>
-        <CoverDesc>
-          <div style={{ height: "fit-content" }}>
-            {
-              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
-            }
-          </div>
-        </CoverDesc>
-      </Cover>
-    </ProjectCard>
+      >
+        <CoverSheet
+          sx={{
+            background: "url('https://picsum.photos/500/400') no-repeat",
+            backgroundSize: "cover",
+          }}
+          opened={opened}
+        />
+        <Cover opened={opened}>
+          <CoverHeader>
+            <CoverTitle>H.I.D.Q.</CoverTitle>
+            <CoverExpansion>Hybrid Inspection Drive Quadcopter</CoverExpansion>
+          </CoverHeader>
+          <CoverDesc>
+            <div style={{ height: "fit-content" }}>
+              {
+                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+              }
+            </div>
+          </CoverDesc>
+        </Cover>
+      </ProjectCard>
+    </Link>
   );
 };
 

@@ -6,7 +6,9 @@ import Team from "./pages/Team";
 import Projects from "./pages/Projects";
 import Accolades from "./pages/Accolades";
 import Events from "./pages/Events";
-import React, { useEffect } from "react";
+import Project from "./pages/Project";
+import React, { useEffect, useState } from "react";
+import { AppContext } from "./store/context";
 
 const AppLayout = styled("div")({
   ...defaultStyles,
@@ -29,17 +31,39 @@ const router = createBrowserRouter([
     element: <Projects />,
   },
   {
-    path: "/Events",
+    path: "/events",
     element: <Events />,
   },
   {
     path: "/accolades",
     element: <Accolades />,
   },
+  {
+    path: "/project/:projectid",
+    element: <Project />,
+  },
 ]);
 
 function App() {
+  const [data, setData] = useState(null);
+
+  const fetchData = async () => {
+    fetch("https://kailash2point0.github.io/data/data.json")
+      .then((response) => {
+        return response.json();
+      })
+      .then((responseData) => {
+        console.log(responseData);
+        setData(responseData);
+      });
+  };
+
   useEffect(() => {
+    fetchData();
+  }, []);
+
+  useEffect(() => {
+    console.log(data);
     const flyers = document.getElementsByClassName("flyer");
     Array.prototype.forEach.call(flyers, (element) => {
       element.style.animationDuration = "1s";
@@ -49,17 +73,23 @@ function App() {
     loadingElement.style.animationDelay = "2s";
     setTimeout(() => {
       const loader = document.getElementById("loading");
-      loader.remove();
+      if (loader) {
+        loader.remove();
+      }
     }, 4000);
     // flyers.forEach(element => {
     // });
-  }, []);
+  }, [data !== null]);
 
   return (
     <>
-      <AppLayout>
-        <RouterProvider router={router} />
-      </AppLayout>
+      {data !== null && (
+        <AppContext.Provider value={data}>
+          <AppLayout>
+            <RouterProvider router={router} />
+          </AppLayout>
+        </AppContext.Provider>
+      )}
     </>
   );
 }
