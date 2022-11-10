@@ -39,6 +39,7 @@ const HeroContent = styled("div")({
 });
 const CarouselContainer = styled("div")({
   width: "100%",
+  height: "50vh",
   margin: "4rem auto",
   paddingInline: "1rem",
 });

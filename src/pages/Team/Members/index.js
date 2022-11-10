@@ -57,7 +57,7 @@ const Index = () => {
           {filteredMembers(year).map((member, index) => (
             <Grid
               item
-              key={member.key}
+              key={member.id}
               xs={12}
               sm={6}
               md={4}
