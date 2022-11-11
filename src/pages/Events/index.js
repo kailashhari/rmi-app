@@ -18,7 +18,13 @@ const index = () => {
     <PageWrapper>
       <Section title={"Workshops and Events"}>{sectionContents.events}</Section>
       {images.map((image, i) => (
-        <SectionCustom title={"Genesis"} bg={image} i={i} key={image}>
+        <SectionCustom
+          title={"Genesis"}
+          bg={image}
+          i={i}
+          key={image}
+          id={`event${i}`}
+        >
           {sectionContents.events}
         </SectionCustom>
       ))}

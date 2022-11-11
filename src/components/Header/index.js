@@ -229,6 +229,8 @@ function ResponsiveAppBar() {
                 marginBlock: "auto",
                 cursor: "pointer",
               }}
+              target="_blank"
+              rel="noreferrer"
             >
               <YoutubeSvg
                 style={{
@@ -246,6 +248,8 @@ function ResponsiveAppBar() {
                 alignItems: "center",
                 justifyContent: "center",
               }}
+              target="_blank"
+              rel="noreferrer"
             >
               <GithubSvg
                 style={{

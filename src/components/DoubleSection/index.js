@@ -2,6 +2,7 @@ import { styled } from "@mui/material";
 import React, { useState } from "react";
 import { colors, fontStyles } from "../../constants";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Link } from "react-router-dom";
 
 const Section = styled("div")({
   width: "100vw",
@@ -126,8 +127,10 @@ const Index = (props) => {
         </Subsection>
         <Subsection>
           <ImgGrid>
-            {images.map((image) => (
-              <ImgCard key={image} image={image}></ImgCard>
+            {images.map((image, i) => (
+              <Link key={image} to={`/events/#event${i}`}>
+                <ImgCard image={image}></ImgCard>
+              </Link>
             ))}
           </ImgGrid>
         </Subsection>

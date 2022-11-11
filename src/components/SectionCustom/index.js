@@ -48,7 +48,13 @@ const images = [
 const Index = (props) => {
   console.log(props);
   return (
-    <Section>
+    <Section
+      id={props.id}
+      sx={{
+        clipPath: "polygon(0 0, 80% 0, 100% 20%, 100% 100%, 20% 100%, 0 80%)",
+        // border: `3px solid ${colors.primary}`,
+      }}
+    >
       {props.bg !== "" && (
         <img
           src={props.bg}
@@ -58,7 +64,7 @@ const Index = (props) => {
             zIndex: 10,
             width: "100%",
             aspectRatio: "auto",
-            opacity: "0.2",
+            opacity: "0.15",
           }}
         />
       )}
@@ -82,6 +88,7 @@ const Index = (props) => {
               infiniteLoop={true}
               showThumbs={false}
               showStatus={false}
+              showIndicators={false}
               style={{
                 zIndex: 12,
               }}
@@ -112,6 +119,7 @@ const Index = (props) => {
               infiniteLoop={true}
               showThumbs={false}
               showStatus={false}
+              showIndicators={false}
               style={{
                 zIndex: 12,
               }}
