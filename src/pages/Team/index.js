@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PageWrapper from "../../components/PageWrapper";
 import Section from "../../components/Section";
 import TopLevel from "./TopLevel";
 
-const index = () => {
-  // console.log(sectionContents.ourTeam);
+const index = ({ title }) => {
+  useEffect(() => {
+    document.title = title;
+  }, [title]);
   return (
     <PageWrapper>
       <Section title={"Our Team"}>

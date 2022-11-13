@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PageWrapper from "../../components/PageWrapper";
 import Section from "../../components/Section";
 import SectionCustom from "../../components/SectionCustom";
@@ -21,7 +21,10 @@ const contents = [
   "Visit our stalls during Pragyan to take a peek at the exciting projects and get to know what  we have been building over the years.  Get mesmerized at what the future of technology holds for humanity !",
 ];
 
-const index = () => {
+const index = ({ title }) => {
+  useEffect(() => {
+    document.title = title;
+  }, [title]);
   return (
     <PageWrapper>
       <Section title={"Workshops and Events"}>

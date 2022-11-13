@@ -26,7 +26,7 @@ const Index = () => {
   const [year, setYear] = React.useState(1);
   const options = ["All", ...uniqueYearStrings];
   const filteredMembers = (i) => {
-    let toBeReturned;
+    let toBeReturned = [];
     if (i === 0) {
       toBeReturned = currentMembers;
     } else {
@@ -34,6 +34,7 @@ const Index = () => {
         return member.batchTag === uniqueYears[i - 1];
       });
     }
+    console.log(toBeReturned);
     return toBeReturned;
   };
   return (
@@ -46,15 +47,8 @@ const Index = () => {
           justifyContent="center"
           width="fit-content"
           spacing={10}
-          // sx={{
-          //   gridTemplateColumns: {
-          //     lg: "repeat(3, minmax(14rem, 1fr))",
-          //     md: "repeat(2, minmax(14rem, 1fr))",
-          //     sm: "repeat(1, minmax(14rem, 1fr))",
-          //   },
-          // }}
         >
-          {filteredMembers(year).map((member, index) => (
+          {filteredMembers(year).map((member) => (
             <Grid
               item
               key={member.id}
@@ -69,18 +63,6 @@ const Index = () => {
               <Card member={member} />
             </Grid>
           ))}
-          {/* <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card /> */}
         </Grid>
       </Container>
     </>

@@ -20,27 +20,27 @@ const AppLayout = styled("div")({
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <Home title="RMI | NIT Trichy" />,
   },
   {
     path: "/team",
-    element: <Team />,
+    element: <Team title="RMI | Team" />,
   },
   {
     path: "/projects",
-    element: <Projects />,
+    element: <Projects title="RMI | Projects" />,
   },
   {
     path: "/events",
-    element: <Events />,
+    element: <Events title="RMI | Events" />,
   },
   {
     path: "/accolades",
-    element: <Accolades />,
+    element: <Accolades title="RMI | Accolades" />,
   },
   {
     path: "/project/:projectid",
-    element: <Project />,
+    element: <Project title="RMI | Projects" />,
   },
 ]);
 

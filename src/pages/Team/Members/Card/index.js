@@ -7,6 +7,7 @@ import { ReactComponent as MailSvg } from "../../../../assets/memberCardSvgs/mai
 import { ReactComponent as WebSvg } from "../../../../assets/memberCardSvgs/web.svg";
 import { ReactComponent as FlipOne } from "../../../../assets/memberCardSvgs/flipsvg1.svg";
 import { ReactComponent as FlipTwo } from "../../../../assets/memberCardSvgs/flipsvg2.svg";
+import noprofile from "../../../../assets/noprofile.png";
 
 const nameModder = (name) => {
   const totalLength = name.length;
@@ -140,9 +141,14 @@ const FirstName = styled("div")({
   fontWeight: 1000,
   width: "100%",
   textAlign: "center",
+<<<<<<< HEAD
   height: "fit-content",
   lineHeight: "100%",
+=======
+  height: "2.1rem",
+>>>>>>> 007eb87 (feat: our team json)
 });
+
 const SingleName = styled("div")({
   fontFamily: "Poppins",
   fontSize: "1.2rem",
@@ -207,17 +213,12 @@ const Icons = styled("div")({
   marginInline: "auto",
   gap: "0.8rem",
   marginTop: "1.6rem",
+  minHeight: "2.4rem",
 });
 
 const Card = (props) => {
   const [flip, setFlip] = React.useState(false);
   const [hover, setHover] = React.useState(false);
-  const domains = [
-    "Embedded Systems",
-    "Aerial Robotics",
-    "Humanoid Robotic Systems",
-    "Mobile Robotics",
-  ];
   const namesplit = nameModder(props.member.name.toUpperCase());
   return (
     <CardLayout
@@ -237,37 +238,66 @@ const Card = (props) => {
     >
       <Front>
         <ImgHolder>
-          <Img src={props.member.imageLink} alt="profile" loading="lazy" />
+          {props.member.imageLink ? (
+            <Img src={props.member.imageLink} loading="lazy" />
+          ) : (
+            <Img src={noprofile} loading="lazy" />
+          )}
         </ImgHolder>
         <Slide hover={hover} />
         <Slider hover={hover}>
-          <NameContainer hover={hover}>
-            {namesplit.lname === "" ? (
-              <SingleName>{namesplit.fname}</SingleName>
-            ) : (
-              <>
-                <FirstName>{namesplit.fname}</FirstName>
-                <FirstName>{namesplit.lname}</FirstName>
-              </>
-            )}
+<NameContainer hover={hover}>
+          {namesplit.lname === "" ? (
+            <SingleName>{namesplit.fname}</SingleName>
+          ) : (
+            <>
+              <FirstName>{namesplit.fname}</FirstName>
+              <FirstName>{namesplit.lname}</FirstName>
+            </>
+          )}
           </NameContainer>
-          <Subtitle>Head of Design and Publicity</Subtitle>
-          {domains.map((domain) => (
-            <Domain key={domain}>{domain}</Domain>
-          ))}
+          <div
+            style={{
+              height: "5.7rem",
+            }}
+          >
+            {props.member.position ? (
+              <Subtitle>{props.member.position}</Subtitle>
+            ) : null}
+            {props.member.domains &&
+              props.member.domains.map((domain, index) => (
+                <Domain key={index}>{domain}</Domain>
+              ))}
+          </div>
           <Icons>
-            <a href="https://github.com">
-              <GitSvg style={{ width: "1.6rem" }} />
-            </a>
-            <a href="https://github.com">
-              <InSvg style={{ width: "1.6rem" }} />
-            </a>
-            <a href="https://github.com">
-              <MailSvg style={{ width: "1.6rem" }} />
-            </a>
-            <a href="https://github.com">
-              <WebSvg style={{ width: "1.6rem" }} />
-            </a>
+            {props.member.github ? (
+              <a href={props.member.github} target="_blank" rel="noreferrer">
+                <GitSvg />
+              </a>
+            ) : null}
+            {props.member.linkedin ? (
+              <a href={props.member.linkedin} target="_blank" rel="noreferrer">
+                <InSvg />
+              </a>
+            ) : null}
+            {props.member.email ? (
+              <a
+                href={`mailto:${props.member.email}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <MailSvg />
+              </a>
+            ) : null}
+            {props.member.personalPage ? (
+              <a
+                href={props.member.personalPage}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <WebSvg />
+              </a>
+            ) : null}
           </Icons>
           <FlipOne
             style={{
@@ -310,18 +340,11 @@ const Card = (props) => {
             </>
           )}
         </NameContainer>
-        {/* <FirstName
-          sx={{
-            color: colors.dark,
-          }}
-        >
-          SREEKUMAR
-        </FirstName> */}
         <SubtitleFlip>Projects</SubtitleFlip>
-        {domains.map((domain) => (
-          <Project key={domain}>{domain}</Project>
-        ))}
-        <Icons></Icons>
+        {props.member.projects &&
+          props.member.projects.map((project) => (
+            <Project key={project.pid}>{project.pname}</Project>
+          ))}
         <FlipTwo
           style={{
             width: "2.2rem",
