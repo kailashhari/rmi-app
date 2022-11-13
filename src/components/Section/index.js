@@ -9,6 +9,7 @@ const Section = styled("div")({
   alignItems: "center",
   justifyContent: "center",
   height: "80vh",
+  textAlign: "center",
   // paddingTop: '10vh',
   // paddingBottom: "10vh",
 });

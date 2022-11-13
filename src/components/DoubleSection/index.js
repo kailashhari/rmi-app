@@ -15,14 +15,23 @@ const Section = styled("div")({
   overflow: "hidden",
   position: "relative",
   paddingInline: "10%",
+  ["@media (max-width:780px)"]: {
+    flexDirection: "column",
+    width: "100%",
+    height: "100%",
+    justifyContent: "space-evenly",
+  },
 });
 
 const SectionTitle = styled("div")({
   ...fontStyles.heading,
+  marginBottom: "1rem",
+  textAlign: "center",
 });
 
 const SectionContent = styled("div")({
   ...fontStyles.content,
+  textAlign: "center",
 });
 
 const Subsection = styled("div")({
@@ -119,22 +128,19 @@ const Index = (props) => {
       <Subsection>
         <Carousel />
       </Subsection> */}
-
-      <>
-        <Subsection>
-          <SectionTitle>{props.title}</SectionTitle>
-          <SectionContent>{props.children}</SectionContent>
-        </Subsection>
-        <Subsection>
-          <ImgGrid>
-            {images.map((image, i) => (
-              <Link key={image} to={`/events/#event${i}`}>
-                <ImgCard image={image}></ImgCard>
-              </Link>
-            ))}
-          </ImgGrid>
-        </Subsection>
-      </>
+      <Subsection>
+        <SectionTitle>{props.title}</SectionTitle>
+        <SectionContent>{props.children}</SectionContent>
+      </Subsection>
+      <Subsection>
+        <ImgGrid>
+          {images.map((image, i) => (
+            <Link key={image} to={`/events/#event${i}`}>
+              <ImgCard image={image}></ImgCard>
+            </Link>
+          ))}
+        </ImgGrid>
+      </Subsection>
     </Section>
   );
 };

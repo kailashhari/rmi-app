@@ -32,6 +32,7 @@ const footerData = [
 
 const FooterRight = styled("div")({
   display: "flex",
+  marginTop: "1rem",
 });
 
 const FooterColumn = styled("div")({

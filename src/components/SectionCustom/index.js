@@ -17,16 +17,33 @@ const Section = styled("div")({
   overflow: "hidden",
   position: "relative",
   paddingInline: "10%",
+  ["@media (min-width:780px)"]: {
+    flexDirection: "column",
+    width: "100%",
+    height: "100%",
+    justifyContent: "space-evenly",
+  },
 });
+const Segment = styled("div")((props) => ({
+  display: "flex",
+  flexDirection: props.ind % 2 != 0 ? "row" : "row-reverse",
+  ["@media (max-width:780px)"]: {
+    flexDirection: "column",
+  },
+}));
 
 const SectionTitle = styled("div")({
   ...fontStyles.heading,
+  fontSize: "1.8rem",
+  marginBottom: "1rem",
   zIndex: 11,
+  textAlign: "center",
 });
 
 const SectionContent = styled("div")({
   ...fontStyles.content,
   zIndex: 11,
+  textAlign: "center",
 });
 
 const Subsection = styled("div")({
@@ -68,84 +85,37 @@ const Index = (props) => {
           }}
         />
       )}
-      {/* <Subsection>
-        <SectionTitle>{props.title}</SectionTitle>
-        <SectionContent>{props.children}</SectionContent>
-      </Subsection>
-      <Subsection>
-        <Carousel />
-      </Subsection> */}
-      {props.i % 2 === 0 ? (
-        <>
-          <Subsection>
-            <SectionTitle>{props.title}</SectionTitle>
-            <SectionContent>{props.children}</SectionContent>
-          </Subsection>
-          <Subsection>
-            <Carousel
-              autoPlay={true}
-              showArrows={true}
-              infiniteLoop={true}
-              showThumbs={false}
-              showStatus={false}
-              showIndicators={false}
-              style={{
-                zIndex: 12,
-              }}
-            >
-              {images.map((image) => (
-                <div
-                  key={image}
-                  style={{ width: "100%", height: "fit-content" }}
-                >
-                  <img
-                    src={image}
-                    alt="event"
-                    style={{
-                      objectFit: "fill",
-                    }}
-                  />
-                </div>
-              ))}
-            </Carousel>
-          </Subsection>
-        </>
-      ) : (
-        <>
-          <Subsection>
-            <Carousel
-              autoPlay={true}
-              showArrows={true}
-              infiniteLoop={true}
-              showThumbs={false}
-              showStatus={false}
-              showIndicators={false}
-              style={{
-                zIndex: 12,
-              }}
-            >
-              {images.map((image) => (
-                <div
-                  key={image}
-                  style={{ width: "100%", height: "fit-content" }}
-                >
-                  <img
-                    src={image}
-                    alt="event"
-                    style={{
-                      objectFit: "fill",
-                    }}
-                  />
-                </div>
-              ))}
-            </Carousel>
-          </Subsection>
-          <Subsection>
-            <SectionTitle>{props.title}</SectionTitle>
-            <SectionContent>{props.children}</SectionContent>
-          </Subsection>
-        </>
-      )}
+      <Segment ind={props.i}>
+        <Subsection>
+          <Carousel
+            autoPlay={true}
+            showArrows={true}
+            infiniteLoop={true}
+            showThumbs={false}
+            showStatus={false}
+            showIndicators={false}
+            style={{
+              zIndex: 12,
+            }}
+          >
+            {images.map((image) => (
+              <div key={image} style={{ width: "100%", height: "fit-content" }}>
+                <img
+                  src={image}
+                  alt="event"
+                  style={{
+                    objectFit: "fill",
+                  }}
+                />
+              </div>
+            ))}
+          </Carousel>
+        </Subsection>
+        <Subsection>
+          <SectionTitle>{props.title}</SectionTitle>
+          <SectionContent>{props.children}</SectionContent>
+        </Subsection>
+      </Segment>
     </Section>
   );
 };

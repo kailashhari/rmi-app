@@ -25,6 +25,9 @@ const Circle = styled("div")({
   color: `${colors.dark}`,
   borderRadius: "50%",
   backgroundColor: "#e5e5e5",
+  ["@media (max-width:780px)"]: {
+    marginLeft: "-0.8rem",
+  },
 });
 
 const Wrapper = styled("div")({
@@ -32,6 +35,10 @@ const Wrapper = styled("div")({
   flexDirection: "column",
   alignItems: "center",
   marginBottom: "15rem",
+  ["@media (max-width:780px)"]: {
+    alignItems: "flex-start",
+    marginLeft: "3rem",
+  },
 });
 
 const Message = styled("div")({
@@ -46,6 +53,11 @@ const Message = styled("div")({
   display: "flex",
   flexDirection: "column",
   padding: "1rem 2rem",
+  ["@media (max-width:780px)"]: {
+    alignItems: "flex-start",
+    minWidth: "60vw",
+    marginLeft: "1.5rem",
+  },
 });
 
 const MessageTitle = styled("div")({
@@ -75,6 +87,12 @@ const oddOrEven = (n) => {
       right: "150%",
       animation: "slideInFromLeft 0.4s forwards",
       alignItems: "flex-end",
+      ["@media (max-width:780px)"]: {
+        left: "150%",
+        right: "0%",
+        animation: "slideInFromLeft 0.4s forwards",
+        alignItems: "flex-end",
+      },
     };
   }
 };

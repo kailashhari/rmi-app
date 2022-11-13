@@ -8,6 +8,12 @@ export const colors = {
 };
 
 export const fontStyles = {
+  title: {
+    fontFamily: "Poppins, Gotham",
+    fontWeight: "bold",
+    fontSize: "2rem",
+    color: colors.light,
+  },
   heading: {
     fontFamily: "Raleway, sans-serif",
     fontWeight: 800,

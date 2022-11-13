@@ -74,6 +74,7 @@ const ProjectCardHolder = () => {
         onMouseEnter={toggleOpened}
         onMouseLeave={toggleOpened}
         sx={{
+          margin: "auto",
           width: {
             xs: "90vw",
             sm: "90vw",

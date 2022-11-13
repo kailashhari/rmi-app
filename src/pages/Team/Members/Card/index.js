@@ -48,7 +48,7 @@ const nameModder = (name) => {
 
 const CardLayout = styled("div")({
   backgroundColor: colors.dark,
-  height: "17.6rem",
+  height: "17.8rem",
   width: "14rem",
   boxShadow: `0 0 16px ${colors.primary}BB`,
   borderRadius: "0.8rem",
@@ -76,6 +76,9 @@ const Back = styled("div")({
   webkitBackfaceVisibility: "hidden",
   backfaceVisibility: "hidden",
   top: 0,
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "space-evenly",
   transform: "rotateY(180deg)",
   borderRadius: "0.8rem",
   transformStyle: "preserve-3d",
@@ -99,7 +102,7 @@ const Img = styled("img")({
 const Slide = styled("div")(({ hover }) => ({
   transition: "all 0.3s ease-in-out",
   width: "100%",
-  height: hover ? "17.6rem" : "3rem",
+  height: hover ? "17.8rem" : "3rem",
   position: "absolute",
   backgroundColor: colors.dark,
   top: hover ? "0" : "13.6rem",
@@ -110,9 +113,12 @@ const Slide = styled("div")(({ hover }) => ({
 const Slider = styled("div")(({ hover }) => ({
   width: "100%",
   borderRadius: "0.6rem",
-  height: "fit-content",
+  height: "16rem",
   zIndex: 3,
   position: "absolute",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "space-evenly",
   paddingTop: hover ? "1.2rem" : "0.6rem",
   top: hover ? "0" : "13.4rem",
   transition: "all 0.3s ease-in-out",
@@ -121,7 +127,7 @@ const Slider = styled("div")(({ hover }) => ({
 const FirstName = styled("div")({
   marginBlock: "-0.2rem",
   fontFamily: "Poppins",
-  fontSize: "1.2rem",
+  fontSize: "1rem",
   zIndex: 3,
   fontWeight: 1000,
   width: "100%",
@@ -131,12 +137,12 @@ const FirstName = styled("div")({
 const SingleName = styled("div")({
   marginBlock: "-0.2rem",
   fontFamily: "Poppins",
-  fontSize: "1.2rem",
+  fontSize: "0.98rem",
   zIndex: 3,
   fontWeight: 1000,
   width: "100%",
   textAlign: "center",
-  height: "4rem",
+  height: "3rem",
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
@@ -145,7 +151,7 @@ const SingleName = styled("div")({
 const Subtitle = styled("div")({
   width: "100%",
   color: colors.primary,
-  fontSize: "0.9rem",
+  fontSize: "0.85rem",
   textAlign: "center",
   fontFamily: "Gotham",
   fontWeight: 500,
@@ -155,19 +161,22 @@ const Subtitle = styled("div")({
 const SubtitleFlip = styled("div")({
   width: "100%",
   color: colors.light,
+  display: "flex",
+  justifyContent: "center",
+  justifyItems: "center",
+  paddingTop: "1.2rem",
+  paddingBottom: "0.85rem",
   backgroundColor: colors.primaryDark,
-  paddingBlock: "0.4rem",
-  fontSize: "0.9rem",
-  textAlign: "center",
+  fontSize: "0.85rem",
   fontFamily: "Gotham",
   fontWeight: 500,
-  margin: "1.2rem 0",
+  margin: "0.85rem auto",
 });
 
 const Domain = styled("div")({
   width: "100%",
   color: colors.light,
-  fontSize: "0.9rem",
+  fontSize: "0.8rem",
   fontFamily: "Gotham",
   fontWeight: 500,
   margin: "0.4rem 0",
@@ -177,13 +186,12 @@ const Domain = styled("div")({
 const Project = styled("div")({
   width: "100%",
   color: colors.dark,
-  fontSize: "0.9rem",
+  fontSize: "0.8rem",
   fontFamily: "Gotham",
   fontWeight: 500,
   margin: "0.4rem 0",
   textAlign: "center",
 });
-
 const Icons = styled("div")({
   display: "flex",
   width: "fit-content",
@@ -268,13 +276,7 @@ const Card = (props) => {
         >
           {props.member.name}
         </FirstName>
-        <FirstName
-          sx={{
-            color: colors.dark,
-          }}
-        >
-          {props.member.name}
-        </FirstName>
+
         {/* <FirstName
           sx={{
             color: colors.dark,
@@ -286,6 +288,7 @@ const Card = (props) => {
         {domains.map((domain) => (
           <Project key={domain}>{domain}</Project>
         ))}
+        <Icons></Icons>
         <FlipTwo
           style={{
             position: "absolute",
