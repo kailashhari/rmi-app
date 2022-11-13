@@ -118,7 +118,6 @@ const ImgCard = (props) => {
 };
 
 const Index = (props) => {
-  console.log(props);
   return (
     <Section>
       {/* <Subsection>

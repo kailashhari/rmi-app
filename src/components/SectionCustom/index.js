@@ -53,17 +53,7 @@ const Subsection = styled("div")({
   zIndex: 11,
 });
 
-const images = [
-  "https://cdn.dnaindia.com/sites/default/files/styles/full/public/2021/01/31/954124-rajinikanth-aishwarya-rai-bachchan.jpg",
-  "https://images.indianexpress.com/2021/04/Anniyan.jpg",
-  "https://images.indianexpress.com/2022/08/kamal-haasan-indian-2.jpg",
-  "https://i.ytimg.com/vi/UMr1EI11Wjs/maxresdefault.jpg",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv8fPh6h4X8lOLWrmFoIdwOMm7GmPrCny4eg&usqp=CAU",
-  "https://s1.dmcdn.net/v/Bw7Fe1MB5nzUhpBs7/x1080",
-];
-
 const Index = (props) => {
-  console.log(props);
   return (
     <Section
       id={props.id}
@@ -98,7 +88,7 @@ const Index = (props) => {
               zIndex: 12,
             }}
           >
-            {images.map((image) => (
+            {props.images.map((image) => (
               <div key={image} style={{ width: "100%", height: "fit-content" }}>
                 <img
                   src={image}

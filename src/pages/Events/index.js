@@ -2,15 +2,7 @@ import React, { useEffect } from "react";
 import PageWrapper from "../../components/PageWrapper";
 import Section from "../../components/Section";
 import SectionCustom from "../../components/SectionCustom";
-
-const images = [
-  "https://cdn.dnaindia.com/sites/default/files/styles/full/public/2021/01/31/954124-rajinikanth-aishwarya-rai-bachchan.jpg",
-  "https://images.indianexpress.com/2021/04/Anniyan.jpg",
-  "https://images.indianexpress.com/2022/08/kamal-haasan-indian-2.jpg",
-  "https://i.ytimg.com/vi/UMr1EI11Wjs/maxresdefault.jpg",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv8fPh6h4X8lOLWrmFoIdwOMm7GmPrCny4eg&usqp=CAU",
-  "https://s1.dmcdn.net/v/Bw7Fe1MB5nzUhpBs7/x1080",
-];
+import { AppContext } from "../../store/context";
 
 const contents = [
   "Our annual workshop for the freshmen that serves as a platform to kindle their interest in Robotics. Various topics in Robotics are introduced that build a foundation for them to explore further. The workshop is structured for students to learn through hands-on-experience by building a bot combining multiple domains of Robotics.",
@@ -25,6 +17,7 @@ const index = ({ title }) => {
   useEffect(() => {
     document.title = title;
   }, [title]);
+  const { events } = React.useContext(AppContext).events;
   return (
     <PageWrapper>
       <Section title={"Workshops and Events"}>
@@ -36,15 +29,16 @@ const index = ({ title }) => {
         events include: Genesis, InHoTTs, Following, RMI Hackathon, Robovigyan,
         Pragyan Exhibition
       </Section>
-      {images.map((image, i) => (
+      {events.map((event, i) => (
         <SectionCustom
-          title={"Genesis"}
-          bg={image}
+          title={event.title}
+          bg={event.images[0]}
           i={i}
-          key={image}
+          key={i}
           id={`event${i}`}
+          images={event.images}
         >
-          {contents[i]}
+          {event.content}
         </SectionCustom>
       ))}
       {/* <SectionCustom

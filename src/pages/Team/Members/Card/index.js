@@ -141,14 +141,9 @@ const FirstName = styled("div")({
   fontWeight: 1000,
   width: "100%",
   textAlign: "center",
-<<<<<<< HEAD
   height: "fit-content",
   lineHeight: "100%",
-=======
-  height: "2.1rem",
->>>>>>> 007eb87 (feat: our team json)
 });
-
 const SingleName = styled("div")({
   fontFamily: "Poppins",
   fontSize: "1.2rem",
@@ -213,9 +208,7 @@ const Icons = styled("div")({
   marginInline: "auto",
   gap: "0.8rem",
   marginTop: "1.6rem",
-  minHeight: "2.4rem",
 });
-
 const Card = (props) => {
   const [flip, setFlip] = React.useState(false);
   const [hover, setHover] = React.useState(false);
@@ -246,19 +239,19 @@ const Card = (props) => {
         </ImgHolder>
         <Slide hover={hover} />
         <Slider hover={hover}>
-<NameContainer hover={hover}>
-          {namesplit.lname === "" ? (
-            <SingleName>{namesplit.fname}</SingleName>
-          ) : (
-            <>
-              <FirstName>{namesplit.fname}</FirstName>
-              <FirstName>{namesplit.lname}</FirstName>
-            </>
-          )}
+          <NameContainer hover={hover}>
+            {namesplit.lname === "" ? (
+              <SingleName>{namesplit.fname}</SingleName>
+            ) : (
+              <>
+                <FirstName>{namesplit.fname}</FirstName>
+                <FirstName>{namesplit.lname}</FirstName>
+              </>
+            )}
           </NameContainer>
           <div
             style={{
-              height: "5.7rem",
+              height: "6rem",
             }}
           >
             {props.member.position ? (

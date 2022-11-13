@@ -4,9 +4,9 @@ import PageWrapper from "../../components/PageWrapper";
 import { styled } from "@mui/material";
 import { colors, fontStyles } from "../../constants";
 import { Carousel } from "3d-react-carousal";
+import { AppContext } from "../../store/context";
 
 const Herolayout = styled("div")({
-  height: "80vh",
   width: "100%",
   position: "relative",
   overflow: "hidden",
@@ -43,42 +43,56 @@ const CarouselContainer = styled("div")({
   paddingInline: "1rem",
 });
 
-const Hero = ({ title }) => {
-  useEffect(() => {
-    document.title = title;
-  }, [title]);
+const Hero = ({ project }) => {
   return (
     <Herolayout>
-      <HeroBg src={"https://picsum.photos/1920/1080"} />
-      <HeroTitle>SSC</HeroTitle>
-      <HeroSubtitle>Sign to Speech Convertor</HeroSubtitle>
+      {project.backgroundImage && <HeroBg src={project.backgroundImage} />}
+      <HeroTitle>{project.shortName}</HeroTitle>
+      <HeroSubtitle>{project.longName}</HeroSubtitle>
       <HeroContent>
-        We believe our drive and passion for what we do has helped us earn
-        several accolades over the years. In each event we participate in, we
-        try to give our best and bring laurels to our small community. However,
-        we also believe that winning is not what our is all about, and the
-        experience and learning are our biggest takeaway in all that we pursue.
+        {project.longDesc &&
+          project.longDesc.map((desc, index) => (
+            <>
+              {desc.heading && <h4>{desc.heading}</h4>}
+              {desc.type === "para" && <p>{desc.para}</p>}
+              {desc.type === "bullets" && (
+                <ul>
+                  {desc.para.map((bullet, ind) => (
+                    <li key={ind}>{bullet}</li>
+                  ))}
+                </ul>
+              )}
+            </>
+          ))}
       </HeroContent>
     </Herolayout>
   );
 };
 
-const slides = [
-  <img src="https://picsum.photos/800/300/?random" alt="1" key={1} />,
-  <img src="https://picsum.photos/800/300/?random" alt="2" key={2} />,
-  <img src="https://picsum.photos/800/300/?random" alt="3" key={3} />,
-  <img src="https://picsum.photos/800/300/?random" alt="4" key={4} />,
-  <img src="https://picsum.photos/800/300/?random" alt="5" key={5} />,
-];
-
-const Index = () => {
+const Index = ({ title }) => {
+  useEffect(() => {
+    document.title = title;
+  }, [title]);
   const pid = useParams().projectid;
-  console.log(pid);
+  const { projects } = React.useContext(AppContext).projects;
+  const [project, setProject] = useState({});
+  useEffect(() => {
+    setProject(projects.find((p) => p.pid === pid));
+  }, [projects, pid]);
   return (
     <PageWrapper>
-      <Hero></Hero>
+      <Hero project={project} />
       <CarouselContainer>
-        <Carousel slides={slides} autoplay={false} />
+        <Carousel
+          slides={
+            project.images
+              ? project.images.map((img, index) => (
+                  <img src={img} key={index} alt={index} />
+                ))
+              : []
+          }
+          autoplay={false}
+        />
       </CarouselContainer>
     </PageWrapper>
   );
