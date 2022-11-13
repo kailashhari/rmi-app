@@ -6,15 +6,6 @@ import { AppContext } from "../../../store/context";
 import Grid from "@mui/material/Grid";
 import { Container } from "@mui/system";
 
-const CardGrid = styled("div")({
-  width: "fit-content",
-  marginInline: "auto",
-  display: "grid",
-  gridGap: "2.8rem",
-  marginTop: "3.2rem",
-  justifyContent: "center",
-});
-
 const Index = () => {
   const currentMembers = useContext(AppContext).ourTeam.currentMembers;
   const uniqueYears = [
@@ -34,7 +25,6 @@ const Index = () => {
         return member.batchTag === uniqueYears[i - 1];
       });
     }
-    console.log(toBeReturned);
     return toBeReturned;
   };
   return (

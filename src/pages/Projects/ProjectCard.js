@@ -63,13 +63,13 @@ const CoverHeader = styled("div")({
   justifyContent: "center",
 });
 
-const ProjectCardHolder = () => {
+const ProjectCardHolder = (props) => {
   const [opened, setOpened] = React.useState(true);
   const toggleOpened = () => {
     setOpened((prevOpened) => !prevOpened);
   };
   return (
-    <Link to={"/project/1"}>
+    <Link to={"/project/" + props.project.pid}>
       <ProjectCard
         onMouseEnter={toggleOpened}
         onMouseLeave={toggleOpened}
@@ -85,23 +85,27 @@ const ProjectCardHolder = () => {
       >
         <CoverSheet
           sx={{
-            background: "url('https://picsum.photos/500/400') no-repeat",
+            background: `url(${props.project.cardCoverImage}) no-repeat center center`,
             backgroundSize: "cover",
           }}
           opened={opened}
         />
         <Cover opened={opened}>
           <CoverHeader>
-            <CoverTitle>H.I.D.Q.</CoverTitle>
-            <CoverExpansion>Hybrid Inspection Drive Quadcopter</CoverExpansion>
+            {props.project.shortName && (
+              <CoverTitle>{props.project.shortName}</CoverTitle>
+            )}
+            {props.project.lomgName && (
+              <CoverExpansion>{props.project.longName}</CoverExpansion>
+            )}
           </CoverHeader>
-          <CoverDesc>
-            <div style={{ height: "fit-content" }}>
-              {
-                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
-              }
-            </div>
-          </CoverDesc>
+          {props.project.shortDesc && (
+            <CoverDesc>
+              <div style={{ height: "fit-content" }}>
+                {props.project.shortDesc}
+              </div>
+            </CoverDesc>
+          )}
         </Cover>
       </ProjectCard>
     </Link>

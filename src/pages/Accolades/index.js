@@ -10,6 +10,7 @@ import { ReactComponent as FirstSvg } from "../../assets/honors/first.svg";
 import { ReactComponent as SecondSvg } from "../../assets/honors/second.svg";
 import { ReactComponent as ThirdSvg } from "../../assets/honors/third.svg";
 import { ReactComponent as HonorSvg } from "../../assets/honors/honor.svg";
+import { AppContext } from "../../store/context";
 
 const TopHonors = styled("div")({
   height: "fit-content",
@@ -47,7 +48,6 @@ const FameItem = styled("div")({
   display: "flex",
   flexDirection: "row",
   alignItems: "center",
-  justifyContent: "center",
   gap: "1rem",
   fontSize: "1.5rem",
   ["@media (max-width:780px)"]: {
@@ -62,7 +62,6 @@ const FameItem = styled("div")({
 const FameText = styled("div")({
   display: "flex",
   flexDirection: "column",
-  justifyContent: "center",
 });
 const FameTitle = styled("div")({});
 const FameDesc = styled("div")({
@@ -74,19 +73,8 @@ const index = ({ title }) => {
   useEffect(() => {
     document.title = title;
   }, [title]);
-  const awards = [
-    "MHRD",
-    "MHRD",
-    "MHRD",
-    "MHRD",
-    "MHRD",
-    "MHRD",
-    "MHRD",
-    "MHRD",
-    "MHRD",
-    "MHRD",
-  ];
-
+  const { topHonours } = React.useContext(AppContext).accolades;
+  console.log(topHonours);
   return (
     <PageWrapper>
       <Section title="Achievements and Accolades">
@@ -95,12 +83,12 @@ const index = ({ title }) => {
       <TopHonors>
         <TopTitle>Top Honors</TopTitle>
         <GridOfFame>
-          {awards.map((award, index) => (
+          {topHonours.map((award, index) => (
             <FameItem key={index}>
-              <Prize n={index % 4} />
+              <Prize n={parseInt(award.prizeIndex)} />
               <FameText>
-                <FameTitle>Winners of Smart India Hackathon</FameTitle>
-                <FameDesc>{award}</FameDesc>
+                <FameTitle>{award.title}</FameTitle>
+                <FameDesc>{award.organisers}</FameDesc>
               </FameText>
             </FameItem>
           ))}

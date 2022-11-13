@@ -1,4 +1,4 @@
-import { listClasses, styled } from "@mui/material";
+import { styled } from "@mui/material";
 import React, { useEffect, useRef, useState } from "react";
 
 import TimelineObserver from "react-timeline-animation";
@@ -197,10 +197,6 @@ const Timeline = ({ setObserver }) => {
 };
 
 export default function App() {
-  const onCallback = () => {
-    console.log("awesome");
-  };
-
   return (
     <div className="App">
       <TimelineObserver
@@ -208,7 +204,7 @@ export default function App() {
         fillColor={colors.primary}
         handleObserve={(setObserver) => (
           <Timeline
-            callback={onCallback}
+            callback={() => {}}
             className="timeline"
             setObserver={setObserver}
           />

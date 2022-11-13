@@ -5,6 +5,7 @@ import ProjectCard from "./ProjectCard";
 import PageWrapper from "../../components/PageWrapper";
 import Section from "../../components/Section";
 import sectionContents from "../../content/sectionContents.json";
+import { AppContext } from "../../store/context";
 // import { primaryColor, lightText, shadeText } from '../../theme/colors';
 
 const ProjectCards = styled("div")({
@@ -15,11 +16,26 @@ const ProjectCards = styled("div")({
 });
 
 const ProjectsPageHolder = ({ title }) => {
+  const { projects } = React.useContext(AppContext).projects;
   useEffect(() => {
     document.title = title;
   }, [title]);
   const [val, setVal] = React.useState("All");
-  const options = ["All", "2022", "2021", "2020", "2019"];
+  const options = [
+    "All",
+    ...new Set(projects.map((project) => project.seededIn)),
+  ];
+  const filteredProjects = (i) => {
+    let toBeReturned;
+    if (i === "All") {
+      toBeReturned = projects;
+    } else {
+      toBeReturned = projects.filter((project) => {
+        return project.seededIn === i;
+      });
+    }
+    return toBeReturned;
+  };
   return (
     <PageWrapper>
       <Section title="Our Projects">{sectionContents.ourTeam}</Section>
@@ -41,12 +57,9 @@ const ProjectsPageHolder = ({ title }) => {
           },
         }}
       >
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
+        {filteredProjects(val).map((project) => (
+          <ProjectCard key={project.id} project={project} />
+        ))}
       </ProjectCards>
     </PageWrapper>
   );
