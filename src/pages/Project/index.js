@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import PageWrapper from "../../components/PageWrapper";
 import { styled } from "@mui/material";
@@ -44,7 +44,10 @@ const CarouselContainer = styled("div")({
   paddingInline: "1rem",
 });
 
-const Hero = () => {
+const Hero = ({ title }) => {
+  useEffect(() => {
+    document.title = title;
+  }, [title]);
   return (
     <Herolayout>
       <HeroBg src={"https://picsum.photos/1920/1080"} />

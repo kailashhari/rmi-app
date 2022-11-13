@@ -7,6 +7,7 @@ import { ReactComponent as MailSvg } from "../../../../assets/memberCardSvgs/mai
 import { ReactComponent as WebSvg } from "../../../../assets/memberCardSvgs/web.svg";
 import { ReactComponent as FlipOne } from "../../../../assets/memberCardSvgs/flipsvg1.svg";
 import { ReactComponent as FlipTwo } from "../../../../assets/memberCardSvgs/flipsvg2.svg";
+import noprofile from "../../../../assets/noprofile.png";
 
 const nameModder = (name) => {
   const totalLength = name.length;
@@ -132,8 +133,9 @@ const FirstName = styled("div")({
   fontWeight: 1000,
   width: "100%",
   textAlign: "center",
-  height: "2rem",
+  height: "2.1rem",
 });
+
 const SingleName = styled("div")({
   marginBlock: "-0.2rem",
   fontFamily: "Poppins",
@@ -198,17 +200,12 @@ const Icons = styled("div")({
   marginInline: "auto",
   gap: "0.8rem",
   marginTop: "1.6rem",
+  minHeight: "2.4rem",
 });
 
 const Card = (props) => {
   const [flip, setFlip] = React.useState(false);
   const [hover, setHover] = React.useState(false);
-  const domains = [
-    "Embedded Systems",
-    "Aerial Robotics",
-    "Humanoid Robotic Systems",
-    "Mobile Robotics",
-  ];
   const namesplit = nameModder(props.member.name.toUpperCase());
   return (
     <CardLayout
@@ -228,7 +225,11 @@ const Card = (props) => {
     >
       <Front>
         <ImgHolder>
-          <Img src={props.member.imageLink} alt="profile" loading="lazy" />
+          {props.member.imageLink ? (
+            <Img src={props.member.imageLink} loading="lazy" />
+          ) : (
+            <Img src={noprofile} loading="lazy" />
+          )}
         </ImgHolder>
         <Slide hover={hover} />
         <Slider hover={hover}>
@@ -240,23 +241,48 @@ const Card = (props) => {
               <FirstName>{namesplit.lname}</FirstName>
             </>
           )}
-          <Subtitle>Head of Design and Publicity</Subtitle>
-          {domains.map((domain) => (
-            <Domain key={domain}>{domain}</Domain>
-          ))}
+          <div
+            style={{
+              height: "5.7rem",
+            }}
+          >
+            {props.member.position ? (
+              <Subtitle>{props.member.position}</Subtitle>
+            ) : null}
+            {props.member.domains &&
+              props.member.domains.map((domain, index) => (
+                <Domain key={index}>{domain}</Domain>
+              ))}
+          </div>
           <Icons>
-            <a href="https://github.com">
-              <GitSvg />
-            </a>
-            <a href="https://github.com">
-              <InSvg />
-            </a>
-            <a href="https://github.com">
-              <MailSvg />
-            </a>
-            <a href="https://github.com">
-              <WebSvg />
-            </a>
+            {props.member.github ? (
+              <a href={props.member.github} target="_blank" rel="noreferrer">
+                <GitSvg />
+              </a>
+            ) : null}
+            {props.member.linkedin ? (
+              <a href={props.member.linkedin} target="_blank" rel="noreferrer">
+                <InSvg />
+              </a>
+            ) : null}
+            {props.member.email ? (
+              <a
+                href={`mailto:${props.member.email}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <MailSvg />
+              </a>
+            ) : null}
+            {props.member.personalPage ? (
+              <a
+                href={props.member.personalPage}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <WebSvg />
+              </a>
+            ) : null}
           </Icons>
           <FlipOne
             style={{
@@ -276,19 +302,11 @@ const Card = (props) => {
         >
           {props.member.name}
         </FirstName>
-
-        {/* <FirstName
-          sx={{
-            color: colors.dark,
-          }}
-        >
-          SREEKUMAR
-        </FirstName> */}
         <SubtitleFlip>Projects</SubtitleFlip>
-        {domains.map((domain) => (
-          <Project key={domain}>{domain}</Project>
-        ))}
-        <Icons></Icons>
+        {props.member.projects &&
+          props.member.projects.map((project) => (
+            <Project key={project.pid}>{project.pname}</Project>
+          ))}
         <FlipTwo
           style={{
             position: "absolute",

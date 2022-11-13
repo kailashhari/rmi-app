@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PageWrapper from "../../components/PageWrapper";
 import { Hero, HeroSection } from "../../components/Hero";
 import logo from "../../assets/logoFull.png";
@@ -97,7 +97,10 @@ const projects = [
   { name: "SPS", expansion: "Smart Parking System" },
 ];
 
-const index = () => {
+const index = ({ title }) => {
+  useEffect(() => {
+    document.title = title;
+  }, [title]);
   return (
     <PageWrapper>
       <Hero>

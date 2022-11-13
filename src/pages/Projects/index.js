@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Selector from "../../components/Selector";
 import { styled } from "@mui/system";
 import ProjectCard from "./ProjectCard";
@@ -14,7 +14,10 @@ const ProjectCards = styled("div")({
   margin: "3rem auto",
 });
 
-const ProjectsPageHolder = () => {
+const ProjectsPageHolder = ({ title }) => {
+  useEffect(() => {
+    document.title = title;
+  }, [title]);
   const [val, setVal] = React.useState("All");
   const options = ["All", "2022", "2021", "2020", "2019"];
   return (

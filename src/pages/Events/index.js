@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PageWrapper from "../../components/PageWrapper";
 import Section from "../../components/Section";
 import SectionCustom from "../../components/SectionCustom";
@@ -13,7 +13,10 @@ const images = [
   "https://s1.dmcdn.net/v/Bw7Fe1MB5nzUhpBs7/x1080",
 ];
 
-const index = () => {
+const index = ({ title }) => {
+  useEffect(() => {
+    document.title = title;
+  }, [title]);
   return (
     <PageWrapper>
       <Section title={"Workshops and Events"}>{sectionContents.events}</Section>

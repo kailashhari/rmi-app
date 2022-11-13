@@ -1,5 +1,5 @@
 import { styled } from "@mui/material";
-import React from "react";
+import React, { useEffect } from "react";
 import PageWrapper from "../../components/PageWrapper";
 import Section from "../../components/Section";
 import sectionContents from "../../content/sectionContents.json";
@@ -70,7 +70,10 @@ const FameDesc = styled("div")({
   color: colors.grey,
 });
 
-const index = () => {
+const index = ({ title }) => {
+  useEffect(() => {
+    document.title = title;
+  }, [title]);
   const awards = [
     "MHRD",
     "MHRD",
