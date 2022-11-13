@@ -49,6 +49,14 @@ const FameItem = styled("div")({
   alignItems: "center",
   justifyContent: "center",
   gap: "1rem",
+  fontSize: "1.5rem",
+  ["@media (max-width:780px)"]: {
+    flexDirection: "column",
+    width: "100%",
+    height: "100%",
+    justifyContent: "space-evenly",
+    textAlign: "center",
+  },
 });
 
 const FameText = styled("div")({

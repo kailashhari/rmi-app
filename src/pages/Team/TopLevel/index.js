@@ -17,8 +17,11 @@ const Tabs = styled("div")({
 
 const Tab = styled("div")({
   fontFamily: "Poppins",
-  fontSize: "1.4rem",
+  fontSize: "1.5rem",
   color: colors.primary,
+  ["@media (max-width:780px)"]: {
+    fontSize: "1rem",
+  },
 });
 
 const Indicator = styled("div")({

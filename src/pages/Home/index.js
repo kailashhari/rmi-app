@@ -2,7 +2,7 @@ import React from "react";
 import PageWrapper from "../../components/PageWrapper";
 import { Hero, HeroSection } from "../../components/Hero";
 import logo from "../../assets/logoFull.png";
-import { styled } from "@mui/material";
+import { styled, Box } from "@mui/material";
 import Section from "../../components/Section";
 import sectionContents from "../../content/sectionContents.json";
 import DoubleSection from "../../components/DoubleSection";
@@ -27,8 +27,9 @@ const responsive = {
 
 const HeroText = styled("div")({
   fontFamily: "Raleway",
-  fontSize: "2.6rem",
+  fontSize: "2.8rem",
   fontWeight: "700",
+  justifyContent: "flex-end",
 });
 
 const HeroAnd = styled("span")({
@@ -111,34 +112,44 @@ const index = () => {
             }}
           />
         </HeroSection>
-        <HeroSection
+        <Box
           sx={{
             flexDirection: "column",
+            flex: "1",
+            alignItems: "center",
+            justifyContent: "center",
+            display: { xs: "none", sm: "none", md: "flex" },
           }}
         >
-          <HeroLineContainer>
-            <HeroText>ROBOTICS</HeroText>
-            <HeroAnd>AND</HeroAnd>
-          </HeroLineContainer>
-          <HeroLineContainer>
-            <HeroText>MACHINE INTELLIGENCE</HeroText>
-          </HeroLineContainer>
-          <HeroLineContainer
+          <HeroSection
             sx={{
-              marginTop: "0.6rem",
+              flexDirection: "column",
             }}
           >
-            <HeroText
-              sx={{
-                fontFamily: "Gotham",
-                fontSize: "1.2rem",
-                fontWeight: "400",
-              }}
-            >
-              The Official Robotics Club of NIT Trichy
-            </HeroText>
-          </HeroLineContainer>
-        </HeroSection>
+            <HeroLineContainer>
+              <HeroText>ROBOTICS</HeroText>
+              <HeroAnd>AND</HeroAnd>
+            </HeroLineContainer>
+            <HeroLineContainer>
+              <HeroText>MACHINE</HeroText>
+            </HeroLineContainer>
+            <HeroLineContainer>
+              <HeroText>INTELLIGENCE</HeroText>
+            </HeroLineContainer>
+            <HeroLineContainer>
+              <HeroText
+                sx={{
+                  fontFamily: "Gotham",
+                  fontSize: "1rem",
+                  fontWeight: "400",
+                  mt: "1rem",
+                }}
+              >
+                The Official Robotics Club of NIT Trichy
+              </HeroText>
+            </HeroLineContainer>
+          </HeroSection>
+        </Box>
       </Hero>
       <Section
         title={"About"}
@@ -148,7 +159,12 @@ const index = () => {
       >
         {sectionContents.ourTeam}
       </Section>
-      <DoubleSection title={"Events and Workshops"}>
+      <DoubleSection
+        sx={{
+          justifyContent: "center",
+        }}
+        title={"Events and Workshops"}
+      >
         {sectionContents.ourTeam}
       </DoubleSection>
       <InterTitle>Our Projects</InterTitle>
