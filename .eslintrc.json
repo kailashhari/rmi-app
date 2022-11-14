@@ -21,7 +21,13 @@
         "semi": ["error", "always"],
         // "quotes": ["error", "double"],
         "react/prop-types": "off",
-        "linebreak-style": ["error", "unix"],
-        "no-unused-vars": "off"
+        "linebreak-style": "off",
+        "no-unused-vars": "off",
+        "prettier/prettier": [
+            "error",
+            {
+              "endOfLine": "auto"
+            }
+          ]
     }
 }

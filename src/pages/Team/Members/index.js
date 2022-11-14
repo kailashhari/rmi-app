@@ -44,8 +44,8 @@ const Index = () => {
           container
           alignItems="center"
           justifyContent="center"
-          rowSpacing={8}
           width="fit-content"
+          spacing={10}
           // sx={{
           //   gridTemplateColumns: {
           //     lg: "repeat(3, minmax(14rem, 1fr))",
@@ -64,6 +64,7 @@ const Index = () => {
               lg={4}
               align="center"
               width="fit-content"
+              padding={0}
             >
               <Card member={member} />
             </Grid>

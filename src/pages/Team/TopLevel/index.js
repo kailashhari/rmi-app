@@ -18,7 +18,6 @@ const Tabs = styled("div")({
 const Tab = styled("div")({
   fontFamily: "Poppins",
   fontSize: "1.5rem",
-  color: colors.primary,
   ["@media (max-width:780px)"]: {
     fontSize: "1rem",
   },
@@ -62,13 +61,31 @@ const Index = () => {
   return (
     <>
       <Tabs ref={tabsRef}>
-        <Tab onClick={() => setTab(0)} ref={memberRef}>
+        <Tab
+          onClick={() => setTab(0)}
+          ref={memberRef}
+          sx={{
+            color: tab === 0 ? colors.primary : colors.grey,
+          }}
+        >
           Members
         </Tab>
-        <Tab onClick={() => setTab(1)} ref={alumniRef}>
+        <Tab
+          onClick={() => setTab(1)}
+          ref={alumniRef}
+          sx={{
+            color: tab === 1 ? colors.primary : colors.grey,
+          }}
+        >
           Alumni
         </Tab>
-        <Tab onClick={() => setTab(2)} ref={facadRef}>
+        <Tab
+          onClick={() => setTab(2)}
+          ref={facadRef}
+          sx={{
+            color: tab === 2 ? colors.primary : colors.grey,
+          }}
+        >
           Faculty Advisor
         </Tab>
         <Indicator ref={indicatorRef} />
