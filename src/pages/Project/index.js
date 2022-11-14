@@ -2,12 +2,13 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import PageWrapper from "../../components/PageWrapper";
 import { styled } from "@mui/material";
-import sectionContents from "../../content/sectionContents.json";
 import { colors, fontStyles } from "../../constants";
 import { Carousel } from "3d-react-carousal";
 import { AppContext } from "../../store/context";
+import { Container } from "@mui/material";
 
 const Herolayout = styled("div")({
+  height: "80vh",
   width: "100%",
   position: "relative",
   overflow: "hidden",
@@ -50,22 +51,7 @@ const Hero = ({ project }) => {
       {project.backgroundImage && <HeroBg src={project.backgroundImage} />}
       <HeroTitle>{project.shortName}</HeroTitle>
       <HeroSubtitle>{project.longName}</HeroSubtitle>
-      <HeroContent>
-        {project.longDesc &&
-          project.longDesc.map((desc, index) => (
-            <>
-              {desc.heading && <h4>{desc.heading}</h4>}
-              {desc.type === "para" && <p>{desc.para}</p>}
-              {desc.type === "bullets" && (
-                <ul>
-                  {desc.para.map((bullet, ind) => (
-                    <li key={ind}>{bullet}</li>
-                  ))}
-                </ul>
-              )}
-            </>
-          ))}
-      </HeroContent>
+      <HeroContent>{project.shortDesc}</HeroContent>
     </Herolayout>
   );
 };
