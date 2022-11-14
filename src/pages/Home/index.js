@@ -9,6 +9,7 @@ import DoubleSection from "../../components/DoubleSection";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { colors, fontStyles } from "../../constants";
+import Reachus from "./Reachus";
 
 const responsive = {
   desktop: {
@@ -83,7 +84,7 @@ const InterTitle = styled("div")({
 });
 
 const CarouselWrapper = styled("div")({
-  width: "80%",
+  width: "95%",
   marginInline: "auto",
 });
 
@@ -190,6 +191,7 @@ const index = () => {
           ))}
         </Carousel>
       </CarouselWrapper>
+      <Reachus />
     </PageWrapper>
   );
 };

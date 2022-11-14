@@ -62,24 +62,24 @@ function App() {
     fetchData();
   }, []);
 
-  useEffect(() => {
-    console.log(data);
-    const flyers = document.getElementsByClassName("flyer");
-    Array.prototype.forEach.call(flyers, (element) => {
-      element.style.animationDuration = "1s";
-    });
-    const loadingElement = document.getElementById("loading");
-    loadingElement.style.animation = "fade 2s forwards";
-    loadingElement.style.animationDelay = "2s";
-    setTimeout(() => {
-      const loader = document.getElementById("loading");
-      if (loader) {
-        loader.remove();
-      }
-    }, 4000);
-    // flyers.forEach(element => {
-    // });
-  }, [data !== null]);
+  // useEffect(() => {
+  //   console.log(data);
+  //   const flyers = document.getElementsByClassName("flyer");
+  //   Array.prototype.forEach.call(flyers, (element) => {
+  //     element.style.animationDuration = "1s";
+  //   });
+  //   const loadingElement = document.getElementById("loading");
+  //   loadingElement.style.animation = "fade 2s forwards";
+  //   loadingElement.style.animationDelay = "2s";
+  //   setTimeout(() => {
+  //     const loader = document.getElementById("loading");
+  //     if (loader) {
+  //       loader.remove();
+  //     }
+  //   }, 4000);
+  //   // flyers.forEach(element => {
+  //   // });
+  // }, [data !== null]);
 
   return (
     <>

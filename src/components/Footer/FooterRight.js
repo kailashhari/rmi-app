@@ -43,7 +43,7 @@ const FooterColumn = styled("div")({
 
 const FooterColumnTitle = styled("div")({
   color: colors.primary,
-  fontSize: "0.8rem",
+  fontSize: "1rem",
   fontFamily: "Gotham",
   fontWeight: "light",
 });

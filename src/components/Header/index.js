@@ -77,7 +77,17 @@ function ResponsiveAppBar() {
 
   const handleDrawerToggle = () => setMobileOpen(!mobileOpen);
   const location = useLocation();
-
+  let logoAnim;
+  if (
+    location.state === null ||
+    (location.state.prevPath !== "/" && location.pathname !== "/")
+  ) {
+    logoAnim = "none";
+  } else if (location.state.prevPath === "/" && location.pathname !== "/") {
+    logoAnim = "zoomIn 0.4s forwards";
+  } else if (location.state.prevPath !== "/" && location.pathname === "/") {
+    logoAnim = "zoomIn 0.4s reverse";
+  }
   const drawer = (
     <Box
       onClick={handleDrawerToggle}
@@ -100,10 +110,11 @@ function ResponsiveAppBar() {
           alt="logo"
           style={{
             display: "block",
+            margin: location.pathname === "/" ? "0" : "3rem",
             padding: 0,
-            animation: "zoomIn 0.4s forwards",
-            width: "56px",
-            height: "56px",
+            width: location.pathname === "/" ? "0" : "56px",
+            height: location.pathname === "/" ? "0" : "56px",
+            animation: logoAnim,
           }}
         />
         <Typography
@@ -155,18 +166,9 @@ function ResponsiveAppBar() {
     </Box>
   );
 
-  let logoAnim;
-  if (
-    location.state === null ||
-    (location.state.prevPath !== "/" && location.pathname !== "/")
-  ) {
-    logoAnim = "none";
-  } else if (location.state.prevPath === "/" && location.pathname !== "/") {
-    logoAnim = "zoomIn 0.4s forwards";
-  } else if (location.state.prevPath !== "/" && location.pathname === "/") {
-    logoAnim = "zoomIn 0.4s reverse";
-  }
-  // (location.state?.prevPath === '/' && location.pathname !== '/') ? 'zoomIn 0.4s forwards' : 'none';
+  // location.state?.prevPath === "/" && location.pathname !== "/"
+  //   ? "zoomIn 0.4s forwards"
+  //   : "none";
   console.log(location.state?.prevPath, location.pathname);
 
   return (
