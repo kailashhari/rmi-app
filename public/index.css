@@ -173,3 +173,17 @@ body {
   animation: fromBottom 1s forwards ease-in-out;
   animation-delay: 2.2s;
 }
+
+body::-webkit-scrollbar-track {
+  background-color: #FFFCF9;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+  background-color: #FFFCF9;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #57E2E5;
+}
+
