@@ -49,8 +49,8 @@ const nameModder = (name) => {
 
 const CardLayout = styled("div")({
   backgroundColor: colors.dark,
-  height: "17.6rem",
-  width: "14rem",
+  height: "19.2rem",
+  width: "16.2rem",
   boxShadow: `0 0 16px ${colors.primary}BB`,
   borderRadius: "0.8rem",
   transformStyle: "preserve-3d",
@@ -77,21 +77,22 @@ const Back = styled("div")({
   webkitBackfaceVisibility: "hidden",
   backfaceVisibility: "hidden",
   top: 0,
-  paddingTop: "1.2rem",
+  display: "flex",
+  flexDirection: "column",
+  // justifyContent: "space-evenly",
   transform: "rotateY(180deg)",
   borderRadius: "0.8rem",
   transformStyle: "preserve-3d",
 });
 
 const ImgHolder = styled("div")({
-  height: "13rem",
-  width: "13rem",
+  height: "15rem",
+  width: "15rem",
   overflow: "hidden",
   marginInline: "auto",
   marginTop: "0.5rem",
   borderRadius: "0.6rem",
 });
-
 const Img = styled("img")({
   width: "100%",
   height: "100%",
@@ -101,10 +102,10 @@ const Img = styled("img")({
 const Slide = styled("div")(({ hover }) => ({
   transition: "all 0.3s ease-in-out",
   width: "100%",
-  height: hover ? "17.6rem" : "3rem",
+  height: hover ? "19.2rem" : "2rem",
   position: "absolute",
   backgroundColor: colors.dark,
-  top: hover ? "0" : "13.6rem",
+  top: hover ? "0" : "16rem",
   zIndex: 2,
   borderRadius: hover ? "0.8rem" : "0",
 }));
@@ -112,24 +113,44 @@ const Slide = styled("div")(({ hover }) => ({
 const Slider = styled("div")(({ hover }) => ({
   width: "100%",
   borderRadius: "0.6rem",
-  height: "fit-content",
+  height: "100%",
   zIndex: 3,
   position: "absolute",
-  paddingTop: hover ? "1.2rem" : "0.4rem",
-  top: hover ? "0" : "13.4rem",
+  display: "flex",
+  flexDirection: "column",
+  // paddingTop: hover ? "1.2rem" : "0.6rem",
+  top: hover ? "0" : "15.5rem",
   transition: "all 0.3s ease-in-out",
 }));
 
-const SingleName = styled("div")({
-  lineHeight: "1.2rem",
-  marginBlock: "-0.2rem",
+const NameContainer = styled("div")(({ hover }) => ({
+  width: "100%",
+  height: "3.7rem",
+  marginTop: hover ? "0.8rem" : "0",
+  transition: "all 0.3s ease-in-out",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  justifyContent: "center",
+}));
+
+const FirstName = styled("div")({
   fontFamily: "Poppins",
-  fontSize: "0.98rem",
+  fontSize: "1.2rem",
   zIndex: 3,
   fontWeight: 1000,
   width: "100%",
   textAlign: "center",
-  height: "4rem",
+  height: "fit-content",
+  lineHeight: "100%",
+});
+const SingleName = styled("div")({
+  fontFamily: "Poppins",
+  fontSize: "1.2rem",
+  zIndex: 3,
+  fontWeight: 1000,
+  width: "100%",
+  textAlign: "center",
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
@@ -142,37 +163,51 @@ const Subtitle = styled("div")({
   textAlign: "center",
   fontFamily: "Gotham",
   fontWeight: 500,
-  margin: "1.2rem 0",
+  margin: "0.8rem 0 1.2rem",
+  padding: "0.4rem",
 });
 
 const SubtitleFlip = styled("div")({
   width: "100%",
-  color: colors.light,
-  backgroundColor: colors.primaryDark,
-  paddingBlock: "0.4rem",
-  fontSize: "0.9rem",
+  fontSize: "1rem",
   textAlign: "center",
   fontFamily: "Gotham",
+  fontWeight: 700,
+  margin: "0.8rem 0 1.2rem",
+  padding: "0.4rem",
+  color: colors.light,
+  backgroundColor: colors.primaryDark,
+});
+
+const Domain = styled("div")({
+  width: "100%",
+  color: colors.light,
+  fontSize: "1rem",
+  fontFamily: "Gotham",
   fontWeight: 500,
-  margin: "0.6rem 0",
+  marginBlock: "0.2rem",
+  textAlign: "center",
 });
 
 const Project = styled("div")({
   width: "100%",
   color: colors.dark,
-  fontSize: "0.9rem",
+  fontSize: "1rem",
   fontFamily: "Gotham",
   fontWeight: 500,
-  margin: "0.4rem 0",
+  marginBlock: "0.2rem",
   textAlign: "center",
 });
-
 const Icons = styled("div")({
+  position: "absolute",
   display: "flex",
   width: "fit-content",
+  left: 0,
+  right: 0,
+  bottom: "1rem",
   marginInline: "auto",
   gap: "0.8rem",
-  marginTop: "2.0rem",
+  marginTop: "1.6rem",
 });
 
 const SubsubtitleBox = styled("div")({
@@ -204,6 +239,7 @@ const Card = (props) => {
   const [flip, setFlip] = React.useState(false);
   const [hover, setHover] = React.useState(false);
   const namesplit = nameModder(props.member.name.toUpperCase());
+  console.log(namesplit);
   return (
     <CardLayout
       onMouseEnter={() => {
@@ -230,7 +266,16 @@ const Card = (props) => {
         </ImgHolder>
         <Slide hover={hover} />
         <Slider hover={hover}>
-          <SingleName>{props.member.name.toUpperCase()}</SingleName>
+          <NameContainer hover={hover}>
+            {namesplit.lname === "" ? (
+              <SingleName>{namesplit.fname}</SingleName>
+            ) : (
+              <>
+                <FirstName>{namesplit.fname}</FirstName>
+                <FirstName>{namesplit.lname}</FirstName>
+              </>
+            )}
+          </NameContainer>
           <div
             style={{
               height: "7rem",
@@ -249,8 +294,8 @@ const Card = (props) => {
                 <GitSvg />
               </a>
             ) : null}
-            {props.member.linkedin ? (
-              <a href={props.member.linkedin} target="_blank" rel="noreferrer">
+            {props.member.linkedIn ? (
+              <a href={props.member.linkedIn} target="_blank" rel="noreferrer">
                 <InSvg />
               </a>
             ) : null}
@@ -275,8 +320,10 @@ const Card = (props) => {
           </Icons>
           <FlipOne
             style={{
+              width: "2.2rem",
+              height: "2.2rem",
               position: "absolute",
-              bottom: "-1.2rem",
+              bottom: 0,
               right: 0,
               zIndex: 2,
             }}
@@ -284,7 +331,34 @@ const Card = (props) => {
         </Slider>
       </Front>
       <Back>
-        <SingleName>{props.member.name.toUpperCase()}</SingleName>
+        <NameContainer hover={true}>
+          {namesplit.lname === "" ? (
+            <SingleName
+              sx={{
+                color: colors.dark,
+              }}
+            >
+              {namesplit.fname}
+            </SingleName>
+          ) : (
+            <>
+              <FirstName
+                sx={{
+                  color: colors.dark,
+                }}
+              >
+                {namesplit.fname}
+              </FirstName>
+              <FirstName
+                sx={{
+                  color: colors.dark,
+                }}
+              >
+                {namesplit.lname}
+              </FirstName>
+            </>
+          )}
+        </NameContainer>
         {props.member.projects && <SubtitleFlip>Projects</SubtitleFlip>}
         {props.member.projects &&
           props.member.projects.map((project) => (

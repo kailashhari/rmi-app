@@ -268,8 +268,8 @@ const Card = (props) => {
                 <GitSvg />
               </a>
             ) : null}
-            {props.member.linkedin ? (
-              <a href={props.member.linkedin} target="_blank" rel="noreferrer">
+            {props.member.linkedIn ? (
+              <a href={props.member.linkedIn} target="_blank" rel="noreferrer">
                 <InSvg />
               </a>
             ) : null}

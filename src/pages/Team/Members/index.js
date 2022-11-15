@@ -1,4 +1,3 @@
-import { styled } from "@mui/material";
 import React, { useContext } from "react";
 import YearSelector from "../YearSelector";
 import Card from "./Card";

@@ -1,11 +1,10 @@
-import { formControlUnstyledClasses } from "@mui/base";
 import { Container, styled } from "@mui/material";
-import React from "react";
+import React, { useContext } from "react";
 import { fontStyles, colors } from "../../../constants";
-import { ReactComponent as GitSvg } from "../../../assets/memberCardSvgs/git.svg";
 import { ReactComponent as InSvg } from "../../../assets/memberCardSvgs/in.svg";
 import { ReactComponent as MailSvg } from "../../../assets/memberCardSvgs/mail.svg";
 import { ReactComponent as WebSvg } from "../../../assets/memberCardSvgs/web.svg";
+import { AppContext } from "../../../store/context";
 
 const FacadLayout = styled("div")({
   display: "flex",
@@ -154,39 +153,41 @@ const BulletsContainer = styled("div")({
 const Bullet = styled("div")({
   display: "flex",
   flexDirection: "row",
-  alignItems: "center",
+  alignItems: "flex-start",
   gap: "1rem",
 });
 
 const BulletPoint = styled("div")({
-  width: "0.6rem",
-  height: "0.6rem",
+  minWidth: "0.6rem",
+  minHeight: "0.6rem",
   backgroundColor: colors.primary,
   borderRadius: "100%",
+  marginTop: "0.6rem",
 });
 const BulletContent = styled("div")({
   ...fontStyles.content,
 });
 
 const Content = ({ data }) => {
+  console.log(data);
   return (
     <ContentLayout>
       <Container maxWidth="lg">
-        <ContentHeading>{data.heading}</ContentHeading>
+        <ContentHeading>{data.header}</ContentHeading>
         <ContentContent>
           {data.type === "para"
-            ? data.content.map((para) => (
+            ? data.subdata.map((para) => (
                 <Paragraph key={para.data}>
-                  {para.subHeading !== "" && (
-                    <ParagraphTitle>{para.subHeading}</ParagraphTitle>
+                  {para.subheading !== "" && (
+                    <ParagraphTitle>{para.subheading}</ParagraphTitle>
                   )}
                   <ParagraphContent>{para.data}</ParagraphContent>
                 </Paragraph>
               ))
-            : data.content.map((bull) => (
+            : data.subdata.map((bull) => (
                 <Paragraph key={bull.data}>
-                  {bull.subHeading !== "" && (
-                    <ParagraphTitle>{bull.subHeading}</ParagraphTitle>
+                  {bull.subheading !== "" && (
+                    <ParagraphTitle>{bull.subheading}</ParagraphTitle>
                   )}
                   <BulletsContainer>
                     {bull.data.map((bulletPoint, idx) => (
@@ -205,32 +206,31 @@ const Content = ({ data }) => {
 };
 
 const index = () => {
+  const { facultyAdvisor } = useContext(AppContext);
+  console.log(facultyAdvisor);
   return (
     <FacadLayout>
       <Main>
-        <Img src="https://picsum.photos/200" />
+        <Img src={facultyAdvisor.imageLink} />
         <ProfHeading>
-          <Name>Dr. K. Paneerselvam</Name>
-          <Position>Associate Professor</Position>
-          <Department>Department of Mechanical Engineering</Department>
+          <Name>{facultyAdvisor.name}</Name>
+          <Position>{facultyAdvisor.position}</Position>
+          <Department>{facultyAdvisor.department}</Department>
           <Icons>
-            <a href="https://github.com">
-              <GitSvg style={{ width: "1.6rem" }} />
-            </a>
-            <a href="https://github.com">
+            <a href={facultyAdvisor.linkedIn}>
               <InSvg style={{ width: "1.6rem" }} />
             </a>
-            <a href="https://github.com">
+            <a href={"mailto:" + facultyAdvisor.email}>
               <MailSvg style={{ width: "1.6rem" }} />
             </a>
-            <a href="https://github.com">
+            <a href={facultyAdvisor.personalPage}>
               <WebSvg style={{ width: "1.6rem" }} />
             </a>
           </Icons>
         </ProfHeading>
       </Main>
       <Contents>
-        {contents.map((content) => (
+        {facultyAdvisor.details.map((content) => (
           <Content data={content} key={content.heading} />
         ))}
       </Contents>
