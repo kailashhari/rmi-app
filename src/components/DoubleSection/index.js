@@ -31,7 +31,7 @@ const SectionTitle = styled("div")({
 
 const SectionContent = styled("div")({
   ...fontStyles.content,
-  textAlign: "center",
+  textAlign: "justify",
 });
 
 const Subsection = styled("div")({
@@ -130,7 +130,15 @@ const Index = (props) => {
       </Subsection> */}
       <Subsection>
         <SectionTitle>{props.title}</SectionTitle>
-        <SectionContent>{props.children}</SectionContent>
+        <SectionContent>
+          RMI firmly believes that besides all the work we do as a team to
+          innovate and create the up and coming tech, it is highly necessary to
+          give back to the community. We organise several workshops and events
+          every year with the vision to make newcomers feel welcome and not
+          alien to the field of Robotics. Some of our most important workshops
+          and events include: Genesis, InHoTTs, Following, RMI Hackathon,
+          Robovigyan, Pragyan Exhibition
+        </SectionContent>
       </Subsection>
       <Subsection>
         <ImgGrid>

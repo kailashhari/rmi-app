@@ -2,7 +2,6 @@ import { styled } from "@mui/material";
 import React from "react";
 import PageWrapper from "../../components/PageWrapper";
 import Section from "../../components/Section";
-import sectionContents from "../../content/sectionContents.json";
 import { colors, fontStyles } from "../../constants";
 import Divider from "../../components/Divider";
 import TimelineSection from "./TimelineSection";
@@ -33,13 +32,37 @@ const GridOfFame = styled("div")({
 const Prize = ({ n }) => {
   switch (n) {
     case 0:
-      return <HonorSvg />;
+      return (
+        <HonorSvg
+          style={{
+            width: "4rem",
+          }}
+        />
+      );
     case 1:
-      return <FirstSvg />;
+      return (
+        <FirstSvg
+          style={{
+            width: "4rem",
+          }}
+        />
+      );
     case 2:
-      return <SecondSvg />;
+      return (
+        <SecondSvg
+          style={{
+            width: "4rem",
+          }}
+        />
+      );
     case 3:
-      return <ThirdSvg />;
+      return (
+        <ThirdSvg
+          style={{
+            width: "4rem",
+          }}
+        />
+      );
   }
 };
 
@@ -87,7 +110,11 @@ const index = () => {
   return (
     <PageWrapper>
       <Section title="Achievements and Accolades">
-        {sectionContents.ourTeam}
+        We believe our drive and passion for what we do has helped us earn
+        several accolades over the years. In each event we participate in, we
+        try to give our best and bring laurels to our small community. However,
+        we also believe that winning is not what our is all about, and the
+        experience and learning are our biggest takeaway in all that we pursue.
       </Section>
       <TopHonors>
         <TopTitle>Top Honors</TopTitle>

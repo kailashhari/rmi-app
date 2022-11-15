@@ -31,12 +31,13 @@ const index = (props) => {
       <SectionContent
         sx={{
           width: {
-            xl: "32%",
-            lg: "36%",
+            xl: "42%",
+            lg: "50%",
             md: "60%",
             sm: "80%",
             xs: "90%",
           },
+          textAlign: "justify",
         }}
       >
         {props.children}

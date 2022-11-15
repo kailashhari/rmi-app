@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import PageWrapper from "../../components/PageWrapper";
 import { styled } from "@mui/material";
-import sectionContents from "../../content/sectionContents.json";
 import { colors, fontStyles } from "../../constants";
 import { Carousel } from "3d-react-carousal";
 
@@ -50,7 +49,13 @@ const Hero = () => {
       <HeroBg src={"https://picsum.photos/1920/1080"} />
       <HeroTitle>SSC</HeroTitle>
       <HeroSubtitle>Sign to Speech Convertor</HeroSubtitle>
-      <HeroContent>{sectionContents.ourTeam}</HeroContent>
+      <HeroContent>
+        We believe our drive and passion for what we do has helped us earn
+        several accolades over the years. In each event we participate in, we
+        try to give our best and bring laurels to our small community. However,
+        we also believe that winning is not what our is all about, and the
+        experience and learning are our biggest takeaway in all that we pursue.
+      </HeroContent>
     </Herolayout>
   );
 };

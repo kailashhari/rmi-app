@@ -35,7 +35,7 @@ const Selector = styled("div")({
   paddingLeft: "0.4rem",
   cursor: "pointer",
   position: "relative",
-  zIndex: 901,
+  zIndex: 199,
 });
 const Options = styled("div")({
   width: "100%",

@@ -111,7 +111,7 @@ const Reachus = () => {
           allowfullscreen={true}
           title="video"
           style={{
-            width: "24rem",
+            width: "30rem",
             aspectRatio: 16 / 9,
           }}
         />
