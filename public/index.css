@@ -175,15 +175,16 @@ body {
 }
 
 body::-webkit-scrollbar-track {
-  background-color: #FFFCF9;
+  background-color: #001011;
 }
 
 body::-webkit-scrollbar {
-  width: 8px;
-  background-color: #FFFCF9;
+  width: 9px;
+  background-color: #001011;
 }
 
 body::-webkit-scrollbar-thumb {
   background-color: #57E2E5;
+  border-radius: 10px;
 }
 

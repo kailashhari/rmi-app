@@ -95,7 +95,7 @@ const ProjectCardHolder = (props) => {
             {props.project.shortName && (
               <CoverTitle>{props.project.shortName}</CoverTitle>
             )}
-            {props.project.lomgName && (
+            {props.project.longName && (
               <CoverExpansion>{props.project.longName}</CoverExpansion>
             )}
           </CoverHeader>
