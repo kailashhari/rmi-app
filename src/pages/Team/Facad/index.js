@@ -2,10 +2,26 @@ import { formControlUnstyledClasses } from "@mui/base";
 import { Container, styled } from "@mui/material";
 import React from "react";
 import { fontStyles, colors } from "../../../constants";
+import { ReactComponent as GitSvg } from "../../../assets/memberCardSvgs/git.svg";
+import { ReactComponent as InSvg } from "../../../assets/memberCardSvgs/in.svg";
+import { ReactComponent as MailSvg } from "../../../assets/memberCardSvgs/mail.svg";
+import { ReactComponent as WebSvg } from "../../../assets/memberCardSvgs/web.svg";
 
 const FacadLayout = styled("div")({
   display: "flex",
   flexDirection: "column",
+});
+
+const Icons = styled("div")({
+  position: "absolute",
+  display: "flex",
+  width: "fit-content",
+  left: 0,
+  right: 0,
+  bottom: "1rem",
+  marginInline: "auto",
+  gap: "0.8rem",
+  marginTop: "1.6rem",
 });
 
 const Main = styled("div")({
@@ -197,6 +213,20 @@ const index = () => {
           <Name>Dr. K. Paneerselvam</Name>
           <Position>Associate Professor</Position>
           <Department>Department of Mechanical Engineering</Department>
+          <Icons>
+            <a href="https://github.com">
+              <GitSvg style={{ width: "1.6rem" }} />
+            </a>
+            <a href="https://github.com">
+              <InSvg style={{ width: "1.6rem" }} />
+            </a>
+            <a href="https://github.com">
+              <MailSvg style={{ width: "1.6rem" }} />
+            </a>
+            <a href="https://github.com">
+              <WebSvg style={{ width: "1.6rem" }} />
+            </a>
+          </Icons>
         </ProfHeading>
       </Main>
       <Contents>

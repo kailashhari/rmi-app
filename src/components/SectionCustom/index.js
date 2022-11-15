@@ -43,7 +43,7 @@ const SectionTitle = styled("div")({
 const SectionContent = styled("div")({
   ...fontStyles.content,
   zIndex: 11,
-  textAlign: "center",
+  textAlign: "justify",
 });
 
 const Subsection = styled("div")({
