@@ -159,11 +159,10 @@ const SingleName = styled("div")({
 const Subtitle = styled("div")({
   width: "100%",
   color: colors.primary,
-  fontSize: "0.9rem",
+  fontSize: "1rem",
   textAlign: "center",
   fontFamily: "Gotham",
-  fontWeight: 500,
-  margin: "0.8rem 0 1.2rem",
+  fontWeight: 700,
   padding: "0.4rem",
 });
 
@@ -177,16 +176,6 @@ const SubtitleFlip = styled("div")({
   padding: "0.4rem",
   color: colors.light,
   backgroundColor: colors.primaryDark,
-});
-
-const Domain = styled("div")({
-  width: "100%",
-  color: colors.light,
-  fontSize: "1rem",
-  fontFamily: "Gotham",
-  fontWeight: 500,
-  marginBlock: "0.2rem",
-  textAlign: "center",
 });
 
 const Project = styled("div")({
@@ -222,8 +211,7 @@ const Subsubtitle = styled("div")({
   fontSize: "0.85rem",
   textAlign: "center",
   fontFamily: "Gotham",
-  fontWeight: 500,
-  margin: "0.5rem 0",
+  fontWeight: 700,
 });
 
 const getNameAndYear = (nameAndYear) => {

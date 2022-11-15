@@ -17,17 +17,18 @@ const Section = styled("div")({
   overflow: "hidden",
   position: "relative",
   paddingInline: "10%",
-  ["@media (min-width:780px)"]: {
+  ["@media (max-width:990px)"]: {
     flexDirection: "column",
     width: "100%",
     height: "100%",
     justifyContent: "space-evenly",
   },
 });
+
 const Segment = styled("div")((props) => ({
   display: "flex",
   flexDirection: props.ind % 2 != 0 ? "row" : "row-reverse",
-  ["@media (max-width:780px)"]: {
+  ["@media (max-width:990px)"]: {
     flexDirection: "column",
   },
 }));
@@ -35,9 +36,17 @@ const Segment = styled("div")((props) => ({
 const SectionTitle = styled("div")({
   ...fontStyles.heading,
   fontSize: "1.8rem",
+  zIndex: 11,
+  textAlign: "center",
+});
+
+const SectionSubtitle = styled("div")({
+  ...fontStyles.heading,
+  fontSize: "1.2rem",
   marginBottom: "1rem",
   zIndex: 11,
   textAlign: "center",
+  color: colors.grey,
 });
 
 const SectionContent = styled("div")({
@@ -71,38 +80,63 @@ const Index = (props) => {
             zIndex: 10,
             width: "100%",
             aspectRatio: "auto",
-            opacity: "0.15",
+            opacity: "0.2",
+            height: "90vh",
           }}
         />
       )}
       <Segment ind={props.i}>
         <Subsection>
-          <Carousel
-            autoPlay={true}
-            showArrows={true}
-            infiniteLoop={true}
-            showThumbs={false}
-            showStatus={false}
-            showIndicators={false}
+          <div
             style={{
-              zIndex: 12,
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              height: "100%",
             }}
           >
-            {props.images.map((image) => (
-              <div key={image} style={{ width: "100%", height: "fit-content" }}>
-                <img
-                  src={image}
-                  alt="event"
-                  style={{
-                    objectFit: "fill",
-                  }}
-                />
-              </div>
-            ))}
-          </Carousel>
+            <div
+              style={{
+                width: "100%",
+                margin: "auto",
+                aspectRatio: "16/9",
+              }}
+            >
+              <Carousel
+                autoPlay={true}
+                showArrows={true}
+                infiniteLoop={true}
+                showThumbs={false}
+                showStatus={false}
+                showIndicators={false}
+                style={{
+                  zIndex: 12,
+                  transform: "translateY(-50%)",
+                  marginTop: "50%",
+                }}
+              >
+                {props.images.map((image) => (
+                  <div
+                    key={image}
+                    style={{ width: "100%", height: "fit-content" }}
+                  >
+                    <img
+                      src={image}
+                      alt="event"
+                      style={{
+                        objectFit: "fill",
+                      }}
+                    />
+                  </div>
+                ))}
+              </Carousel>
+            </div>
+          </div>
         </Subsection>
         <Subsection>
           <SectionTitle>{props.title}</SectionTitle>
+          <SectionSubtitle>{props.subtitle}</SectionSubtitle>
           <SectionContent>{props.children}</SectionContent>
         </Subsection>
       </Segment>

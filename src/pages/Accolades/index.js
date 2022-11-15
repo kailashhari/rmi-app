@@ -10,6 +10,8 @@ import { ReactComponent as SecondSvg } from "../../assets/honors/second.svg";
 import { ReactComponent as ThirdSvg } from "../../assets/honors/third.svg";
 import { ReactComponent as HonorSvg } from "../../assets/honors/honor.svg";
 import { AppContext } from "../../store/context";
+import { Container } from "@mui/material";
+import { Box } from "@mui/material";
 
 const TopHonors = styled("div")({
   height: "fit-content",
@@ -36,7 +38,7 @@ const Prize = ({ n }) => {
       return (
         <HonorSvg
           style={{
-            width: "4rem",
+            maxWidth: "3rem",
           }}
         />
       );
@@ -44,7 +46,7 @@ const Prize = ({ n }) => {
       return (
         <FirstSvg
           style={{
-            width: "4rem",
+            maxWidth: "3rem",
           }}
         />
       );
@@ -52,7 +54,7 @@ const Prize = ({ n }) => {
       return (
         <SecondSvg
           style={{
-            width: "4rem",
+            maxWidth: "3rem",
           }}
         />
       );
@@ -60,7 +62,7 @@ const Prize = ({ n }) => {
       return (
         <ThirdSvg
           style={{
-            width: "4rem",
+            maxWidth: "3rem",
           }}
         />
       );
@@ -70,9 +72,10 @@ const Prize = ({ n }) => {
 const FameItem = styled("div")({
   display: "flex",
   flexDirection: "row",
-  alignItems: "center",
+  alignItems: "flex-start",
   gap: "1rem",
   fontSize: "1.5rem",
+  lineHeight: "120%",
   ["@media (max-width:780px)"]: {
     flexDirection: "column",
     width: "100%",
@@ -85,10 +88,12 @@ const FameItem = styled("div")({
 const FameText = styled("div")({
   display: "flex",
   flexDirection: "column",
+  paddingBlock: "1rem",
 });
 const FameTitle = styled("div")({});
 const FameDesc = styled("div")({
   fontSize: "1rem",
+  lineHeight: "135%",
   color: colors.grey,
 });
 
@@ -109,17 +114,21 @@ const index = ({ title }) => {
       </Section>
       <TopHonors>
         <TopTitle>Top Honors</TopTitle>
-        <GridOfFame>
-          {topHonours.map((award, index) => (
-            <FameItem key={index}>
-              <Prize n={parseInt(award.prizeIndex)} />
-              <FameText>
-                <FameTitle>{award.title}</FameTitle>
-                <FameDesc>{award.organisers}</FameDesc>
-              </FameText>
-            </FameItem>
-          ))}
-        </GridOfFame>
+        <Container maxWidth="lg">
+          <GridOfFame>
+            {topHonours.map((award, index) => (
+              <FameItem key={index}>
+                <Box>
+                  <Prize n={parseInt(award.prizeIndex)} />
+                </Box>
+                <FameText>
+                  <FameTitle>{award.title}</FameTitle>
+                  <FameDesc>{award.organisers}</FameDesc>
+                </FameText>
+              </FameItem>
+            ))}
+          </GridOfFame>
+        </Container>
       </TopHonors>
       <Divider />
       <TimelineSection />

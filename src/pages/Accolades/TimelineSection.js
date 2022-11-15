@@ -176,9 +176,7 @@ const Timeline = ({ setObserver }) => {
               ref={(el) => {
                 circleRefs.current[i] = el;
               }}
-            >
-              {i + 1}
-            </Circle>
+            />
             {message !== "" && (
               <Message sx={oddOrEven(i)}>
                 <MessageTitle>

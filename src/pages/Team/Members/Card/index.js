@@ -162,7 +162,7 @@ const Subtitle = styled("div")({
   fontSize: "0.9rem",
   textAlign: "center",
   fontFamily: "Gotham",
-  fontWeight: 500,
+  fontWeight: 700,
   margin: "0.8rem 0 1.2rem",
   padding: "0.4rem",
 });

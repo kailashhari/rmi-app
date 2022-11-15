@@ -4,15 +4,6 @@ import Section from "../../components/Section";
 import SectionCustom from "../../components/SectionCustom";
 import { AppContext } from "../../store/context";
 
-const contents = [
-  "Our annual workshop for the freshmen that serves as a platform to kindle their interest in Robotics. Various topics in Robotics are introduced that build a foundation for them to explore further. The workshop is structured for students to learn through hands-on-experience by building a bot combining multiple domains of Robotics.",
-  "The annual inter-hostel technical tournament held in collaboration with Pragyan that provides an intellectual challenge and is a source of healthy competition between hostels. Participating teams build robots specific to problem statements and complete a set of tasks within predefined constraints, exhibiting technical prowess.",
-  "Our annual Robotics competition that tests a variety of technical domains, providing an opportunity for the freshmen to innovate and build complex systems with a mix of twists and additional challenges, making the competition a huge dive into the world of line-followers and autonomous bots.",
-  "A 24-hour hackathon,  held consecutive to  Following,  where participants work and build on solutions to problem statements with  hardware available from our inventory, within the short time-frame. The platform aims to prove that, sometimes Beauty lies in simplicity !",
-  "Conducted in collaboration with Pragyan, the annual technical fest of NIT Trichy,  this consists of a plethora of events for Robotics enthusiasts from various institutions to showcase their technical skills by competing against each other and proving their prowess in each of their desired domains.",
-  "Visit our stalls during Pragyan to take a peek at the exciting projects and get to know what  we have been building over the years.  Get mesmerized at what the future of technology holds for humanity !",
-];
-
 const index = ({ title }) => {
   useEffect(() => {
     document.title = title;
@@ -37,6 +28,7 @@ const index = ({ title }) => {
           key={i}
           id={`event${i}`}
           images={event.images}
+          subtitle={event.subtitle}
         >
           {event.content}
         </SectionCustom>

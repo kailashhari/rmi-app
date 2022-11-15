@@ -37,22 +37,12 @@ const ProjectsPageHolder = ({ title }) => {
   return (
     <PageWrapper>
       <Section title="Our Projects">
-        Robotics and Machine Intelligence (RMI) is the official robotics and
-        technical research club of NIT Trichy. We are a close-knit community of
-        technology enthusiasts from diverse backgrounds who take an interest in
-        building things for the greater good of those around us and bringing
-        innovation into our everyday lives. Being one of the oldest technical
-        clubs of the institute, established in 2005, the melange of projects and
-        domains that we, as RMI, delve into has always been ever-expanding.{" "}
-        <br />
-        <br />
-        With the vision to develop solutions that can be implemented in
-        real-time, we, as a team, work with domains encompassing designing and
-        solid modelling, electronics and embedded systems, control systems,
-        computer vision and artificial intelligence, and machine learning. We
-        also partake in competitions, exhibitions and symposiums in addition to
-        conducting workshops and events to further the spirit of learning and
-        growth among all.
+        Our team comprises a diverse pool of members, which facilitates us to
+        work on projects across various domains. We have set foot into multiple
+        facets of robotics over the years, including mobile robotics, humanoid
+        robotics, swarm robotics, and human-robot interaction, among others, in
+        fields such as healthcare, industry, assistive tech, and agriculture, to
+        name a few.
       </Section>
       <Selector
         title={"Seeded in"}
