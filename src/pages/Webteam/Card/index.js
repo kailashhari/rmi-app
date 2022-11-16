@@ -5,8 +5,7 @@ import { ReactComponent as GitSvg } from "../../../assets/memberCardSvgs/git.svg
 import { ReactComponent as InSvg } from "../../../assets/memberCardSvgs/in.svg";
 import { ReactComponent as MailSvg } from "../../../assets/memberCardSvgs/mail.svg";
 import { ReactComponent as WebSvg } from "../../../assets/memberCardSvgs/web.svg";
-import { ReactComponent as FlipOne } from "../../../assets/memberCardSvgs/flipsvg1.svg";
-import { ReactComponent as FlipTwo } from "../../../assets/memberCardSvgs/flipsvg2.svg";
+import noprofile from "../../../assets/noprofile.png";
 
 const nameModder = (name) => {
   const totalLength = name.length;
@@ -48,13 +47,12 @@ const nameModder = (name) => {
 
 const CardLayout = styled("div")({
   backgroundColor: colors.dark,
-  height: "17.6rem",
-  width: "14rem",
+  height: "19.2rem",
+  width: "16.2rem",
   boxShadow: `0 0 16px ${colors.primary}BB`,
   borderRadius: "0.8rem",
   transformStyle: "preserve-3d",
   perspective: "1000px",
-  cursor: "pointer",
 });
 
 const Front = styled("div")({
@@ -67,24 +65,9 @@ const Front = styled("div")({
   transformStyle: "preserve-3d",
 });
 
-const Back = styled("div")({
-  backgroundColor: colors.primary,
-  height: "100%",
-  width: "100%",
-  overflow: "hidden",
-  position: "absolute",
-  webkitBackfaceVisibility: "hidden",
-  backfaceVisibility: "hidden",
-  top: 0,
-  transform: "rotateY(180deg)",
-  borderRadius: "0.8rem",
-  transformStyle: "preserve-3d",
-  paddingTop: "1.2rem",
-});
-
 const ImgHolder = styled("div")({
-  height: "13rem",
-  width: "13rem",
+  height: "15rem",
+  width: "15rem",
   overflow: "hidden",
   marginInline: "auto",
   marginTop: "0.5rem",
@@ -99,10 +82,10 @@ const Img = styled("img")({
 const Slide = styled("div")(({ hover }) => ({
   transition: "all 0.3s ease-in-out",
   width: "100%",
-  height: hover ? "17.6rem" : "3rem",
+  height: hover ? "19.2rem" : "2rem",
   position: "absolute",
   backgroundColor: colors.dark,
-  top: hover ? "0" : "13.6rem",
+  top: hover ? "0" : "16rem",
   zIndex: 2,
   borderRadius: hover ? "0.8rem" : "0",
 }));
@@ -110,33 +93,44 @@ const Slide = styled("div")(({ hover }) => ({
 const Slider = styled("div")(({ hover }) => ({
   width: "100%",
   borderRadius: "0.6rem",
-  height: "fit-content",
+  height: "100%",
   zIndex: 3,
   position: "absolute",
-  paddingTop: hover ? "1.2rem" : "0.6rem",
-  top: hover ? "0" : "13.4rem",
+  display: "flex",
+  flexDirection: "column",
+  // paddingTop: hover ? "1.2rem" : "0.6rem",
+  top: hover ? "0" : "15.5rem",
   transition: "all 0.3s ease-in-out",
 }));
 
+const NameContainer = styled("div")(({ hover }) => ({
+  width: "100%",
+  height: "3.7rem",
+  marginTop: hover ? "0.8rem" : "0",
+  transition: "all 0.3s ease-in-out",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  justifyContent: "center",
+}));
+
 const FirstName = styled("div")({
-  marginBlock: "-0.2rem",
   fontFamily: "Poppins",
   fontSize: "1.2rem",
   zIndex: 3,
   fontWeight: 1000,
   width: "100%",
   textAlign: "center",
-  height: "2rem",
+  height: "fit-content",
+  lineHeight: "100%",
 });
 const SingleName = styled("div")({
-  marginBlock: "-0.2rem",
   fontFamily: "Poppins",
   fontSize: "1.2rem",
   zIndex: 3,
   fontWeight: 1000,
   width: "100%",
   textAlign: "center",
-  height: "4rem",
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
@@ -148,59 +142,55 @@ const Subtitle = styled("div")({
   fontSize: "0.9rem",
   textAlign: "center",
   fontFamily: "Gotham",
-  fontWeight: 500,
-  margin: "1.2rem 0",
+  fontWeight: 700,
+  margin: "0.8rem 0 1.2rem",
+  padding: "0.4rem",
 });
 
 const SubtitleFlip = styled("div")({
   width: "100%",
-  color: colors.light,
-  backgroundColor: colors.primaryDark,
-  paddingBlock: "0.4rem",
-  fontSize: "0.9rem",
+  fontSize: "1rem",
   textAlign: "center",
   fontFamily: "Gotham",
-  fontWeight: 500,
-  margin: "1.2rem 0",
+  fontWeight: 700,
+  margin: "0.8rem 0 1.2rem",
+  padding: "0.4rem",
+  color: colors.light,
+  backgroundColor: colors.primaryDark,
 });
 
 const Domain = styled("div")({
   width: "100%",
   color: colors.light,
-  fontSize: "0.9rem",
+  fontSize: "1rem",
   fontFamily: "Gotham",
   fontWeight: 500,
-  margin: "0.4rem 0",
+  marginBlock: "0.2rem",
   textAlign: "center",
 });
 
 const Project = styled("div")({
   width: "100%",
   color: colors.dark,
-  fontSize: "0.9rem",
+  fontSize: "1rem",
   fontFamily: "Gotham",
   fontWeight: 500,
-  margin: "0.4rem 0",
+  marginBlock: "0.2rem",
   textAlign: "center",
 });
-
 const Icons = styled("div")({
+  position: "absolute",
   display: "flex",
   width: "fit-content",
+  left: 0,
+  right: 0,
+  bottom: "1rem",
   marginInline: "auto",
   gap: "0.8rem",
   marginTop: "1.6rem",
 });
-
 const Card = (props) => {
-  const [flip, setFlip] = React.useState(false);
   const [hover, setHover] = React.useState(false);
-  const domains = [
-    "Embedded Systems",
-    "Aerial Robotics",
-    "Humanoid Robotic Systems",
-    "Mobile Robotics",
-  ];
   const namesplit = nameModder(props.member.name.toUpperCase());
   return (
     <CardLayout
@@ -210,91 +200,72 @@ const Card = (props) => {
       onMouseLeave={() => {
         setHover(false);
       }}
-      onClick={() => {
-        setFlip((flip) => !flip);
-      }}
-      sx={{
-        transition: "transform 0.4s",
-        transform: flip ? "rotateY(180deg)" : "rotateY(0)",
-      }}
     >
       <Front>
         <ImgHolder>
-          <Img src="https://picsum.photos/500" alt="profile" loading="lazy" />
+          {props.member.imageLink ? (
+            <Img src={props.member.imageLink} loading="lazy" />
+          ) : (
+            <Img src={noprofile} loading="lazy" />
+          )}
         </ImgHolder>
         <Slide hover={hover} />
         <Slider hover={hover}>
-          {namesplit.lname === "" ? (
-            <SingleName>{namesplit.fname}</SingleName>
-          ) : (
-            <>
-              <FirstName>{namesplit.fname}</FirstName>
-              <FirstName>{namesplit.lname}</FirstName>
-            </>
-          )}
-          <Subtitle>Head of Design and Publicity</Subtitle>
-          {domains.map((domain) => (
-            <Domain key={domain}>{domain}</Domain>
-          ))}
-          <Icons>
-            <a href="https://github.com">
-              <GitSvg />
-            </a>
-            <a href="https://github.com">
-              <InSvg />
-            </a>
-            <a href="https://github.com">
-              <MailSvg />
-            </a>
-            <a href="https://github.com">
-              <WebSvg />
-            </a>
-          </Icons>
-          <FlipOne
+          <NameContainer hover={hover}>
+            {namesplit.lname === "" ? (
+              <SingleName>{namesplit.fname}</SingleName>
+            ) : (
+              <>
+                <FirstName>{namesplit.fname}</FirstName>
+                <FirstName>{namesplit.lname}</FirstName>
+              </>
+            )}
+          </NameContainer>
+          <div
             style={{
-              position: "absolute",
-              bottom: "-1.8rem",
-              right: 0,
-              zIndex: 2,
+              height: "6rem",
             }}
-          />
+          >
+            {props.member.position ? (
+              <Subtitle>{props.member.position}</Subtitle>
+            ) : null}
+            {props.member.domains &&
+              props.member.domains.map((domain, index) => (
+                <Domain key={index}>{domain}</Domain>
+              ))}
+          </div>
+          <Icons>
+            {props.member.github ? (
+              <a href={props.member.github} target="_blank" rel="noreferrer">
+                <GitSvg />
+              </a>
+            ) : null}
+            {props.member.linkedIn ? (
+              <a href={props.member.linkedIn} target="_blank" rel="noreferrer">
+                <InSvg />
+              </a>
+            ) : null}
+            {props.member.email ? (
+              <a
+                href={`mailto:${props.member.email}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <MailSvg />
+              </a>
+            ) : null}
+            {props.member.personalPage ? (
+              <a
+                href={props.member.personalPage}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <WebSvg />
+              </a>
+            ) : null}
+          </Icons>
         </Slider>
       </Front>
-      <Back>
-        <FirstName
-          sx={{
-            color: colors.dark,
-          }}
-        >
-          {props.member.name}
-        </FirstName>
-        <FirstName
-          sx={{
-            color: colors.dark,
-          }}
-        >
-          {props.member.name}
-        </FirstName>
-        {/* <FirstName
-          sx={{
-            color: colors.dark,
-          }}
-        >
-          SREEKUMAR
-        </FirstName> */}
-        <SubtitleFlip>Projects</SubtitleFlip>
-        {domains.map((domain) => (
-          <Project key={domain}>{domain}</Project>
-        ))}
-        <FlipTwo
-          style={{
-            position: "absolute",
-            bottom: 0,
-            right: 0,
-            zIndex: 2,
-          }}
-        />
-      </Back>
     </CardLayout>
   );
 };

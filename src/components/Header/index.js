@@ -101,18 +101,20 @@ function ResponsiveAppBar() {
           marginBottom: "1.2rem",
         }}
       >
-        <img
-          src={logo}
-          alt="logo"
-          style={{
-            display: "block",
-            margin: location.pathname === "/" ? "0" : "3rem",
-            padding: 0,
-            width: location.pathname === "/" ? "0" : "56px",
-            height: location.pathname === "/" ? "0" : "56px",
-            animation: logoAnim,
-          }}
-        />
+        <Link to={"/"}>
+          <img
+            src={logo}
+            alt="logo"
+            style={{
+              display: "block",
+              margin: location.pathname === "/" ? "0" : "3rem",
+              padding: 0,
+              width: location.pathname === "/" ? "0" : "56px",
+              height: location.pathname === "/" ? "0" : "56px",
+              animation: logoAnim,
+            }}
+          />
+        </Link>
         <Typography
           sx={{
             ...fontStyles.title,
@@ -195,17 +197,19 @@ function ResponsiveAppBar() {
             }}
           >
             <Box sx={{ display: "flex", flexDirection: "row" }}>
-              <img
-                src={logo}
-                alt="logo"
-                style={{
-                  display: "block",
-                  margin: location.pathname === "/" ? "0" : "1rem",
-                  padding: 0,
-                  width: location.pathname === "/" ? "0" : "56px",
-                  height: location.pathname === "/" ? "0" : "56px",
-                }}
-              />
+              <Link to={"/"}>
+                <img
+                  src={logo}
+                  alt="logo"
+                  style={{
+                    display: "block",
+                    margin: location.pathname === "/" ? "0" : "1rem",
+                    padding: 0,
+                    width: location.pathname === "/" ? "0" : "56px",
+                    height: location.pathname === "/" ? "0" : "56px",
+                  }}
+                />
+              </Link>
               <Typography
                 sx={{
                   ...fontStyles.title,
@@ -296,7 +300,7 @@ function ResponsiveAppBar() {
                 />
               </a>
               <a
-                href="https://www.youtube.com/c/RMIRoboticsandMachineIntelligenceNITT"
+                href="https://github.com/RMI-NITT"
                 style={{
                   height: "36px",
                   marginBlock: "auto",

@@ -10,6 +10,7 @@ import Project from "./pages/Project";
 import WebTeam from "./pages/Webteam";
 import React, { useEffect, useState } from "react";
 import { AppContext } from "./store/context";
+import Webteam from "./pages/Webteam";
 
 const AppLayout = styled("div")({
   ...defaultStyles,
@@ -44,8 +45,8 @@ const router = createBrowserRouter([
     element: <Project title="RMI | Projects" />,
   },
   {
-    path: "webteam",
-    element: <WebTeam title="RMI | Web Team" />,
+    path: "/webteam",
+    element: <Webteam title="RMI | Webteam" />,
   },
 ]);
 

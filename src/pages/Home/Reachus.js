@@ -134,17 +134,29 @@ const Reachus = () => {
             <LinkColumn>
               <LinkLink>RMI-NITT</LinkLink>
               <LinkLinks>
-                <LinkedIn />
-                <Github />
-                <Youtube />
+                <a href="https://www.linkedin.com/company/rmi-nitt/">
+                  <LinkedIn />
+                </a>
+                <a href="https://github.com/RMI-NITT">
+                  <Github />
+                </a>
+                <a href="https://www.youtube.com/c/RMIRoboticsandMachineIntelligenceNITT">
+                  <Youtube />
+                </a>
               </LinkLinks>
             </LinkColumn>
             <LinkColumn>
               <LinkLink>rmi_nitt</LinkLink>
               <LinkLinks>
-                <Facebook />
-                <Instagram />
-                <LinkTree />
+                <a href="https://www.facebook.com/RmiNitt">
+                  <Facebook />
+                </a>
+                <a href="https://www.instagram.com/rmi_nitt/">
+                  <Instagram />
+                </a>
+                <a href="https://linktr.ee/rmi_nitt">
+                  <LinkTree />
+                </a>
               </LinkLinks>
             </LinkColumn>
           </LinkRow>

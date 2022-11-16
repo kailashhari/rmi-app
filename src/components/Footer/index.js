@@ -11,6 +11,7 @@ import {
 } from "../../assets/followUsIcons/Exporter";
 import logo from "../../assets/logoCompressed.png";
 import FooterRightHolder from "./FooterRight";
+import { Link } from "react-router-dom";
 
 const Footer = styled("div")({
   marginTop: "4rem",
@@ -160,23 +161,23 @@ const FooterHolder = () => (
               },
             }}
           >
-            <FollowUsLink href="https://www.facebook.com">
-              <Facebook />
-            </FollowUsLink>
-            <FollowUsLink href="https://www.facebook.com">
-              <Instagram />
-            </FollowUsLink>
-            <FollowUsLink href="https://www.facebook.com">
+            <FollowUsLink href="https://www.linkedin.com/company/rmi-nitt/">
               <LinkedIn />
             </FollowUsLink>
-            <FollowUsLink href="https://www.facebook.com">
+            <FollowUsLink href="https://github.com/RMI-NITT">
               <Github />
             </FollowUsLink>
-            <FollowUsLink href="https://www.facebook.com">
+            <FollowUsLink href="https://www.youtube.com/c/RMIRoboticsandMachineIntelligenceNITT">
               <Youtube />
             </FollowUsLink>
-            <FollowUsLink href="https://www.facebook.com">
+            <FollowUsLink href="https://linktr.ee/rmi_nitt">
               <LinkTree />
+            </FollowUsLink>
+            <FollowUsLink href="https://www.facebook.com/RmiNitt">
+              <Facebook />
+            </FollowUsLink>
+            <FollowUsLink href="https://www.instagram.com/rmi_nitt/">
+              <Instagram />
             </FollowUsLink>
           </FollowUsLinks>
         </FollowUsSection>
@@ -186,7 +187,14 @@ const FooterHolder = () => (
     <FooterSeparator />
     <Credits>
       Site Designed, Developed and Maintained by
-      <CreditLink>RMI Web Team</CreditLink>
+      <Link
+        to="/webteam"
+        style={{
+          textDecoration: "none",
+        }}
+      >
+        <CreditLink>RMI Web Team</CreditLink>
+      </Link>
     </Credits>
   </Footer>
 );
