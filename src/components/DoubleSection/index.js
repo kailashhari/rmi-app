@@ -2,7 +2,8 @@ import { styled } from "@mui/material";
 import React, { useState } from "react";
 import { colors, fontStyles } from "../../constants";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Link } from "react-router-dom";
+import { AppContext } from "../../store/context";
+import { HashLink as Link } from "react-router-hash-link";
 
 const Section = styled("div")({
   width: "100vw",
@@ -11,7 +12,6 @@ const Section = styled("div")({
   alignItems: "center",
   justifyContent: "center",
   height: "90vh",
-  // paddingTop: '10vh',
   overflow: "hidden",
   position: "relative",
   paddingInline: "10%",
@@ -48,7 +48,8 @@ const ImgGrid = styled("div")({
 
 const ImgCardHolder = styled("div")({
   width: "100%",
-  aspectRatio: 16 / 9,
+  height: "100%",
+  objectFit: "cover",
   backgroundColor: colors.primary,
   position: "relative",
   transition: "all 0.2s ease-out",
@@ -85,15 +86,6 @@ const ImageBg = styled("div")({
   height: "100%",
 });
 
-const images = [
-  "https://cdn.dnaindia.com/sites/default/files/styles/full/public/2021/01/31/954124-rajinikanth-aishwarya-rai-bachchan.jpg",
-  "https://images.indianexpress.com/2021/04/Anniyan.jpg",
-  "https://images.indianexpress.com/2022/08/kamal-haasan-indian-2.jpg",
-  "https://i.ytimg.com/vi/UMr1EI11Wjs/maxresdefault.jpg",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv8fPh6h4X8lOLWrmFoIdwOMm7GmPrCny4eg&usqp=CAU",
-  "https://s1.dmcdn.net/v/Bw7Fe1MB5nzUhpBs7/x1080",
-];
-
 const ImgCard = (props) => {
   const [hovered, setHovered] = useState(false);
   return (
@@ -102,6 +94,7 @@ const ImgCard = (props) => {
         transform: hovered ? "scale(1.1)" : "scale(1)",
         zIndex: hovered ? 100 : "inherit",
         overflow: hovered ? "visible" : "hidden",
+        // aspectRatio: "1000/562",
       }}
       onMouseEnter={() => {
         setHovered(true);
@@ -111,13 +104,14 @@ const ImgCard = (props) => {
       }}
     >
       <Img src={props.image} />
-      {hovered && <ImgDesc>Pragyan Exhibition</ImgDesc>}
+      {hovered && <ImgDesc>{props.title}</ImgDesc>}
       {hovered && <ImageBg />}
     </ImgCardHolder>
   );
 };
 
 const Index = (props) => {
+  const { events } = React.useContext(AppContext).events;
   return (
     <Section>
       {/* <Subsection>
@@ -132,18 +126,20 @@ const Index = (props) => {
         <SectionContent>
           RMI firmly believes that besides all the work we do as a team to
           innovate and create the up and coming tech, it is highly necessary to
-          give back to the community. We organise several workshops and events
-          every year with the vision to make newcomers feel welcome and not
-          alien to the field of Robotics. Some of our most important workshops
-          and events include: Genesis, InHoTTs, Following, RMI Hackathon,
-          Robovigyan, Pragyan Exhibition
+          give back to the community.
+          <br />
+          <br />
+          We organise several workshops and events every year with the vision to
+          make newcomers feel welcome and not alien to the field of Robotics.
+          Some of our most important workshops and events include: Genesis,
+          InHoTTs, Following, RMI Hackathon, Robovigyan, Pragyan Exhibition
         </SectionContent>
       </Subsection>
       <Subsection>
         <ImgGrid>
-          {images.map((image, i) => (
-            <Link key={image} to={`/events/#event${i}`}>
-              <ImgCard image={image}></ImgCard>
+          {events.map((event) => (
+            <Link key={event.id} to={`/events#${event.title}`}>
+              <ImgCard image={event.images[0]} title={event.title}></ImgCard>
             </Link>
           ))}
         </ImgGrid>

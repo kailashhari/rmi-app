@@ -99,8 +99,10 @@ const Index = (props) => {
             <div
               style={{
                 width: "100%",
+                height: "100%",
                 margin: "auto",
                 aspectRatio: "16/9",
+                alignSelf: "center",
               }}
             >
               <Carousel
@@ -112,14 +114,12 @@ const Index = (props) => {
                 showIndicators={false}
                 style={{
                   zIndex: 12,
-                  transform: "translateY(-50%)",
-                  marginTop: "50%",
                 }}
               >
                 {props.images.map((image) => (
                   <div
                     key={image}
-                    style={{ width: "100%", height: "fit-content" }}
+                    style={{ width: "100%", aspectRatio: "16/9" }}
                   >
                     <img
                       src={image}

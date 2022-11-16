@@ -11,7 +11,7 @@ const Card = ({ src }) => (
 );
 
 export const Carousel = ({ contents }) => {
-  console.log(contents);
+  console.log(contents.length / 2);
   const [active, setActive] = useState(contents.length / 2);
   const count = contents.length;
 

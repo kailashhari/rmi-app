@@ -3,11 +3,12 @@ import React, { useEffect, useRef, useState } from "react";
 
 import TimelineObserver from "react-timeline-animation";
 import { colors } from "../../constants";
+import { AppContext } from "../../store/context";
 
 import "./styles.css";
 
 const Line = styled("div")({
-  height: "250px",
+  height: "200px",
   width: "5px",
   backgroundColor: `${colors.primary}`,
 });
@@ -17,8 +18,8 @@ const CircleWrapper = styled("div")({
 });
 
 const Circle = styled("div")({
-  width: "30px",
-  height: "30px",
+  width: "20px",
+  height: "20px",
   display: "inline-flex",
   alignItems: "center",
   justifyContent: "center",
@@ -43,7 +44,7 @@ const Wrapper = styled("div")({
 
 const Message = styled("div")({
   position: "absolute",
-  width: "fit-content",
+  width: "100%",
   minWidth: "30vw",
   fontWeight: "bold",
   borderRadius: "0.8rem",
@@ -60,17 +61,14 @@ const Message = styled("div")({
   },
 });
 
-const MessageTitle = styled("div")({
-  fontSize: "1.2rem",
-});
 const MessageVenue = styled("div")({
-  fontSize: "1rem",
+  color: colors.grey,
+  fontSize: "0.8rem",
 });
 const MessageProject = styled("div")({
-  fontSize: "1.2rem",
+  fontSize: "1rem",
 });
 const MessageHighlight = styled("span")({
-  marginLeft: "0.8rem",
   fontSize: "1.2rem",
   color: colors.primary,
 });
@@ -98,44 +96,7 @@ const oddOrEven = (n) => {
 };
 
 const Timeline = ({ setObserver }) => {
-  const content = [
-    {
-      title1: "1st place in",
-      title2: "Smart India Hackathon 2022",
-      venue: "MHRD | August 2022",
-      project: "Project ANVI",
-    },
-    {
-      title1: "1st place in",
-      title2: "Smart India Hackathon 2022",
-      venue: "MHRD | August 2022",
-      project: "Project ANVI",
-    },
-    {
-      title1: "1st place in",
-      title2: "Smart India Hackathon 2022",
-      venue: "MHRD | August 2022",
-      project: "Project ANVI",
-    },
-    {
-      title1: "1st place in",
-      title2: "Smart India Hackathon 2022",
-      venue: "MHRD | August 2022",
-      project: "Project ANVI",
-    },
-    {
-      title1: "1st place in",
-      title2: "Smart India Hackathon 2022",
-      venue: "MHRD | August 2022",
-      project: "Project ANVI",
-    },
-    {
-      title1: "1st place in",
-      title2: "Smart India Hackathon 2022",
-      venue: "MHRD | August 2022",
-      project: "Project ANVI",
-    },
-  ];
+  const { accolades: content } = React.useContext(AppContext).accolades;
   const emptyList = [];
   content.forEach(() => {
     emptyList.push("");
@@ -179,12 +140,27 @@ const Timeline = ({ setObserver }) => {
             />
             {message !== "" && (
               <Message sx={oddOrEven(i)}>
-                <MessageTitle>
-                  {message.title1}
-                  <MessageHighlight>{message.title2}</MessageHighlight>
-                </MessageTitle>
-                <MessageVenue>{message.venue}</MessageVenue>
-                <MessageProject>{message.project}</MessageProject>
+                <MessageHighlight
+                  sx={{
+                    textAlign: i % 2 === 0 ? "left" : "right",
+                  }}
+                >
+                  {message.title}
+                </MessageHighlight>
+                <MessageVenue
+                  sx={{
+                    textAlign: i % 2 === 0 ? "left" : "right",
+                  }}
+                >
+                  {message.subtitle}
+                </MessageVenue>
+                <MessageProject
+                  sx={{
+                    textAlign: i % 2 === 0 ? "left" : "right",
+                  }}
+                >
+                  {message.project}
+                </MessageProject>
               </Message>
             )}
           </CircleWrapper>

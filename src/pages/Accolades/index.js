@@ -28,7 +28,7 @@ const TopTitle = styled("div")({
 const GridOfFame = styled("div")({
   display: "grid",
   gridTemplateColumns: "auto auto",
-  gap: "4rem",
+  gap: "2rem",
   margin: "3rem",
 });
 
@@ -102,7 +102,6 @@ const index = ({ title }) => {
     document.title = title;
   }, [title]);
   const { topHonours } = React.useContext(AppContext).accolades;
-  console.log(topHonours);
   return (
     <PageWrapper>
       <Section title="Achievements and Accolades">
@@ -113,7 +112,13 @@ const index = ({ title }) => {
         experience and learning are our biggest takeaway in all that we pursue.
       </Section>
       <TopHonors>
-        <TopTitle>Top Honors</TopTitle>
+        <TopTitle
+          sx={{
+            fontSize: "2.2rem",
+          }}
+        >
+          Top Honors
+        </TopTitle>
         <Container maxWidth="lg">
           <GridOfFame>
             {topHonours.map((award, index) => (

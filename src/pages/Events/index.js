@@ -26,7 +26,7 @@ const index = ({ title }) => {
           bg={event.images[0]}
           i={i}
           key={i}
-          id={`event${i}`}
+          id={`${event.title}`}
           images={event.images}
           subtitle={event.subtitle}
         >

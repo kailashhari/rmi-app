@@ -9,6 +9,8 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { colors, fontStyles } from "../../constants";
 import Reachus from "./Reachus";
+import { AppContext } from "../../store/context";
+import { Link } from "react-router-dom";
 
 const responsive = {
   desktop: {
@@ -47,7 +49,7 @@ const HeroLineContainer = styled("div")({
 });
 
 const ImgHolder = styled("div")({
-  height: "fit-content",
+  height: "90%",
   width: "90%",
   margin: "1rem auto",
   display: "flex",
@@ -64,15 +66,9 @@ const Img = styled("img")({
 const ProjectTitle = styled("div")({
   textAlign: "center",
   color: colors.light,
-  marginTop: "0.4rem",
-  // marginBottom: "0rem",
-  fontSize: "1.6rem",
-});
-const ProjectExpansion = styled("div")({
-  textAlign: "center",
-  color: colors.grey,
-  marginBottom: "0.4rem",
+  marginBlock: "0.2rem",
   fontSize: "1.2rem",
+  fontWeight: "600",
 });
 
 const InterTitle = styled("div")({
@@ -86,16 +82,6 @@ const CarouselWrapper = styled("div")({
   width: "95%",
   marginInline: "auto",
 });
-
-const projects = [
-  { name: "SPS", expansion: "Smart Parking System" },
-  { name: "SPS", expansion: "Smart Parking System" },
-  { name: "SPS", expansion: "Smart Parking System" },
-  { name: "SPS", expansion: "Smart Parking System" },
-  { name: "SPS", expansion: "Smart Parking System" },
-  { name: "SPS", expansion: "Smart Parking System" },
-  { name: "SPS", expansion: "Smart Parking System" },
-];
 
 const LeftArrowContainer = styled("div")({
   position: "absolute",
@@ -146,6 +132,7 @@ const index = ({ title }) => {
   useEffect(() => {
     document.title = title;
   }, [title]);
+  const { projects } = React.useContext(AppContext).projects;
   return (
     <PageWrapper>
       <Hero>
@@ -203,28 +190,33 @@ const index = ({ title }) => {
         title={"About"}
         sx={{
           height: "70vh",
+          marginBottom: "32rem",
         }}
       >
         Robotics and Machine Intelligence (RMI) is the official robotics and
         technical research club of NIT Trichy. We are a close-knit community of
         technology enthusiasts from diverse backgrounds who take an interest in
         building things for the greater good of those around us and bringing
-        innovation into our everyday lives. Being one of the oldest technical
-        clubs of the institute, established in 2005, the melange of projects and
-        domains that we, as RMI, delve into has always been ever-expanding.{" "}
+        innovation into our everyday lives.
         <br />
         <br />
-        With the vision to develop solutions that can be implemented in
-        real-time, we, as a team, work with domains encompassing designing and
-        solid modelling, electronics and embedded systems, control systems,
-        computer vision and artificial intelligence, and machine learning. We
-        also partake in competitions, exhibitions and symposiums in addition to
-        conducting workshops and events to further the spirit of learning and
+        Being one of the oldest technical clubs of the institute, established in
+        2005, the melange of projects and domains that we, as RMI, delve into
+        has always been ever-expanding. With the vision to develop solutions
+        that can be implemented in real-time, we, as a team, work with domains
+        encompassing designing and solid modelling, electronics and embedded
+        systems, control systems, computer vision and artificial intelligence,
+        and machine learning.
+        <br />
+        <br />
+        We also partake in competitions, exhibitions and symposiums in addition
+        to conducting workshops and events to further the spirit of learning and
         growth among all.
       </Section>
       <DoubleSection
         sx={{
           justifyContent: "center",
+          marginBottom: "16rem",
         }}
         title={"Events and Workshops"}
       />
@@ -242,22 +234,47 @@ const index = ({ title }) => {
           customTransition="all 0.5s"
           transitionDuration={500}
           customLeftArrow={
-            <LeftArrowContainer>
+            <LeftArrowContainer
+              sx={{
+                cursor: "pointer",
+              }}
+            >
               <LeftArrow />
             </LeftArrowContainer>
           }
           customRightArrow={
-            <RightArrowContainer>
+            <RightArrowContainer
+              sx={{
+                cursor: "pointer",
+              }}
+            >
               <RightArrow />
             </RightArrowContainer>
           }
         >
           {projects.map((project) => (
-            <ImgHolder key={project.name}>
-              <Img src="https://picsum.photos/350/200" loading="lazy" />
-              <ProjectTitle>{project.name}</ProjectTitle>
-              <ProjectExpansion>{project.expansion}</ProjectExpansion>
-            </ImgHolder>
+            <Link
+              key={project.pid}
+              to={`/project/${project.pid}`}
+              style={{
+                textDecoration: "none",
+              }}
+            >
+              <ImgHolder>
+                <Img src={project.cardCoverImage} loading="lazy" />
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignContent: "center",
+                    justifyContent: "center",
+                    height: "100%",
+                  }}
+                >
+                  <ProjectTitle>{project.shortName}</ProjectTitle>
+                </div>
+              </ImgHolder>
+            </Link>
           ))}
         </Carousel>
       </CarouselWrapper>
