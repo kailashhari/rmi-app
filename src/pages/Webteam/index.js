@@ -405,7 +405,10 @@ const Selector = () => {
   );
 };
 
-const index = () => {
+const index = ({ title }) => {
+  useEffect(() => {
+    document.title = title;
+  }, [title]);
   return (
     <PageWrapper>
       <Section>

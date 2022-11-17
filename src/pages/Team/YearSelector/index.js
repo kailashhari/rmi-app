@@ -19,7 +19,7 @@ const YearSelector = styled("div")({
 const Option = styled("div")({
   ...fontStyles.content,
   zIndex: 1,
-  fontSize: "0.96rem",
+  fontSize: "1.2rem",
   transition: "all 0.2s ease-in-out",
   cursor: "pointer",
   ["@media (max-width:780px)"]: {

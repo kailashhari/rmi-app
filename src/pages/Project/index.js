@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import PageWrapper from "../../components/PageWrapper";
-import { styled } from "@mui/material";
+import { Avatar, Grid, styled } from "@mui/material";
 import { colors, fontStyles } from "../../constants";
 import { Carousel } from "./Carousel";
 import { AppContext } from "../../store/context";
 import { Container } from "@mui/material";
 import Divider from "../../components/Divider";
+import ProjectStats from "./ProjectStats";
 
 const Herolayout = styled("div")({
   height: "80vh",
@@ -66,6 +67,8 @@ const Publication = styled("div")({
   alignItems: "center",
   textAlign: "center",
   marginBlock: "1rem",
+  display: "flex",
+  flexDirection: "column",
 });
 
 const HeroContent = styled("div")({
@@ -78,6 +81,15 @@ const HeroContent = styled("div")({
 const Title = styled("div")({
   ...fontStyles.heading,
   fontSize: "2rem",
+});
+
+const DevTitle = styled("div")({
+  ...fontStyles.heading,
+  fontSize: "1.2rem",
+  color: colors.black,
+  lineHeight: "100%",
+  fontWeight: 600,
+  marginBlock: "1rem",
 });
 
 const Hero = ({ project }) => {
@@ -97,14 +109,27 @@ const Index = ({ title }) => {
   }, [title]);
   const pid = useParams().projectid;
   const { projects } = React.useContext(AppContext).projects;
+  const { currentMembers, alumni } = React.useContext(AppContext).ourTeam;
+
   const [project, setProject] = useState({
     images: [],
   });
-  console.log(projects, pid);
+  const [projectMembers, setProjectMembers] = useState([]);
+
   useEffect(() => {
-    setProject(projects.find((p) => p.pid === pid));
-    console.log(project.images);
-  }, [projects, pid]);
+    const proj = projects.find((p) => p.pid === pid);
+    setProject(proj);
+    const mapData = {};
+    // console.log(proj);
+    [...currentMembers, ...alumni].forEach((member) => {
+      mapData[member.id] = member;
+    });
+    setProjectMembers([]);
+    proj.developers.forEach((dev) => {
+      setProjectMembers((prev) => [...prev, mapData[dev.id]]);
+    });
+    // console.log(projectMembers);
+  }, [pid, projects, currentMembers, alumni]);
   return (
     <PageWrapper>
       <Hero project={project} />
@@ -132,6 +157,7 @@ const Index = ({ title }) => {
             </>
           ))}
       </Container>
+      <ProjectStats project={project} />
       <Divider />
       {project.publications && (
         <Layout>
@@ -148,6 +174,51 @@ const Index = ({ title }) => {
               <PubSubtitle>{pub.subtitle}</PubSubtitle>
             </Publication>
           ))}
+        </Layout>
+      )}
+      {projectMembers && (
+        <Layout>
+          <Title
+            sx={{
+              marginBlock: "2rem",
+            }}
+          >
+            Project Developers{" "}
+          </Title>
+          <Container maxWidth="md" sx={{ marginTop: "1rem" }}>
+            <Grid
+              container
+              alignItems="center"
+              justifyContent="center"
+              width="fit-content"
+              spacing={0}
+            >
+              {projectMembers.map((dev, index) => (
+                <Grid
+                  item
+                  key={index}
+                  xs={6}
+                  sm={4}
+                  md={3}
+                  lg={3}
+                  align="center"
+                  width="fit-content"
+                  padding={0}
+                >
+                  <Publication key={index}>
+                    <Avatar
+                      src={dev.imageLink}
+                      style={{
+                        width: "8rem",
+                        height: "8rem",
+                      }}
+                    />
+                    <DevTitle>{dev.name}</DevTitle>
+                  </Publication>
+                </Grid>
+              ))}
+            </Grid>
+          </Container>
         </Layout>
       )}
     </PageWrapper>

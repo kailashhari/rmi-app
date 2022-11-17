@@ -12,15 +12,11 @@ const FacadLayout = styled("div")({
 });
 
 const Icons = styled("div")({
-  position: "absolute",
   display: "flex",
   width: "fit-content",
-  left: 0,
-  right: 0,
   bottom: "1rem",
-  marginInline: "auto",
   gap: "0.8rem",
-  marginTop: "1.6rem",
+  marginTop: "1rem",
 });
 
 const Main = styled("div")({

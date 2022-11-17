@@ -2,8 +2,10 @@ import { styled } from "@mui/material";
 import React from "react";
 
 const HeroLayout = styled("div")({
+  position: "relative",
   display: "flex",
-  width: "80%",
+  width: "100%",
+  paddingInline: "10vw",
   minHeight: "80vh",
   marginInline: "auto",
   alignItems: "space-evenly",
@@ -34,7 +36,9 @@ const Hero = (props) => {
 };
 
 const HeroSection = (props) => {
-  return <HeroSectionLayout>{props.children}</HeroSectionLayout>;
+  return (
+    <HeroSectionLayout sx={{ zIndex: 99 }}>{props.children}</HeroSectionLayout>
+  );
 };
 
 export { Hero, HeroSection };

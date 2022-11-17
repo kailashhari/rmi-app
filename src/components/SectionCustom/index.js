@@ -28,6 +28,8 @@ const Section = styled("div")({
 const Segment = styled("div")((props) => ({
   display: "flex",
   flexDirection: props.ind % 2 != 0 ? "row" : "row-reverse",
+  alignItems: "center",
+  height: "100%",
   ["@media (max-width:990px)"]: {
     flexDirection: "column",
   },
@@ -57,9 +59,93 @@ const SectionContent = styled("div")({
 
 const Subsection = styled("div")({
   width: "100%",
+  height: "fit-content",
   flex: "1",
   padding: "2rem",
   zIndex: 11,
+});
+const SubCarouselSection = styled("div")({
+  width: "100%",
+  height: "100%",
+  flex: "1",
+  zIndex: 11,
+});
+
+const Column = styled("div")({
+  height: "100%",
+  width: "100%",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+});
+
+const CarouselHolder = styled("div")({
+  width: "32rem",
+  height: "18rem",
+  ["@media (max-width:990px)"]: {
+    width: "16rem",
+    height: "9rem",
+  },
+  position: "relative",
+  overflow: "hidden",
+});
+
+const LeftArrowContainer = styled("div")({
+  position: "absolute",
+  left: "0",
+  top: 0,
+  height: "18rem",
+  ["@media (max-width:990px)"]: {
+    width: "2rem",
+    height: "9rem",
+  },
+  width: "2.4rem",
+  backgroundColor: `${colors.dark}`,
+  transition: "all 0.2s ease-in-out",
+  opacity: 0.4,
+  "&:hover": {
+    opacity: 0.8,
+  },
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  zIndex: 201,
+});
+
+const LeftArrow = styled("div")({
+  backgroundColor: colors.light,
+  width: "1rem",
+  height: "1rem",
+  clipPath: "polygon(100% 0, 0 50%, 100% 100%)",
+});
+const RightArrowContainer = styled("div")({
+  position: "absolute",
+  right: "0",
+  top: 0,
+  height: "18rem",
+  ["@media (max-width:990px)"]: {
+    width: "2rem",
+    height: "9rem",
+  },
+  width: "2.4rem",
+  backgroundColor: `${colors.dark}`,
+  transition: "all 0.2s ease-in-out",
+  opacity: 0.4,
+  "&:hover": {
+    opacity: 0.8,
+  },
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  zIndex: 201,
+});
+
+const RightArrow = styled("div")({
+  backgroundColor: colors.light,
+  width: "1rem",
+  height: "1rem",
+  clipPath: "polygon(0 0, 100% 50%, 0 100%)",
 });
 
 const Index = (props) => {
@@ -86,54 +172,67 @@ const Index = (props) => {
         />
       )}
       <Segment ind={props.i}>
-        <Subsection>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              alignItems: "center",
-              height: "100%",
-            }}
-          >
-            <div
-              style={{
-                width: "100%",
-                margin: "auto",
-                aspectRatio: "16/9",
-              }}
-            >
+        <SubCarouselSection>
+          <Column>
+            <CarouselHolder>
               <Carousel
-                autoPlay={true}
-                showArrows={true}
+                autoPlay={false} // true
+                showArrows={false}
                 infiniteLoop={true}
                 showThumbs={false}
                 showStatus={false}
                 showIndicators={false}
-                style={{
-                  zIndex: 12,
-                  transform: "translateY(-50%)",
-                  marginTop: "50%",
+                // renderArrowNext={
+                //   <RightArrowContainer>
+                //     <RightArrow />
+                //   </RightArrowContainer>
+                // }
+                renderArrowPrev={(clickHandler) => {
+                  return (
+                    <LeftArrowContainer
+                      onClick={() => {
+                        clickHandler();
+                      }}
+                    >
+                      <LeftArrow />
+                    </LeftArrowContainer>
+                  );
+                }}
+                renderArrowNext={(clickHandler) => {
+                  return (
+                    <RightArrowContainer
+                      onClick={() => {
+                        clickHandler();
+                      }}
+                    >
+                      <RightArrow />
+                    </RightArrowContainer>
+                  );
                 }}
               >
                 {props.images.map((image) => (
                   <div
                     key={image}
-                    style={{ width: "100%", height: "fit-content" }}
+                    style={{
+                      width: "100%",
+                      height: "fit-content",
+                      aspectRatio: 16 / 9,
+                    }}
                   >
                     <img
                       src={image}
                       alt="event"
                       style={{
-                        objectFit: "fill",
+                        objectFit: "cover",
+                        aspectRatio: 16 / 9,
                       }}
                     />
                   </div>
                 ))}
               </Carousel>
-            </div>
-          </div>
-        </Subsection>
+            </CarouselHolder>
+          </Column>
+        </SubCarouselSection>
         <Subsection>
           <SectionTitle>{props.title}</SectionTitle>
           <SectionSubtitle>{props.subtitle}</SectionSubtitle>

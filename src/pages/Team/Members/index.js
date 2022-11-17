@@ -13,7 +13,7 @@ const Index = () => {
   const uniqueYearStrings = uniqueYears.map(
     (uniqueYear) => `Batch of ${uniqueYear}`
   );
-  const [year, setYear] = React.useState(1);
+  const [year, setYear] = React.useState(0);
   const options = ["All", ...uniqueYearStrings];
   const filteredMembers = (i) => {
     let toBeReturned = [];

@@ -34,13 +34,18 @@ const Index = () => {
   };
   return (
     <>
-      <Selector title={"Batch"} options={options} val={year} setVal={setYear} />
+      <Selector
+        title={"Batch of"}
+        options={options}
+        val={year}
+        setVal={setYear}
+      />
       <Container maxWidth="md" sx={{ marginTop: "3rem" }}>
         <Grid
           container
           alignItems="center"
           justifyContent="center"
-          rowSpacing={8}
+          spacing={10}
           width="fit-content"
         >
           {filteredMembers(year).map((member, index) => (
@@ -53,6 +58,7 @@ const Index = () => {
               lg={4}
               align="center"
               width="fit-content"
+              padding={0}
             >
               <Card member={member} />
             </Grid>

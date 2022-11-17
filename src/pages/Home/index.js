@@ -9,6 +9,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { colors, fontStyles } from "../../constants";
 import Reachus from "./Reachus";
+import ImageFader from "../../components/ImageFader";
 
 const responsive = {
   desktop: {
@@ -149,7 +150,8 @@ const index = ({ title }) => {
   return (
     <PageWrapper>
       <Hero>
-        <HeroSection>
+        <ImageFader />
+        <HeroSection sx={{ zIndex: 100 }}>
           <img
             src={logo}
             alt="Logo big"
@@ -199,12 +201,7 @@ const index = ({ title }) => {
           </HeroSection>
         </Box>
       </Hero>
-      <Section
-        title={"About"}
-        sx={{
-          height: "70vh",
-        }}
-      >
+      <Section title={"About"}>
         Robotics and Machine Intelligence (RMI) is the official robotics and
         technical research club of NIT Trichy. We are a close-knit community of
         technology enthusiasts from diverse backgrounds who take an interest in

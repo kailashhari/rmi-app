@@ -8,6 +8,7 @@ import { ReactComponent as WebSvg } from "../../../../assets/memberCardSvgs/web.
 import { ReactComponent as FlipOne } from "../../../../assets/memberCardSvgs/flipsvg1.svg";
 import { ReactComponent as FlipTwo } from "../../../../assets/memberCardSvgs/flipsvg2.svg";
 import noprofile from "../../../../assets/noprofile.png";
+import { Link } from "react-router-dom";
 
 const nameModder = (name) => {
   const totalLength = name.length;
@@ -197,6 +198,7 @@ const Project = styled("div")({
   fontWeight: 500,
   marginBlock: "0.2rem",
   textAlign: "center",
+  textDecoration: "none",
 });
 const Icons = styled("div")({
   position: "absolute",
@@ -335,9 +337,21 @@ const Card = (props) => {
         </NameContainer>
         <SubtitleFlip>Projects</SubtitleFlip>
         {props.member.projects &&
-          props.member.projects.map((project) => (
-            <Project key={project.pid}>{project.pname}</Project>
-          ))}
+          props.member.projects.map((project) => {
+            if (project.pid === "0") {
+              return <Project key={project.pid}>{project.pname}</Project>;
+            } else {
+              return (
+                <Link
+                  key={project.pid}
+                  to={`/project/${project.pid}`}
+                  style={{ textDecoration: "none" }}
+                >
+                  <Project>{project.pname}</Project>
+                </Link>
+              );
+            }
+          })}
         <FlipTwo
           style={{
             width: "2.2rem",

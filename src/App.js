@@ -7,6 +7,7 @@ import Projects from "./pages/Projects";
 import Accolades from "./pages/Accolades";
 import Events from "./pages/Events";
 import Project from "./pages/Project";
+import WebTeam from "./pages/Webteam";
 import React, { useEffect, useState } from "react";
 import { AppContext } from "./store/context";
 
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
   {
     path: "/project/:projectid",
     element: <Project title="RMI | Projects" />,
+  },
+  {
+    path: "webteam",
+    element: <WebTeam title="RMI | Web Team" />,
   },
 ]);
 

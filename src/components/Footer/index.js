@@ -14,7 +14,7 @@ import FooterRightHolder from "./FooterRight";
 
 const Footer = styled("div")({
   marginTop: "4rem",
-  width: "100vw",
+  width: "100%",
   backgroundColor: colors.purple,
   display: "flex",
   flexDirection: "column",
