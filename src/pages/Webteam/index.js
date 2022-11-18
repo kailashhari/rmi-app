@@ -1,9 +1,10 @@
 import { Container, Grid, styled } from "@mui/material";
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect, useContext } from "react";
 import PageWrapper from "../../components/PageWrapper";
 import { colors, fontStyles } from "../../constants";
 import Divider from "../../components/Divider";
 import Card from "./Card";
+import { AppContext } from "../../store/context";
 
 const SectionTitle = styled("div")({
   ...fontStyles.heading,
@@ -53,8 +54,6 @@ const Indicator = styled("div")({
 
 const Development = styled("div")({
   width: "100%",
-  display: "flex",
-  flexDirection: "column",
 });
 const Webops = styled("div")({
   display: "flex",
@@ -62,6 +61,9 @@ const Webops = styled("div")({
 });
 
 const Selector = () => {
+  const { mainArchitects, addnArchitects, webops } =
+    useContext(AppContext).webTeam;
+  console.log(mainArchitects);
   const [tab, setTab] = useState(0);
   const developmentRef = useRef(null);
   const webopsRef = useRef(null);
@@ -121,87 +123,21 @@ const Selector = () => {
               justifyContent="center"
               rowSpacing={8}
               width="fit-content"
-              // sx={{
-              //   gridTemplateColumns: {
-              //     lg: "repeat(3, minmax(14rem, 1fr))",
-              //     md: "repeat(2, minmax(14rem, 1fr))",
-              //     sm: "repeat(1, minmax(14rem, 1fr))",
-              //   },
-              // }}
             >
-              <Grid
-                item
-                xs={12}
-                sm={6}
-                md={4}
-                lg={4}
-                align="center"
-                width="fit-content"
-              >
-                <Card
-                  member={{
-                    name: "Hello World",
-                  }}
-                />
-              </Grid>
-              <Grid
-                item
-                xs={12}
-                sm={6}
-                md={4}
-                lg={4}
-                align="center"
-                width="fit-content"
-              >
-                <Card
-                  member={{
-                    name: "Hello World",
-                  }}
-                />
-              </Grid>
-              <Grid
-                item
-                xs={12}
-                sm={6}
-                md={4}
-                lg={4}
-                align="center"
-                width="fit-content"
-              >
-                <Card
-                  member={{
-                    name: "Hello World",
-                  }}
-                />
-              </Grid>
-              <Grid
-                item
-                xs={12}
-                sm={6}
-                md={4}
-                lg={4}
-                align="center"
-                width="fit-content"
-              >
-                <Card
-                  member={{
-                    name: "Hello World",
-                  }}
-                />
-              </Grid>
-
-              {/* <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card /> */}
+              {mainArchitects.map((architect) => (
+                <Grid
+                  item
+                  key={architect.name}
+                  xs={12}
+                  sm={6}
+                  md={4}
+                  lg={4}
+                  align="center"
+                  width="fit-content"
+                >
+                  <Card member={architect} />
+                </Grid>
+              ))}
             </Grid>
           </Container>
           <Divider
@@ -222,181 +158,52 @@ const Selector = () => {
               justifyContent="center"
               rowSpacing={8}
               width="fit-content"
-              // sx={{
-              //   gridTemplateColumns: {
-              //     lg: "repeat(3, minmax(14rem, 1fr))",
-              //     md: "repeat(2, minmax(14rem, 1fr))",
-              //     sm: "repeat(1, minmax(14rem, 1fr))",
-              //   },
-              // }}
             >
-              <Grid
-                item
-                xs={12}
-                sm={6}
-                md={4}
-                lg={4}
-                align="center"
-                width="fit-content"
-              >
-                <Card
-                  member={{
-                    name: "Hello World",
-                  }}
-                />
-              </Grid>
-              <Grid
-                item
-                xs={12}
-                sm={6}
-                md={4}
-                lg={4}
-                align="center"
-                width="fit-content"
-              >
-                <Card
-                  member={{
-                    name: "Hello World",
-                  }}
-                />
-              </Grid>
-              <Grid
-                item
-                xs={12}
-                sm={6}
-                md={4}
-                lg={4}
-                align="center"
-                width="fit-content"
-              >
-                <Card
-                  member={{
-                    name: "Hello World",
-                  }}
-                />
-              </Grid>
-              <Grid
-                item
-                xs={12}
-                sm={6}
-                md={4}
-                lg={4}
-                align="center"
-                width="fit-content"
-              >
-                <Card
-                  member={{
-                    name: "Hello World",
-                  }}
-                />
-              </Grid>
-
-              {/* <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card /> */}
+              {addnArchitects.map((architect) => (
+                <>
+                  <Grid
+                    item
+                    key={architect.name}
+                    xs={12}
+                    sm={6}
+                    md={4}
+                    lg={4}
+                    align="center"
+                    width="fit-content"
+                  >
+                    <Card member={architect} />
+                  </Grid>
+                </>
+              ))}
             </Grid>
           </Container>
         </Development>
       )}
       {tab === 1 && (
         <Webops>
-          <Container maxWidth="md" sx={{ marginTop: "5.4rem" }}>
+          <Container maxWidth="md" sx={{ marginTop: "3rem" }}>
             <Grid
               container
               alignItems="center"
               justifyContent="center"
               rowSpacing={8}
               width="fit-content"
-              // sx={{
-              //   gridTemplateColumns: {
-              //     lg: "repeat(3, minmax(14rem, 1fr))",
-              //     md: "repeat(2, minmax(14rem, 1fr))",
-              //     sm: "repeat(1, minmax(14rem, 1fr))",
-              //   },
-              // }}
             >
-              <Grid
-                item
-                xs={12}
-                sm={6}
-                md={4}
-                lg={4}
-                align="center"
-                width="fit-content"
-              >
-                <Card
-                  member={{
-                    name: "Hello World",
-                  }}
-                />
-              </Grid>
-              <Grid
-                item
-                xs={12}
-                sm={6}
-                md={4}
-                lg={4}
-                align="center"
-                width="fit-content"
-              >
-                <Card
-                  member={{
-                    name: "Hello World",
-                  }}
-                />
-              </Grid>
-              <Grid
-                item
-                xs={12}
-                sm={6}
-                md={4}
-                lg={4}
-                align="center"
-                width="fit-content"
-              >
-                <Card
-                  member={{
-                    name: "Hello World",
-                  }}
-                />
-              </Grid>
-              <Grid
-                item
-                xs={12}
-                sm={6}
-                md={4}
-                lg={4}
-                align="center"
-                width="fit-content"
-              >
-                <Card
-                  member={{
-                    name: "Hello World",
-                  }}
-                />
-              </Grid>
-
-              {/* <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card /> */}
+              {webops.map((architect) => (
+                <Grid
+                  item
+                  key={architect.name}
+                  xs={12}
+                  sm={6}
+                  md={4}
+                  lg={4}
+                  xl={4}
+                  align="center"
+                  width="fit-content"
+                >
+                  <Card member={architect} />
+                </Grid>
+              ))}
             </Grid>
           </Container>
         </Webops>

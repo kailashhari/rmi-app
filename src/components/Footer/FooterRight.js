@@ -2,12 +2,13 @@ import React from "react";
 import { styled } from "@mui/material";
 import PropTypes from "prop-types";
 import { colors } from "../../constants";
+import { HashLink } from "react-router-hash-link";
 
 const footerData = [
   {
     columnTitle: "Home",
     columnItems: [
-      { itemName: "About", itemLink: "/about" },
+      { itemName: "About", itemLink: "/#about" },
       { itemName: "Projects", itemLink: "/projects" },
       { itemName: "Accolades", itemLink: "/accolades" },
     ],
@@ -15,17 +16,17 @@ const footerData = [
   {
     columnTitle: "Events",
     columnItems: [
-      { itemName: "Genesis", itemLink: "/about" },
-      { itemName: "Following", itemLink: "/accolades" },
-      { itemName: "Hackathon", itemLink: "/gallery" },
+      { itemName: "Genesis", itemLink: "/events/#Genesis" },
+      { itemName: "Following", itemLink: "/events/#Following" },
+      { itemName: "Hackathon", itemLink: "/events/#Hackathon" },
     ],
   },
   {
     columnTitle: "Our Team",
     columnItems: [
-      { itemName: "Members", itemLink: "/about" },
-      { itemName: "Alumni", itemLink: "/projects" },
-      { itemName: "Faculty Advisor", itemLink: "/accolades" },
+      { itemName: "Members", itemLink: "/team/#members" },
+      { itemName: "Alumni", itemLink: "/team/#alumni" },
+      { itemName: "Faculty Advisor", itemLink: "/team/#facultyAdvisor" },
     ],
   },
 ];
@@ -58,7 +59,15 @@ const FooterColumnHolder = ({ columnTitle, columnItems }) => (
   <FooterColumn>
     <FooterColumnTitle>{columnTitle}</FooterColumnTitle>
     {columnItems.map((item) => (
-      <FooterColumnItem key={item.itemName}>{item.itemName}</FooterColumnItem>
+      <HashLink
+        to={item.itemLink}
+        key={item.itemName}
+        style={{
+          textDecoration: "none",
+        }}
+      >
+        <FooterColumnItem key={item.itemName}>{item.itemName}</FooterColumnItem>
+      </HashLink>
     ))}
   </FooterColumn>
 );

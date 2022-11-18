@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import PageWrapper from "../../components/PageWrapper";
 import Section from "../../components/Section";
 import TopLevel from "./TopLevel";
@@ -7,6 +8,7 @@ const index = ({ title }) => {
   useEffect(() => {
     document.title = title;
   }, [title]);
+  const { hash } = useLocation();
   return (
     <PageWrapper>
       <Section title={"Our Team"}>
@@ -21,7 +23,7 @@ const index = ({ title }) => {
         departments of NIT Trichy who work and collaborate to bring innovative
         thoughts to life.
       </Section>
-      <TopLevel />
+      <TopLevel hash={hash} />
     </PageWrapper>
   );
 };

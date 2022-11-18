@@ -29,7 +29,7 @@ const SectionContent = styled("div")({
 
 const index = (props) => {
   return (
-    <Section>
+    <Section id={props.id}>
       <SectionTitle>{props.title}</SectionTitle>
       <SectionContent
         sx={{

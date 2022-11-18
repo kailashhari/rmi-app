@@ -108,7 +108,7 @@ const Reachus = () => {
           src="https://www.youtube.com/embed/m_VWOgJYowo"
           frameBorder="0"
           allow="autoplay; encrypted-media"
-          allowfullscreen={true}
+          allowFullScreen
           title="video"
           style={{
             width: "30rem",
@@ -134,13 +134,25 @@ const Reachus = () => {
             <LinkColumn>
               <LinkLink>RMI-NITT</LinkLink>
               <LinkLinks>
-                <a href="https://www.linkedin.com/company/rmi-nitt/">
+                <a
+                  href="https://www.linkedin.com/company/rmi-nitt/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <LinkedIn />
                 </a>
-                <a href="https://github.com/RMI-NITT">
+                <a
+                  href="https://github.com/RMI-NITT"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <Github />
                 </a>
-                <a href="https://www.youtube.com/c/RMIRoboticsandMachineIntelligenceNITT">
+                <a
+                  href="https://www.youtube.com/c/RMIRoboticsandMachineIntelligenceNITT"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <Youtube />
                 </a>
               </LinkLinks>
@@ -148,13 +160,25 @@ const Reachus = () => {
             <LinkColumn>
               <LinkLink>rmi_nitt</LinkLink>
               <LinkLinks>
-                <a href="https://www.facebook.com/RmiNitt">
+                <a
+                  href="https://www.facebook.com/RmiNitt"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <Facebook />
                 </a>
-                <a href="https://www.instagram.com/rmi_nitt/">
+                <a
+                  href="https://www.instagram.com/rmi_nitt/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <Instagram />
                 </a>
-                <a href="https://linktr.ee/rmi_nitt">
+                <a
+                  href="https://linktr.ee/rmi_nitt"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <LinkTree />
                 </a>
               </LinkLinks>

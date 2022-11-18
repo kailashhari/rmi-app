@@ -188,7 +188,7 @@ const index = ({ title }) => {
           </HeroSection>
         </Box>
       </Hero>
-      <Section title={"About"}>
+      <Section title={"About"} id="about">
         Robotics and Machine Intelligence (RMI) is the official robotics and
         technical research club of NIT Trichy. We are a close-knit community of
         technology enthusiasts from diverse backgrounds who take an interest in

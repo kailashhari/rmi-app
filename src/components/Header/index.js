@@ -341,6 +341,11 @@ function ResponsiveAppBar() {
       >
         {drawer}
       </Drawer>
+      <div
+        style={{
+          minHeight: "100px",
+        }}
+      ></div>
     </>
   );
 }
