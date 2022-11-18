@@ -99,13 +99,13 @@ const LinkLinks = styled("div")({
   gap: "0.6rem",
 });
 
-const Reachus = () => {
+const Reachus = (props) => {
   return (
     <Section>
       <SectionTitle>Reach Us</SectionTitle>
       <SectionContent>
         <iframe
-          src="https://www.youtube.com/embed/m_VWOgJYowo"
+          src={`https://www.youtube.com/embed/${props.ytLink}`}
           frameBorder="0"
           allow="autoplay; encrypted-media"
           allowFullScreen

@@ -3,8 +3,9 @@ import Selector from "../../components/Selector";
 import { styled } from "@mui/system";
 import ProjectCard from "./ProjectCard";
 import PageWrapper from "../../components/PageWrapper";
-import Section from "../../components/Section";
+import Section from "../../components/SectionFade";
 import { AppContext } from "../../store/context";
+import ImageFader from "../../components/ImageFader";
 
 const ProjectCards = styled("div")({
   width: "fit-content",
@@ -15,6 +16,7 @@ const ProjectCards = styled("div")({
 
 const ProjectsPageHolder = ({ title }) => {
   const { projects } = React.useContext(AppContext).projects;
+  const { projectsPageImages } = React.useContext(AppContext).miscellaneous;
   useEffect(() => {
     document.title = title;
   }, [title]);
@@ -36,7 +38,10 @@ const ProjectsPageHolder = ({ title }) => {
   };
   return (
     <PageWrapper>
-      <Section title="Our Projects">
+      <Section
+        title="Our Projects"
+        Fader={() => <ImageFader images={projectsPageImages} />}
+      >
         Our team comprises a diverse pool of members, which facilitates us to
         work on projects across various domains. We have set foot into multiple
         facets of robotics over the years, including mobile robotics, humanoid

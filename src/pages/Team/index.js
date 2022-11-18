@@ -1,17 +1,23 @@
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import PageWrapper from "../../components/PageWrapper";
-import Section from "../../components/Section";
+import Section from "../../components/SectionFade";
 import TopLevel from "./TopLevel";
+import ImageFader from "../../components/ImageFader";
+import { AppContext } from "../../store/context";
 
 const index = ({ title }) => {
   useEffect(() => {
     document.title = title;
   }, [title]);
   const { hash } = useLocation();
+  const { ourTeamImages } = useContext(AppContext).miscellaneous;
   return (
     <PageWrapper>
-      <Section title={"Our Team"}>
+      <Section
+        title={"Our Team"}
+        Fader={() => <ImageFader images={ourTeamImages} />}
+      >
         Robotics is a highly interdisciplinary field that thrives well with the
         perfect amalgamation of individuals possessing knowledge of various
         domains. We believe that great work stems from the will to grow as a

@@ -5,6 +5,7 @@ import { ReactComponent as CalendarSVG } from "../../assets/projectlinks/calenda
 import { ReactComponent as QuickLinksSVG } from "../../assets/projectlinks/quicklinks.svg";
 import { ReactComponent as YoutubeSVG } from "../../assets/youtubeHeader.svg";
 import { ReactComponent as GithubSVG } from "../../assets/githubHeader.svg";
+import { ReactComponent as WebSVG } from "../../assets/web.svg";
 import { colors, fontStyles } from "../../constants";
 import { useState } from "react";
 
@@ -50,6 +51,7 @@ const IconWrapperLayout = styled("div")({
   cursor: "pointer",
 });
 const Tooltip = styled("div")({
+  color: colors.light,
   position: "absolute",
   fontSize: "0.8rem",
   backgroundColor: "#9DC7F833",
@@ -97,7 +99,7 @@ const ProjectStats = (props) => {
           <Column>
             <IconSection>
               <IconColumn>
-                <TechStackSVG style={{ width: "3rem" }} />
+                <TechStackSVG style={{ width: "2rem" }} />
               </IconColumn>
               <IconColumn>
                 <IconTitle>Technology Stack</IconTitle>
@@ -112,41 +114,74 @@ const ProjectStats = (props) => {
           <Column>
             <IconSection>
               <IconColumn>
-                <CalendarSVG style={{ width: "3rem" }} />
+                <CalendarSVG style={{ width: "2rem" }} />
               </IconColumn>
               <IconColumn>
                 <IconTitle>Duration</IconTitle>
                 <TechStack>{props.project.duration}</TechStack>
               </IconColumn>
             </IconSection>
-            <IconSection>
-              <IconColumn>
-                <QuickLinksSVG style={{ width: "3rem" }} />
-              </IconColumn>
-              <IconColumn>
-                <IconTitle>Quick Links</IconTitle>
-                <Icons>
-                  {props.project.quickLinks.youtubeLink !== "" && (
-                    <IconWrapper tooltip="Youtube link">
-                      <YoutubeSVG
-                        style={{
-                          height: "2rem",
-                        }}
-                      />
-                    </IconWrapper>
-                  )}
-                  {props.project.quickLinks.githubLink !== "" && (
-                    <IconWrapper tooltip="Github repository">
-                      <GithubSVG
-                        style={{
-                          height: "2rem",
-                        }}
-                      />
-                    </IconWrapper>
-                  )}
-                </Icons>
-              </IconColumn>
-            </IconSection>
+            {!(
+              props.project.quickLinks.youtubeLink === "" &&
+              props.project.quickLinks.githubLink === "" &&
+              props.project.quickLinks.otherLink === ""
+            ) && (
+              <IconSection>
+                <IconColumn>
+                  <QuickLinksSVG style={{ width: "2rem" }} />
+                </IconColumn>
+                <IconColumn>
+                  <IconTitle>Quick Links</IconTitle>
+                  <Icons>
+                    {props.project.quickLinks.youtubeLink !== "" && (
+                      <a
+                        href={props.project.quickLinks.youtubeLink}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <IconWrapper tooltip="Youtube link">
+                          <YoutubeSVG
+                            style={{
+                              height: "2rem",
+                            }}
+                          />
+                        </IconWrapper>
+                      </a>
+                    )}
+                    {props.project.quickLinks.githubLink !== "" && (
+                      <a
+                        href={props.project.quickLinks.githubLink}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <IconWrapper tooltip="Github repository">
+                          <GithubSVG
+                            style={{
+                              height: "2rem",
+                            }}
+                          />
+                        </IconWrapper>
+                      </a>
+                    )}
+                    {props.project.quickLinks.otherLink !== "" && (
+                      <a
+                        href={props.project.quickLinks.otherLink}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <IconWrapper tooltip="Other Link">
+                          <WebSVG
+                            style={{
+                              height: "2rem",
+                            }}
+                          />
+                        </IconWrapper>
+                      </a>
+                    )}
+                  </Icons>
+                </IconColumn>
+              </IconSection>
+            )}
           </Column>
         </Box>
       )}

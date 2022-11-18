@@ -348,6 +348,7 @@ const Card = (props) => {
             </>
           )}
         </NameContainer>
+        <SubtitleFlip>Projects</SubtitleFlip>
         {props.member.projects &&
           props.member.projects.map((project) => {
             if (project.pid === "0") {

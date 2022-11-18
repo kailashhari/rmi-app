@@ -19,7 +19,6 @@ const StaticBackground = styled("div")({
 const PageContent = styled("div")({
   width: "100vw",
   zIndex: 1,
-  marginTop: "6rem",
 });
 
 const index = (props) => {

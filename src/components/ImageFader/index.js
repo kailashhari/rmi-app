@@ -15,21 +15,21 @@ const ImageFaderLayout = styled("div")({
 const ImageContainer = styled("div")({
   width: "100%",
   height: "100%",
+  position: "relative",
 });
 
 const Img = styled("img")({
   width: "100%",
-  objectFit: "cover",
   opacity: 0.15,
 });
 
-const fadeImages = [
-  "https://picsum.photos/1920/1080",
-  "https://picsum.photos/1920/1081",
-  "https://picsum.photos/1920/1082",
-];
+// const fadeImages = [
+//   "https://picsum.photos/1920/1080",
+//   "https://picsum.photos/1920/1081",
+//   "https://picsum.photos/1920/1082",
+// ];
 
-const index = () => {
+const index = ({ images }) => {
   return (
     <ImageFaderLayout sx={{ zIndex: 99 }}>
       <Fade
@@ -39,7 +39,7 @@ const index = () => {
         duration={2000}
         pauseOnHover={false}
       >
-        {fadeImages.map((image) => {
+        {images.map((image) => {
           return (
             <ImageContainer key={image} className="each-fade">
               <Img src={image} />

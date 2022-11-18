@@ -3,10 +3,12 @@ import { styled } from "@mui/material";
 import PropTypes from "prop-types";
 import { colors } from "../../constants";
 import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 
 const footerData = [
   {
     columnTitle: "Home",
+    columnLink: "/#",
     columnItems: [
       { itemName: "About", itemLink: "/#about" },
       { itemName: "Projects", itemLink: "/projects" },
@@ -15,6 +17,7 @@ const footerData = [
   },
   {
     columnTitle: "Events",
+    columnLink: "/events",
     columnItems: [
       { itemName: "Genesis", itemLink: "/events/#Genesis" },
       { itemName: "Following", itemLink: "/events/#Following" },
@@ -23,6 +26,7 @@ const footerData = [
   },
   {
     columnTitle: "Our Team",
+    columnLink: "/team",
     columnItems: [
       { itemName: "Members", itemLink: "/team/#members" },
       { itemName: "Alumni", itemLink: "/team/#alumni" },
@@ -55,9 +59,11 @@ const FooterColumnItem = styled("div")({
   fontFamily: "Poppins",
 });
 
-const FooterColumnHolder = ({ columnTitle, columnItems }) => (
+const FooterColumnHolder = ({ columnTitle, columnItems, columnLink }) => (
   <FooterColumn>
-    <FooterColumnTitle>{columnTitle}</FooterColumnTitle>
+    <Link to={columnLink} style={{ textDecoration: "none" }}>
+      <FooterColumnTitle>{columnTitle}</FooterColumnTitle>
+    </Link>
     {columnItems.map((item) => (
       <HashLink
         to={item.itemLink}
@@ -98,6 +104,7 @@ const FooterRightHolder = () => (
         key={column.columnTitle}
         columnTitle={column.columnTitle}
         columnItems={column.columnItems}
+        columnLink={column.columnLink}
       />
     ))}
   </FooterRight>

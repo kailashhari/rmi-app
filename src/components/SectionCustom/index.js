@@ -97,10 +97,10 @@ const LeftArrowContainer = styled("div")({
   top: 0,
   height: "18rem",
   ["@media (max-width:990px)"]: {
-    width: "2rem",
+    width: "1.6rem",
     height: "9rem",
   },
-  width: "2.4rem",
+  width: "2rem",
   backgroundColor: `${colors.dark}`,
   transition: "all 0.2s ease-in-out",
   opacity: 0.4,
@@ -115,8 +115,8 @@ const LeftArrowContainer = styled("div")({
 
 const LeftArrow = styled("div")({
   backgroundColor: colors.light,
-  width: "1rem",
-  height: "1rem",
+  width: "0.8rem",
+  height: "0.8rem",
   clipPath: "polygon(100% 0, 0 50%, 100% 100%)",
 });
 const RightArrowContainer = styled("div")({
@@ -125,10 +125,10 @@ const RightArrowContainer = styled("div")({
   top: 0,
   height: "18rem",
   ["@media (max-width:990px)"]: {
-    width: "2rem",
+    width: "1.6rem",
     height: "9rem",
   },
-  width: "2.4rem",
+  width: "2rem",
   backgroundColor: `${colors.dark}`,
   transition: "all 0.2s ease-in-out",
   opacity: 0.4,
@@ -143,8 +143,8 @@ const RightArrowContainer = styled("div")({
 
 const RightArrow = styled("div")({
   backgroundColor: colors.light,
-  width: "1rem",
-  height: "1rem",
+  width: "0.8rem",
+  height: "0.8rem",
   clipPath: "polygon(0 0, 100% 50%, 0 100%)",
 });
 
@@ -166,7 +166,7 @@ const Index = (props) => {
             zIndex: 10,
             width: "100%",
             aspectRatio: "auto",
-            opacity: "0.2",
+            opacity: "0.1",
             height: "90vh",
           }}
         />

@@ -74,8 +74,8 @@ const ImgDesc = styled("div")({
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
-  fontSize: "1.6rem",
-  fontWeight: 700,
+  fontSize: "1.2rem",
+  fontWeight: 500,
 });
 
 const ImageBg = styled("div")({

@@ -139,7 +139,10 @@ const Index = ({ title }) => {
         style={{
           textAlign: "justify",
           marginBlock: "6rem",
-          fontSize: "1.5rem",
+          fontSize: "1.2rem",
+          display: "flex",
+          flexDirection: "column",
+          gap: "2rem",
         }}
       >
         {project.longDesc &&

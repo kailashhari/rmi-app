@@ -161,22 +161,46 @@ const FooterHolder = () => (
               },
             }}
           >
-            <FollowUsLink href="https://www.linkedin.com/company/rmi-nitt/">
+            <FollowUsLink
+              href="https://www.linkedin.com/company/rmi-nitt/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <LinkedIn />
             </FollowUsLink>
-            <FollowUsLink href="https://github.com/RMI-NITT">
+            <FollowUsLink
+              href="https://github.com/RMI-NITT"
+              target="_blank"
+              rel="noreferrer"
+            >
               <Github />
             </FollowUsLink>
-            <FollowUsLink href="https://www.youtube.com/c/RMIRoboticsandMachineIntelligenceNITT">
+            <FollowUsLink
+              href="https://www.youtube.com/c/RMIRoboticsandMachineIntelligenceNITT"
+              target="_blank"
+              rel="noreferrer"
+            >
               <Youtube />
             </FollowUsLink>
-            <FollowUsLink href="https://linktr.ee/rmi_nitt">
+            <FollowUsLink
+              href="https://linktr.ee/rmi_nitt"
+              target="_blank"
+              rel="noreferrer"
+            >
               <LinkTree />
             </FollowUsLink>
-            <FollowUsLink href="https://www.facebook.com/RmiNitt">
+            <FollowUsLink
+              href="https://www.facebook.com/RmiNitt"
+              target="_blank"
+              rel="noreferrer"
+            >
               <Facebook />
             </FollowUsLink>
-            <FollowUsLink href="https://www.instagram.com/rmi_nitt/">
+            <FollowUsLink
+              href="https://www.instagram.com/rmi_nitt/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <Instagram />
             </FollowUsLink>
           </FollowUsLinks>

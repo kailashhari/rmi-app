@@ -20,6 +20,9 @@ const index = ({ title }) => {
         events include: Genesis, InHoTTs, Following, RMI Hackathon, Robovigyan,
         Pragyan Exhibition
       </Section>
+      <br />
+      <br />
+      <br />
       {events.map((event, i) => (
         <SectionCustom
           title={event.title}

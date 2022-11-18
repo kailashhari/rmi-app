@@ -1,10 +1,11 @@
 import { styled } from "@mui/material";
 import React, { useEffect } from "react";
 import PageWrapper from "../../components/PageWrapper";
-import Section from "../../components/Section";
+import Section from "../../components/SectionFade";
 import { colors, fontStyles } from "../../constants";
 import Divider from "../../components/Divider";
 import TimelineSection from "./TimelineSection";
+import ImageFader from "../../components/ImageFader";
 import { ReactComponent as FirstSvg } from "../../assets/honors/first.svg";
 import { ReactComponent as SecondSvg } from "../../assets/honors/second.svg";
 import { ReactComponent as ThirdSvg } from "../../assets/honors/third.svg";
@@ -15,6 +16,7 @@ import { Box } from "@mui/material";
 
 const TopHonors = styled("div")({
   height: "fit-content",
+  marginTop: "4rem",
   width: "100%",
   display: "flex",
   flexDirection: "column",
@@ -102,9 +104,13 @@ const index = ({ title }) => {
     document.title = title;
   }, [title]);
   const { topHonours } = React.useContext(AppContext).accolades;
+  const { accoladesImages } = React.useContext(AppContext).miscellaneous;
   return (
     <PageWrapper>
-      <Section title="Achievements and Accolades">
+      <Section
+        title="Achievements and Accolades"
+        Fader={() => <ImageFader images={accoladesImages} />}
+      >
         We believe our drive and passion for what we do has helped us earn
         several accolades over the years. In each event we participate in, we
         try to give our best and bring laurels to our small community. However,

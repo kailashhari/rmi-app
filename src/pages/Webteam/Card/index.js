@@ -169,15 +169,6 @@ const Domain = styled("div")({
   textAlign: "center",
 });
 
-const Project = styled("div")({
-  width: "100%",
-  color: colors.dark,
-  fontSize: "1rem",
-  fontFamily: "Gotham",
-  fontWeight: 500,
-  marginBlock: "0.2rem",
-  textAlign: "center",
-});
 const Icons = styled("div")({
   position: "absolute",
   display: "flex",
@@ -229,8 +220,8 @@ const Card = (props) => {
             {props.member.position ? (
               <Subtitle>{props.member.position}</Subtitle>
             ) : null}
-            {props.member.domains &&
-              props.member.domains.map((domain, index) => (
+            {props.member.additional &&
+              props.member.additional.map((domain, index) => (
                 <Domain key={index}>{domain}</Domain>
               ))}
           </div>

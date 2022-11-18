@@ -25,7 +25,7 @@ const Section = styled("div")({
   alignItems: "center",
   // border: "1px solid red",
   height: "fit-content",
-  marginBlock: "8rem",
+  marginBlock: "4rem",
   gap: "2rem",
 });
 
@@ -117,24 +117,9 @@ const Selector = () => {
         <Development>
           <SectionSubtitle>Foundational design and development</SectionSubtitle>
           <Container maxWidth="md" sx={{ marginTop: "3rem" }}>
-            <Grid
-              container
-              alignItems="center"
-              justifyContent="center"
-              rowSpacing={8}
-              width="fit-content"
-            >
+            <Grid container justifyContent="center" spacing={10}>
               {mainArchitects.map((architect) => (
-                <Grid
-                  item
-                  key={architect.name}
-                  xs={12}
-                  sm={6}
-                  md={4}
-                  lg={4}
-                  align="center"
-                  width="fit-content"
-                >
+                <Grid item key={architect.name} xs={12} sm={6} md={4} lg={4}>
                   <Card member={architect} />
                 </Grid>
               ))}
@@ -149,16 +134,10 @@ const Selector = () => {
             }}
           />
           <SectionSubtitle sx={{ marginTop: "2rem" }}>
-            Data acquisition
+            Data acquisition and coordination
           </SectionSubtitle>
           <Container maxWidth="md" sx={{ marginTop: "3rem" }}>
-            <Grid
-              container
-              alignItems="center"
-              justifyContent="center"
-              rowSpacing={8}
-              width="fit-content"
-            >
+            <Grid container width="fit-content" spacing={10}>
               {addnArchitects.map((architect) => (
                 <>
                   <Grid
@@ -169,7 +148,6 @@ const Selector = () => {
                     md={4}
                     lg={4}
                     align="center"
-                    width="fit-content"
                   >
                     <Card member={architect} />
                   </Grid>
@@ -182,13 +160,7 @@ const Selector = () => {
       {tab === 1 && (
         <Webops>
           <Container maxWidth="md" sx={{ marginTop: "3rem" }}>
-            <Grid
-              container
-              alignItems="center"
-              justifyContent="center"
-              rowSpacing={8}
-              width="fit-content"
-            >
+            <Grid container width="fit-content" spacing={10}>
               {webops.map((architect) => (
                 <Grid
                   item
@@ -198,8 +170,6 @@ const Selector = () => {
                   md={4}
                   lg={4}
                   xl={4}
-                  align="center"
-                  width="fit-content"
                 >
                   <Card member={architect} />
                 </Grid>

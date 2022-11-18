@@ -134,10 +134,12 @@ const index = ({ title }) => {
     document.title = title;
   }, [title]);
   const { projects } = React.useContext(AppContext).projects;
+  const { landingPageImages, youtubeVideo } =
+    React.useContext(AppContext).miscellaneous;
   return (
     <PageWrapper>
       <Hero>
-        <ImageFader />
+        <ImageFader images={landingPageImages} />
         <HeroSection sx={{ zIndex: 100 }}>
           <img
             src={logo}
@@ -153,7 +155,7 @@ const index = ({ title }) => {
           sx={{
             flexDirection: "column",
             flex: "1",
-            alignItems: "center",
+            alignItems: "flex-start",
             justifyContent: "center",
             display: { xs: "none", sm: "none", md: "flex" },
           }}
@@ -168,16 +170,16 @@ const index = ({ title }) => {
               <HeroAnd>AND</HeroAnd>
             </HeroLineContainer>
             <HeroLineContainer>
-              <HeroText>MACHINE</HeroText>
+              <HeroText>MACHINE INTELLIGENCE</HeroText>
             </HeroLineContainer>
-            <HeroLineContainer>
+            {/* <HeroLineContainer>
               <HeroText>INTELLIGENCE</HeroText>
-            </HeroLineContainer>
+            </HeroLineContainer> */}
             <HeroLineContainer>
               <HeroText
                 sx={{
                   fontFamily: "Gotham",
-                  fontSize: "1rem",
+                  fontSize: "1.6rem",
                   fontWeight: "400",
                   mt: "1rem",
                 }}
@@ -274,7 +276,7 @@ const index = ({ title }) => {
           ))}
         </Carousel>
       </CarouselWrapper>
-      <Reachus />
+      <Reachus ytLink={youtubeVideo} />
     </PageWrapper>
   );
 };
