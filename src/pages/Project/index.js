@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import PageWrapper from "../../components/PageWrapper";
 import { Avatar, Grid, styled } from "@mui/material";
 import { colors, fontStyles } from "../../constants";
@@ -110,6 +110,7 @@ const Index = ({ title }) => {
   const pid = useParams().projectid;
   const { projects } = React.useContext(AppContext).projects;
   const { currentMembers, alumni } = React.useContext(AppContext).ourTeam;
+  const navigate = useNavigate();
 
   const [project, setProject] = useState({
     images: [],
@@ -118,6 +119,9 @@ const Index = ({ title }) => {
 
   useEffect(() => {
     const proj = projects.find((p) => p.pid === pid);
+    if (!proj) {
+      navigate("/404");
+    }
     setProject(proj);
     const mapData = {};
     // console.log(proj);

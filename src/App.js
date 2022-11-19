@@ -8,6 +8,7 @@ import Accolades from "./pages/Accolades";
 import Events from "./pages/Events";
 import Project from "./pages/Project";
 import WebTeam from "./pages/Webteam";
+import NotFound from "./pages/NotFound";
 import React, { useEffect, useState } from "react";
 import { AppContext } from "./store/context";
 import Webteam from "./pages/Webteam";
@@ -47,6 +48,10 @@ const router = createBrowserRouter([
   {
     path: "/webteam",
     element: <Webteam title="RMI | Webteam" />,
+  },
+  {
+    path: "/*",
+    element: <NotFound title="Page not found" />,
   },
 ]);
 
