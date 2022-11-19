@@ -91,11 +91,17 @@
 
 .nav.left {
   transform: translateX(-50%) translateY(-50%);
+  -webkit-text-stroke: 5px;
+  -webkit-text-stroke-color: #57E2E5;
+  color: #FFFCF9!important;
 }
 
 .nav.right {
   right: 0;
   transform: translateX(50%) translateY(-50%);
+  -webkit-text-stroke: 5px;
+  -webkit-text-stroke-color: #57E2E5;
+  color: #FFFCF9!important;
 }
 
 .card img {

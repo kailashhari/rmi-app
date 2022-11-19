@@ -1,5 +1,4 @@
 import React, { useContext, useEffect } from "react";
-import { useLocation } from "react-router-dom";
 import PageWrapper from "../../components/PageWrapper";
 import Section from "../../components/SectionFade";
 import TopLevel from "./TopLevel";
@@ -10,7 +9,6 @@ const index = ({ title }) => {
   useEffect(() => {
     document.title = title;
   }, [title]);
-  const { hash } = useLocation();
   const { ourTeamImages } = useContext(AppContext).miscellaneous;
   return (
     <PageWrapper>
@@ -29,7 +27,7 @@ const index = ({ title }) => {
         departments of NIT Trichy who work and collaborate to bring innovative
         thoughts to life.
       </Section>
-      <TopLevel hash={hash} />
+      <TopLevel />
     </PageWrapper>
   );
 };

@@ -187,3 +187,7 @@ body::-webkit-scrollbar-thumb {
   background-color: #57E2E5;
   border-radius: 10px;
 }
+
+html {
+  scroll-padding-top: 6rem;
+}

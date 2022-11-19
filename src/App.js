@@ -26,7 +26,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/team",
-    element: <Team title="RMI | Team" />,
+    element: <Team title="RMI | Our Team" />,
   },
   {
     path: "/projects",

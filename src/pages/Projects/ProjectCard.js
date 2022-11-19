@@ -39,12 +39,15 @@ const CoverTitle = styled("div")({
   fontSize: "1.4rem",
   fontWeight: "bold",
   color: colors.primary,
+  marginBlockStart: "1rem",
 });
 
 const CoverExpansion = styled("div")({
   fontSize: "1rem",
   fontWeight: "bold",
   color: colors.grey,
+  height: "3rem",
+  overflow: "hidden",
 });
 
 const CoverDesc = styled("div")({
@@ -54,6 +57,7 @@ const CoverDesc = styled("div")({
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
+  textAlign: "justify",
 });
 
 const CoverHeader = styled("div")({
@@ -91,18 +95,15 @@ const ProjectCardHolder = (props) => {
           opened={opened}
         />
         <Cover opened={opened}>
-          <CoverHeader>
-            {props.project.shortName && (
-              <CoverTitle>{props.project.shortName}</CoverTitle>
-            )}
-            {props.project.longName && (
-              <CoverExpansion>{props.project.longName}</CoverExpansion>
-            )}
-          </CoverHeader>
+          {props.project.shortName && (
+            <CoverTitle>{props.project.shortName}</CoverTitle>
+          )}
+          <CoverExpansion>{props.project.longName}</CoverExpansion>
+
           {props.project.shortDesc && (
             <CoverDesc>
-              <div style={{ height: "fit-content" }}>
-                {props.project.shortDesc}
+              <div style={{ height: "9rem", overflow: "hidden" }}>
+                <p>{props.project.shortDesc}</p>
               </div>
             </CoverDesc>
           )}

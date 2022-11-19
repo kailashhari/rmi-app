@@ -4,7 +4,6 @@ import { colors } from "../../../constants";
 import Members from "../Members";
 import Alumni from "../Alumni";
 import Facad from "../Facad";
-import { useNavigate } from "react-router-dom";
 
 const Tabs = styled("div")({
   display: "flex",
@@ -31,7 +30,7 @@ const Indicator = styled("div")({
   transition: "all 0.2s ease-in-out",
 });
 
-const Index = (props) => {
+const Index = () => {
   const [tab, setTab] = useState(0);
   const memberRef = useRef(null);
   const alumniRef = useRef(null);
@@ -42,15 +41,6 @@ const Index = (props) => {
   useEffect(() => {
     const tabsCoords = tabsRef.current.getBoundingClientRect();
     let coords;
-    if (props.hash) {
-      if (props.hash === "#members") {
-        setTab(0);
-      } else if (props.hash === "#alumni") {
-        setTab(1);
-      } else if (props.hash === "#facultyAdvisor") {
-        setTab(2);
-      }
-    }
     if (tab === 0) {
       coords = memberRef.current.getBoundingClientRect();
     } else if (tab === 1) {
@@ -66,13 +56,11 @@ const Index = (props) => {
       coords.top - tabsCoords.top + coords.height
     }px`;
   }, [tab, indicatorRef, tabsRef, memberRef, alumniRef, facadRef]);
-  const navigate = useNavigate();
   return (
     <>
       <Tabs ref={tabsRef}>
         <Tab
           onClick={() => {
-            navigate("/team/#members");
             setTab(0);
           }}
           ref={memberRef}
@@ -84,7 +72,6 @@ const Index = (props) => {
         </Tab>
         <Tab
           onClick={() => {
-            navigate("/team/#alumni");
             setTab(1);
           }}
           ref={alumniRef}
@@ -96,7 +83,6 @@ const Index = (props) => {
         </Tab>
         <Tab
           onClick={() => {
-            navigate("/team/#facultyAdvisor");
             setTab(2);
           }}
           ref={facadRef}

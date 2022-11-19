@@ -16,11 +16,15 @@ const CardGrid = styled("div")({
 
 const Index = () => {
   const alumniMembers = useContext(AppContext).ourTeam.alumni;
+  const recentYear = [
+    ...new Set(alumniMembers.map((member) => member.batchTag)),
+  ][0];
+  console.log(recentYear);
   const options = [
     "All",
     ...new Set(alumniMembers.map((member) => member.batchTag)),
   ];
-  const [year, setYear] = React.useState("All");
+  const [year, setYear] = React.useState(recentYear);
   const filteredMembers = (i) => {
     let toBeReturned;
     if (i === "All") {

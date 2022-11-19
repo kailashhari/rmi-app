@@ -21,16 +21,14 @@ const footerData = [
     columnItems: [
       { itemName: "Genesis", itemLink: "/events/#Genesis" },
       { itemName: "Following", itemLink: "/events/#Following" },
-      { itemName: "Hackathon", itemLink: "/events/#Hackathon" },
+      { itemName: "Hackathon", itemLink: "/events/#RMI Hackathon" },
     ],
   },
   {
-    columnTitle: "Our Team",
-    columnLink: "/team",
     columnItems: [
-      { itemName: "Members", itemLink: "/team/#members" },
-      { itemName: "Alumni", itemLink: "/team/#alumni" },
-      { itemName: "Faculty Advisor", itemLink: "/team/#facultyAdvisor" },
+      { itemName: "InHoTTs", itemLink: "/events/#InHoTTs" },
+      { itemName: "RoboVigyan", itemLink: "/events/#RoboVigyan" },
+      { itemName: "Exhibition", itemLink: "/events/#Pragyan Exhibition" },
     ],
   },
 ];
@@ -61,7 +59,7 @@ const FooterColumnItem = styled("div")({
 
 const FooterColumnHolder = ({ columnTitle, columnItems, columnLink }) => (
   <FooterColumn>
-    <Link to={columnLink} style={{ textDecoration: "none" }}>
+    <Link to={columnLink} style={{ textDecoration: "none", height: "20px" }}>
       <FooterColumnTitle>{columnTitle}</FooterColumnTitle>
     </Link>
     {columnItems.map((item) => (

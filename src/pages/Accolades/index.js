@@ -123,7 +123,7 @@ const index = ({ title }) => {
             fontSize: "2.2rem",
           }}
         >
-          Top Honors
+          Top Honours
         </TopTitle>
         <Container maxWidth="lg">
           <GridOfFame>

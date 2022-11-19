@@ -188,13 +188,19 @@ const Index = ({ title }) => {
           >
             Project Developers{" "}
           </Title>
-          <Container maxWidth="md" sx={{ marginTop: "1rem" }}>
+          <Container
+            maxWidth="md"
+            sx={{
+              marginTop: "4rem",
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
             <Grid
               container
-              alignItems="center"
-              justifyContent="center"
               width="fit-content"
-              spacing={0}
+              spacing={10}
+              justifyContent="center"
             >
               {projectMembers.map((dev, index) => (
                 <Grid
@@ -205,7 +211,6 @@ const Index = ({ title }) => {
                   md={3}
                   lg={3}
                   align="center"
-                  width="fit-content"
                   padding={0}
                 >
                   <Publication key={index}>
