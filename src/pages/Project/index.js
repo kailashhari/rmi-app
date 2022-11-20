@@ -8,7 +8,7 @@ import { AppContext } from "../../store/context";
 import { Container } from "@mui/material";
 import Divider from "../../components/Divider";
 import ProjectStats from "./ProjectStats";
-import noprofile from "../../assets/noprofile.png";
+import noprofile from "../../assets/noprofiledark.png";
 
 const Herolayout = styled("div")({
   height: "80vh",
@@ -38,14 +38,17 @@ const HeroBg = styled("img")({
   position: "absolute",
   top: "0",
   left: "0",
+  zIndex: 200,
 });
 
 const HeroTitle = styled("div")({
   ...fontStyles.heading,
+  zIndex: 201,
 });
 const HeroSubtitle = styled("div")({
   ...fontStyles.content,
   color: colors.grey,
+  zIndex: 201,
 });
 
 const PubTitle = styled("div")({
@@ -77,6 +80,7 @@ const HeroContent = styled("div")({
   width: "35vw",
   textAlign: "center",
   marginTop: "1.5rem",
+  zIndex: 201,
 });
 
 const Title = styled("div")({
