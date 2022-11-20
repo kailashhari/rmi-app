@@ -8,6 +8,7 @@ import { AppContext } from "../../store/context";
 import { Container } from "@mui/material";
 import Divider from "../../components/Divider";
 import ProjectStats from "./ProjectStats";
+import noprofile from "../../assets/noprofile.png";
 
 const Herolayout = styled("div")({
   height: "80vh",
@@ -130,9 +131,11 @@ const Index = ({ title }) => {
     });
     setProjectMembers([]);
     proj.developers.forEach((dev) => {
-      setProjectMembers((prev) => [...prev, mapData[dev.id]]);
+      setProjectMembers((prev) => [
+        ...prev,
+        dev.id in mapData ? mapData[dev.id] : dev,
+      ]);
     });
-    // console.log(projectMembers);
   }, [pid, projects, currentMembers, alumni]);
   return (
     <PageWrapper>
@@ -206,29 +209,32 @@ const Index = ({ title }) => {
               spacing={10}
               justifyContent="center"
             >
-              {projectMembers.map((dev, index) => (
-                <Grid
-                  item
-                  key={index}
-                  xs={6}
-                  sm={4}
-                  md={3}
-                  lg={3}
-                  align="center"
-                  padding={0}
-                >
-                  <Publication key={index}>
-                    <Avatar
-                      src={dev.imageLink}
-                      style={{
-                        width: "8rem",
-                        height: "8rem",
-                      }}
-                    />
-                    <DevTitle>{dev.name}</DevTitle>
-                  </Publication>
-                </Grid>
-              ))}
+              {projectMembers.map(
+                (dev, index) =>
+                  dev && (
+                    <Grid
+                      item
+                      key={index}
+                      xs={6}
+                      sm={4}
+                      md={3}
+                      lg={3}
+                      align="center"
+                      padding={0}
+                    >
+                      <Publication key={index}>
+                        <Avatar
+                          src={dev.imageLink ? dev.imageLink : noprofile}
+                          style={{
+                            width: "8rem",
+                            height: "8rem",
+                          }}
+                        />
+                        <DevTitle>{dev.name}</DevTitle>
+                      </Publication>
+                    </Grid>
+                  )
+              )}
             </Grid>
           </Container>
         </Layout>
