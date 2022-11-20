@@ -194,10 +194,7 @@ function ResponsiveAppBar() {
                 style={{
                   ...fontStyles.navlinks,
                   color:
-                    location.pathname === `/${page.route}` ||
-                    (page.route === "projects" &&
-                      location.pathname.length > 8 &&
-                      location.pathname.slice(0, 8) === "/project")
+                    location.pathname === `/${page.route}`
                       ? colors.primary
                       : colors.light,
                 }}
@@ -213,10 +210,7 @@ function ResponsiveAppBar() {
                 >
                   {page.text}
                 </Link>
-                {(location.pathname === `/${page.route}` ||
-                  (page.route === "projects" &&
-                    location.pathname.length > 8 &&
-                    location.pathname.slice(0, 8) === "/project")) && (
+                {location.pathname === `/${page.route}` && (
                   <Indicator active={location.pathname === `/${page.route}`} />
                 )}
               </NavItem>
@@ -239,7 +233,7 @@ function ResponsiveAppBar() {
               />
             </a>
             <a
-              href="https://www.youtube.com/c/RMIRoboticsandMachineIntelligenceNITT"
+              href="https://github.com/RMI-NITT"
               style={{
                 height: "36px",
                 marginBlock: "auto",
