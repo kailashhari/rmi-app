@@ -213,23 +213,33 @@ const index = () => {
           <Position>{facultyAdvisor.position}</Position>
           <Department>{facultyAdvisor.department}</Department>
           <Icons>
-            <a href={facultyAdvisor.linkedIn} target="_blank" rel="noreferrer">
-              <InSvg style={{ width: "1.6rem" }} />
-            </a>
-            <a
-              href={"mailto:" + facultyAdvisor.email}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <MailSvg style={{ width: "1.6rem" }} />
-            </a>
-            <a
-              href={facultyAdvisor.personalPage}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <WebSvg style={{ width: "1.6rem" }} />
-            </a>
+            {facultyAdvisor.linkedIn !== "" && (
+              <a
+                href={facultyAdvisor.linkedIn}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <InSvg style={{ width: "1.6rem" }} />
+              </a>
+            )}
+            {facultyAdvisor.email !== "" && (
+              <a
+                href={"mailto:" + facultyAdvisor.email}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <MailSvg style={{ width: "1.6rem" }} />
+              </a>
+            )}
+            {facultyAdvisor.personalPage !== "" && (
+              <a
+                href={facultyAdvisor.personalPage}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <WebSvg style={{ width: "1.6rem" }} />
+              </a>
+            )}
           </Icons>
         </ProfHeading>
       </Main>
