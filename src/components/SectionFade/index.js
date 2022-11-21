@@ -13,9 +13,10 @@ const Section = styled("div")({
   paddingBlock: "4rem",
   position: "relative",
   marginBottom: "2rem",
-  // paddingTop: '10vh',
-  // paddingBottom: "10vh",
   gap: "2.6rem",
+  "@media (max-width: 767px)": {
+    height: "60vh",
+  },
 });
 
 const SectionTitle = styled("div")({

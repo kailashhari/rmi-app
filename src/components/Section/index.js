@@ -8,11 +8,8 @@ const Section = styled("div")({
   flexDirection: "column",
   alignItems: "center",
   justifyContent: "center",
-  minheight: "80vh",
-  height: "fit-content",
+  height: "80vh",
   textAlign: "center",
-  marginTop: "4rem",
-  marginBottom: "4rem",
   // paddingTop: '10vh',
   // paddingBottom: "10vh",
 });

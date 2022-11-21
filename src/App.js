@@ -12,6 +12,8 @@ import NotFound from "./pages/NotFound";
 import React, { useEffect, useState } from "react";
 import { AppContext } from "./store/context";
 import Webteam from "./pages/Webteam";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
 
 const AppLayout = styled("div")({
   ...defaultStyles,
@@ -91,14 +93,22 @@ function App() {
   //   // flyers.forEach(element => {
   //   // });
   // }, [data !== null]);
+  const darkTheme = createTheme({
+    palette: {
+      mode: "dark",
+    },
+  });
 
   return (
     <>
       {data !== null && (
         <AppContext.Provider value={data}>
-          <AppLayout>
-            <RouterProvider router={router} />
-          </AppLayout>
+          <ThemeProvider theme={darkTheme}>
+            <CssBaseline />
+            <AppLayout>
+              <RouterProvider router={router} />
+            </AppLayout>
+          </ThemeProvider>
         </AppContext.Provider>
       )}
     </>

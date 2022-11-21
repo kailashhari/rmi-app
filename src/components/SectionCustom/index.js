@@ -1,4 +1,4 @@
-import { styled } from "@mui/material";
+import { Box, styled } from "@mui/material";
 import React from "react";
 import { colors, fontStyles } from "../../constants";
 import { Carousel } from "react-responsive-carousel";
@@ -10,7 +10,7 @@ const Section = styled("div")({
   flexDirection: "row",
   alignItems: "center",
   justifyContent: "center",
-  height: "90vh",
+  height: "80vh",
   // paddingTop: '10vh',
   backgroundColor: `${colors.dark}55`,
   backgroundBlendMode: "darken",
@@ -21,7 +21,7 @@ const Section = styled("div")({
     flexDirection: "column",
     width: "100%",
     height: "100%",
-    justifyContent: "space-evenly",
+    paddingInline: "2%",
   },
 });
 
@@ -40,6 +40,9 @@ const SectionTitle = styled("div")({
   fontSize: "1.8rem",
   zIndex: 11,
   textAlign: "center",
+  ["@media (max-width:990px)"]: {
+    textAlign: "start",
+  },
 });
 
 const SectionSubtitle = styled("div")({
@@ -49,12 +52,21 @@ const SectionSubtitle = styled("div")({
   zIndex: 11,
   textAlign: "center",
   color: colors.grey,
+  ["@media (max-width:990px)"]: {
+    fontSize: "1.16rem",
+    marginTop: "0.5rem",
+    textAlign: "start",
+  },
 });
 
 const SectionContent = styled("div")({
   ...fontStyles.content,
   zIndex: 11,
   textAlign: "justify",
+  ["@media (max-width:990px)"]: {
+    fontSize: "0.96rem",
+    marginBottom: "2rem",
+  },
 });
 
 const Subsection = styled("div")({
@@ -84,8 +96,8 @@ const CarouselHolder = styled("div")({
   width: "32rem",
   height: "18rem",
   ["@media (max-width:990px)"]: {
-    width: "16rem",
-    height: "9rem",
+    width: "100%",
+    height: "14rem",
   },
   position: "relative",
   overflow: "hidden",
@@ -98,7 +110,7 @@ const LeftArrowContainer = styled("div")({
   height: "18rem",
   ["@media (max-width:990px)"]: {
     width: "1.6rem",
-    height: "9rem",
+    height: "100%",
   },
   width: "2rem",
   backgroundColor: `${colors.dark}`,
@@ -126,7 +138,7 @@ const RightArrowContainer = styled("div")({
   height: "18rem",
   ["@media (max-width:990px)"]: {
     width: "1.6rem",
-    height: "9rem",
+    height: "100%",
   },
   width: "2rem",
   backgroundColor: `${colors.dark}`,
@@ -153,7 +165,10 @@ const Index = (props) => {
     <Section
       id={props.id}
       sx={{
-        clipPath: "polygon(0 0, 80% 0, 100% 20%, 100% 100%, 20% 100%, 0 80%)",
+        clipPath: {
+          xs: "null",
+          md: "polygon(0 0, 80% 0, 100% 20%, 100% 100%, 20% 100%, 0 80%)",
+        },
         // border: `3px solid ${colors.primary}`,
       }}
     >
@@ -167,7 +182,6 @@ const Index = (props) => {
             width: "100%",
             aspectRatio: "auto",
             opacity: "0.1",
-            height: "90vh",
           }}
         />
       )}
@@ -211,23 +225,25 @@ const Index = (props) => {
                 }}
               >
                 {props.images.map((image) => (
-                  <div
+                  <Box
+                    component="div"
                     key={image}
-                    style={{
+                    sx={{
                       width: "100%",
                       height: "fit-content",
                       aspectRatio: 16 / 9,
                     }}
                   >
-                    <img
+                    <Box
+                      component="img"
                       src={image}
                       alt="event"
-                      style={{
+                      sx={{
                         objectFit: "cover",
                         aspectRatio: 16 / 9,
                       }}
                     />
-                  </div>
+                  </Box>
                 ))}
               </Carousel>
             </CarouselHolder>

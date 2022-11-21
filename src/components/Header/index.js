@@ -14,29 +14,39 @@ import logo from "../../assets/logoCompressed.png";
 import { Link, useLocation } from "react-router-dom";
 import { ReactComponent as YoutubeSvg } from "../../assets/youtubeHeader.svg";
 import { ReactComponent as GithubSvg } from "../../assets/githubHeader.svg";
-
+import TemporaryDrawer from "./drawer";
+import HomeIcon from "@mui/icons-material/Home";
+import Groups2Icon from "@mui/icons-material/Groups2";
+import PrecisionManufacturingIcon from "@mui/icons-material/PrecisionManufacturing";
+import EventIcon from "@mui/icons-material/Event";
+import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
 // const pages = [
 //   'Home', 'Our Team', 'Projects', 'Events', 'Accolades', 'Reach Us'];
-const pages = [
+export const pages = [
   {
     text: "Home",
     route: "",
+    icon: <HomeIcon />,
   },
   {
     text: "Our Team",
     route: "team",
+    icon: <Groups2Icon />,
   },
   {
     text: "Projects",
     route: "projects",
+    icon: <PrecisionManufacturingIcon />,
   },
   {
     text: "Events",
     route: "events",
+    icon: <EventIcon />,
   },
   {
     text: "Accolades",
     route: "accolades",
+    icon: <EmojiEventsIcon />,
   },
 ];
 
@@ -47,9 +57,9 @@ const NavItem = styled("div")({
   alignItems: "center",
 });
 
-const Indicator = () => {
+export const Indicator = ({ active }) => {
   return (
-    <Zoom in={true}>
+    <Zoom in={active}>
       <div
         style={{
           width: "20px",
@@ -60,16 +70,51 @@ const Indicator = () => {
     </Zoom>
   );
 };
+const StyledBurger = styled("button")((props) => ({
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "space-around",
+  width: "1.8rem",
+  height: "1.8rem",
+  background: "transparent",
+  border: "none",
+  cursor: "pointer",
+  padding: "0",
+  zIndex: "10",
+
+  ["&:focus"]: {
+    outline: "none",
+  },
+
+  ["div"]: {
+    width: "1.9rem",
+    height: "0.16rem",
+    background: "#EFFFFA",
+    borderRadius: "10px",
+    transition: "all 0.3s linear",
+    position: "relative",
+    transformOrigin: "1px",
+
+    [":first-child"]: {
+      transform: props.open ? "rotate(45deg)" : "rotate(0)",
+    },
+
+    [":nth-child(2)"]: {
+      opacity: props.open ? "0" : "1",
+      transform: props.open ? "translateX(20px)" : "translateX(0)",
+    },
+
+    [":nth-child(3)"]: {
+      transform: props.open ? "rotate(-45deg)" : "rotate(0)",
+    },
+  },
+}));
 
 function ResponsiveAppBar() {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const [state, setState] = React.useState(false);
 
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
-
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
+  const toggleDrawer = () => {
+    setState(!state);
   };
 
   const location = useLocation();
@@ -88,93 +133,88 @@ function ResponsiveAppBar() {
   console.log(location.state?.prevPath, location.pathname);
 
   return (
-    <AppBar
-      position="fixed"
-      sx={{
-        background: `linear-gradient(0deg, ${colors.dark}00 0%, ${colors.dark}FF 30%)`,
-        height: "6rem",
-        zIndex: 1000,
-        boxShadow: "none",
-      }}
-    >
-      <Container
-        maxWidth="xl"
+    <>
+      <AppBar
+        position="fixed"
         sx={{
-          height: "100%",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
+          background: `linear-gradient(0deg, ${colors.dark}00 0%, ${colors.dark}FF 30%)`,
+          height: "6rem",
+          zIndex: 1000,
+          boxShadow: "none",
         }}
       >
-        <Toolbar
+        <Container
+          maxWidth="xl"
           sx={{
-            height: "fit-content",
+            height: "100%",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
           }}
         >
-          <img
-            src={logo}
-            alt="logo"
-            style={{
-              display: "block",
-              margin: location.pathname === "/" ? "0" : "3rem",
-              padding: 0,
-              width: location.pathname === "/" ? "0" : "56px",
-              height: location.pathname === "/" ? "0" : "56px",
-              animation: logoAnim,
-            }}
-          />
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
-            >
-              <MenuIcon />
-            </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: "block", md: "none" },
-              }}
-            >
-              {pages.map((page) => (
-                <MenuItem key={page.text} onClick={handleCloseNavMenu}>
-                  <Typography
-                    textAlign="center"
-                    sx={{
-                      ...fontStyles.navlinks,
-                    }}
-                  >
-                    {page.text}
-                  </Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box>
-          <Box
+          <Toolbar
             sx={{
-              flexGrow: 1,
-              display: { xs: "none", md: "flex" },
-              position: "relative",
-              gap: "1rem",
+              height: "fit-content",
+              width: { xs: "100%", md: "auto" },
+              justifyContent: { xs: "space-between", md: "normal" },
             }}
           >
-            {/* <NavItem
+            <Box
+              component="img"
+              src={logo}
+              alt="logo"
+              sx={{
+                margin: location.pathname === "/" ? "0" : { xs: 0, md: "3rem" },
+                padding: 0,
+                width: location.pathname === "/" ? "0" : "56px",
+                height: location.pathname === "/" ? "0" : "56px",
+                animation: { xs: null, md: logoAnim },
+              }}
+            />
+            <Box sx={{ display: { xs: "flex", md: "none" } }}>
+              <StyledBurger open={state} onClick={toggleDrawer}>
+                <div />
+                <div />
+                <div />
+              </StyledBurger>
+              <Menu
+                id="menu-appbar"
+                anchorOrigin={{
+                  vertical: "bottom",
+                  horizontal: "left",
+                }}
+                keepMounted
+                transformOrigin={{
+                  vertical: "top",
+                  horizontal: "left",
+                }}
+                sx={{
+                  display: { xs: "block", md: "none" },
+                }}
+              >
+                {pages.map((page) => (
+                  <MenuItem key={page.text}>
+                    <Typography
+                      textAlign="center"
+                      sx={{
+                        ...fontStyles.navlinks,
+                      }}
+                    >
+                      {page.text}
+                    </Typography>
+                  </MenuItem>
+                ))}
+              </Menu>
+            </Box>
+            <Box
+              sx={{
+                flexGrow: 1,
+                display: { xs: "none", md: "flex" },
+                position: "relative",
+                gap: "1rem",
+              }}
+            >
+              {/* <NavItem
               key={'Home'}
               style={{
                 ...fontStyles.navlinks,
@@ -188,74 +228,82 @@ function ResponsiveAppBar() {
               {location.pathname === '/' && <Indicator active={location.pathname === '/'}/>}
             </NavItem>          */}
 
-            {pages.map((page) => (
-              <NavItem
-                key={page.text}
-                style={{
-                  ...fontStyles.navlinks,
-                  color:
-                    location.pathname === `/${page.route}`
-                      ? colors.primary
-                      : colors.light,
-                }}
-              >
-                <Link
-                  to={`/${page.route}`}
-                  state={{ prevPath: location.pathname }}
+              {pages.map((page) => (
+                <NavItem
+                  key={page.text}
                   style={{
-                    color: "inherit",
-                    textDecoration: "none",
-                    fontSize: "1.1rem",
+                    ...fontStyles.navlinks,
+                    color:
+                      location.pathname === `/${page.route}`
+                        ? colors.primary
+                        : colors.light,
                   }}
                 >
-                  {page.text}
-                </Link>
-                {location.pathname === `/${page.route}` && (
-                  <Indicator active={location.pathname === `/${page.route}`} />
-                )}
-              </NavItem>
-            ))}
+                  <Link
+                    to={`/${page.route}`}
+                    state={{ prevPath: location.pathname }}
+                    style={{
+                      color: "inherit",
+                      textDecoration: "none",
+                      fontSize: "1.1rem",
+                    }}
+                  >
+                    {page.text}
+                  </Link>
+                  {location.pathname === `/${page.route}` && (
+                    <Indicator
+                      active={location.pathname === `/${page.route}`}
+                    />
+                  )}
+                </NavItem>
+              ))}
 
-            <a
-              href="https://www.youtube.com/c/RMIRoboticsandMachineIntelligenceNITT"
-              style={{
-                height: "36px",
-                marginBlock: "auto",
-                cursor: "pointer",
-              }}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <YoutubeSvg
+              <a
+                href="https://www.youtube.com/c/RMIRoboticsandMachineIntelligenceNITT"
                 style={{
-                  height: "34px",
+                  height: "36px",
+                  marginBlock: "auto",
+                  cursor: "pointer",
                 }}
-              />
-            </a>
-            <a
-              href="https://github.com/RMI-NITT"
-              style={{
-                height: "36px",
-                marginBlock: "auto",
-                cursor: "pointer",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <GithubSvg
+                target="_blank"
+                rel="noreferrer"
+              >
+                <YoutubeSvg
+                  style={{
+                    height: "34px",
+                  }}
+                />
+              </a>
+              <a
+                href="https://github.com/RMI-NITT"
                 style={{
-                  height: "28px",
-                  width: "36px",
+                  height: "36px",
+                  marginBlock: "auto",
+                  cursor: "pointer",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
                 }}
-              />
-            </a>
-          </Box>
-        </Toolbar>
-      </Container>
-    </AppBar>
+                target="_blank"
+                rel="noreferrer"
+              >
+                <GithubSvg
+                  style={{
+                    height: "28px",
+                    width: "36px",
+                  }}
+                />
+              </a>
+            </Box>
+          </Toolbar>
+        </Container>
+      </AppBar>
+      <TemporaryDrawer
+        state={state}
+        toggleDrawer={toggleDrawer}
+        location={location}
+      />
+    </>
   );
 }
 export default ResponsiveAppBar;

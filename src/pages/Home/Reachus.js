@@ -1,4 +1,4 @@
-import { styled } from "@mui/material";
+import { Box, styled } from "@mui/material";
 import React from "react";
 import { colors, fontStyles } from "../../constants";
 import { ReactComponent as LocationSVG } from "../../assets/reachUsIcons/location.svg";
@@ -18,6 +18,10 @@ const Section = styled("div")({
   alignItems: "center",
   margin: "10rem",
   gap: "4rem",
+  "@media (max-width: 767px)": {
+    margin: "1rem",
+    gap: "2rem",
+  },
 });
 const SectionContent = styled("div")({
   display: "flex",
@@ -25,6 +29,10 @@ const SectionContent = styled("div")({
   alignItems: "center",
   justifyContent: "space-between",
   gap: "4rem",
+  "@media (max-width: 767px)": {
+    flexDirection: "column",
+    gap: "2.5rem",
+  },
 });
 const SectionColumn = styled("div")({
   display: "flex",
@@ -35,11 +43,13 @@ const SectionColumn = styled("div")({
 });
 const SectionTitle = styled("div")({
   ...fontStyles.heading,
+  marginTop: "1.5rem",
 });
 
 const IconSectionLayout = styled("div")({
   display: "flex",
   flexDirection: "row",
+  justifyContent: "center",
 });
 
 const IconSectionContent = styled("div")({
@@ -79,6 +89,10 @@ const LinkRow = styled("div")({
   flexDirection: "row",
   width: "100%",
   gap: "4rem",
+  "@media (max-width: 767px)": {
+    flexDirection: "column",
+    gap: "2rem",
+  },
 });
 
 const LinkColumn = styled("div")({
@@ -104,14 +118,15 @@ const Reachus = (props) => {
     <Section>
       <SectionTitle>Reach Us</SectionTitle>
       <SectionContent>
-        <iframe
+        <Box
+          component="iframe"
           src={`https://www.youtube.com/embed/${props.ytLink}`}
           frameBorder="0"
           allow="autoplay; encrypted-media"
           allowFullScreen
           title="video"
-          style={{
-            width: "30rem",
+          sx={{
+            width: { xs: "100%", md: "30rem" },
             aspectRatio: 16 / 9,
           }}
         />

@@ -13,18 +13,27 @@ export const fontStyles = {
     fontWeight: "bold",
     fontSize: "2rem",
     color: colors.light,
+    "@media (max-width: 767px)": {
+      fontSize: "1.5rem",
+    },
   },
   heading: {
     fontFamily: "Raleway, sans-serif",
     fontWeight: 800,
     fontSize: "2.4rem",
     color: colors.primary,
+    "@media (max-width: 767px)": {
+      fontSize: "2rem",
+    },
   },
   content: {
     fontFamily: "Poppins, sans-serif",
     fontWeight: 400,
     fontSize: "1.3rem",
     color: colors.light,
+    "@media (max-width: 767px)": {
+      fontSize: "1rem",
+    },
   },
   navlinks: {
     fontFamily: "Poppins, sans-serif",

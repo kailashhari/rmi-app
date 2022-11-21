@@ -6,7 +6,7 @@ const HeroLayout = styled("div")({
   display: "flex",
   width: "100%",
   paddingInline: "10vw",
-  minHeight: "80vh",
+  height: "90vh",
   marginInline: "auto",
   alignItems: "space-evenly",
   justifyContent: "center",
@@ -14,7 +14,8 @@ const HeroLayout = styled("div")({
   ["@media (max-width:780px)"]: {
     flexDirection: "column",
     width: "100%",
-    minHeight: "80vh",
+    height: "60vh",
+    paddingInline: "0",
     justifyContent: "space-evenly",
   },
 });
@@ -27,7 +28,6 @@ const HeroSectionLayout = styled("div")({
   flexDirection: "column",
   ["@media (max-width:780px)"]: {
     marginTop: "2rem",
-    padding: "1.5rem",
   },
 });
 

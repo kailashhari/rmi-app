@@ -27,6 +27,10 @@ const Main = styled("div")({
   justifyContent: "center",
   marginBlock: "4rem",
   gap: "4rem",
+  "@media (max-width: 767px)": {
+    flexDirection: "column",
+    marginBottom: "0rem",
+  },
 });
 
 const Img = styled("img")({
@@ -60,6 +64,9 @@ const Contents = styled("div")({
   display: "flex",
   flexDirection: "column",
   gap: "2rem",
+  "@media (max-width: 767px)": {
+    padding: "4rem",
+  },
 });
 
 const contents = [
@@ -106,13 +113,16 @@ const ContentLayout = styled("div")({
   flexDirection: "column",
   width: "100%",
   alignItems: "center",
-  gap: "0.6rem",
 });
 const ContentHeading = styled("div")({
   ...fontStyles.heading,
   fontSize: "1.6rem",
   marginLeft: "1.6rem",
   marginBottom: "0.6rem",
+  "@media (max-width: 767px)": {
+    marginLeft: "0rem",
+    fontSize: "1.4rem",
+  },
 });
 
 const ContentContent = styled("div")({
@@ -134,10 +144,18 @@ const ParagraphTitle = styled("div")({
   fontWeight: 500,
   marginLeft: "1.6rem",
   fontStyle: "italic",
+  "@media (max-width: 767px)": {
+    fontSize: "1.2rem",
+    marginLeft: "0rem",
+  },
 });
 const ParagraphContent = styled("div")({
   ...fontStyles.content,
   marginLeft: "1.6rem",
+  "@media (max-width: 767px)": {
+    fontSize: "0.9rem",
+    marginLeft: "0rem",
+  },
 });
 
 const BulletsContainer = styled("div")({
@@ -162,6 +180,9 @@ const BulletPoint = styled("div")({
 });
 const BulletContent = styled("div")({
   ...fontStyles.content,
+  "@media (max-width: 767px)": {
+    fontSize: "0.9rem",
+  },
 });
 
 const Content = ({ data }) => {

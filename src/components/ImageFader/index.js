@@ -20,7 +20,11 @@ const ImageContainer = styled("div")({
 
 const Img = styled("img")({
   width: "100%",
+  objectFit: "fill",
   opacity: 0.15,
+  "@media (max-width: 767px)": {
+    objectFit: "cover",
+  },
 });
 
 // const fadeImages = [

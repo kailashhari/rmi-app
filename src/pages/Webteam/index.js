@@ -116,10 +116,18 @@ const Selector = () => {
       {tab === 0 && (
         <Development>
           <SectionSubtitle>Foundational design and development</SectionSubtitle>
-          <Container maxWidth="md" sx={{ marginTop: "3rem" }}>
-            <Grid container justifyContent="center" spacing={10}>
+          <Container maxWidth="sm" sx={{ marginTop: "3rem" }}>
+            <Grid align="center" container spacing={5}>
               {mainArchitects.map((architect) => (
-                <Grid item key={architect.name} xs={12} sm={6} md={4} lg={4}>
+                <Grid
+                  item
+                  key={architect.name}
+                  xs={12}
+                  sm={6}
+                  md={6}
+                  lg={6}
+                  align="center"
+                >
                   <Card member={architect} />
                 </Grid>
               ))}
@@ -136,8 +144,8 @@ const Selector = () => {
           <SectionSubtitle sx={{ marginTop: "2rem" }}>
             Data acquisition and coordination
           </SectionSubtitle>
-          <Container maxWidth="md" sx={{ marginTop: "3rem" }}>
-            <Grid container width="fit-content" spacing={10}>
+          <Container maxWidth="sm" sx={{ marginTop: "3rem" }}>
+            <Grid container width="fit-content" spacing={5}>
               {addnArchitects.map((architect) => (
                 <>
                   <Grid
@@ -145,8 +153,8 @@ const Selector = () => {
                     key={architect.name}
                     xs={12}
                     sm={6}
-                    md={4}
-                    lg={4}
+                    md={6}
+                    lg={6}
                     align="center"
                   >
                     <Card member={architect} />

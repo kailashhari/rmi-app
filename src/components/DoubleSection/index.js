@@ -11,7 +11,7 @@ const Section = styled("div")({
   flexDirection: "row",
   alignItems: "center",
   justifyContent: "center",
-  height: "90vh",
+  height: "80vh",
   overflow: "hidden",
   position: "relative",
   paddingInline: "10%",
@@ -20,6 +20,7 @@ const Section = styled("div")({
     width: "100%",
     height: "100%",
     justifyContent: "space-evenly",
+    paddingInline: "0%",
   },
 });
 
@@ -38,6 +39,9 @@ const Subsection = styled("div")({
   width: "100%",
   flex: "1",
   padding: "2rem",
+  ["@media (max-width:780px)"]: {
+    padding: "1.2rem",
+  },
 });
 
 const ImgGrid = styled("div")({

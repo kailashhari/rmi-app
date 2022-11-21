@@ -11,6 +11,9 @@ const ProjectCard = styled("div")({
   overflow: "hidden",
   borderRadius: "0.4rem",
   cursor: "pointer",
+  "@media (max-width: 767px)": {
+    height: "15rem",
+  },
 });
 
 const Cover = styled("div")({
@@ -40,6 +43,9 @@ const CoverTitle = styled("div")({
   fontWeight: "bold",
   color: colors.primary,
   marginBlockStart: "1rem",
+  "@media (max-width: 767px)": {
+    fontSize: "1rem",
+  },
 });
 
 const CoverExpansion = styled("div")({
@@ -48,6 +54,9 @@ const CoverExpansion = styled("div")({
   color: colors.grey,
   height: "3rem",
   overflow: "hidden",
+  "@media (max-width: 767px)": {
+    fontSize: "0.8rem",
+  },
 });
 
 const CoverDesc = styled("div")({
@@ -58,6 +67,9 @@ const CoverDesc = styled("div")({
   flexDirection: "column",
   justifyContent: "center",
   textAlign: "justify",
+  "@media (max-width: 767px)": {
+    fontSize: "0.8rem",
+  },
 });
 
 const CoverHeader = styled("div")({
