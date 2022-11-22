@@ -11,6 +11,10 @@ const Line = styled("div")({
   height: "200px",
   width: "5px",
   backgroundColor: `${colors.primary}`,
+  ["@media (max-width:780px)"]: {
+    marginTop: "-0.4rem",
+    height: "180px",
+  },
 });
 
 const CircleWrapper = styled("div")({
@@ -27,7 +31,7 @@ const Circle = styled("div")({
   borderRadius: "50%",
   backgroundColor: "#e5e5e5",
   ["@media (max-width:780px)"]: {
-    marginLeft: "-0.8rem",
+    marginLeft: "-0.5rem",
   },
 });
 
@@ -57,24 +61,33 @@ const Message = styled("div")({
   ["@media (max-width:780px)"]: {
     alignItems: "flex-start",
     minWidth: "60vw",
-    marginLeft: "1.5rem",
+    margin: "1.5rem",
   },
 });
 
 const MessageVenue = styled("div")({
   color: colors.grey,
   fontSize: "0.8rem",
+  ["@media (max-width:780px)"]: {
+    fontSize: "0.6rem",
+  },
 });
 const MessageProject = styled("div")({
   fontSize: "1rem",
+  ["@media (max-width:780px)"]: {
+    fontSize: "0.8rem",
+  },
 });
 const MessageHighlight = styled("span")({
   fontSize: "1.2rem",
   color: colors.primary,
+  ["@media (max-width:780px)"]: {
+    fontSize: "0.9rem",
+  },
 });
 
 const oddOrEven = (n) => {
-  if (n % 2 == 0) {
+  if (n == 0) {
     return {
       left: "150%",
       animation: "slideInFromRight 0.4s forwards",
@@ -139,24 +152,33 @@ const Timeline = ({ setObserver }) => {
               }}
             />
             {message !== "" && (
-              <Message sx={oddOrEven(i)}>
+              <Message sx={{ xs: oddOrEven(0), md: oddOrEven(i % 2) }}>
                 <MessageHighlight
                   sx={{
-                    textAlign: i % 2 === 0 ? "left" : "right",
+                    textAlign: {
+                      xs: "left",
+                      md: i % 2 === 0 ? "left" : "right",
+                    },
                   }}
                 >
                   {message.title}
                 </MessageHighlight>
                 <MessageVenue
                   sx={{
-                    textAlign: i % 2 === 0 ? "left" : "right",
+                    textAlign: {
+                      xs: "left",
+                      md: i % 2 === 0 ? "left" : "right",
+                    },
                   }}
                 >
                   {message.subtitle}
                 </MessageVenue>
                 <MessageProject
                   sx={{
-                    textAlign: i % 2 === 0 ? "left" : "right",
+                    textAlign: {
+                      xs: "left",
+                      md: i % 2 === 0 ? "left" : "right",
+                    },
                   }}
                 >
                   {message.project}

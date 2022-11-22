@@ -3,18 +3,17 @@ import React from "react";
 import { fontStyles } from "../../constants";
 
 const Section = styled("div")({
-  maxWidth: "100vw",
+  width: "100vw",
+  height: "85vh",
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
   justifyContent: "center",
-  minheight: "80vh",
-  height: "fit-content",
   textAlign: "center",
-  marginTop: "4rem",
-  marginBottom: "4rem",
-  // paddingTop: '10vh',
-  // paddingBottom: "10vh",
+  paddingBlock: "4rem",
+  position: "relative",
+  marginBottom: "2rem",
+  gap: "2.6rem",
 });
 
 const SectionTitle = styled("div")({

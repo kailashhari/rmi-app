@@ -32,6 +32,9 @@ const GridOfFame = styled("div")({
   gridTemplateColumns: "auto auto",
   gap: "2rem",
   margin: "3rem",
+  ["@media (max-width:780px)"]: {
+    gridTemplateColumns: "auto",
+  },
 });
 
 const Prize = ({ n }) => {
@@ -82,21 +85,38 @@ const FameItem = styled("div")({
     flexDirection: "column",
     width: "100%",
     height: "100%",
-    justifyContent: "space-evenly",
+    justifyContent: "center",
+    alignItems: "center",
     textAlign: "center",
   },
+});
+
+const FameIcon = styled("div")({
+  height: "5rem",
+  width: "5rem",
 });
 
 const FameText = styled("div")({
   display: "flex",
   flexDirection: "column",
   paddingBlock: "1rem",
+  ["@media (max-width:780px)"]: {
+    paddingBlock: "0.2rem",
+  },
 });
-const FameTitle = styled("div")({});
+const FameTitle = styled("div")({
+  fontSize: "1.4rem",
+  ["@media (max-width:780px)"]: {
+    fontSize: "1.2rem",
+  },
+});
 const FameDesc = styled("div")({
   fontSize: "1rem",
   lineHeight: "135%",
   color: colors.grey,
+  ["@media (max-width:780px)"]: {
+    fontSize: "0.9rem",
+  },
 });
 
 const index = ({ title }) => {
@@ -129,9 +149,9 @@ const index = ({ title }) => {
           <GridOfFame>
             {topHonours.map((award, index) => (
               <FameItem key={index}>
-                <Box>
+                <FameIcon>
                   <Prize n={parseInt(award.prizeIndex)} />
-                </Box>
+                </FameIcon>
                 <FameText>
                   <FameTitle>{award.title}</FameTitle>
                   <FameDesc>{award.organisers}</FameDesc>

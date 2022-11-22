@@ -103,12 +103,9 @@ function App() {
     <>
       {data !== null && (
         <AppContext.Provider value={data}>
-          <ThemeProvider theme={darkTheme}>
-            <CssBaseline />
-            <AppLayout>
-              <RouterProvider router={router} />
-            </AppLayout>
-          </ThemeProvider>
+          <AppLayout>
+            <RouterProvider router={router} />
+          </AppLayout>
         </AppContext.Provider>
       )}
     </>

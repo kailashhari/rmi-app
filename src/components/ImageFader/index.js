@@ -7,7 +7,7 @@ import "react-slideshow-image/dist/styles.css";
 const ImageFaderLayout = styled("div")({
   position: "absolute",
   width: "100%",
-  height: "100%",
+  height: "85vh",
   backgroundColor: `${colors.dark}33`,
   overflow: "hidden",
 });
@@ -20,11 +20,9 @@ const ImageContainer = styled("div")({
 
 const Img = styled("img")({
   width: "100%",
-  objectFit: "fill",
+  height: "85vh",
+  objectFit: "cover",
   opacity: 0.15,
-  "@media (max-width: 767px)": {
-    objectFit: "cover",
-  },
 });
 
 // const fadeImages = [

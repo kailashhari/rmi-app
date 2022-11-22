@@ -6,7 +6,7 @@ const HeroLayout = styled("div")({
   display: "flex",
   width: "100%",
   paddingInline: "10vw",
-  height: "90vh",
+  height: "85vh",
   marginInline: "auto",
   alignItems: "space-evenly",
   justifyContent: "center",
@@ -14,7 +14,6 @@ const HeroLayout = styled("div")({
   ["@media (max-width:780px)"]: {
     flexDirection: "column",
     width: "100%",
-    height: "60vh",
     paddingInline: "0",
     justifyContent: "space-evenly",
   },

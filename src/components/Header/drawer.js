@@ -16,6 +16,7 @@ export default function TemporaryDrawer({ state, toggleDrawer, location }) {
       sx={{
         height: "100%",
         background: "transparent",
+        transition: "height 400ms cubic-bezier(0.23, 1, 0.32, 1)",
       }}
       role="presentation"
       onClick={toggleDrawer}
@@ -67,20 +68,19 @@ export default function TemporaryDrawer({ state, toggleDrawer, location }) {
   );
 
   return (
-    <div>
-      <Box
-        sx={{
-          display: state ? "inline" : "none",
-          zIndex: 200,
-          height: "100%",
-          width: "100%",
-          position: "fixed",
-          top: "4rem",
-          background: "transparent",
-        }}
-      >
-        {list()}
-      </Box>
-    </div>
+    <Box
+      component="div"
+      sx={{
+        display: { xs: state ? "inline" : "none", md: "none" },
+        zIndex: 200,
+        height: "100%",
+        width: "100%",
+        position: "fixed",
+        top: "4rem",
+        background: "transparent",
+      }}
+    >
+      {list()}
+    </Box>
   );
 }

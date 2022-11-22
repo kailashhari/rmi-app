@@ -4,7 +4,7 @@ import { fontStyles } from "../../constants";
 
 const Section = styled("div")({
   width: "100vw",
-  height: "80vh",
+  height: "85vh",
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
@@ -14,9 +14,6 @@ const Section = styled("div")({
   position: "relative",
   marginBottom: "2rem",
   gap: "2.6rem",
-  "@media (max-width: 767px)": {
-    height: "60vh",
-  },
 });
 
 const SectionTitle = styled("div")({
