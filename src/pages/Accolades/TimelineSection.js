@@ -10,6 +10,7 @@ import "./styles.css";
 const Line = styled("div")({
   height: "200px",
   width: "5px",
+  marginTop: "0",
   backgroundColor: `${colors.primary}`,
   ["@media (max-width:780px)"]: {
     marginTop: "-0.4rem",
@@ -29,6 +30,7 @@ const Circle = styled("div")({
   justifyContent: "center",
   color: `${colors.dark}`,
   borderRadius: "50%",
+  marginLeft: 0,
   backgroundColor: "#e5e5e5",
   ["@media (max-width:780px)"]: {
     marginLeft: "-0.5rem",
@@ -40,6 +42,7 @@ const Wrapper = styled("div")({
   flexDirection: "column",
   alignItems: "center",
   marginBottom: "15rem",
+  marginLeft: 0,
   ["@media (max-width:780px)"]: {
     alignItems: "flex-start",
     marginLeft: "3rem",
@@ -58,6 +61,7 @@ const Message = styled("div")({
   display: "flex",
   flexDirection: "column",
   padding: "1rem 2rem",
+  alignItems: "normal",
   ["@media (max-width:780px)"]: {
     alignItems: "flex-start",
     minWidth: "60vw",
@@ -102,7 +106,7 @@ const oddOrEven = (n) => {
         left: "150%",
         right: "0%",
         animation: "slideInFromLeft 0.4s forwards",
-        alignItems: "flex-end",
+        alignItems: "flex-start",
       },
     };
   }
@@ -152,7 +156,7 @@ const Timeline = ({ setObserver }) => {
               }}
             />
             {message !== "" && (
-              <Message sx={{ xs: oddOrEven(0), md: oddOrEven(i % 2) }}>
+              <Message sx={oddOrEven(i % 2)}>
                 <MessageHighlight
                   sx={{
                     textAlign: {

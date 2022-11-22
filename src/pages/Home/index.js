@@ -181,7 +181,7 @@ const index = ({ title }) => {
                   fontFamily: "Gotham",
                   fontSize: "1.6rem",
                   fontWeight: "400",
-                  mt: "1rem",
+                  mt: "2rem",
                 }}
               >
                 The Official Robotics Club of NIT Trichy

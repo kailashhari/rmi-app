@@ -92,7 +92,7 @@ const FameItem = styled("div")({
 });
 
 const FameIcon = styled("div")({
-  height: "5rem",
+  height: "3.5rem",
   width: "5rem",
 });
 

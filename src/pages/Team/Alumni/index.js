@@ -5,6 +5,8 @@ import { styled } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import { Container } from "@mui/system";
 import { AppContext } from "../../../store/context";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import CardMobile from "./Card/mobile";
 
 const CardGrid = styled("div")({
   width: "fit-content",
@@ -25,6 +27,7 @@ const Index = () => {
     ...new Set(alumniMembers.map((member) => member.batchTag)),
   ];
   const [year, setYear] = React.useState(recentYear);
+  const matches = useMediaQuery("(max-width:600px)");
   const filteredMembers = (i) => {
     let toBeReturned;
     if (i === "All") {

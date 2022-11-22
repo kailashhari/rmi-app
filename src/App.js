@@ -13,7 +13,6 @@ import React, { useEffect, useState } from "react";
 import { AppContext } from "./store/context";
 import Webteam from "./pages/Webteam";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
-import CssBaseline from "@mui/material/CssBaseline";
 
 const AppLayout = styled("div")({
   ...defaultStyles,
@@ -98,9 +97,8 @@ function App() {
       mode: "dark",
     },
   });
-
   return (
-    <>
+    <ThemeProvider theme={darkTheme}>
       {data !== null && (
         <AppContext.Provider value={data}>
           <AppLayout>
@@ -108,7 +106,7 @@ function App() {
           </AppLayout>
         </AppContext.Provider>
       )}
-    </>
+    </ThemeProvider>
   );
 }
 

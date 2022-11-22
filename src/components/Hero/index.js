@@ -6,7 +6,7 @@ const HeroLayout = styled("div")({
   display: "flex",
   width: "100%",
   paddingInline: "10vw",
-  height: "85vh",
+  height: "80vh",
   marginInline: "auto",
   alignItems: "space-evenly",
   justifyContent: "center",

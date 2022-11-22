@@ -4,6 +4,9 @@ import Card from "./Card";
 import { AppContext } from "../../../store/context";
 import Grid from "@mui/material/Grid";
 import { Container } from "@mui/system";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import CardMobile from "./Card/mobile";
+import ScopedCssBaseline from "@mui/material/ScopedCssBaseline";
 
 const Index = () => {
   const currentMembers = useContext(AppContext).ourTeam.currentMembers;
@@ -35,7 +38,7 @@ const Index = () => {
           alignItems="center"
           justifyContent="center"
           width="fit-content"
-          spacing={10}
+          spacing={{ xs: 8.5, md: 10 }}
         >
           {filteredMembers(year).map((member) => (
             <Grid
@@ -49,7 +52,9 @@ const Index = () => {
               width="fit-content"
               padding={0}
             >
-              <Card member={member} />
+              <ScopedCssBaseline>
+                <Card member={member} />
+              </ScopedCssBaseline>
             </Grid>
           ))}
         </Grid>

@@ -28,6 +28,10 @@ const Credits = styled("div")({
   color: "#fff",
   fontSize: "1.2rem",
   fontFamily: "Poppins",
+  "@media (max-width: 767px)": {
+    fontSize: "1rem",
+    textAlign: "center",
+  },
 });
 
 const CreditLink = styled("span")({
@@ -45,12 +49,19 @@ const FooterMain = styled("div")({
   display: "flex",
   justifyContent: "space-between",
   width: "100%",
+  "@media (max-width: 767px)": {
+    alignItems: "center",
+  },
 });
 
 const FooterLeft = styled("div")({
   display: "flex",
   flexDirection: "column",
   gap: "1rem",
+  "@media (max-width: 767px)": {
+    alignItems: "center",
+    width: "100%",
+  },
 });
 
 const FooterLogo = styled("div")({
@@ -70,6 +81,9 @@ const FollowUsSection = styled("div")({
   display: "flex",
   flexDirection: "column",
   gap: "0.4rem",
+  "@media (max-width: 767px)": {
+    alignItems: "center",
+  },
 });
 
 const FollowUs = styled("div")({
@@ -154,8 +168,8 @@ const FooterHolder = () => (
           <FollowUsLinks
             sx={{
               gap: {
-                xs: "0.3rem",
-                sm: "0.3rem",
+                xs: "1rem",
+                sm: "1rem",
                 md: "0.6rem",
                 lg: "0.6rem",
               },

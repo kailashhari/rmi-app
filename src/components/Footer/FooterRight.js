@@ -35,13 +35,17 @@ const footerData = [
 
 const FooterRight = styled("div")({
   display: "flex",
-  marginTop: "1rem",
+  marginTop: "2rem",
 });
 
 const FooterColumn = styled("div")({
   display: "flex",
   flexDirection: "column",
   gap: "0.6rem",
+  "@media (max-width: 767px)": {
+    marginTop: "0.6rem",
+    alignItems: "center",
+  },
 });
 
 const FooterColumnTitle = styled("div")({
@@ -49,12 +53,18 @@ const FooterColumnTitle = styled("div")({
   fontSize: "1rem",
   fontFamily: "Gotham",
   fontWeight: "light",
+  "@media (max-width: 767px)": {
+    fontSize: "1rem",
+  },
 });
 
 const FooterColumnItem = styled("div")({
   color: "#fff",
   fontSize: "1rem",
   fontFamily: "Poppins",
+  "@media (max-width: 767px)": {
+    fontSize: "0.9rem",
+  },
 });
 
 const FooterColumnHolder = ({ columnTitle, columnItems, columnLink }) => (
@@ -90,8 +100,8 @@ const FooterRightHolder = () => (
   <FooterRight
     sx={{
       gap: {
-        xs: "1rem",
-        sm: "2rem",
+        xs: "2.5rem",
+        sm: "2.5rem",
         md: "3rem",
         lg: "3rem",
       },

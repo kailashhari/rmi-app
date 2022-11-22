@@ -14,28 +14,44 @@ const Column = styled("div")({
   flexDirection: "column",
   width: "fit-content",
   gap: "2rem",
+  "@media (max-width: 767px)": {
+    width: "100%",
+    marginTop: "1rem",
+    alignItems: "center",
+  },
 });
+
 const IconColumn = styled("div")({
   display: "flex",
   flexDirection: "column",
   gap: "1rem",
 });
+
 const IconSection = styled("div")({
   display: "flex",
   flexDirection: "row",
   gap: "1rem",
   width: "fit-content",
+  "@media (max-width: 767px)": {
+    width: "80%",
+  },
 });
 
 const IconTitle = styled("div")({
   ...fontStyles.heading,
   fontSize: "1.4rem",
   marginTop: "0.2rem",
+  "@media (max-width: 767px)": {
+    fontSize: "1.4rem",
+  },
 });
 
 const TechStacks = styled("div")({
   display: "flex",
   flexDirection: "column",
+  "@media (max-width: 767px)": {
+    marginBottom: "2rem",
+  },
 });
 
 const TechStack = styled("div")({
@@ -43,6 +59,9 @@ const TechStack = styled("div")({
   color: colors.grey,
   fontSize: "1.3rem",
   fontWeight: 500,
+  "@media (max-width: 767px)": {
+    fontSize: "1rem",
+  },
 });
 
 const IconWrapperLayout = styled("div")({
@@ -92,8 +111,9 @@ const ProjectStats = (props) => {
         <Box
           sx={{
             display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-between",
+            width: "100%",
+            flexDirection: { xs: "column", md: "row" },
+            justifyContent: { xs: "center", md: "space-between" },
           }}
         >
           <Column>

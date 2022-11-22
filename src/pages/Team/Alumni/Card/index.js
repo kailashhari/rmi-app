@@ -10,7 +10,7 @@ import { ReactComponent as FlipTwo } from "../../../../assets/memberCardSvgs/fli
 import noprofile from "../../../../assets/noprofile.png";
 import { Link } from "react-router-dom";
 
-const nameModder = (name) => {
+export const nameModder = (name) => {
   const totalLength = name.length;
   if (totalLength < 14) {
     return { fname: name, lname: "" };

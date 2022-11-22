@@ -4,7 +4,7 @@ import { fontStyles } from "../../constants";
 
 const Section = styled("div")({
   width: "100vw",
-  height: "85vh",
+  height: "80vh",
   display: "flex",
   flexDirection: "column",
   alignItems: "center",

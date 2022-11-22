@@ -14,7 +14,7 @@ const Herolayout = styled("div")({
   height: "80vh",
   width: "100%",
   position: "relative",
-  overflow: "hidden",
+  overflowX: "hidden",
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
@@ -33,22 +33,23 @@ const Layout = styled("div")({
 
 const HeroBg = styled("img")({
   width: "100%",
+  height: "80vh",
   objectFit: "cover",
   opacity: 0.2,
   position: "absolute",
   top: "0",
   left: "0",
-  zIndex: 200,
+  zIndex: 100,
 });
 
 const HeroTitle = styled("div")({
   ...fontStyles.heading,
-  zIndex: 201,
+  zIndex: 101,
 });
 const HeroSubtitle = styled("div")({
   ...fontStyles.content,
   color: colors.grey,
-  zIndex: 201,
+  zIndex: 101,
 });
 
 const PubTitle = styled("div")({
@@ -73,6 +74,9 @@ const Publication = styled("div")({
   marginBlock: "1rem",
   display: "flex",
   flexDirection: "column",
+  "@media (max-width: 767px)": {
+    margin: "auto",
+  },
 });
 
 const HeroContent = styled("div")({
@@ -86,6 +90,10 @@ const HeroContent = styled("div")({
 const Title = styled("div")({
   ...fontStyles.heading,
   fontSize: "2rem",
+  "@media (max-width: 767px)": {
+    alignItems: "center",
+    fontSize: "1.5rem",
+  },
 });
 
 const DevTitle = styled("div")({
@@ -95,6 +103,10 @@ const DevTitle = styled("div")({
   lineHeight: "100%",
   fontWeight: 600,
   marginBlock: "1rem",
+  "@media (max-width: 767px)": {
+    alignItems: "center",
+    fontSize: "1rem",
+  },
 });
 
 const Hero = ({ project }) => {
@@ -147,10 +159,11 @@ const Index = ({ title }) => {
       <Carousel contents={project.images} />
       <Container
         maxWidth="lg"
-        style={{
+        sx={{
           textAlign: "justify",
-          marginBlock: "6rem",
-          fontSize: "1.2rem",
+          marginBlock: { xs: "5rem", md: "6rem" },
+          paddingInline: { xs: "3rem", md: "0rem" },
+          fontSize: { xs: "0.95rem", md: "1.2rem" },
           display: "flex",
           flexDirection: "column",
           gap: "2rem",
@@ -210,7 +223,7 @@ const Index = ({ title }) => {
             <Grid
               container
               width="fit-content"
-              spacing={10}
+              spacing={5}
               justifyContent="center"
             >
               {projectMembers.map(
@@ -229,9 +242,9 @@ const Index = ({ title }) => {
                       <Publication key={index}>
                         <Avatar
                           src={dev.imageLink ? dev.imageLink : noprofile}
-                          style={{
-                            width: "8rem",
-                            height: "8rem",
+                          sx={{
+                            width: { xs: "4rem", md: "8rem" },
+                            height: { xs: "4rem", md: "8rem" },
                           }}
                         />
                         <DevTitle>{dev.name}</DevTitle>

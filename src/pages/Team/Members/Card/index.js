@@ -9,8 +9,9 @@ import { ReactComponent as FlipOne } from "../../../../assets/memberCardSvgs/fli
 import { ReactComponent as FlipTwo } from "../../../../assets/memberCardSvgs/flipsvg2.svg";
 import noprofile from "../../../../assets/noprofile.png";
 import { Link } from "react-router-dom";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
-const nameModder = (name) => {
+export const nameModder = (name) => {
   const totalLength = name.length;
   if (totalLength < 14) {
     return { fname: name, lname: "" };
@@ -186,7 +187,7 @@ const Domain = styled("div")({
   fontSize: "1rem",
   fontFamily: "Gotham",
   fontWeight: 500,
-  marginBlock: "0.2rem",
+  marginBlock: "-0.1rem",
   textAlign: "center",
 });
 
@@ -196,7 +197,7 @@ const Project = styled("div")({
   fontSize: "1rem",
   fontFamily: "Gotham",
   fontWeight: 500,
-  marginBlock: "0.2rem",
+  marginBlock: "-0.1rem",
   textAlign: "center",
   textDecoration: "none",
 });
@@ -214,17 +215,41 @@ const Icons = styled("div")({
 const Card = (props) => {
   const [flip, setFlip] = React.useState(false);
   const [hover, setHover] = React.useState(false);
+  const isMobile =
+    /Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(
+      navigator.userAgent
+    );
   const namesplit = nameModder(props.member.name.toUpperCase());
+  const [tapCount, setTapCount] = React.useState(0);
   return (
     <CardLayout
       onMouseEnter={() => {
-        setHover(true);
+        if (!isMobile) {
+          setHover(true);
+        }
       }}
       onMouseLeave={() => {
-        setHover(false);
+        if (!isMobile) {
+          setHover(false);
+        }
       }}
       onClick={() => {
-        setFlip((flip) => !flip);
+        if (isMobile) {
+          if (tapCount === 0) {
+            setHover(true);
+            setTapCount(1);
+          } else if (tapCount === 1) {
+            setFlip((flip) => !flip);
+            setTapCount(2);
+          } else if (tapCount === 2) {
+            setHover(false);
+            setFlip((flip) => !flip);
+            setTapCount(0);
+          }
+          console.log(tapCount);
+        } else {
+          setFlip((flip) => !flip);
+        }
       }}
       sx={{
         transition: "transform 0.4s",

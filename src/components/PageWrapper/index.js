@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Footer from "../Footer";
 import Header from "../Header";
-import { styled } from "@mui/material";
+import { styled } from "@mui/material/styles";
 
 const StaticBackground = styled("div")({
   position: "fixed",

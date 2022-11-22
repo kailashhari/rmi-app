@@ -72,14 +72,14 @@ const SectionContent = styled("div")({
 const Subsection = styled("div")({
   width: "100%",
   height: "fit-content",
-  flex: "1",
+  flex: 1,
   padding: "2rem",
   zIndex: 11,
 });
 const SubCarouselSection = styled("div")({
   width: "100%",
   height: "100%",
-  flex: "1",
+  flex: 1,
   zIndex: 11,
 });
 
@@ -180,6 +180,8 @@ const Index = (props) => {
             position: "absolute",
             zIndex: 10,
             width: "100%",
+            height: "80vh",
+            objectFit: "cover",
             aspectRatio: "auto",
             opacity: "0.1",
           }}

@@ -45,21 +45,6 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  .carousel {
-    width: 24rem;
-    height: 13.5rem;
-  }
-
-  .card-container {
-    transform: rotateY(calc(var(--offset) * 50deg))
-      scaleY(calc(1 + var(--abs-offset) * -0.4))
-      translateZ(calc(var(--abs-offset) * -15rem))
-      translateX(calc(var(--direction) * -3rem));
-    filter: blur(calc(var(--abs-offset) * 0.5rem));
-  }
-}
-
 .card h2 {
   text-align: center;
   font-size: 2rem;
@@ -109,3 +94,21 @@
   height: 100%;
   object-fit: cover;
 }
+
+@media screen and (max-width: 768px) {
+    .carousel {
+      width: 100vw;
+      height: 13.5rem;
+      overflow-x: hidden;
+    }
+  
+    .card-container {
+      transform: none;
+      filter: none;
+    }
+    .nav {
+        font-size: 3rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+  }
