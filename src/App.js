@@ -100,15 +100,13 @@ function App() {
   });
   return (
     <ThemeProvider theme={darkTheme}>
-      <ScopedCssBaseline sx={{ background: "transparent" }}>
-        {data !== null && (
-          <AppContext.Provider value={data}>
-            <AppLayout>
-              <RouterProvider router={router} />
-            </AppLayout>
-          </AppContext.Provider>
-        )}
-      </ScopedCssBaseline>
+      {data !== null && (
+        <AppContext.Provider value={data}>
+          <AppLayout>
+            <RouterProvider router={router} />
+          </AppLayout>
+        </AppContext.Provider>
+      )}
     </ThemeProvider>
   );
 }

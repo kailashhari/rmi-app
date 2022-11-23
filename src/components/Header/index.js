@@ -159,21 +159,24 @@ function ResponsiveAppBar() {
               justifyContent: { xs: "space-between", md: "normal" },
             }}
           >
-            <Box
-              component="img"
-              src={logo}
-              alt="logo"
-              style={{
-                display: "block",
-                padding: 0,
-                width: location.pathname === "/" ? "0" : "56px",
-                height: location.pathname === "/" ? "0" : "56px",
-              }}
-              sx={{
-                margin: location.pathname === "/" ? "0" : { xs: 0, md: "3rem" },
-                animation: { xs: null, md: logoAnim },
-              }}
-            />
+            <Link to={`/`} state={{ prevPath: location.pathname }}>
+              <Box
+                component="img"
+                src={logo}
+                alt="logo"
+                style={{
+                  display: "block",
+                  padding: 0,
+                  width: location.pathname === "/" ? "0" : "56px",
+                  height: location.pathname === "/" ? "0" : "56px",
+                }}
+                sx={{
+                  margin:
+                    location.pathname === "/" ? "0" : { xs: 0, md: "3rem" },
+                  animation: { xs: null, md: logoAnim },
+                }}
+              />
+            </Link>
             <Box
               sx={{
                 flexGrow: { xs: 0, md: 1 },

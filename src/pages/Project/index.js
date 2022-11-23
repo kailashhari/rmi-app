@@ -228,7 +228,7 @@ const Index = ({ title }) => {
           <Title
             sx={{
               marginBlock: "2rem",
-              marginTop: { xs: "3rem", md: 0 },
+              marginTop: "3rem",
             }}
           >
             Project Developers{" "}
@@ -236,7 +236,7 @@ const Index = ({ title }) => {
           <Container
             maxWidth="md"
             sx={{
-              marginTop: { xs: "2rem", md: "4rem" },
+              marginTop: "2rem",
               display: "flex",
               justifyContent: "center",
             }}

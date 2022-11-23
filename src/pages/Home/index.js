@@ -31,7 +31,7 @@ const responsive = {
 
 const HeroText = styled("div")({
   fontFamily: "Raleway",
-  fontSize: "2.7rem",
+  fontSize: "2.8rem",
   fontWeight: "700",
   justifyContent: "flex-end",
 });
@@ -40,7 +40,7 @@ const HeroAnd = styled("span")({
   fontFamily: "Raleway",
   fontSize: "2rem",
   fontWeight: "700",
-  margin: "0.5rem 0.4rem",
+  margin: "0.2rem 0.4rem",
 });
 
 const HeroLineContainer = styled("div")({
@@ -180,7 +180,7 @@ const index = ({ title }) => {
             </HeroLineContainer> */}
             <HeroLineContainer>
               <HeroText
-                sx={{
+                style={{
                   fontFamily: "Gotham",
                   fontSize: "1.6rem",
                   fontWeight: "400",
