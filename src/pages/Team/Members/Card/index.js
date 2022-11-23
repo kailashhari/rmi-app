@@ -10,6 +10,7 @@ import { ReactComponent as FlipTwo } from "../../../../assets/memberCardSvgs/fli
 import noprofile from "../../../../assets/noprofile.png";
 import { Link } from "react-router-dom";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import ScopedCssBaseline from "@mui/material/ScopedCssBaseline";
 
 export const nameModder = (name) => {
   const totalLength = name.length;
@@ -200,6 +201,7 @@ const Project = styled("div")({
   marginBlock: "-0.1rem",
   textAlign: "center",
   textDecoration: "none",
+  cursor: "crosshair",
 });
 const Icons = styled("div")({
   position: "absolute",
@@ -257,69 +259,134 @@ const Card = (props) => {
       }}
     >
       <Front>
-        <ImgHolder>
-          {props.member.imageLink ? (
-            <Img src={props.member.imageLink} loading="lazy" />
-          ) : (
-            <Img src={noprofile} loading="lazy" />
-          )}
-        </ImgHolder>
-        <Slide hover={hover} />
-        <Slider hover={hover}>
-          <NameContainer hover={hover}>
+        <ScopedCssBaseline>
+          <ImgHolder>
+            {props.member.imageLink ? (
+              <Img src={props.member.imageLink} loading="lazy" />
+            ) : (
+              <Img src={noprofile} loading="lazy" />
+            )}
+          </ImgHolder>
+          <Slide hover={hover} />
+          <Slider hover={hover}>
+            <NameContainer hover={hover}>
+              {namesplit.lname === "" ? (
+                <SingleName>{namesplit.fname}</SingleName>
+              ) : (
+                <>
+                  <FirstName>{namesplit.fname}</FirstName>
+                  <FirstName>{namesplit.lname}</FirstName>
+                </>
+              )}
+            </NameContainer>
+            <div
+              style={{
+                height: "6rem",
+              }}
+            >
+              {props.member.position ? (
+                <Subtitle>{props.member.position}</Subtitle>
+              ) : null}
+              {props.member.domains &&
+                props.member.domains.map((domain, index) => (
+                  <Domain key={index}>{domain}</Domain>
+                ))}
+            </div>
+            <Icons>
+              {props.member.github ? (
+                <a href={props.member.github} target="_blank" rel="noreferrer">
+                  <GitSvg />
+                </a>
+              ) : null}
+              {props.member.linkedIn ? (
+                <a
+                  href={props.member.linkedIn}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <InSvg />
+                </a>
+              ) : null}
+              {props.member.email ? (
+                <a
+                  href={`mailto:${props.member.email}`}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <MailSvg />
+                </a>
+              ) : null}
+              {props.member.personalPage ? (
+                <a
+                  href={props.member.personalPage}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <WebSvg />
+                </a>
+              ) : null}
+            </Icons>
+            <FlipOne
+              style={{
+                width: "2.2rem",
+                height: "2.2rem",
+                position: "absolute",
+                bottom: 0,
+                right: 0,
+                zIndex: 2,
+              }}
+            />
+          </Slider>
+        </ScopedCssBaseline>
+      </Front>
+      <Back>
+        <ScopedCssBaseline sx={{ background: "transparent" }}>
+          <NameContainer hover={true}>
             {namesplit.lname === "" ? (
-              <SingleName>{namesplit.fname}</SingleName>
+              <SingleName
+                sx={{
+                  color: colors.dark,
+                }}
+              >
+                {namesplit.fname}
+              </SingleName>
             ) : (
               <>
-                <FirstName>{namesplit.fname}</FirstName>
-                <FirstName>{namesplit.lname}</FirstName>
+                <FirstName
+                  sx={{
+                    color: colors.dark,
+                  }}
+                >
+                  {namesplit.fname}
+                </FirstName>
+                <FirstName
+                  sx={{
+                    color: colors.dark,
+                  }}
+                >
+                  {namesplit.lname}
+                </FirstName>
               </>
             )}
           </NameContainer>
-          <div
-            style={{
-              height: "6rem",
-            }}
-          >
-            {props.member.position ? (
-              <Subtitle>{props.member.position}</Subtitle>
-            ) : null}
-            {props.member.domains &&
-              props.member.domains.map((domain, index) => (
-                <Domain key={index}>{domain}</Domain>
-              ))}
-          </div>
-          <Icons>
-            {props.member.github ? (
-              <a href={props.member.github} target="_blank" rel="noreferrer">
-                <GitSvg />
-              </a>
-            ) : null}
-            {props.member.linkedIn ? (
-              <a href={props.member.linkedIn} target="_blank" rel="noreferrer">
-                <InSvg />
-              </a>
-            ) : null}
-            {props.member.email ? (
-              <a
-                href={`mailto:${props.member.email}`}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <MailSvg />
-              </a>
-            ) : null}
-            {props.member.personalPage ? (
-              <a
-                href={props.member.personalPage}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <WebSvg />
-              </a>
-            ) : null}
-          </Icons>
-          <FlipOne
+          <SubtitleFlip>Projects</SubtitleFlip>
+          {props.member.projects &&
+            props.member.projects.map((project) => {
+              if (project.pid === "0") {
+                return <Project key={project.pid}>{project.pname}</Project>;
+              } else {
+                return (
+                  <Link
+                    key={project.pid}
+                    to={`/project/${project.pid}`}
+                    style={{ textDecoration: "none" }}
+                  >
+                    <Project>{project.pname}</Project>
+                  </Link>
+                );
+              }
+            })}
+          <FlipTwo
             style={{
               width: "2.2rem",
               height: "2.2rem",
@@ -329,64 +396,7 @@ const Card = (props) => {
               zIndex: 2,
             }}
           />
-        </Slider>
-      </Front>
-      <Back>
-        <NameContainer hover={true}>
-          {namesplit.lname === "" ? (
-            <SingleName
-              sx={{
-                color: colors.dark,
-              }}
-            >
-              {namesplit.fname}
-            </SingleName>
-          ) : (
-            <>
-              <FirstName
-                sx={{
-                  color: colors.dark,
-                }}
-              >
-                {namesplit.fname}
-              </FirstName>
-              <FirstName
-                sx={{
-                  color: colors.dark,
-                }}
-              >
-                {namesplit.lname}
-              </FirstName>
-            </>
-          )}
-        </NameContainer>
-        <SubtitleFlip>Projects</SubtitleFlip>
-        {props.member.projects &&
-          props.member.projects.map((project) => {
-            if (project.pid === "0") {
-              return <Project key={project.pid}>{project.pname}</Project>;
-            } else {
-              return (
-                <Link
-                  key={project.pid}
-                  to={`/project/${project.pid}`}
-                  style={{ textDecoration: "none" }}
-                >
-                  <Project>{project.pname}</Project>
-                </Link>
-              );
-            }
-          })}
-        <FlipTwo
-          style={{
-            width: "2.2rem",
-            height: "2.2rem",
-            position: "absolute",
-            bottom: 0,
-            right: 0,
-            zIndex: 2,
-          }}
-        />
+        </ScopedCssBaseline>
       </Back>
     </CardLayout>
   );

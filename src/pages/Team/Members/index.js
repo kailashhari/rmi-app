@@ -4,9 +4,6 @@ import Card from "./Card";
 import { AppContext } from "../../../store/context";
 import Grid from "@mui/material/Grid";
 import { Container } from "@mui/system";
-import useMediaQuery from "@mui/material/useMediaQuery";
-import CardMobile from "./Card/mobile";
-import ScopedCssBaseline from "@mui/material/ScopedCssBaseline";
 
 const Index = () => {
   const currentMembers = useContext(AppContext).ourTeam.currentMembers;
@@ -52,9 +49,7 @@ const Index = () => {
               width="fit-content"
               padding={0}
             >
-              <ScopedCssBaseline>
-                <Card member={member} />
-              </ScopedCssBaseline>
+              <Card member={member} />
             </Grid>
           ))}
         </Grid>

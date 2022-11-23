@@ -43,8 +43,8 @@ const SectionColumn = styled("div")({
 });
 const SectionTitle = styled("div")({
   ...fontStyles.heading,
-  marginTop: "1.5rem",
   "@media (max-width: 767px)": {
+    marginTop: "4rem",
     fontSize: "1.6rem",
   },
 });
@@ -67,15 +67,18 @@ const IconIcon = styled("img")({
 const IconTitle = styled("div")({
   ...fontStyles.heading,
   margin: "0.2rem 0.4rem",
-  fontSize: "1.6rem",
+  fontSize: "1.2rem",
   "@media (max-width: 767px)": {
-    fontSize: "1.5rem",
+    fontSize: "1.3rem",
   },
 });
 const IconContent = styled("div")({
   ...fontStyles.content,
   fontSize: "1rem",
-  margin: "0.3rem",
+  margin: "0.4rem",
+  "@media (max-width: 767px)": {
+    fontSize: "0.9rem",
+  },
 });
 
 const IconSection = (props) => {
@@ -130,9 +133,10 @@ const Reachus = (props) => {
           allow="autoplay; encrypted-media"
           allowFullScreen
           title="video"
+          style={{ aspectRatio: 16 / 9 }}
           sx={{
+            padding: 0,
             width: { xs: "100%", md: "30rem" },
-            aspectRatio: 16 / 9,
           }}
         />
         <SectionColumn>

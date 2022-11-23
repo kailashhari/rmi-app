@@ -13,6 +13,7 @@ import React, { useEffect, useState } from "react";
 import { AppContext } from "./store/context";
 import Webteam from "./pages/Webteam";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
+import ScopedCssBaseline from "@mui/material/ScopedCssBaseline";
 
 const AppLayout = styled("div")({
   ...defaultStyles,
@@ -99,13 +100,15 @@ function App() {
   });
   return (
     <ThemeProvider theme={darkTheme}>
-      {data !== null && (
-        <AppContext.Provider value={data}>
-          <AppLayout>
-            <RouterProvider router={router} />
-          </AppLayout>
-        </AppContext.Provider>
-      )}
+      <ScopedCssBaseline sx={{ background: "transparent" }}>
+        {data !== null && (
+          <AppContext.Provider value={data}>
+            <AppLayout>
+              <RouterProvider router={router} />
+            </AppLayout>
+          </AppContext.Provider>
+        )}
+      </ScopedCssBaseline>
     </ThemeProvider>
   );
 }

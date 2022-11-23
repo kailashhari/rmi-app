@@ -20,7 +20,7 @@ const Section = styled("div")({
     width: "100%",
     height: "100%",
     justifyContent: "space-evenly",
-    paddingInline: "0%",
+    paddingInline: "2rem",
   },
 });
 
@@ -28,11 +28,18 @@ const SectionTitle = styled("div")({
   ...fontStyles.heading,
   marginBottom: "1rem",
   textAlign: "center",
+  "@media (max-width: 767px)": {
+    fontSize: "1.6rem",
+  },
 });
 
 const SectionContent = styled("div")({
   ...fontStyles.content,
   textAlign: "justify",
+  "@media (max-width: 767px)": {
+    marginTop: "2rem",
+    fontSize: "1rem",
+  },
 });
 
 const Subsection = styled("div")({

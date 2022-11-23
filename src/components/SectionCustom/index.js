@@ -10,7 +10,7 @@ const Section = styled("div")({
   flexDirection: "row",
   alignItems: "center",
   justifyContent: "center",
-  height: "80vh",
+  height: "90vh",
   // paddingTop: '10vh',
   backgroundColor: `${colors.dark}55`,
   backgroundBlendMode: "darken",
@@ -173,14 +173,15 @@ const Index = (props) => {
       }}
     >
       {props.bg !== "" && (
-        <img
+        <Box
+          component="img"
           src={props.bg}
           alt="event"
-          style={{
+          sx={{
             position: "absolute",
             zIndex: 10,
             width: "100%",
-            height: "80vh",
+            height: { xs: "80vh", md: "100%" },
             objectFit: "cover",
             aspectRatio: "auto",
             opacity: "0.1",

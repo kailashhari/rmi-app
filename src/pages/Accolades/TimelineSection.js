@@ -10,10 +10,13 @@ import "./styles.css";
 const Line = styled("div")({
   height: "200px",
   width: "5px",
-  marginTop: "0",
+  marginTop: "-0.52rem",
+  marginBottom: "-0.2rem",
   backgroundColor: `${colors.primary}`,
   ["@media (max-width:780px)"]: {
     marginTop: "-0.4rem",
+    marginBottom: "0rem",
+    marginLeft: "0.45rem",
     height: "180px",
   },
 });
@@ -33,7 +36,7 @@ const Circle = styled("div")({
   marginLeft: 0,
   backgroundColor: "#e5e5e5",
   ["@media (max-width:780px)"]: {
-    marginLeft: "-0.5rem",
+    marginLeft: "0rem",
   },
 });
 
@@ -46,6 +49,9 @@ const Wrapper = styled("div")({
   ["@media (max-width:780px)"]: {
     alignItems: "flex-start",
     marginLeft: "3rem",
+    overflow: "hidden",
+    marginBottom: "0rem",
+    paddingBottom: "15rem",
   },
 });
 
@@ -96,6 +102,9 @@ const oddOrEven = (n) => {
       left: "150%",
       animation: "slideInFromRight 0.4s forwards",
       alignItems: "flex-start",
+      ["@media (max-width:780px)"]: {
+        left: "90%",
+      },
     };
   } else {
     return {
@@ -103,9 +112,9 @@ const oddOrEven = (n) => {
       animation: "slideInFromLeft 0.4s forwards",
       alignItems: "flex-end",
       ["@media (max-width:780px)"]: {
-        left: "150%",
+        left: "90%",
         right: "0%",
-        animation: "slideInFromLeft 0.4s forwards",
+        animation: "slideInFromRight 0.4s forwards",
         alignItems: "flex-start",
       },
     };

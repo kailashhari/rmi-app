@@ -19,6 +19,9 @@ const Herolayout = styled("div")({
   flexDirection: "column",
   alignItems: "center",
   justifyContent: "center",
+  "@media (max-width: 767px)": {
+    padding: "2rem",
+  },
 });
 
 const Layout = styled("div")({
@@ -45,11 +48,18 @@ const HeroBg = styled("img")({
 const HeroTitle = styled("div")({
   ...fontStyles.heading,
   zIndex: 101,
+  "@media (max-width: 767px)": {
+    fontSize: "2.2rem",
+  },
 });
 const HeroSubtitle = styled("div")({
   ...fontStyles.content,
   color: colors.grey,
   zIndex: 101,
+  "@media (max-width: 767px)": {
+    fontSize: "1.2rem",
+    textAlign: "center",
+  },
 });
 
 const PubTitle = styled("div")({
@@ -58,6 +68,9 @@ const PubTitle = styled("div")({
   color: colors.black,
   lineHeight: "100%",
   fontWeight: 700,
+  "@media (max-width: 767px)": {
+    fontSize: "1.1rem",
+  },
 });
 
 const PubSubtitle = styled("div")({
@@ -65,6 +78,9 @@ const PubSubtitle = styled("div")({
   color: colors.grey,
   fontSize: "1.3rem",
   fontWeight: 400,
+  "@media (max-width: 767px)": {
+    fontSize: "1rem",
+  },
 });
 
 const Publication = styled("div")({
@@ -85,6 +101,10 @@ const HeroContent = styled("div")({
   textAlign: "center",
   marginTop: "1.5rem",
   zIndex: 201,
+  "@media (max-width: 767px)": {
+    width: "100%",
+    fontSize: "1rem",
+  },
 });
 
 const Title = styled("div")({
@@ -208,6 +228,7 @@ const Index = ({ title }) => {
           <Title
             sx={{
               marginBlock: "2rem",
+              marginTop: { xs: "3rem", md: 0 },
             }}
           >
             Project Developers{" "}
@@ -215,7 +236,7 @@ const Index = ({ title }) => {
           <Container
             maxWidth="md"
             sx={{
-              marginTop: "4rem",
+              marginTop: { xs: "2rem", md: "4rem" },
               display: "flex",
               justifyContent: "center",
             }}

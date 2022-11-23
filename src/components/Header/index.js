@@ -163,15 +163,23 @@ function ResponsiveAppBar() {
               component="img"
               src={logo}
               alt="logo"
-              sx={{
-                margin: location.pathname === "/" ? "0" : { xs: 0, md: "3rem" },
+              style={{
+                display: "block",
                 padding: 0,
                 width: location.pathname === "/" ? "0" : "56px",
                 height: location.pathname === "/" ? "0" : "56px",
+              }}
+              sx={{
+                margin: location.pathname === "/" ? "0" : { xs: 0, md: "3rem" },
                 animation: { xs: null, md: logoAnim },
               }}
             />
-            <Box sx={{ display: { xs: "flex", md: "none" } }}>
+            <Box
+              sx={{
+                flexGrow: { xs: 0, md: 1 },
+                display: { xs: "flex", md: "none" },
+              }}
+            >
               <StyledBurger open={state} onClick={toggleDrawer}>
                 <div />
                 <div />
@@ -208,7 +216,7 @@ function ResponsiveAppBar() {
             </Box>
             <Box
               sx={{
-                flexGrow: 1,
+                flexGrow: { xs: 0, md: 1 },
                 display: { xs: "none", md: "flex" },
                 position: "relative",
                 gap: "1rem",

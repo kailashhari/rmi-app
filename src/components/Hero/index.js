@@ -26,7 +26,8 @@ const HeroSectionLayout = styled("div")({
   justifyContent: "center",
   flexDirection: "column",
   ["@media (max-width:780px)"]: {
-    marginTop: "2rem",
+    marginTop: "1rem",
+    padding: "1.5rem",
   },
 });
 

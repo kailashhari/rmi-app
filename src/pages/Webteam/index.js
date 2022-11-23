@@ -145,7 +145,12 @@ const Selector = () => {
             Data acquisition and coordination
           </SectionSubtitle>
           <Container maxWidth="sm" sx={{ marginTop: "3rem" }}>
-            <Grid container width="fit-content" spacing={5}>
+            <Grid
+              justifyContent="center"
+              container
+              width="fit-content"
+              spacing={5}
+            >
               {addnArchitects.map((architect) => (
                 <>
                   <Grid
@@ -178,6 +183,7 @@ const Selector = () => {
                   md={4}
                   lg={4}
                   xl={4}
+                  align="center"
                 >
                   <Card member={architect} />
                 </Grid>

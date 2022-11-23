@@ -9,6 +9,7 @@ import { ReactComponent as FlipOne } from "../../../../assets/memberCardSvgs/fli
 import { ReactComponent as FlipTwo } from "../../../../assets/memberCardSvgs/flipsvg2.svg";
 import noprofile from "../../../../assets/noprofile.png";
 import { Link } from "react-router-dom";
+import ScopedCssBaseline from "@mui/material/ScopedCssBaseline";
 
 export const nameModder = (name) => {
   const totalLength = name.length;
@@ -227,18 +228,42 @@ const getNameAndYear = (nameAndYear) => {
 const Card = (props) => {
   const [flip, setFlip] = React.useState(false);
   const [hover, setHover] = React.useState(false);
+  const isMobile =
+    /Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(
+      navigator.userAgent
+    );
   const namesplit = nameModder(props.member.name.toUpperCase());
+  const [tapCount, setTapCount] = React.useState(0);
   console.log(namesplit);
   return (
     <CardLayout
       onMouseEnter={() => {
-        setHover(true);
+        if (!isMobile) {
+          setHover(true);
+        }
       }}
       onMouseLeave={() => {
-        setHover(false);
+        if (!isMobile) {
+          setHover(false);
+        }
       }}
       onClick={() => {
-        setFlip((flip) => !flip);
+        if (isMobile) {
+          if (tapCount === 0) {
+            setHover(true);
+            setTapCount(1);
+          } else if (tapCount === 1) {
+            setFlip((flip) => !flip);
+            setTapCount(2);
+          } else if (tapCount === 2) {
+            setHover(false);
+            setFlip((flip) => !flip);
+            setTapCount(0);
+          }
+          console.log(tapCount);
+        } else {
+          setFlip((flip) => !flip);
+        }
       }}
       sx={{
         transition: "transform 0.4s",
@@ -320,59 +345,61 @@ const Card = (props) => {
         </Slider>
       </Front>
       <Back>
-        <NameContainer hover={true}>
-          {namesplit.lname === "" ? (
-            <SingleName
-              sx={{
-                color: colors.dark,
-              }}
-            >
-              {namesplit.fname}
-            </SingleName>
-          ) : (
-            <>
-              <FirstName
+        <ScopedCssBaseline sx={{ background: "transparent" }}>
+          <NameContainer hover={true}>
+            {namesplit.lname === "" ? (
+              <SingleName
                 sx={{
                   color: colors.dark,
                 }}
               >
                 {namesplit.fname}
-              </FirstName>
-              <FirstName
-                sx={{
-                  color: colors.dark,
-                }}
-              >
-                {namesplit.lname}
-              </FirstName>
-            </>
-          )}
-        </NameContainer>
-        <SubtitleFlip>Projects</SubtitleFlip>
-        {props.member.projects &&
-          props.member.projects.map((project) => {
-            if (project.pid === "0") {
-              return <Project key={project.pid}>{project.pname}</Project>;
-            } else {
-              return (
-                <Link
-                  key={project.pid}
-                  to={`/project/${project.pid}`}
-                  style={{ textDecoration: "none" }}
+              </SingleName>
+            ) : (
+              <>
+                <FirstName
+                  sx={{
+                    color: colors.dark,
+                  }}
                 >
-                  <Project>{project.pname}</Project>
-                </Link>
-              );
-            }
-          })}
-        <FlipTwo
-          style={{
-            position: "absolute",
-            bottom: 0,
-            right: 0,
-            zIndex: 2,
-          }}
-        />
+                  {namesplit.fname}
+                </FirstName>
+                <FirstName
+                  sx={{
+                    color: colors.dark,
+                  }}
+                >
+                  {namesplit.lname}
+                </FirstName>
+              </>
+            )}
+          </NameContainer>
+          <SubtitleFlip>Projects</SubtitleFlip>
+          {props.member.projects &&
+            props.member.projects.map((project) => {
+              if (project.pid === "0") {
+                return <Project key={project.pid}>{project.pname}</Project>;
+              } else {
+                return (
+                  <Link
+                    key={project.pid}
+                    to={`/project/${project.pid}`}
+                    style={{ textDecoration: "none" }}
+                  >
+                    <Project>{project.pname}</Project>
+                  </Link>
+                );
+              }
+            })}
+          <FlipTwo
+            style={{
+              position: "absolute",
+              bottom: 0,
+              right: 0,
+              zIndex: 2,
+            }}
+          />
+        </ScopedCssBaseline>
       </Back>
     </CardLayout>
   );

@@ -6,6 +6,7 @@ import { ReactComponent as InSvg } from "../../../assets/memberCardSvgs/in.svg";
 import { ReactComponent as MailSvg } from "../../../assets/memberCardSvgs/mail.svg";
 import { ReactComponent as WebSvg } from "../../../assets/memberCardSvgs/web.svg";
 import noprofile from "../../../assets/noprofile.png";
+import ScopedCssBaseline from "@mui/material/ScopedCssBaseline";
 
 const nameModder = (name) => {
   const totalLength = name.length;
@@ -193,69 +194,75 @@ const Card = (props) => {
       }}
     >
       <Front>
-        <ImgHolder>
-          {props.member.imageLink ? (
-            <Img src={props.member.imageLink} loading="lazy" />
-          ) : (
-            <Img src={noprofile} loading="lazy" />
-          )}
-        </ImgHolder>
-        <Slide hover={hover} />
-        <Slider hover={hover}>
-          <NameContainer hover={hover}>
-            {namesplit.lname === "" ? (
-              <SingleName>{namesplit.fname}</SingleName>
+        <ScopedCssBaseline sx={{ background: "transparent" }}>
+          <ImgHolder>
+            {props.member.imageLink ? (
+              <Img src={props.member.imageLink} loading="lazy" />
             ) : (
-              <>
-                <FirstName>{namesplit.fname}</FirstName>
-                <FirstName>{namesplit.lname}</FirstName>
-              </>
+              <Img src={noprofile} loading="lazy" />
             )}
-          </NameContainer>
-          <div
-            style={{
-              height: "6rem",
-            }}
-          >
-            {props.member.position ? (
-              <Subtitle>{props.member.position}</Subtitle>
-            ) : null}
-            {props.member.additional &&
-              props.member.additional.map((domain, index) => (
-                <Domain key={index}>{domain}</Domain>
-              ))}
-          </div>
-          <Icons>
-            {props.member.github ? (
-              <a href={props.member.github} target="_blank" rel="noreferrer">
-                <GitSvg />
-              </a>
-            ) : null}
-            {props.member.linkedIn ? (
-              <a href={props.member.linkedIn} target="_blank" rel="noreferrer">
-                <InSvg />
-              </a>
-            ) : null}
-            {props.member.email ? (
-              <a
-                href={`mailto:${props.member.email}`}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <MailSvg />
-              </a>
-            ) : null}
-            {props.member.personalPage ? (
-              <a
-                href={props.member.personalPage}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <WebSvg />
-              </a>
-            ) : null}
-          </Icons>
-        </Slider>
+          </ImgHolder>
+          <Slide hover={hover} />
+          <Slider hover={hover}>
+            <NameContainer hover={hover}>
+              {namesplit.lname === "" ? (
+                <SingleName>{namesplit.fname}</SingleName>
+              ) : (
+                <>
+                  <FirstName>{namesplit.fname}</FirstName>
+                  <FirstName>{namesplit.lname}</FirstName>
+                </>
+              )}
+            </NameContainer>
+            <div
+              style={{
+                height: "6rem",
+              }}
+            >
+              {props.member.position ? (
+                <Subtitle>{props.member.position}</Subtitle>
+              ) : null}
+              {props.member.additional &&
+                props.member.additional.map((domain, index) => (
+                  <Domain key={index}>{domain}</Domain>
+                ))}
+            </div>
+            <Icons>
+              {props.member.github ? (
+                <a href={props.member.github} target="_blank" rel="noreferrer">
+                  <GitSvg />
+                </a>
+              ) : null}
+              {props.member.linkedIn ? (
+                <a
+                  href={props.member.linkedIn}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <InSvg />
+                </a>
+              ) : null}
+              {props.member.email ? (
+                <a
+                  href={`mailto:${props.member.email}`}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <MailSvg />
+                </a>
+              ) : null}
+              {props.member.personalPage ? (
+                <a
+                  href={props.member.personalPage}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <WebSvg />
+                </a>
+              ) : null}
+            </Icons>
+          </Slider>
+        </ScopedCssBaseline>
       </Front>
     </CardLayout>
   );

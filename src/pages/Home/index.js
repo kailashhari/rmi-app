@@ -12,6 +12,7 @@ import Reachus from "./Reachus";
 import ImageFader from "../../components/ImageFader";
 import { AppContext } from "../../store/context";
 import { Link } from "react-router-dom";
+import ScopedCssBaseline from "@mui/material/ScopedCssBaseline";
 
 const responsive = {
   desktop: {
@@ -30,7 +31,7 @@ const responsive = {
 
 const HeroText = styled("div")({
   fontFamily: "Raleway",
-  fontSize: "2.8rem",
+  fontSize: "2.7rem",
   fontWeight: "700",
   justifyContent: "flex-end",
 });
@@ -39,14 +40,13 @@ const HeroAnd = styled("span")({
   fontFamily: "Raleway",
   fontSize: "2rem",
   fontWeight: "700",
-  margin: "0.2rem 0.4rem",
+  margin: "0.5rem 0.4rem",
 });
 
 const HeroLineContainer = styled("div")({
   width: "100%",
   display: "flex",
   flexDirection: "row",
-  alignItems: "flex-end",
 });
 
 const ImgHolder = styled("div")({
@@ -77,6 +77,9 @@ const InterTitle = styled("div")({
   width: "100%",
   textAlign: "center",
   marginBlock: "4rem",
+  "@media (max-width: 767px)": {
+    fontSize: "1.6rem",
+  },
 });
 
 const CarouselWrapper = styled("div")({
@@ -181,7 +184,7 @@ const index = ({ title }) => {
                   fontFamily: "Gotham",
                   fontSize: "1.6rem",
                   fontWeight: "400",
-                  mt: "2rem",
+                  mt: "1rem",
                 }}
               >
                 The Official Robotics Club of NIT Trichy

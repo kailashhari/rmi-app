@@ -35,15 +35,18 @@ const footerData = [
 
 const FooterRight = styled("div")({
   display: "flex",
-  marginTop: "2rem",
+  marginTop: "1rem",
+  "@media (max-width: 767px)": {
+    marginTop: "2rem",
+  },
 });
 
 const FooterColumn = styled("div")({
   display: "flex",
   flexDirection: "column",
   gap: "0.6rem",
+  marginTop: "0.6rem",
   "@media (max-width: 767px)": {
-    marginTop: "0.6rem",
     alignItems: "center",
   },
 });

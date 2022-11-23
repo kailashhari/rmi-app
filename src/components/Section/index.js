@@ -4,7 +4,7 @@ import { fontStyles } from "../../constants";
 
 const Section = styled("div")({
   width: "100vw",
-  height: "85vh",
+  minHeight: "80vh",
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
@@ -14,16 +14,26 @@ const Section = styled("div")({
   position: "relative",
   marginBottom: "2rem",
   gap: "2.6rem",
+  "@media (max-width: 767px)": {
+    padding: "2rem",
+  },
 });
 
 const SectionTitle = styled("div")({
   ...fontStyles.heading,
-  margin: "2.6rem",
+  margin: "1.5rem",
+  "@media (max-width: 767px)": {
+    margin: "1.5rem",
+    fontSize: "1.6rem",
+  },
 });
 
 const SectionContent = styled("div")({
   ...fontStyles.content,
   textAlign: "center",
+  "@media (max-width: 767px)": {
+    fontSize: "0.9rem",
+  },
 });
 
 const index = (props) => {
