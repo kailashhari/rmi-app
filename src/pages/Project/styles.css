@@ -99,12 +99,12 @@
     .carousel {
       width: 100vw;
       height: 13.5rem;
-      overflow-x: hidden;
+      overflow: hidden;
     }
   
     .card-container {
-      transform: none;
-      filter: none;
+        transform: none;
+        filter: none;
     }
     .nav {
         font-size: 3rem;

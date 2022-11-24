@@ -184,13 +184,20 @@ const Icons = styled("div")({
 const Card = (props) => {
   const [hover, setHover] = React.useState(false);
   const namesplit = nameModder(props.member.name.toUpperCase());
+  const isMobile =
+    /Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(
+      navigator.userAgent
+    );
   return (
     <CardLayout
       onMouseEnter={() => {
-        setHover(true);
+        if (!isMobile) setHover(true);
       }}
       onMouseLeave={() => {
-        setHover(false);
+        if (!isMobile) setHover(false);
+      }}
+      onClick={() => {
+        if (isMobile) setHover(!hover);
       }}
     >
       <Front>

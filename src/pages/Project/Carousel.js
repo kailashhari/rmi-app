@@ -3,8 +3,6 @@ import "./styles.css";
 import leftArrow from "../../assets/leftarrow.svg";
 import rightArrow from "../../assets/rightarrow.svg";
 
-const MAX_VISIBILITY = 3;
-
 const Card = ({ src }) => (
   <div className="card">
     <img src={src} alt="" />
@@ -14,7 +12,11 @@ const Card = ({ src }) => (
 export const Carousel = ({ contents }) => {
   const [active, setActive] = useState(contents.length / 2);
   const count = contents.length;
-
+  const isMobile =
+    /Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(
+      navigator.userAgent
+    );
+  const MAX_VISIBILITY = isMobile ? 1 : 3;
   return (
     <div className="carousel">
       {active > 0 && (

@@ -34,13 +34,23 @@ const HeroText = styled("div")({
   fontSize: "2.8rem",
   fontWeight: "700",
   justifyContent: "flex-end",
+  lineHeight: "2.5rem",
+});
+
+const HeroTag = styled("div")({
+  fontFamily: "Gotham",
+  fontSize: "1.6rem",
+  fontWeight: "400",
+  marginTop: "1rem",
+  alignContent: "flex-end",
 });
 
 const HeroAnd = styled("span")({
   fontFamily: "Raleway",
   fontSize: "2rem",
   fontWeight: "700",
-  margin: "0.2rem 0.4rem",
+  marginLeft: "0.5rem",
+  alignContent: "flex-end",
 });
 
 const HeroLineContainer = styled("div")({
@@ -141,58 +151,51 @@ const index = ({ title }) => {
     React.useContext(AppContext).miscellaneous;
   return (
     <PageWrapper>
-      <Hero>
-        <ImageFader images={landingPageImages} />
-        <HeroSection sx={{ zIndex: 100 }}>
-          <img
-            src={logo}
-            alt="Logo big"
-            style={{
-              width: "auto",
-              height: "24rem",
-              margin: "auto",
-            }}
-          />
-        </HeroSection>
-        <Box
-          sx={{
-            flexDirection: "column",
-            flex: "1",
-            alignItems: "flex-start",
-            justifyContent: "center",
-            display: { xs: "none", sm: "none", md: "flex" },
-          }}
-        >
-          <HeroSection
+      <ScopedCssBaseline sx={{ background: "transparent" }}>
+        <Hero>
+          <ImageFader images={landingPageImages} />
+          <HeroSection sx={{ zIndex: 100 }}>
+            <img
+              src={logo}
+              alt="Logo big"
+              style={{
+                width: "auto",
+                height: "24rem",
+                margin: "auto",
+              }}
+            />
+          </HeroSection>
+          <Box
             sx={{
               flexDirection: "column",
+              flex: "1",
+              alignItems: "flex-start",
+              justifyContent: "center",
+              display: { xs: "none", sm: "none", md: "flex" },
             }}
           >
-            <HeroLineContainer>
-              <HeroText>ROBOTICS</HeroText>
-              <HeroAnd>AND</HeroAnd>
-            </HeroLineContainer>
-            <HeroLineContainer>
-              <HeroText>MACHINE INTELLIGENCE</HeroText>
-            </HeroLineContainer>
-            {/* <HeroLineContainer>
+            <HeroSection
+              sx={{
+                flexDirection: "column",
+              }}
+            >
+              <HeroLineContainer>
+                <HeroText>ROBOTICS</HeroText>
+                <HeroAnd>AND</HeroAnd>
+              </HeroLineContainer>
+              <HeroLineContainer>
+                <HeroText>MACHINE INTELLIGENCE</HeroText>
+              </HeroLineContainer>
+              {/* <HeroLineContainer>
               <HeroText>INTELLIGENCE</HeroText>
             </HeroLineContainer> */}
-            <HeroLineContainer>
-              <HeroText
-                style={{
-                  fontFamily: "Gotham",
-                  fontSize: "1.6rem",
-                  fontWeight: "400",
-                  mt: "1rem",
-                }}
-              >
-                The Official Robotics Club of NIT Trichy
-              </HeroText>
-            </HeroLineContainer>
-          </HeroSection>
-        </Box>
-      </Hero>
+              <HeroLineContainer>
+                <HeroTag>The Official Robotics Club of NIT Trichy</HeroTag>
+              </HeroLineContainer>
+            </HeroSection>
+          </Box>
+        </Hero>
+      </ScopedCssBaseline>
       <Section title={"About"} id="about">
         Robotics and Machine Intelligence (RMI) is the official robotics and
         technical research club of NIT Trichy. We are a close-knit community of

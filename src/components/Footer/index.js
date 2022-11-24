@@ -49,9 +49,6 @@ const FooterMain = styled("div")({
   display: "flex",
   justifyContent: "space-between",
   width: "100%",
-  "@media (max-width: 767px)": {
-    alignItems: "center",
-  },
 });
 
 const FooterLeft = styled("div")({
@@ -59,7 +56,6 @@ const FooterLeft = styled("div")({
   flexDirection: "column",
   gap: "1rem",
   "@media (max-width: 767px)": {
-    alignItems: "center",
     width: "100%",
   },
 });
@@ -81,9 +77,6 @@ const FollowUsSection = styled("div")({
   display: "flex",
   flexDirection: "column",
   gap: "0.4rem",
-  "@media (max-width: 767px)": {
-    alignItems: "center",
-  },
 });
 
 const FollowUs = styled("div")({

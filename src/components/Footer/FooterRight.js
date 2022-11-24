@@ -19,17 +19,17 @@ const footerData = [
     columnTitle: "Events",
     columnLink: "/events",
     columnItems: [
-      { itemName: "Genesis", itemLink: "/events/#Genesis" },
-      { itemName: "Following", itemLink: "/events/#Following" },
-      { itemName: "Hackathon", itemLink: "/events/#RMI Hackathon" },
+      { itemName: "Genesis", itemLink: "/events#Genesis" },
+      { itemName: "Following", itemLink: "/events#Following" },
+      { itemName: "Hackathon", itemLink: "/events#RMI Hackathon" },
     ],
   },
   {
     columnTitle: "",
     columnItems: [
-      { itemName: "InHoTTs", itemLink: "/events/#InHoTTs" },
-      { itemName: "RoboVigyan", itemLink: "/events/#RoboVigyan" },
-      { itemName: "Exhibition", itemLink: "/events/#Pragyan Exhibition" },
+      { itemName: "InHoTTs", itemLink: "/events#InHoTTs" },
+      { itemName: "RoboVigyan", itemLink: "/events#RoboVigyan" },
+      { itemName: "Exhibition", itemLink: "/events#Pragyan Exhibition" },
     ],
   },
 ];
