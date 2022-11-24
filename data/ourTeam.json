@@ -1,0 +1,2358 @@
+{
+  "currentMembers": [
+    {
+      "batchTag": "2023",
+      "id": "136",
+      "name": "Rigved Sanku",
+      "imageLink": "https://i.imgur.com/cAmnVx1.png",
+      "position": "President",
+      "domains": [
+        "Deep Learning",
+        "Computer Vision",
+        "Natural Language Processing"
+      ],
+      "github": "https://github.com/Rigved19",
+      "linkedIn": "https://www.linkedin.com/in/rigved-sanku-8933041aa/",
+      "email": "sankurigved@gmail.com",
+      "projects": [
+        {
+          "pid": "30",
+          "pname": "ANVI"
+        }
+      ]
+    },
+    {
+      "batchTag": "2023",
+      "id": "137",
+      "name": "K Girish",
+      "imageLink": "https://i.imgur.com/sJLS7Ti.png",
+      "position": "Vice President",
+      "domains": [
+        "Electronics and Embedded Systems",
+        "Mechanics",
+        "Control systems"
+      ],
+      "github": "https://github.com/girish-2001",
+      "linkedIn": "https://www.linkedin.com/in/girish-karthik-959165191/",
+      "email": "girishk1470@gmail.com",
+      "projects": [
+        {
+          "pid": "28",
+          "pname": "LEWI"
+        },
+        {
+          "pid": "24",
+          "pname": "STAR"
+        },
+        {
+          "pid": "22",
+          "pname": "CHAOS"
+        },
+        {
+          "pid": "0",
+          "pname": "4-DOF Arm"
+        }
+      ]
+    },
+    {
+      "batchTag": "2023",
+      "id": "138",
+      "name": "Aravindh Deiva G",
+      "imageLink": "https://i.imgur.com/nuu3y15.png",
+      "position": "Treasurer",
+      "domains": ["Mechanics", "Photogrammetry", "ROS"],
+      "github": "https://github.com/AravindhDeivaG",
+      "linkedIn": "https://www.linkedin.com/in/aravindh-deiva-ganesan-6668931a1",
+      "email": "aravindhdeiva456@gmail.com",
+      "projects": [
+        {
+          "pid": "29",
+          "pname": "ARIBOT"
+        },
+        {
+          "pid": "23",
+          "pname": "Automated Trolley"
+        }
+      ]
+    },
+    {
+      "batchTag": "2023",
+      "id": "139",
+      "name": "M Sivvani",
+      "imageLink": "https://i.imgur.com/OAyu7qr.png",
+      "position": "Treasurer",
+      "domains": ["Image processing", "controls and dynamics"],
+      "github": "https://github.com/Msivvani",
+      "linkedIn": "https://www.linkedin.com/in/sivvani-muthusamy-1645401a5",
+      "email": "sivvanimuthusmy15032002@gmail.com",
+      "projects": [
+        {
+          "pid": "27",
+          "pname": "SPARO"
+        },
+        {
+          "pid": "21",
+          "pname": "HIDQ"
+        }
+      ]
+    },
+    {
+      "batchTag": "2023",
+      "id": "140",
+      "name": "Satish Kumar L",
+      "imageLink": "https://i.imgur.com/xZ2jvIw.png",
+      "position": "Head, Workshops and Events",
+      "domains": ["Embedded Systems", "Control Systems"],
+      "github": "https://github.com/Satish-Kumar-L",
+      "linkedIn": "https://www.linkedin.com/in/satish-kumar-l-0780451b0/",
+      "email": "satishkumarvv2002@gmail.com",
+      "projects": [
+        {
+          "pid": "26",
+          "pname": "Smart Parking System"
+        },
+        {
+          "pid": "25",
+          "pname": "Sign to Speech Convertor"
+        },
+        {
+          "pid": "21",
+          "pname": "HIDQ"
+        }
+      ]
+    },
+    {
+      "batchTag": "2023",
+      "id": "141",
+      "name": "Aswin Sreekumar",
+      "imageLink": "https://i.imgur.com/u8NyVGp.png",
+      "position": "Head, Design and Publicity",
+      "domains": ["Embedded systems", "Mobile robotics", "Quadcopters"],
+      "github": "https://github.com/aswin-sreekumar/",
+      "linkedIn": "https://www.linkedin.com/in/aswin-sreekumar",
+      "email": "aswinsreekumar123@gmail.com",
+      "projects": [
+        {
+          "pid": "26",
+          "pname": "Smart Parking System"
+        },
+        {
+          "pid": "25",
+          "pname": "Sign to Speech Convertor"
+        },
+        {
+          "pid": "21",
+          "pname": "HIDQ"
+        },
+        {
+          "pid": "0",
+          "pname": "Sonar Mapping Bot"
+        }
+      ]
+    },
+    {
+      "batchTag": "2023",
+      "id": "142",
+      "name": "Abhinav Agrawal",
+      "imageLink": "https://i.imgur.com/CGs49Hc.png",
+      "position": "Member",
+      "domains": ["Computer Vision", "Deep Learning", "Path Planning"],
+      "github": "https://github.com/nevermess",
+      "linkedIn": "https://www.linkedin.com/in/abhinav-agrawal-377761197",
+      "email": "abhinav.agrawal4721@gmail.com",
+      "projects": [
+        {
+          "pid": "23",
+          "pname": "Automated Trolley"
+        }
+      ]
+    },
+    {
+      "batchTag": "2023",
+      "id": "143",
+      "name": "Divya A B",
+      "imageLink": "https://i.imgur.com/rY2Cr2I.png",
+      "position": "Member",
+      "domains": [
+        "Image processing",
+        "Artificial Intelligence",
+        "Embedded systems"
+      ],
+      "github": "https://github.com/DIVYA422",
+      "linkedIn": "https://www.linkedin.com/in/divya-a-b-7b09b51b0",
+      "email": "divyalakshmi422@gmail.com",
+      "projects": [
+        {
+          "pid": "30",
+          "pname": "ANVI"
+        },
+        {
+          "pid": "23",
+          "pname": "Automated Trolley"
+        }
+      ]
+    },
+    {
+      "batchTag": "2023",
+      "id": "144",
+      "name": "Greeshwar R S",
+      "imageLink": "https://i.imgur.com/JM7ZKMj.png",
+      "position": "Member",
+      "domains": ["Computer Vision", "Deep learning", "Machine learning"],
+      "github": "https://github.com/greesh02",
+      "linkedIn": "https://www.linkedin.com/in/greeshwar-r-s-8930261b8",
+      "email": "greeshwargree@gmail.com",
+      "projects": [
+        {
+          "pid": "26",
+          "pname": "Smart Parking System"
+        },
+        {
+          "pid": "25",
+          "pname": "Sign to Speech Convertor"
+        },
+        {
+          "pid": "22",
+          "pname": "CHAOS"
+        }
+      ]
+    },
+    {
+      "batchTag": "2023",
+      "id": "145",
+      "name": "Jai Kesav K R",
+      "imageLink": "https://i.imgur.com/riGsty3.png",
+      "position": "Member",
+      "domains": ["Mechanics", "Control"],
+      "github": "https://github.com/nice-boi-jk",
+      "linkedIn": "https://www.linkedin.com/in/jai-kesav-k-r-400870195/",
+      "email": "krjaikesav05@gmail.com",
+      "projects": [
+        {
+          "pid": "22",
+          "pname": "CHAOS"
+        }
+      ]
+    },
+    {
+      "batchTag": "2023",
+      "id": "146",
+      "name": "Lokesh Keshav S",
+      "imageLink": "https://i.imgur.com/z2WISUt.png",
+      "position": "Member",
+      "domains": [
+        "Image Processing",
+        "Artificial intelligence",
+        "Machine Intelligence"
+      ],
+      "github": "https://github.com/dankitydanker",
+      "linkedIn": "https://www.linkedin.com/in/lokesh-keshav-a099a01a2/",
+      "email": "keshavs.lokesh@gmail.com",
+      "projects": [
+        {
+          "pid": "28",
+          "pname": "LEWI"
+        },
+        {
+          "pid": "21",
+          "pname": "HIDQ"
+        }
+      ]
+    },
+    {
+      "batchTag": "2023",
+      "id": "147",
+      "name": "Rishivanthiya G R",
+      "imageLink": "https://i.imgur.com/MMo6NcO.png",
+      "position": "Member",
+      "domains": ["Embedded systems"],
+      "github": "https://github.com/DarkRiya",
+      "linkedIn": "https://www.linkedin.com/in/rishivanthiya-g-r-79079a1a5",
+      "email": "rishivanthiyagr@gmail.com",
+      "projects": [
+        {
+          "pid": "22",
+          "pname": "CHAOS"
+        }
+      ]
+    },
+    {
+      "batchTag": "2023",
+      "id": "148",
+      "name": "Shrushti Khairkar",
+      "imageLink": "https://i.imgur.com/23Veahm.png",
+      "position": "Member",
+      "domains": ["Image processing", "Electronics"],
+      "github": "https://github.com/shrushti24",
+      "linkedIn": "http://linkedin.com/in/shrushti-khairkar-91303a1b7",
+      "email": "shrushti.khairkar@gmail.com",
+      "projects": [
+        {
+          "pid": "27",
+          "pname": "SPARO"
+        },
+        {
+          "pid": "22",
+          "pname": "CHAOS"
+        }
+      ]
+    },
+    {
+      "batchTag": "2024",
+      "id": "149",
+      "name": "Adithya Venkata Narayanan",
+      "imageLink": "https://i.imgur.com/QX7x8qC.png",
+      "position": "Member",
+      "domains": ["Mechatronics", "Controls", "Computer Vision"],
+      "github": "https://github.com/Adithya-187326",
+      "linkedIn": "https://www.linkedin.com/in/adithya-venkata-narayanan-1a1321219/",
+      "email": "adithyavnarayanan@gmail.com",
+      "projects": [
+        {
+          "pid": "9",
+          "pname": "HuRoS"
+        },
+        {
+          "pid": "30",
+          "pname": "ANVI"
+        },
+        {
+          "pid": "27",
+          "pname": "SPARO"
+        }
+      ]
+    },
+    {
+      "batchTag": "2024",
+      "id": "150",
+      "name": "Farhan Abid Seliya",
+      "imageLink": "https://i.imgur.com/D6pLrkY.png",
+      "position": "Member",
+      "domains": [
+        "Computer Vision",
+        "Deep Learning",
+        "Mobile Robotics",
+        "Mechanics & Control"
+      ],
+      "github": "https://github.com/FarhanNITT/FarhanNITT",
+      "linkedIn": "https://www.linkedin.com/in/farhan-seliya-573b2a205/",
+      "email": "farhanseliya9@gmail.com",
+      "projects": [
+        {
+          "pid": "29",
+          "pname": "ARIBOT"
+        }
+      ]
+    },
+    {
+      "batchTag": "2024",
+      "id": "151",
+      "name": "Guru Vishnu M",
+      "imageLink": "https://i.imgur.com/A2SNodL.png",
+      "position": "SAC coordinator",
+      "domains": ["Mechanics", "Electronics"],
+      "github": "https://github.com/Guru-Vishnu",
+      "linkedIn": "https://www.linkedin.com/in/guru-vishnu-m/",
+      "email": "mgv.earth@gmail.com",
+      "projects": [
+        {
+          "pid": "29",
+          "pname": "ARIBOT"
+        }
+      ]
+    },
+    {
+      "batchTag": "2024",
+      "id": "152",
+      "name": "Krishna Kishore V S",
+      "imageLink": "https://i.imgur.com/tAO3hUC.png",
+      "position": "Member",
+      "domains": [
+        "Reinforcement learning",
+        "Deep learning",
+        "Machine learning"
+      ],
+      "github": "https://github.com/krishnakvs10",
+      "linkedIn": "https://www.linkedin.com/in/krishna-kishore-vs-640969212/",
+      "email": "krisriboo@gmail.com",
+      "projects": [
+        {
+          "pid": "29",
+          "pname": "ARIBOT"
+        }
+      ]
+    },
+    {
+      "batchTag": "2024",
+      "id": "153",
+      "name": "Madhav R",
+      "imageLink": "https://i.imgur.com/2OZ9GJ3.png",
+      "position": "SAC coordinator",
+      "domains": ["Electronics", "IoT", "Mechanics", "Control Systems"],
+      "github": "https://github.com/madE03",
+      "linkedIn": "https://www.linkedin.com/in/madhav-r-2867b920b",
+      "email": "madspace49@gmail.com",
+      "projects": [
+        {
+          "pid": "28",
+          "pname": "LEWI"
+        },
+        {
+          "pid": "24",
+          "pname": "STAR"
+        }
+      ]
+    },
+    {
+      "batchTag": "2024",
+      "id": "154",
+      "name": "Mukilan K",
+      "imageLink": "https://i.imgur.com/CpAGbkf.png",
+      "position": "Member",
+      "domains": ["Computer Vision", "Deep Learning", "Signal Processing"],
+      "github": "https://github.com/Mukil07",
+      "linkedIn": "https://www.linkedin.com/in/mukilan-k-3261121b9",
+      "email": "mukilks2502@gmail.com",
+      "projects": [
+        {
+          "pid": "28",
+          "pname": "LEWI"
+        }
+      ]
+    },
+    {
+      "batchTag": "2024",
+      "id": "155",
+      "name": "P N Kalaimani",
+      "imageLink": "https://i.imgur.com/lfYGRmL.png",
+      "position": "Member",
+      "domains": [
+        "Embedded Systems",
+        "Image Processing",
+        "Signal Processing",
+        "Soft Robotics"
+      ],
+      "github": "https://github.com/Kalaimani02",
+      "linkedIn": "https://www.linkedin.com/in/p-n-kalaimani-69a276217/",
+      "email": "kalaimegu2002@gmail.com",
+      "projects": [
+        {
+          "pid": "28",
+          "pname": "LEWI"
+        }
+      ]
+    },
+    {
+      "batchTag": "2024",
+      "id": "156",
+      "name": "R Charan Bhardhwaj",
+      "imageLink": "https://i.imgur.com/r2B8usn.png",
+      "position": "Member",
+      "domains": ["Machine Learning", "Computer Vision"],
+      "github": "https://github.com/R-Charan",
+      "linkedIn": "https://www.linkedin.com/in/r-charan-bhardhwaj-2827981b7",
+      "email": "rcharanbhardhwaj@gmail.com",
+      "projects": [
+        {
+          "pid": "30",
+          "pname": "ANVI"
+        },
+        {
+          "pid": "29",
+          "pname": "ARIBOT"
+        },
+        {
+          "pid": "27",
+          "pname": "SPARO"
+        },
+        {
+          "pid": "0",
+          "pname": "Self driving bot"
+        }
+      ]
+    },
+    {
+      "batchTag": "2024",
+      "id": "157",
+      "name": "Rahul Raaghav A",
+      "imageLink": "https://i.imgur.com/zMTydOw.png",
+      "position": "Head, Web-ops",
+      "domains": ["Robotics", "Machine learning", "Embedded systems"],
+      "github": "https://github.com/RahulraaghavA1308",
+      "linkedIn": "https://www.linkedin.com/in/rahul-raaghav-a-308446202/",
+      "email": "rahulgksvv@gmail.com",
+      "projects": [
+        {
+          "pid": "30",
+          "pname": "ANVI"
+        }
+      ]
+    },
+    {
+      "batchTag": "2024",
+      "id": "158",
+      "name": "Shyaam Pon Sundar S",
+      "imageLink": "https://i.imgur.com/GpqrRoS.png",
+      "position": "Member",
+      "domains": ["CV", "Machine learning", "Mechanics"],
+      "github": "https://github.com/shyaam-963",
+      "linkedIn": "https://www.linkedin.com/in/shyaam-pon-sundar-s-3166b51a7",
+      "email": "shyaam.pon@gmail.com",
+      "projects": [
+        {
+          "pid": "30",
+          "pname": "ANVI"
+        }
+      ]
+    },
+    {
+      "batchTag": "2024",
+      "id": "159",
+      "name": "Sunkara Vikash",
+      "imageLink": "https://i.imgur.com/EKHHTfq.png",
+      "position": "Member",
+      "domains": ["Machine learning", "Deep learning"],
+      "github": "https://github.com/Vikash2024",
+      "linkedIn": "https://www.linkedin.com/in/vikash-sunkara-2986a9212",
+      "email": "sunkara.vikash@gmail.com",
+      "projects": [
+        {
+          "pid": "28",
+          "pname": "LEWI"
+        },
+        {
+          "pid": "24",
+          "pname": "STAR"
+        }
+      ]
+    },
+    {
+      "batchTag": "2024",
+      "id": "160",
+      "name": "Vakula Venkatesh",
+      "imageLink": "https://i.imgur.com/BqDVMAE.png",
+      "position": "Member",
+      "domains": ["Computer Vision", "Mechatronics", "Assistive Tech"],
+      "github": "https://github.com/Vakula289",
+      "linkedIn": "https://www.linkedin.com/in/vakula-v",
+      "email": "vakulaven280@gmail.com",
+      "projects": [
+        {
+          "pid": "30",
+          "pname": "ANVI"
+        }
+      ]
+    },
+    {
+      "batchTag": "2025",
+      "id": "161",
+      "name": "Aditya Singh ",
+      "imageLink": "https://i.imgur.com/II9SEiW.png",
+      "position": "Member",
+      "domains": ["Computer Vision"],
+      "github": "https://github.com/glucosesupremacy",
+      "linkedIn": "https://www.linkedin.com/in/aditya-singh-386151224",
+      "email": "aditya64748@gmail.com"
+    },
+    {
+      "batchTag": "2025",
+      "id": "162",
+      "name": "Akhil Kasyap",
+      "imageLink": "https://i.imgur.com/pxhnGPd.png",
+      "position": "Member",
+      "domains": ["Mechanics", "Image Processing", "Electronics"],
+      "github": "https://github.com/Kasyap27",
+      "linkedIn": "https://www.linkedin.com/in/akhil-kasyap-284ab824a",
+      "email": "akhilkasyap.007@gmail.com"
+    },
+    {
+      "batchTag": "2025",
+      "id": "163",
+      "name": "Anas Khalid",
+      "imageLink": "https://i.imgur.com/42Izplm.png",
+      "position": "Member",
+      "domains": ["Embeded Systems", "Electronics", "Machine Learning"],
+      "github": "https://github.com/Anas-120",
+      "linkedIn": "https://www.linkedin.com/in/anas-khalid-682889246",
+      "email": "askanasadfia1@gmail.com"
+    },
+    {
+      "batchTag": "2025",
+      "id": "164",
+      "name": "Ganishk D",
+      "imageLink": "https://i.imgur.com/ZopihbY.png",
+      "position": "Member",
+      "domains": ["Mechanics", "Electronics", "Control Systems"],
+      "github": "https://github.com/Ganishk",
+      "linkedIn": "https://www.linkedin.com/ganishk",
+      "email": "ganishk1@gmail.com"
+    },
+    {
+      "batchTag": "2025",
+      "id": "165",
+      "name": "Janam Khandelwal ",
+      "imageLink": "https://i.imgur.com/bSbxlNi.png",
+      "position": "Member",
+      "domains": ["Computer Vision", "Embedded systems"],
+      "github": "https://github.com/Janam-001",
+      "linkedIn": "https://www.linkedin.com/in/janam-khandelwal-520524223/",
+      "email": "janamkhandelwal1700@gmail.com"
+    },
+    {
+      "batchTag": "2025",
+      "id": "166",
+      "name": "Rusheek B",
+      "imageLink": "https://i.imgur.com/xjC0rTU.png",
+      "position": "Member",
+      "domains": ["Embedded Systems", "Computer Vision"],
+      "github": "https://github.com/rusheek7",
+      "linkedIn": "https://www.linkedin.com/in/rusheek-b-3b9872231/",
+      "email": "rusheek7@gmail.com"
+    },
+    {
+      "batchTag": "2025",
+      "id": "167",
+      "name": "Sourav S",
+      "imageLink": "https://i.imgur.com/Q3ZccZJ.png",
+      "position": "Member",
+      "domains": ["Embedded systems", "Computer Vision", "Verilog and FPGA"],
+      "github": "https://github.com/SouravSelvaraj",
+      "linkedIn": "www.linkedin.com/in/sourav-selvaraj",
+      "email": "krssourav@gmail.com"
+    },
+    {
+      "batchTag": "2025",
+      "id": "168",
+      "name": "Sreenidhi Balachandran ",
+      "imageLink": "https://i.imgur.com/1IwxTts.png",
+      "position": "Member",
+      "domains": [
+        "Embedded electronics",
+        "Computer Vision",
+        "Aerial Robotics "
+      ],
+      "github": "https://github.com/B-G-SREENIDHI",
+      "linkedIn": "https://www.linkedin.com/in/sreenidhi-b-b949bb227",
+      "email": "sreenidhisundaram@gmail.com"
+    },
+    {
+      "batchTag": "2025",
+      "id": "169",
+      "name": "Srivattsan S",
+      "imageLink": "https://i.imgur.com/Sxc1FZi.png",
+      "position": "Member",
+      "domains": ["Machine Learning", "Computer Vision", "ROS"],
+      "github": "github.com/Vattsan37",
+      "linkedIn": "https://www.linkedin.com/in/srivattsan-s-147a5b22a",
+      "email": "srivattsan37@gmail.com"
+    },
+    {
+      "batchTag": "2025",
+      "id": "170",
+      "name": "Susmitha S ",
+      "imageLink": "https://i.imgur.com/Rsrji9t.png",
+      "position": "Member",
+      "domains": ["Machine learning", "Electronics"],
+      "github": "https://github.com/Susmitha-03",
+      "linkedIn": "https://www.linkedin.com/in/susmitha-s-a01961248",
+      "email": "meetsusmitha.er@gmail.com"
+    },
+    {
+      "batchTag": "2025",
+      "id": "171",
+      "name": "Vallimayl V",
+      "imageLink": "https://i.imgur.com/VouCMlm.png",
+      "position": "Member",
+      "domains": ["Computer vision", "Machine Learning", "Embedded systems"],
+      "github": "https://github.com/Vallimayl",
+      "linkedIn": "https://www.linkedin.com/in/vallimayl-v-619b96240",
+      "email": "spvalliappan73@gmail.com"
+    }
+  ],
+  "alumni": [
+    {
+      "batchTag": "2022",
+      "id": "123",
+      "name": "Shrikumaran P B",
+      "imageLink": "https://i.imgur.com/cZNAfX5.png",
+      "position": "President (2021-2022)",
+      "github": "https://github.com/shrikumaran",
+      "linkedin": "https://www.linkedin.com/in/shrikumaran-p-b-7b2820173/",
+      "email": "pbshrikumaran@gmail.com",
+      "projects": [
+        {
+          "pid": "19",
+          "pname": "Precision Agriculture Bot"
+        },
+        {
+          "pid": "8",
+          "pname": "Pepper"
+        }
+      ]
+    },
+    {
+      "batchTag": "2022",
+      "id": "124",
+      "name": "V K Viekash",
+      "imageLink": "https://i.imgur.com/PHiTq3x.png",
+      "position": "Vice President (2021-2022)",
+      "github": "https://github.com/VIEKASH2001",
+      "linkedin": "https://www.linkedin.com/in/viekash-v-6bb868131/",
+      "email": "vkviekash@gmail.com",
+      "projects": [
+        {
+          "pid": "20",
+          "pname": "MARKO"
+        },
+        {
+          "pid": "9",
+          "pname": "HuRoS"
+        }
+      ]
+    },
+    {
+      "batchTag": "2022",
+      "id": "125",
+      "name": "Akshat Khandelwal",
+      "imageLink": "https://i.imgur.com/s0xBgI0.png",
+      "position": "Vice President (2021-2022)",
+      "github": "https://github.com/kakshat1205",
+      "linkedin": "www.linkedin.com/in/kakshat1205",
+      "email": "kakshat1205@gmail.com",
+      "projects": [
+        {
+          "pid": "19",
+          "pname": "Precision Agriculture Bot"
+        },
+        {
+          "pid": "7",
+          "pname": "Quadcopter"
+        },
+        {
+          "pid": "0",
+          "pname": "Self balancing bot"
+        }
+      ]
+    },
+    {
+      "batchTag": "2022",
+      "id": "126",
+      "name": "Kailash Jagadeesh",
+      "imageLink": "https://i.imgur.com/4m60S5i.png",
+      "position": "Treasurer (2021-2022)",
+      "github": "https://github.com/kailash-jagadeesh",
+      "linkedin": "https://www.linkedin.com/in/kailash-j-b01223150",
+      "email": "meetkailash2000@gmail.com",
+      "projects": [
+        {
+          "pid": "29",
+          "pname": "ARIBOT"
+        },
+        {
+          "pid": "18",
+          "pname": "Supernumary fingers"
+        },
+        {
+          "pid": "8",
+          "pname": "Pepper"
+        },
+        {
+          "pid": "7",
+          "pname": "Quadcopter"
+        }
+      ]
+    },
+    {
+      "batchTag": "2022",
+      "id": "127",
+      "name": "Hemangani N",
+      "imageLink": "https://i.imgur.com/DcBCofO.png",
+      "position": "Treasurer (2021-2022)",
+      "github": "https://github.com/HEMANGANI",
+      "linkedin": "https://www.linkedin.com/in/hemangani-n-910a3716b/",
+      "email": "nhemangani@gmail.com",
+      "projects": [
+        {
+          "pid": "18",
+          "pname": "Supernumary fingers"
+        },
+        {
+          "pid": "8",
+          "pname": "Pepper"
+        }
+      ]
+    },
+    {
+      "batchTag": "2022",
+      "id": "128",
+      "name": "Loahit K",
+      "imageLink": "https://i.imgur.com/Uazeflo.png",
+      "position": "Head, Workshops and Events (2021-2022)",
+      "github": "https://github.com/Loahit5101",
+      "email": "loahit5101@gmail.com",
+      "projects": [
+        {
+          "pid": "19",
+          "pname": "Precision Agriculture Bot"
+        },
+        {
+          "pid": "8",
+          "pname": "Pepper"
+        }
+      ]
+    },
+    {
+      "batchTag": "2022",
+      "id": "129",
+      "name": "Pramoth Arun",
+      "imageLink": "https://i.imgur.com/e5FJVpo.png",
+      "position": "Head, Design and Publicity (2021-2022)",
+      "github": "https://github.com/pramotharun",
+      "linkedin": "https://www.linkedin.com/in/pramotharun/",
+      "email": "pramotharun2.72@gmail.com",
+      "projects": [
+        {
+          "pid": "6",
+          "pname": "Soccer Bots"
+        }
+      ]
+    },
+    {
+      "batchTag": "2022",
+      "id": "130",
+      "name": "Shubham Aggarwal",
+      "imageLink": "https://i.imgur.com/1d4ePhL.png",
+      "position": "Head, Alumni Relations (2021-2022)",
+      "github": "https://github.com/Demigod2808",
+      "linkedin": "https://www.linkedin.com/in/shubham-aggarwal-01343719b/",
+      "email": "shubhamaggarwal2808@gmail.com"
+    },
+    {
+      "batchTag": "2022",
+      "id": "131",
+      "name": "Akesh M",
+      "imageLink": "https://i.imgur.com/zBOwoEH.png",
+      "position": "Member",
+      "github": "https://github.com/Akesh-M",
+      "email": "akeshnevergiveup@gmail.com",
+      "projects": [
+        {
+          "pid": "19",
+          "pname": "Precision Agriculture Bot"
+        }
+      ]
+    },
+    {
+      "batchTag": "2022",
+      "id": "132",
+      "name": "Gaurav Nagotanekar",
+      "imageLink": "https://i.imgur.com/N1En2hU.png",
+      "position": "Member",
+      "github": "https://github.com/Gaurav4857",
+      "linkedin": "https://www.linkedin.com/in/gaurav-n-58622aab/",
+      "email": "gauravnagotanekar@gmail.com",
+      "projects": [
+        {
+          "pid": "23",
+          "pname": "Automated Trolley"
+        },
+        {
+          "pid": "20",
+          "pname": "MARKO"
+        }
+      ]
+    },
+    {
+      "batchTag": "2022",
+      "id": "133",
+      "name": "Nilendu Ganguli",
+      "imageLink": "https://i.imgur.com/1Lx7bjo.png",
+      "position": "Member",
+      "github": "https://github.com/Nilendu999",
+      "linkedin": "https://www.linkedin.com/in/nilendu-ganguli-017879122",
+      "email": "nilenduganguli999@gmail.com",
+      "projects": [
+        {
+          "pid": "9",
+          "pname": "HuRoS"
+        },
+        {
+          "pid": "0",
+          "pname": "Ball balancing stewart platform"
+        }
+      ]
+    },
+    {
+      "batchTag": "2022",
+      "id": "134",
+      "name": "S Manimozhi",
+      "imageLink": "https://i.imgur.com/DL7zKse.png",
+      "position": "Member",
+      "github": "https://github.com/ManimozhiS/Mani.git",
+      "email": "manimozhisekar4@gmail.com",
+      "projects": [
+        {
+          "pid": "28",
+          "pname": "LEWI"
+        },
+        {
+          "pid": "20",
+          "pname": "MARKO"
+        }
+      ]
+    },
+    {
+      "batchTag": "2022",
+      "id": "135",
+      "name": "Sathya Prakash",
+      "imageLink": "https://i.imgur.com/4LxLz4y.png",
+      "position": "Member",
+      "github": "https://github.com/KingArthur000",
+      "email": "sathyaprakashelango@gmail.com",
+      "projects": [
+        {
+          "pid": "19",
+          "pname": "Precision Agriculture Bot"
+        }
+      ]
+    },
+    {
+      "batchTag": "2021",
+      "id": "111",
+      "name": "Nitish Gudapati",
+      "imageLink": "https://i.imgur.com/cuMXx98.png",
+      "position": "President (2020-2021)",
+      "github": "https://github.com/gnitish18",
+      "linkedin": "https://www.linkedin.com/in/gudapatinitish9/",
+      "email": "gudapatinitish9@gmail.com",
+      "projects": [
+        {
+          "pid": "13",
+          "pname": "SPEAR"
+        },
+        {
+          "pid": "9",
+          "pname": "HuRoS"
+        }
+      ]
+    },
+    {
+      "batchTag": "2021",
+      "id": "112",
+      "name": "Deepak S V",
+      "imageLink": "https://i.imgur.com/ltPCvSN.png",
+      "position": "Vice President (2020-2021)",
+      "github": "https://github.com/svdeepak999",
+      "linkedin": "https://www.linkedin.com/in/deepak-s-v-358b50170",
+      "email": "svdeepak99@gmail.com",
+      "projects": [
+        {
+          "pid": "13",
+          "pname": "SPEAR"
+        },
+        {
+          "pid": "8",
+          "pname": "Pepper"
+        }
+      ]
+    },
+    {
+      "batchTag": "2021",
+      "id": "113",
+      "name": "R Mukesh Kanna",
+      "imageLink": "https://i.imgur.com/U1kCB9F.png",
+      "position": "Vice President (2020-2021)",
+      "github": "https://github.com/Mukeshkanna19",
+      "email": "kanna.r1999@gmail.com",
+      "projects": [
+        {
+          "pid": "13",
+          "pname": "SPEAR"
+        },
+        {
+          "pid": "6",
+          "pname": "Soccer Bots"
+        }
+      ]
+    },
+    {
+      "batchTag": "2021",
+      "id": "114",
+      "name": "Jinesh R",
+      "imageLink": "https://i.imgur.com/p5IbDHq.png",
+      "position": "Treasurer (2020-2021)",
+      "github": "https://github.com/jineshrs2398",
+      "linkedin": "https://www.linkedin.com/in/jinesh-r-38a24a172",
+      "email": "jineshrs2398@gmail.com",
+      "projects": [
+        {
+          "pid": "13",
+          "pname": "SPEAR"
+        },
+        {
+          "pid": "9",
+          "pname": "HuRoS"
+        }
+      ]
+    },
+    {
+      "batchTag": "2021",
+      "id": "115",
+      "name": "Harshith Vignesh",
+      "imageLink": "https://i.imgur.com/3HB8niS.png",
+      "position": "Treasurer (2020-2021)",
+      "github": "https://github.com/harry-124",
+      "linkedin": "https://www.linkedin.com/in/harshith-vignesh-70817615b",
+      "email": "vinu.mhv@gmail.com",
+      "projects": [
+        {
+          "pid": "12",
+          "pname": "SRR"
+        },
+        {
+          "pid": "6",
+          "pname": "Soccer Bots"
+        }
+      ]
+    },
+    {
+      "batchTag": "2021",
+      "id": "116",
+      "name": "Dharun Chagarlamudi",
+      "imageLink": "https://i.imgur.com/7nskBHe.png",
+      "position": "Head, Workshops and Events (2020-2021)",
+      "github": "https://github.com/chagd",
+      "linkedin": "https://www.linkedin.com/in/dharun-chagarlamudi-7a6568170/",
+      "email": "chagdhar@gmail.com",
+      "projects": [
+        {
+          "pid": "17",
+          "pname": "Ballbot"
+        },
+        {
+          "pid": "12",
+          "pname": "SRR"
+        },
+        {
+          "pid": "6",
+          "pname": "Soccer Bots"
+        }
+      ]
+    },
+    {
+      "batchTag": "2021",
+      "id": "117",
+      "name": "Pranav M",
+      "imageLink": "https://i.imgur.com/FLWD518.png",
+      "position": "Head, Alumni Relations (2020-2021)",
+      "github": "https://github.com/Pranav-99",
+      "linkedin": "https://www.linkedin.com/in/pranav-mani-09782a185",
+      "email": "pranavmani99@gmail.com",
+      "projects": [
+        {
+          "pid": "6",
+          "pname": "Soccer Bots"
+        }
+      ]
+    },
+    {
+      "batchTag": "2021",
+      "id": "118",
+      "name": "Koushik Kumaran",
+      "imageLink": "https://i.imgur.com/z0eL1DE.png",
+      "position": "Member",
+      "github": "https://github.com/bubblydiddles",
+      "email": "koushikkumaran52@gmail.com",
+      "projects": [
+        {
+          "pid": "13",
+          "pname": "SPEAR"
+        },
+        {
+          "pid": "6",
+          "pname": "Soccer Bots"
+        }
+      ]
+    },
+    {
+      "batchTag": "2021",
+      "id": "119",
+      "name": "Abdur Rahman Kalim",
+      "imageLink": "https://i.imgur.com/jcobrru.png",
+      "position": "Member",
+      "github": "https://www.github.com/arkalim",
+      "linkedin": "https://www.linkedin.com/in/abdur-rahman-kalim-876899118",
+      "email": "abdur.rahman.kalim@gmail.com",
+      "projects": [
+        {
+          "pid": "12",
+          "pname": "SRR"
+        }
+      ]
+    },
+    {
+      "batchTag": "2021",
+      "id": "120",
+      "name": "Athithiya Kumar N B",
+      "imageLink": "https://i.imgur.com/UWiimPv.png",
+      "position": "Member",
+      "github": "https://github.com/athithyakumar",
+      "linkedin": "https://www.linkedin.com/in/athithya-kumar-a17828185/",
+      "email": "athithyakumar.mech@gmail.com",
+      "projects": [
+        {
+          "pid": "9",
+          "pname": "HuRoS"
+        }
+      ]
+    },
+    {
+      "batchTag": "2021",
+      "id": "121",
+      "name": "Avinash S",
+      "imageLink": "https://i.imgur.com/brNyx3z.png",
+      "position": "Member",
+      "github": "https://github.com/avinashrox",
+      "email": "avinashsenthil029@gmail.com",
+      "projects": [
+        {
+          "pid": "8",
+          "pname": "Pepper"
+        }
+      ]
+    },
+    {
+      "batchTag": "2021",
+      "id": "122",
+      "name": "Sarthak Narayan",
+      "imageLink": "https://i.imgur.com/G7jDB8L.png",
+      "position": "Member",
+      "github": "https://github.com/SarthakNarayan",
+      "linkedin": "https://www.linkedin.com/in/sarthak-narayan-40b927164/",
+      "email": "sarthak.narayang@gmail.com",
+      "projects": [
+        {
+          "pid": "12",
+          "pname": "SRR"
+        }
+      ]
+    },
+    {
+      "batchTag": "2020",
+      "id": "101",
+      "name": "R Hari shankar",
+      "imageLink": "https://i.imgur.com/zOO7XmW.png",
+      "position": "President (2019-2020)",
+      "github": "https://github.com/hari2181998",
+      "email": "harishankar2181998@gmail.com",
+      "projects": [
+        {
+          "pid": "17",
+          "pname": "Ballbot"
+        }
+      ]
+    },
+    {
+      "batchTag": "2020",
+      "id": "102",
+      "name": "Aswin Gururaj",
+      "imageLink": "https://i.imgur.com/jYDIJrG.png",
+      "position": "Vice President (2019-2020)",
+      "github": "https://github.com/aswingururaj",
+      "email": "aswingururaj1998@yahoo.com",
+      "projects": [
+        {
+          "pid": "17",
+          "pname": "Ballbot"
+        },
+        {
+          "pid": "15",
+          "pname": "RoBoat"
+        }
+      ]
+    },
+    {
+      "batchTag": "2020",
+      "id": "103",
+      "name": "Vidyaa K",
+      "imageLink": "https://i.imgur.com/o6JjnMA.png",
+      "position": "Treasurer  (2019-2020)",
+      "github": "https://github.com/vidyaa29",
+      "linkedin": "https://www.linkedin.com/in/vidyaa-krishnan-97923316a",
+      "email": "vidyaak2903@gmail.com",
+      "projects": [
+        {
+          "pid": "16",
+          "pname": "UXO"
+        },
+        {
+          "pid": "8",
+          "pname": "Pepper"
+        }
+      ]
+    },
+    {
+      "batchTag": "2020",
+      "id": "104",
+      "name": "Naveen S",
+      "imageLink": "https://i.imgur.com/5UzZ44W.png",
+      "position": "Treasurer (2019-2020)",
+      "github": "https://github.com/Naveen50525",
+      "linkedin": "https://www.linkedin.com/in/naveen-santhanam-36b44514a",
+      "email": "naveen50525@gmail.com",
+      "projects": [
+        {
+          "pid": "6",
+          "pname": "Soccer Bots"
+        }
+      ]
+    },
+    {
+      "batchTag": "2020",
+      "id": "105",
+      "name": "Akshaya K S",
+      "imageLink": "https://i.imgur.com/kq7ZaBy.png",
+      "position": "Head, Workshops and Events(2019-2020)",
+      "github": "https://github.com/Akshayaks",
+      "linkedin": "https://www.linkedin.com/in/akshaya-srinivasan-47a92b13a/",
+      "email": "akshaya.kms@gmail.com",
+      "projects": [
+        {
+          "pid": "16",
+          "pname": "UXO"
+        },
+        {
+          "pid": "6",
+          "pname": "Soccer Bots"
+        }
+      ]
+    },
+    {
+      "batchTag": "2020",
+      "id": "106",
+      "name": "Harinaathgobi C",
+      "imageLink": "https://i.imgur.com/E4nRYxt.png",
+      "position": "Member",
+      "github": "https://github.com/Harinaathgobi",
+      "email": "harinaathgobi@gmail.com",
+      "projects": [
+        {
+          "pid": "17",
+          "pname": "Ballbot"
+        },
+        {
+          "pid": "15",
+          "pname": "RoBoat"
+        }
+      ]
+    },
+    {
+      "batchTag": "2020",
+      "id": "107",
+      "name": "S Srikrishna",
+      "imageLink": "https://i.imgur.com/B7v4GOZ.png",
+      "position": "Member",
+      "github": "https://github.com/srike27",
+      "linkedin": "https://www.linkedin.com/in/srikrishna-s-2228b4136",
+      "email": "srike27@gmail.com",
+      "projects": [
+        {
+          "pid": "15",
+          "pname": "RoBoat"
+        },
+        {
+          "pid": "6",
+          "pname": "Soccer Bots"
+        }
+      ]
+    },
+    {
+      "batchTag": "2020",
+      "id": "108",
+      "name": "Ananda Rangan N",
+      "imageLink": "https://i.imgur.com/tFcm1zD.png",
+      "position": "Member",
+      "github": "https://github.com/anandarangan249",
+      "email": "anandarangan249@gmail.com",
+      "projects": [
+        {
+          "pid": "15",
+          "pname": "RoBoat"
+        },
+        {
+          "pid": "9",
+          "pname": "HURoS"
+        }
+      ]
+    },
+    {
+      "batchTag": "2020",
+      "id": "109",
+      "name": "Rishab Balasubramanian",
+      "imageLink": "https://i.imgur.com/ueowTaP.png",
+      "position": "Member",
+      "github": "https://github.com/rishab26201",
+      "email": "rishab.edu@gmail.com",
+      "projects": [
+        {
+          "pid": "17",
+          "pname": "Ballbot"
+        },
+        {
+          "pid": "14",
+          "pname": "Snakebot"
+        }
+      ]
+    },
+    {
+      "batchTag": "2020",
+      "id": "110",
+      "name": "Soumyarup Lahiri",
+      "position": "Member",
+      "github": "https://github.com/SoumyarupL",
+      "linkedin": "https://www.linkedin.com/in/soumyarup-lahiri-26a164143",
+      "email": "soumyarup.lahiri@gmail.com",
+      "projects": [
+        {
+          "pid": "14",
+          "pname": "Snakebot"
+        },
+        {
+          "pid": "7",
+          "pname": "Quadcopter"
+        }
+      ]
+    },
+    {
+      "batchTag": "2019",
+      "id": "89",
+      "name": "Anand Asokan",
+      "imageLink": "https://i.imgur.com/U7wtavF.png",
+      "position": "President  (2018-2019)",
+      "github": "https://github.com/anand97",
+      "linkedin": "https://www.linkedin.com/in/anand-asokan-750972126/",
+      "email": "anand.asokan1997@outlook.com",
+      "personalPage": "https://sites.google.com/view/anand-asokan",
+      "projects": [
+        {
+          "pid": "11",
+          "pname": "ARES"
+        },
+        {
+          "pid": "9",
+          "pname": "HURoS"
+        }
+      ]
+    },
+    {
+      "batchTag": "2019",
+      "id": "90",
+      "name": "Hari Prasanth P",
+      "imageLink": "https://i.imgur.com/r5EXOjm.png",
+      "position": "Vice President (2018-2019)",
+      "linkedin": "https://www.linkedin.com/in/hariprasanth19",
+      "email": "hari.191197@gmail.com",
+      "personalPage": "https://venkateshprasad23.github.io/",
+      "projects": [
+        {
+          "pid": "11",
+          "pname": "ARES"
+        },
+        {
+          "pid": "9",
+          "pname": "HURoS"
+        }
+      ]
+    },
+    {
+      "batchTag": "2019",
+      "id": "91",
+      "name": "Venkatesh Prasad V",
+      "imageLink": "https://i.imgur.com/OQfTWUr.png",
+      "position": "Vice President (2018-2019)",
+      "github": "https://github.com/venkateshprasad23",
+      "linkedin": "https://www.linkedin.com/in/venkatesh-prasad-7686a2134/",
+      "email": "venkateshprasad23061997@gmail.com",
+      "projects": [
+        {
+          "pid": "10",
+          "pname": "ASCON"
+        },
+        {
+          "pid": "9",
+          "pname": "HURoS"
+        }
+      ]
+    },
+    {
+      "batchTag": "2019",
+      "id": "92",
+      "name": "Anirudh Swaminathan",
+      "imageLink": "https://i.imgur.com/nHIgwfO.png",
+      "position": "Treasurer (2018-2019)",
+      "github": "https://github.com/Anirudh-Swaminathan",
+      "linkedin": "https://www.linkedin.com/in/anirudh-swaminathan",
+      "email": "aniswami97@gmail.com",
+      "personalPage": "http://anirudh-swaminathan.github.io/",
+      "projects": [
+        {
+          "pid": "11",
+          "pname": "ARES"
+        },
+        {
+          "pid": "8",
+          "pname": "Pepper"
+        }
+      ]
+    },
+    {
+      "batchTag": "2019",
+      "id": "93",
+      "name": "Madhan S",
+      "imageLink": "https://i.imgur.com/fRDVfwD.png",
+      "position": "Treasurer (2018-2019)",
+      "github": "https://github.com/Madhan-Suresh",
+      "linkedin": "https://www.linkedin.com/in/madhan-s-85855713a/",
+      "email": "madhanksb1234@gmail.com",
+      "projects": [
+        {
+          "pid": "11",
+          "pname": "ARES"
+        },
+        {
+          "pid": "6",
+          "pname": "Soccer Bots"
+        }
+      ]
+    },
+    {
+      "batchTag": "2019",
+      "id": "94",
+      "name": "Vigneshwar Mohanam",
+      "imageLink": "https://i.imgur.com/sKpdqRn.png",
+      "position": "Head, Workshops and Inductions  (2018-2019)",
+      "linkedin": "https://www.linkedin.com/in/vignesh-war/",
+      "email": "vigneshwar235@gmail.com",
+      "projects": [
+        {
+          "pid": "11",
+          "pname": "ARES"
+        },
+        {
+          "pid": "9",
+          "pname": "HURoS"
+        }
+      ]
+    },
+    {
+      "batchTag": "2019",
+      "id": "95",
+      "name": "Subramanian Krishnan",
+      "imageLink": "https://i.imgur.com/uQanbMt.png",
+      "position": "Head, External Affairs  (2018-2019)",
+      "github": "https://github.com/SubramanianKrish",
+      "linkedin": "https://www.linkedin.com/in/subramaniankrish/",
+      "email": "subramanian.krish611@gmail.com",
+      "projects": [
+        {
+          "pid": "10",
+          "pname": "ASCON"
+        },
+        {
+          "pid": "8",
+          "pname": "Pepper"
+        },
+        {
+          "pid": "5",
+          "pname": "Air Hockey"
+        }
+      ]
+    },
+    {
+      "batchTag": "2019",
+      "id": "96",
+      "name": "PSVS Sai Kumar",
+      "imageLink": "https://i.imgur.com/hTY6Xra.png",
+      "position": "Head, External Affairs  (2018-2019)",
+      "github": "https://github.com/psvssaikumar",
+      "linkedin": "https://www.linkedin.com/mwlite/me",
+      "email": "psvssaikumar1998@gmail.com",
+      "projects": [
+        {
+          "pid": "9",
+          "pname": "HURoS"
+        }
+      ]
+    },
+    {
+      "batchTag": "2019",
+      "id": "97",
+      "name": "Chinari Subhechha Subudhi",
+      "imageLink": "https://i.imgur.com/Cgc5EOj.png",
+      "position": "Member",
+      "github": "https://github.com/SubhechhaSubudhi",
+      "linkedin": "https://www.linkedin.com/in/subhechha-subudhi-825006139/",
+      "email": "subhechhasubudhi@yahoo.in",
+      "projects": [
+        {
+          "pid": "10",
+          "pname": "ASCON"
+        }
+      ]
+    },
+    {
+      "batchTag": "2019",
+      "id": "98",
+      "name": "Nikhil Jonnavithula",
+      "imageLink": "https://i.imgur.com/eglrgGx.png",
+      "position": "Member",
+      "linkedin": "https://in.linkedin.com/in/nikhil-jonnavithula-0762b4118",
+      "email": "jnikhil321@gmail.com",
+      "projects": [
+        {
+          "pid": "10",
+          "pname": "ASCON"
+        },
+        {
+          "pid": "9",
+          "pname": "HURoS"
+        }
+      ]
+    },
+    {
+      "batchTag": "2019",
+      "id": "99",
+      "name": "Rajiv Vaidyanathan N",
+      "imageLink": "https://i.imgur.com/p32VEO8.png",
+      "position": "Member",
+      "github": "https://github.com/Rajiv2605",
+      "email": "rajivvaidyanathan4@gmail.com",
+      "projects": [
+        {
+          "pid": "6",
+          "pname": "Soccer Bots"
+        }
+      ]
+    },
+    {
+      "batchTag": "2019",
+      "id": "100",
+      "name": "Surya M",
+      "imageLink": "https://i.imgur.com/wsJYL3b.png",
+      "position": "Member",
+      "github": "https://github.com/Surya-98",
+      "linkedin": "https://www.linkedin.com/in/surya-ravishankar-751a93152",
+      "projects": [
+        {
+          "pid": "8",
+          "pname": "Pepper"
+        }
+      ]
+    },
+    {
+      "batchTag": "2018",
+      "id": "76",
+      "name": "Mohamed Naveed G",
+      "imageLink": "https://i.imgur.com/1ASOA64.png",
+      "position": "President (2017-2018)",
+      "github": "https://github.com/MohamedNaveed",
+      "linkedin": "https://www.linkedin.com/in/mohamed-naveed-gul-mohamed-674b74a9",
+      "email": "mohdnaveed96@gmail.com",
+      "personalPage": "https://sites.google.com/view/mohamednaveed/",
+      "projects": [
+        {
+          "pid": "6",
+          "pname": "Soccer Bots"
+        },
+        {
+          "pid": "2",
+          "pname": "SLAT HEX"
+        }
+      ]
+    },
+    {
+      "batchTag": "2018",
+      "id": "77",
+      "name": "Nanda Kishore V",
+      "imageLink": "https://i.imgur.com/ZEvAZmm.png",
+      "position": "Vice President (2017-2018)",
+      "github": "https://github.com/Nanda-Kishore-V",
+      "linkedin": "https://www.linkedin.com/in/nanda-kishore-vasudevan/",
+      "email": "nandakishore12111996@gmail.com",
+      "projects": [
+        {
+          "pid": "6",
+          "pname": "Soccer Bots"
+        },
+        {
+          "pid": "2",
+          "pname": "SLAT HEX"
+        }
+      ]
+    },
+    {
+      "batchTag": "2018",
+      "id": "78",
+      "name": "Baladhurgesh Balagurusamy Paramasivan",
+      "imageLink": "https://i.imgur.com/JJI5fxV.png",
+      "position": "Treasurer (2017-2018)",
+      "github": "https://github.com/Baladhurgesh",
+      "linkedin": "https://www.linkedin.com/in/baladhurgesh-balagurusamy-paramasivan-67057a57",
+      "email": "baladhurgesh97@gmail.com",
+      "projects": [
+        {
+          "pid": "6",
+          "pname": "Soccer Bots"
+        },
+        {
+          "pid": "2",
+          "pname": "SLAT HEX"
+        }
+      ]
+    },
+    {
+      "batchTag": "2018",
+      "id": "79",
+      "name": "Sundaravalli Aravazhi",
+      "imageLink": "https://i.imgur.com/cZhFy3h.png",
+      "position": "Treasurer (2017-2018)",
+      "linkedin": "https://www.linkedin.com/in/sundaravalli-aravazhi",
+      "email": "sundaravalli.aravazhi@gmail.com",
+      "projects": [
+        {
+          "pid": "3",
+          "pname": "Mind Over Matter"
+        }
+      ]
+    },
+    {
+      "batchTag": "2018",
+      "id": "80",
+      "name": "Muhammad Suhail S",
+      "imageLink": "https://i.imgur.com/00u4XMS.png",
+      "position": "Head, Workshops and Events (2017-2018)",
+      "email": "muhammadsuhail441@gmail.com",
+      "projects": [
+        {
+          "pid": "6",
+          "pname": "Soccer Bots"
+        },
+        {
+          "pid": "2",
+          "pname": "SLAT HEX"
+        }
+      ]
+    },
+    {
+      "batchTag": "2018",
+      "id": "81",
+      "name": "Nithin Shrivastav S",
+      "imageLink": "https://i.imgur.com/rCJmrfR.png",
+      "position": "Head, Workshops and Events(2017-2018)",
+      "github": "https://github.com/NithinShrivatsav",
+      "linkedin": "https://www.linkedin.com/in/nithin-shrivatsav-s-70805bb3/",
+      "email": "nithinshrivatsav@gmail.com",
+      "projects": [
+        {
+          "pid": "8",
+          "pname": "Pepper"
+        },
+        {
+          "pid": "4",
+          "pname": "EXOS"
+        }
+      ]
+    },
+    {
+      "batchTag": "2018",
+      "id": "82",
+      "name": "Aarthy Ramesh",
+      "imageLink": "https://i.imgur.com/mSJMSnn.png",
+      "position": "Project Manager (2017 -2018)",
+      "linkedin": "https://www.linkedin.com/in/aarthy-ramesh-a6070b13b",
+      "email": "raarthy22@gmail.com",
+      "projects": [
+        {
+          "pid": "7",
+          "pname": "Quadcopter"
+        },
+        {
+          "pid": "3",
+          "pname": "Mind Over Matter"
+        }
+      ]
+    },
+    {
+      "batchTag": "2018",
+      "id": "83",
+      "name": "Ajay Asai",
+      "imageLink": "https://i.imgur.com/jU4x2kk.png",
+      "position": "Member",
+      "email": "ajaiasai@gmail.com",
+      "projects": [
+        {
+          "pid": "4",
+          "pname": "EXOS"
+        }
+      ]
+    },
+    {
+      "batchTag": "2018",
+      "id": "84",
+      "name": "Arvind Nataraj",
+      "imageLink": "https://i.imgur.com/M2mZt57.png",
+      "position": "Member",
+      "linkedin": "https://www.linkedin.com/in/arvind-nataraj-s-b16b1b11a",
+      "email": "arvindnata123@gmail.com",
+      "projects": [
+        {
+          "pid": "2",
+          "pname": "SLAT HEX"
+        }
+      ]
+    },
+    {
+      "batchTag": "2018",
+      "id": "85",
+      "name": "Harish Kumar K R",
+      "imageLink": "https://i.imgur.com/KlLoFQY.png",
+      "position": "Member",
+      "linkedin": "https://www.linkedin.com/in/harishkumarkr/",
+      "email": "harishkumarkr97@gmail.com",
+      "projects": [
+        {
+          "pid": "5",
+          "pname": "Air Hockey"
+        }
+      ]
+    },
+    {
+      "batchTag": "2018",
+      "id": "86",
+      "name": "Ruthrash Hari",
+      "imageLink": "https://i.imgur.com/ApxU0ES.png",
+      "position": "Member",
+      "github": "https://github.com/Ruthrash",
+      "linkedin": "https://www.linkedin.com/in/h-ruthrash-b5b790112/",
+      "email": "ruthrash.hari@gmail.com",
+      "personalPage": "https://ruthrashhari.wixsite.com/ruthrash",
+      "projects": [
+        {
+          "pid": "8",
+          "pname": "Pepper"
+        },
+        {
+          "pid": "4",
+          "pname": "EXOS"
+        }
+      ]
+    },
+    {
+      "batchTag": "2018",
+      "id": "87",
+      "name": "Varsha Suresh",
+      "imageLink": "https://i.imgur.com/M9cpMj2.png",
+      "position": "Member",
+      "email": "varshasuresh2706@gmail.com",
+      "projects": [
+        {
+          "pid": "3",
+          "pname": "Mind Over Matter"
+        }
+      ]
+    },
+    {
+      "batchTag": "2018",
+      "id": "88",
+      "name": "Venkata Subramanian Srinivasan",
+      "imageLink": "https://i.imgur.com/sjVAv5X.png",
+      "position": "Member",
+      "github": "https://github.com/VenkataSubramania",
+      "linkedin": "https://www.linkedin.com/in/vs-s",
+      "email": "venkatasubramanian1996@gmail.com",
+      "projects": [
+        {
+          "pid": "8",
+          "pname": "Pepper"
+        },
+        {
+          "pid": "4",
+          "pname": "EXOS"
+        }
+      ]
+    },
+    {
+      "batchTag": "2017",
+      "id": "71",
+      "name": "Sabhari Natarajan",
+      "imageLink": "https://i.imgur.com/Mkp3Lbl.png",
+      "position": "President (2016-2017)",
+      "github": "https://github.com/nsabhari",
+      "linkedin": "https://www.linkedin.com/in/nsabhari1995/",
+      "email": "nsabhari@gmail.com",
+      "projects": [
+        {
+          "pid": "7",
+          "pname": "Quadcopter"
+        },
+        {
+          "pid": "5",
+          "pname": "Air Hockey"
+        }
+      ]
+    },
+    {
+      "batchTag": "2017",
+      "id": "72",
+      "name": "Sarada Krithivasan",
+      "imageLink": "https://i.imgur.com/UQrrH82.png",
+      "position": "Vice President (2016-2017)",
+      "github": "https://www.bitbucket.org/Sarada_K/",
+      "linkedin": "https://www.linkedin.com/in/sarada-krithivasan-07534a140/",
+      "email": "sarada.krithi@gmail.com"
+    },
+    {
+      "batchTag": "2017",
+      "id": "73",
+      "name": "Sidhaarth Murugan",
+      "imageLink": "https://i.imgur.com/e82Zyt6.png",
+      "position": "Vice President (2016-2017)",
+      "linkedin": "https://www.linkedin.com/in/sidhaarth-murugan-b30293101/",
+      "email": "mur.sidhaarth@gmail.com"
+    },
+    {
+      "batchTag": "2017",
+      "id": "74",
+      "name": "Prakash Baskaran",
+      "imageLink": "https://i.imgur.com/BWT3gW8.png",
+      "position": "Treasurer (2016-2017)",
+      "github": "https://github.com/prakash1895",
+      "linkedin": "https://www.linkedin.com/in/prakash1895/",
+      "email": "prakashbaskaran1895@gmail.com",
+      "projects": [
+        {
+          "pid": "8",
+          "pname": "Pepper"
+        },
+        {
+          "pid": "7",
+          "pname": "Quadcopter"
+        }
+      ]
+    },
+    {
+      "batchTag": "2017",
+      "id": "75",
+      "name": "Adarsh Jagan S",
+      "imageLink": "https://i.imgur.com/c5rhPBg.png",
+      "position": "Project Manager (2016-2017)",
+      "email": "adarshjagan3895@gmail.com",
+      "projects": [
+        {
+          "pid": "8",
+          "pname": "Pepper"
+        },
+        {
+          "pid": "7",
+          "pname": "Quadcopter"
+        }
+      ]
+    },
+    {
+      "batchTag": "2016",
+      "id": "53",
+      "name": "Vimalesh Muralidharan",
+      "imageLink": "https://i.imgur.com/8ufXdoY.png",
+      "position": "President (2015-2016)",
+      "email": "vimalesh_m@yahoo.co.in",
+      "projects": [
+        {
+          "pid": "14",
+          "pname": "Snakebot"
+        },
+        {
+          "pid": "5",
+          "pname": "Air Hockey"
+        },
+        {
+          "pid": "1",
+          "pname": "3D Printer"
+        }
+      ]
+    },
+    {
+      "batchTag": "2016",
+      "id": "54",
+      "name": "Akshay Pramod Roy",
+      "imageLink": "https://i.imgur.com/KQy7d2t.png",
+      "position": "Vice President (2015-2016)",
+      "github": "https://github.com/apr8",
+      "linkedin": "https://www.linkedin.com/in/akshaypramodroy",
+      "email": "akshayproy26@gmail.com",
+      "projects": [
+        {
+          "pid": "1",
+          "pname": "3D Printer"
+        }
+      ]
+    },
+    {
+      "batchTag": "2016",
+      "id": "55",
+      "name": "Devalla Sripad Krishna",
+      "imageLink": "https://i.imgur.com/kUNFm1s.png",
+      "position": "Vice President (2015-2016)",
+      "linkedin": "https://www.linkedin.com/in/sripaddevalla",
+      "email": "devalla2603@gmail.com"
+    },
+    {
+      "batchTag": "2016",
+      "id": "56",
+      "name": "Shravan Muralidharan",
+      "imageLink": "https://i.imgur.com/VeDhnDT.png",
+      "position": "Treasurer (2015-2016)",
+      "github": "https://github.com/shravan1394",
+      "linkedin": "https://www.linkedin.com/in/shravan-murlidaran/",
+      "email": "smurlidaran@ucsb.edu"
+    },
+    {
+      "batchTag": "2016",
+      "id": "57",
+      "name": "Vijay Anand",
+      "position": "Treasurer (2015-2016)"
+    },
+    {
+      "batchTag": "2016",
+      "id": "58",
+      "name": "Haresh K Miriyala",
+      "position": "Head, External Affairs (2015-2016)",
+      "github": "https://github.com/HareshMiriyala",
+      "linkedin": "https://www.linkedin.com/in/hareshkarnan/",
+      "email": "haresh.miriyala@gmail.com"
+    },
+    {
+      "batchTag": "2016",
+      "id": "59",
+      "name": "Vivekanandan Suryamurthy",
+      "position": "Head, External Affairs (2015-2016)",
+      "github": "https://github.com/vsuryamurthy",
+      "linkedin": "https://www.linkedin.com/in/vivekanandan-suryamurthy-749997100/",
+      "email": "vivek.sury28@gmail.com"
+    },
+    {
+      "batchTag": "2016",
+      "id": "60",
+      "name": "Mohan Chandrasekharan",
+      "position": "Member",
+      "projects": [
+        {
+          "pid": "1",
+          "pname": "3D Printer"
+        }
+      ]
+    },
+    {
+      "batchTag": "2016",
+      "id": "61",
+      "name": "Nikesh Elango",
+      "position": "Member",
+      "linkedin": "https://www.linkedin.com/in/nikesh5050",
+      "email": "nikesh5050@gmail.com"
+    },
+    {
+      "batchTag": "2016",
+      "id": "62",
+      "name": "Saravanan Ravanan",
+      "position": "Member"
+    },
+    {
+      "batchTag": "2016",
+      "id": "63",
+      "name": "Adarsh Simon",
+      "position": "Member",
+      "projects": [
+        {
+          "pid": "1",
+          "pname": "3D Printer"
+        }
+      ]
+    },
+    {
+      "batchTag": "2016",
+      "id": "64",
+      "name": "Ashwin Narayan",
+      "position": "Member"
+    },
+    {
+      "batchTag": "2016",
+      "id": "65",
+      "name": "BS Rohit",
+      "position": "Member"
+    },
+    {
+      "batchTag": "2016",
+      "id": "66",
+      "name": "Chakradhar Reddy",
+      "position": "Member"
+    },
+    {
+      "batchTag": "2016",
+      "id": "67",
+      "name": "DV Gautam Raj",
+      "position": "Member"
+    },
+    {
+      "batchTag": "2016",
+      "id": "68",
+      "name": "Harish Karunakaran",
+      "imageLink": "https://i.imgur.com/d2ZAfpC.png",
+      "position": "Member"
+    },
+    {
+      "batchTag": "2016",
+      "id": "69",
+      "name": "Ramitha Sundar",
+      "position": "Member"
+    },
+    {
+      "batchTag": "2016",
+      "id": "70",
+      "name": "SuryaTeja Golkonda",
+      "position": "Member"
+    },
+    {
+      "batchTag": "2015",
+      "id": "40",
+      "name": "Nikhil Swaminathan",
+      "imageLink": "https://i.imgur.com/XnYgmwQ.png",
+      "position": "President (2014-2015)"
+    },
+    {
+      "batchTag": "2015",
+      "id": "41",
+      "name": "Shri Aravinthan",
+      "position": "Vice President (2014-2015)"
+    },
+    {
+      "batchTag": "2015",
+      "id": "42",
+      "name": "Sree Dharshni",
+      "position": "Treasurer (2014-2015)",
+      "linkedin": "https://www.linkedin.com/in/sree-dharshni-d",
+      "email": "sreedharshnid@gmail.com"
+    },
+    {
+      "batchTag": "2015",
+      "id": "43",
+      "name": "Abhiroop Badra",
+      "position": "Member"
+    },
+    {
+      "batchTag": "2015",
+      "id": "44",
+      "name": "Dharanivendhan Thangapazham",
+      "position": "Member"
+    },
+    {
+      "batchTag": "2015",
+      "id": "45",
+      "name": "Gowtham Kumar",
+      "position": "Member"
+    },
+    {
+      "batchTag": "2015",
+      "id": "46",
+      "name": "Karthik Vijaykumar",
+      "position": "Member"
+    },
+    {
+      "batchTag": "2015",
+      "id": "47",
+      "name": "Kumar Pushpak",
+      "position": "Member"
+    },
+    {
+      "batchTag": "2015",
+      "id": "48",
+      "name": "Milan Thomas",
+      "position": "Member"
+    },
+    {
+      "batchTag": "2015",
+      "id": "49",
+      "name": "Naresh Balaji",
+      "position": "Member"
+    },
+    {
+      "batchTag": "2015",
+      "id": "50",
+      "name": "Pankaj Rahi",
+      "position": "Member"
+    },
+    {
+      "batchTag": "2015",
+      "id": "51",
+      "name": "Rishikesh Sampat",
+      "position": "Member",
+      "email": "rishikeshsampat993@gmail.com"
+    },
+    {
+      "batchTag": "2015",
+      "id": "52",
+      "name": "Sai Sudha",
+      "position": "Member"
+    },
+    {
+      "batchTag": "2014",
+      "id": "26",
+      "name": "Kishore Punniyamurthy",
+      "position": "President (2013-2014)",
+      "linkedin": "https://www.linkedin.com/in/kishore-punniyamurthy-2b74247a",
+      "email": "Kishore.punniyamurthy@gmail.com"
+    },
+    {
+      "batchTag": "2014",
+      "id": "27",
+      "name": "Manikandan Ananth",
+      "imageLink": "https://i.imgur.com/JyFsV6c.png",
+      "position": "Vice President (2013-2014)",
+      "linkedin": "https://www.linkedin.com/in/manikandanananth50",
+      "email": "manikandan.ananth50@gmail.com"
+    },
+    {
+      "batchTag": "2014",
+      "id": "28",
+      "name": "Sethu Chidambaram",
+      "position": "Treasurer (2013-2014)",
+      "email": "chidambaram_sethu@hotmail.com",
+      "personalPage": "https://chidambaramsethu.wordpress.com/"
+    },
+    {
+      "batchTag": "2014",
+      "id": "29",
+      "name": "Govinda Pandey",
+      "position": "Head, Mech and Fab (2013-2014)"
+    },
+    {
+      "batchTag": "2014",
+      "id": "30",
+      "name": "Vinith James",
+      "position": "Head, Mech and Fab (2013-2014)"
+    },
+    {
+      "batchTag": "2014",
+      "id": "31",
+      "name": "Radha Dorairajan",
+      "position": "Head, Publicity and PR  (2013-2014)"
+    },
+    {
+      "batchTag": "2014",
+      "id": "32",
+      "name": "Vivekanandan Barathi",
+      "position": "Member"
+    },
+    {
+      "batchTag": "2014",
+      "id": "33",
+      "name": "Brahm Prakash Mishra",
+      "position": "Member"
+    },
+    {
+      "batchTag": "2014",
+      "id": "34",
+      "name": "Arjun Prasath",
+      "position": "Member"
+    },
+    {
+      "batchTag": "2014",
+      "id": "35",
+      "name": "Gibin Joe Zachariah",
+      "imageLink": "https://i.imgur.com/Rwex8nu.png",
+      "position": "Member",
+      "linkedin": "https://www.linkedin.com/in/gibinjoe/",
+      "email": "gibinjoezach@gmail.com"
+    },
+    {
+      "batchTag": "2014",
+      "id": "36",
+      "name": "John George Francis",
+      "position": "Member"
+    },
+    {
+      "batchTag": "2014",
+      "id": "37",
+      "name": "Nishant Panigrahi",
+      "position": "Member",
+      "email": "panigrahinishant@gmail.com"
+    },
+    {
+      "batchTag": "2014",
+      "id": "38",
+      "name": "Siddharth PL",
+      "position": "Member"
+    },
+    {
+      "batchTag": "2014",
+      "id": "39",
+      "name": "Vignesh Sushruta Raghavan",
+      "position": "Member",
+      "linkedin": "https://www.linkedin.com/in/vignesh-sushrutha-raghavan-06951773/",
+      "email": "vsraghavan913@gmail.com"
+    },
+    {
+      "batchTag": "2013",
+      "id": "19",
+      "name": "Atif Nabil",
+      "imageLink": "https://i.imgur.com/2EXaR4F.png",
+      "position": "President (2012-2013)",
+      "email": "contact.atifnabil@gmail.com"
+    },
+    {
+      "batchTag": "2013",
+      "id": "20",
+      "name": "Amutha Barathi",
+      "position": "Member",
+      "linkedin": "https://www.linkedin.com/in/amuthabharathi"
+    },
+    {
+      "batchTag": "2013",
+      "id": "21",
+      "name": "Ashwin Kannan",
+      "position": "Member"
+    },
+    {
+      "batchTag": "2013",
+      "id": "22",
+      "name": "Harini M",
+      "position": "Member",
+      "email": "harinim@outlook.in"
+    },
+    {
+      "batchTag": "2013",
+      "id": "23",
+      "name": "Hisham",
+      "position": "Member"
+    },
+    {
+      "batchTag": "2013",
+      "id": "24",
+      "name": "Layumrutha",
+      "position": "Member"
+    },
+    {
+      "batchTag": "2013",
+      "id": "25",
+      "name": "Sumantha Bose",
+      "position": "Member"
+    },
+    {
+      "batchTag": "2012",
+      "id": "13",
+      "name": "Ankur Prasad",
+      "position": "Member"
+    },
+    {
+      "batchTag": "2012",
+      "id": "14",
+      "name": "Aravind K",
+      "position": "Member"
+    },
+    {
+      "batchTag": "2012",
+      "id": "15",
+      "name": "Arjun Bhatia",
+      "position": "Member"
+    },
+    {
+      "batchTag": "2012",
+      "id": "16",
+      "name": "Ashutosh Dhar",
+      "position": "Member"
+    },
+    {
+      "batchTag": "2012",
+      "id": "17",
+      "name": "Guru Subramani",
+      "position": "Member"
+    },
+    {
+      "batchTag": "2012",
+      "id": "18",
+      "name": "KV Aditya",
+      "position": "Member"
+    },
+    {
+      "batchTag": "2011",
+      "id": "6",
+      "name": "Benzun Wisely Babu",
+      "position": "President (2010-2011)",
+      "email": "benzun1999@gmail.com"
+    },
+    {
+      "batchTag": "2011",
+      "id": "7",
+      "name": "Rajeev Kumar",
+      "position": "Vice President (2010-2011)"
+    },
+    {
+      "batchTag": "2011",
+      "id": "8",
+      "name": "Rahul Ashok",
+      "position": "Treasurer (2010-2011)"
+    },
+    {
+      "batchTag": "2011",
+      "id": "9",
+      "name": "Ashwath Rajendran",
+      "position": "Member"
+    },
+    {
+      "batchTag": "2011",
+      "id": "10",
+      "name": "Pranesh Pandurangan",
+      "position": "Member"
+    },
+    {
+      "batchTag": "2011",
+      "id": "11",
+      "name": "Ritika Borkar",
+      "position": "Member"
+    },
+    {
+      "batchTag": "2011",
+      "id": "12",
+      "name": "Venky Govind",
+      "position": "Member"
+    },
+    {
+      "batchTag": "2010",
+      "id": "1",
+      "name": "Manimaran",
+      "position": "President (2009-2010)"
+    },
+    {
+      "batchTag": "2010",
+      "id": "2",
+      "name": "Anusha",
+      "position": "Member"
+    },
+    {
+      "batchTag": "2010",
+      "id": "3",
+      "name": "Ashwin Chandrr",
+      "position": "Member"
+    },
+    {
+      "batchTag": "2010",
+      "id": "4",
+      "name": "Harini",
+      "position": "Member"
+    },
+    {
+      "batchTag": "2010",
+      "id": "5",
+      "name": "Natrajan",
+      "position": "Member"
+    }
+  ]
+}

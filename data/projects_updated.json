@@ -1,0 +1,1639 @@
+{
+  "projects": [
+    {
+      "pid": "30",
+      "seededIn": "2021",
+      "shortName": "ANVI",
+      "longName": "Assistance in Navigation for the Visually Impaired",
+      "duration": "Dec 2021 - Present",
+      "shortDesc": "The project aims to assist visually impaired people by providing audio instructions, utilizing deep learning, along with safety features including fall detection and GPS tracking.",
+      "longDesc": [
+        {
+          "heading": "",
+          "type": "para",
+          "para": "We developed this project to address the needs of millions of visually impaired people."
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "The prototype provides audio instructions to the users based on the environment to enable them to understand better. The device is wearable and relatively cheap compared to existing solutions. It also has safety features built into it."
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "It uses Deep learning models CLIP and LXMERT for image captioning and visual question answering. The models take an input image from a camera and output a text explaining the environment or answering the question posed by the user."
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "This text is converted to audio and played in the headphone worn by the user. The image is captured from the wireless camera located on the headband and sent to the computation platform where the process mentioned above takes place."
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "We have tested the Raspberry Pi and Jetson Nano for the computation, and both work well, albeit with some latency. Several safety features are implemented via onboard sensors: fall detection, GPS tracking, and Obstacle detection."
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "The Time of flight-based LIDAR sensor detects obstacles in front of the person and gives a vibration through haptic motors. The strength of vibration depends on the distance of the obstacle, which enables the user to maneuver around the obstacle."
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "The MPU6050 is used to detect falls, and an email is sent to emergency contacts. The email contains the GPS coordinates of the person obtained from the GPS sensor. A Li-Po battery powers the entire system."
+        }
+      ],
+      "techStack": [
+        "ToF sensor",
+        "Nvidia Jetson Nano",
+        "Wireless camera,",
+        "Deep Learning"
+      ],
+      "developers": [
+        { "id": "157", "name": "Rahul Raaghav A" },
+        { "id": "158", "name": "Shyaam Pon Sundar S" },
+        { "id": "160", "name": "Vakula Venkatesh" },
+        { "id": "136", "name": "Rigved Sanku" },
+        { "id": "149", "name": "Adithya Venkata Narayanan" },
+        { "id": "156", "name": " R Charan Bhardhwaj" },
+        { "id": "143", "name": "Divya A B" }
+      ],
+      "cardCoverImage": "https://i.imgur.com/3mLEFJE.png",
+      "backgroundImage": "https://i.imgur.com/dIgQ8d0.png",
+      "images": [
+        "https://i.imgur.com/3mLEFJE.png ",
+        "https://i.imgur.com/gR6XL9i.png ",
+        "https://i.imgur.com/jxdM3Vo.png",
+        "https://i.imgur.com/gPznDcL.png",
+        "https://i.imgur.com/75ONACO.png ",
+        "https://i.imgur.com/4j2fgSU.png"
+      ],
+      "quickLinks": {
+        "youtubeLink": "https://youtu.be/qKCRdq6o9OM",
+        "githubLink": "https://github.com/RMI-NITT/ANVI",
+        "otherLink": ""
+      },
+      "publications": [
+        {
+          "title": "Winners of Smart India Hackathon 2022",
+          "subtitle": "MHRD",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "pid": "29",
+      "seededIn": "2021",
+      "shortName": "ARIBOT",
+      "longName": "Autonomous Rail Inspection Bot",
+      "duration": "Dec 2021 - Present",
+      "shortDesc": "Autonomous Railway Inspection Robot to conduct active and passive  inspection of rail tracks using ultrasonic NDT, laser scanners, and a Machine vision system using Image processing and Deep Learning algorithms.",
+      "longDesc": [
+        {
+          "heading": "",
+          "type": "para",
+          "para": "Regular maintenance and inspection are crucial for the effective and safe usage of railways as a mode of transportation. Any form of cracks or defects in railway tracks can lead to track failures causing catastrophic damage. In India, most railway track inspections are conducted manually by railroad track inspectors. It is practically difficult to manually look for defects along long stretches of railway tracks, making it inaccurate due to human errors. Deploying an autonomous robot that can check the railway lines for defects will reduce human effort and error."
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "We propose a prototype that is a fully autonomous 4-wheeled robot, flexible in usage and installation, capable of detecting railway defects by performing various tests such as ultrasonic Nondestructive Test (NDT) for internal crack detection in rails and a 3D-laser profiling system for surface cracks, gauge length, and ballast profile inspection. The robot is also equipped with a machine vision system (camera) for anomaly detection in fasters and sleepers. Once inspection mode is turned on, our proposed system will autonomously inspect the track for defects, mainly in 4 profiles: Ballast, Rails, Sleepers, and Fasteners, checking for deviation from a standard profile by implementing the aforementioned methods."
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "The bot is equipped with modules like GPS, odometer, and IMU sensors to locate and know the robot's position and status respectively at any given time. All the inspection data, including ongoing data capture and defect location details, are constantly being sent and updated to a user-friendly web server. These details can be accessed by Inspection personnel for robot activity monitoring, such as distance traveled, battery charge with rough inspection duration estimate, the temperature of on-board modules, and mainly, Inspection result analysis such as live camera feed from a camera installed, laser profile of track, and other inspection data. If any defect or anomaly is detected, the nearby base station is alerted in the webserver mentioned, and the Spatio-temporal coordinates, that is, time and location of defect and type of defect, are shared."
+        }
+      ],
+      "techStack": ["ROS Gazebo", "MATLAB", "NGIX", "Tensorflow"],
+      "developers": [
+        { "id": "138", "name": "Aravindh Deiva G" },
+        { "id": "126", "name": "Kailash Jagadeesh" },
+        { "id": "152", "name": "Krishna Kishore V S" },
+        { "id": "151", "name": "Guru Vishnu M" },
+        { "id": "150", "name": "Farhan Abid Seliya" },
+        { "id": "156", "name": "R Charan Bhardhwaj" }
+      ],
+      "cardCoverImage": "https://i.imgur.com/aF1mgjo.png",
+      "backgroundImage": "https://i.imgur.com/R3UTsmj.png",
+      "images": [
+        "https://i.imgur.com/aF1mgjo.png",
+        "https://i.imgur.com/ZlgW5oP.png",
+        "https://i.imgur.com/GSxbx0V.png",
+        "https://i.imgur.com/i7txSMR.png"
+      ],
+      "quickLinks": {
+        "youtubeLink": "https://www.youtube.com/watch?v=xe1oSxpRqOU",
+        "githubLink": "github.com/RMI-NITT/ARIBOT",
+        "otherLink": ""
+      }
+    },
+    {
+      "pid": "28",
+      "seededIn": "2021",
+      "shortName": "LEWI",
+      "longName": "Localization and mapping of Enclosed space using Wi-Fi signals",
+      "duration": "Dec 2021 - Present",
+      "shortDesc": "Localisation of static objects inside an enclosed space and human activity detection through the wall using wifi technology by multiple mobile robot networks.",
+      "longDesc": [
+        {
+          "heading": "",
+          "type": "para",
+          "para": "Obstacle mapping is crucial to the robust operation of robotic networks. Specifically, obstacle mapping relates to determining the location of an object within an environment. In existing approaches, only the obstacles that are directly visible to the robot can be mapped. In other words, occluded obstacles cannot be mapped. Currently, frameworks for mapping of occluded obstacles are lacking. Even the popular SLAM algorithm can’t map occluded objects."
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "Generally, robots tasked with a certain exploratory mission face an abundance of information. In such an information-rich world, there is simply not enough time to sample the whole environment due to the potential delay-sensitive nature of the application as well as other practical constraints. A group of Unmanned Air Vehicles (UAVs), for instance, may need to cooperatively build an aerial map of an area in a limited time. It is not practical to wait for the collective sampling of the vehicles to cover every single point in the terrain. So, our objective is to get a map by taking only a minimum amount of measurements and devising an algorithm to get the map from that minimum data."
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "Hence, we use the new theory of compressive sampling (also known by other terms such as compressed sensing, compressive sensing or sparse sensing) shows that under certain conditions, it is possible to reconstruct a signal from a considerably incomplete set of observations, i.e., with a number of measurements much less than predicted by the Nyquist-Shannon theorem."
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "Hence, we propose our project LEWI, which stands for “Localization and mapping of Enclosed space using Wi-Fi signals”. Since the Wi-Fi signal has the ability to pass through objects and also decays through objects, we use this property to map the occluded objects. We use the new algorithm of compressive sensing to do the mapping by collecting only very little data. We can also determine the accurate position and shape of the obstacles, which helps in localization of occluded objects inside the enclosed space. Hence our proposed project does the mapping efficiently with minimum amount of measurements and also maps the objects occluded from the view."
+        }
+      ],
+      "techStack": [
+        "ESP8266",
+        "Compressive sensing",
+        "Yagi antenna",
+        "Robotic  cooperative network"
+      ],
+      "developers": [
+        { "id": "155", "name": "P N Kalaimani" },
+        { "id": "154", "name": "Mukilan K" },
+        { "id": "134", "name": "Manimozhi S" },
+        { "id": "146", "name": "Lokesh Keshav S" },
+        { "id": "153", "name": "Madhav R" },
+        { "id": "137", "name": "K Girish" },
+        { "id": "159", "name": "Sunkara Vikash" }
+      ],
+      "cardCoverImage": "https://i.imgur.com/HTUys5d.png",
+      "backgroundImage": "https://i.imgur.com/v8S5BNK.png",
+      "images": [
+        "https://i.imgur.com/HTUys5d.png",
+        "https://i.imgur.com/BmlwPkz.png",
+        "https://i.imgur.com/wag0lQ5.png",
+        "https://i.imgur.com/I4AEK1P.png",
+        "https://i.imgur.com/mKmVQ0J.png",
+        "https://i.imgur.com/VNqYVwK.png"
+      ],
+      "quickLinks": {
+        "youtubeLink": "https://youtu.be/gD48fRKOrWo",
+        "githubLink": "https://github.com/RMI-NITT/LEWI",
+        "otherLink": ""
+      }
+    },
+    {
+      "pid": "27",
+      "seededIn": "2021",
+      "shortName": "SPARO",
+      "longName": "Spatial Augmentation and Reconstruction of Objects",
+      "duration": "Dec 2021 - Present",
+      "shortDesc": "The project aims to create 3D mesh models in virtual space from camera images of real-world objects.",
+      "longDesc": [
+        {
+          "heading": "",
+          "type": "para",
+          "para": "3D reconstruction of real-world objects in virtual space finds various applications in scene rendering and self-driving cars for scene building and perception. This project aims to create editable 3D models of real-world objects using only a few images of the desired object. The project uses the concepts of Structure from Motion and Neural Radiance Fields to recreate the selected object in virtual space."
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "The user inputs the images of the object. Structure from Motion is a concept that determines the relative position of the camera from the entity in consideration. The relative poses of the camera are calculated, and then the data is fed into the neural radiance network. The network outputs the colour RGB and opacity alpha of every voxel in the space. This data is used in the rendering equation, which renders the item's volume in the 3D space."
+        }
+      ],
+      "techStack": ["NeRF", " Tensorflow", " Pytorch", "Deep Learning"],
+      "developers": [
+        { "id": "156", "name": "R Charan Bhardhwaj" },
+        { "id": "149", "name": "Adithya Venkata Narayanan" },
+        { "id": "139", "name": "Sivvani M" },
+        { "id": "148", "name": "Shrushti Khairkar" }
+      ],
+      "cardCoverImage": "https://i.imgur.com/gOC2rt2.png",
+      "backgroundImage": "https://i.imgur.com/IwpIPVM.png",
+      "images": [
+        "https://i.imgur.com/gOC2rt2.png",
+        "https://i.imgur.com/f20UdkD.png",
+        "https://i.imgur.com/Jo2yv1b.png",
+        "https://i.imgur.com/z3CRsye.png",
+        "https://i.imgur.com/mQdmlJW.png",
+        "https://i.imgur.com/qOf71UB.png"
+      ],
+      "quickLinks": {
+        "youtubeLink": "https://youtu.be/If1SxSkwnWg",
+        "githubLink": "https://github.com/Adithya-187326/PL_NeRF",
+        "otherLink": ""
+      }
+    },
+    {
+      "pid": "26",
+      "seededIn": "2021",
+      "shortName": "SPS",
+      "longName": "Smart Parking System",
+      "duration": "Sept 2021 - Nov 2021",
+      "shortDesc": "Vision based system using object detection through ESP32-CAMs, Raspberry Pi and cloud deployed NodeJS web-server.",
+      "longDesc": [
+        {
+          "heading": "",
+          "type": "para",
+          "para": "Parking has always been an issue in metropolitan cities. Be it a shopping complex or a public arena, parking wastes time and fuel, and sometimes one must break a sweat to get it done. This calls for a streamlined approach through which people can easily find and park their vehicles close to their destinations. "
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "Our Smart Parking System (SPS) uses low-cost camera modules installed at multiple parking lots across the city and streams live images to the corresponding remote server. The remote server processes the data from the camera module and decides on the number of vacant parking spaces available in the parking lot. "
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "The remote server updates the number of vacant and filled parking slots in a cloud database. The number of vacant parking slots and their location are displayed in a web application accessible to the general public and free to use. The database is updated continuously, ensuring a pristine user experience. "
+        }
+      ],
+      "techStack": ["Raspberry Pi", "ESP32 CAM", "NodeJS", "OpenCV"],
+      "developers": [
+        { "id": "141", "name": "Aswin Sreekumar" },
+        { "id": "140", "name": "Satish Kumar L" },
+        { "id": "144", "name": "Greeshwar R S" },
+        { "id": "0", "name": "H Kailash (Associate)" }
+      ],
+      "cardCoverImage": "https://i.imgur.com/qMuOW2n.png",
+      "backgroundImage": "https://i.imgur.com/W2fmJUJ.png",
+      "images": [
+        "https://i.imgur.com/qMuOW2n.png",
+        "https://i.imgur.com/D4bgomy.png",
+        "https://i.imgur.com/dLfFv2I.png",
+        "https://i.imgur.com/rKWoQWb.png",
+        "https://i.imgur.com/pZ2mWGT.png",
+        "https://i.imgur.com/HKPX33z.png",
+        "https://i.imgur.com/gxk1akO.png",
+        "https://i.imgur.com/rTP26Ix.png",
+        "https://i.imgur.com/SkCQuLk.png"
+      ],
+      "quickLinks": {
+        "youtubeLink": "",
+        "githubLink": "https://github.com/RMI-NITT/Smart-parking-system",
+        "otherLink": ""
+      },
+      "publications": [
+        {
+          "title": "Winners of Amrita Smart City Hackathon 2021",
+          "subtitle": "Amrita Coimbatore | Honeywell Technologies",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "pid": "25",
+      "seededIn": "2021",
+      "shortName": "SSC",
+      "longName": "Sign to Speech Convertor",
+      "duration": "Aug 2021 - April 2022",
+      "shortDesc": "Compact and portable system for converting Indian Sign Language to speech using Artificial Neural Networks deployed on the Sony sPresense microcontroller.",
+      "longDesc": [
+        {
+          "heading": "",
+          "type": "para",
+          "para": "People with speech disabilities and or who have difficulties talking rely on sign language and gestures to communicate. Communication between persons with such defects and people without knowledge of sign language becomes an arduous task. Hence, to communicate, people must resort to using more straightforward gestures or written prompts, which is tedious, slow and unsuitable for varied situations."
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "Our solution to this involves a sign language-to-speech converter device that can read the signs and gestures of a person and convert them to simple speech. Most people with speech disabilities are acquainted with sign language, which acts as the system's input. Based on finger movements and the angular position of the hands, the signs can be decoded into specific words and fed to a speaker with a custom voice set. Hence it makes communication among diverse groups of people more manageable and more efficient. The system will also be tuned and calibrated to a specific person according to their hand and finger movements to improve speech, efficiency and accuracy."
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "Our device uses signs and gestures as input. We use flex sensors and inertial measurement units (IMU) to obtain the input signals properly. These input signals are used to decode the word/content for communication. For tracking gestures, the IMU data is used to predict the angle of the hand. The indicated data/content is then fed to audio output based on the pre-set voice. The entire system is battery powered, which makes it mobile and unrestrictive."
+        }
+      ],
+      "techStack": [
+        "Sony sPresense",
+        "nRF24L01+ network",
+        "Sensor fusion",
+        "Deep Learning"
+      ],
+      "developers": [
+        { "id": "141", "name": "Aswin Sreekumar," },
+        { "id": "140", "name": "Satish Kumar L" },
+        { "id": "144", "name": "Greeshwar R S" }
+      ],
+      "cardCoverImage": "https://i.imgur.com/vAmCSBg.png",
+      "backgroundImage": "https://i.imgur.com/6MMhsUX.png",
+      "images": [
+        "https://i.imgur.com/vAmCSBg.png",
+        "https://i.imgur.com/mvLd9Hu.png",
+        "https://i.imgur.com/m9ZuGaZ.png",
+        "https://i.imgur.com/pdhvGSN.png",
+        "https://i.imgur.com/0W31fRy.png",
+        "https://i.imgur.com/kkKVtku.png",
+        "https://i.imgur.com/KgazGNB.png",
+        "https://i.imgur.com/T2LyjyV.png"
+      ],
+      "quickLinks": {
+        "youtubeLink": "https://youtu.be/oq0OR4O_MMM",
+        "githubLink": "https://github.com/RMI-NITT/Sign-to-Speech-Convertor",
+        "otherLink": ""
+      }
+    },
+    {
+      "pid": "24",
+      "seededIn": "2021",
+      "shortName": "STAR",
+      "longName": "System for Tracking Animals using Radar",
+      "duration": "Dec 2021 - Present",
+      "shortDesc": "Detection of vital signs of wildlife using radar technology.",
+      "longDesc": [
+        {
+          "heading": "Introduction",
+          "type": "para",
+          "para": "In the course of the last century alone, the planet witnessed the extinction of 18 species of animals. A multitude of wildlife sanctuaries have been established around the globe with the sole purpose of protecting and preserving wildlife in their natural habitat. Despite their eﬀorts, acts of poaching and hunting continue to threaten the existence of many animal species. Locating and monitoring the movement and vitals of the animals in reserves are challenging."
+        },
+        {
+          "heading": "Existing Technology",
+          "type": "para",
+          "para": "Some of the existing models for the purpose of tracking wild beings use methods like microchips and GPS which require a physical device to be worn by the animal at all times. This is not feasible as these devices are prone to damage, usually heavy and cannot be used for smaller animals. Furthermore, it gives no information with respect to monitoring of heartbeat and breathing rate."
+        },
+        {
+          "heading": "Proposed Solution",
+          "type": "para",
+          "para": "This project proposes the use of Frequency Modulated Continuous Wave radar to send and analyze signals to detect and estimate respiration and heartbeat frequencies. Being capable of measuring vital signs(through non-contact methods) and having a wider ﬁeld, it is more advantageous than the existing alternatives. Through its implementation the following can be achieved:"
+        },
+        {
+          "heading": "",
+          "type": "bullets",
+          "para": [
+            "Detect and measure vital signs of animals.",
+            "Tracking both animal and human movements to prevent poaching and hunting in wildlife sanctuaries.",
+            "Weather is not a constraint and this system can work all day long. The radar technology gives real time tracking of the vital signs of the animals by emitting waves and analyzing the reflected waves. This eliminates the demerits of wearing a physical device and the time taken for this estimation is less due to high-end signal processors."
+          ]
+        },
+        {
+          "heading": "Progress",
+          "type": "para",
+          "para": "Simulations for heartbeat and respiration rate were modelled in MATLAB. It was also figured out that this radar technology also had applications in motion tracking, contour detection, area scanning, etc"
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "The hardware from Texas Instruments, IWR6843AOPEVM, was utilized in this project. Many guides, videos and articles were referred for understanding its working and the potential it holds."
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "Works are still being held by RMI members in this project."
+        }
+      ],
+      "techStack": [
+        "MATLAB",
+        "FMCW technology",
+        "mm waves",
+        "Fourier transformations"
+      ],
+      "developers": [
+        { "id": "153", "name": "Madhav R" },
+        { "id": "159", "name": "Sunkara Vikash" },
+        { "id": "137", "name": "Girish K" }
+      ],
+      "cardCoverImage": "https://i.imgur.com/UcMR3nk.png",
+      "backgroundImage": "https://i.imgur.com/nwj5rDP.png",
+      "images": [
+        "https://i.imgur.com/UcMR3nk.png",
+        "https://i.imgur.com/ZhDzmvK.png",
+        "https://i.imgur.com/UUFZMmj.png",
+        "https://i.imgur.com/tGZzJKf.png"
+      ],
+      "quickLinks": {
+        "youtubeLink": "https://youtu.be/zlh-tLXnrtc",
+        "githubLink": "https://github.com/RMI-NITT/STAR",
+        "otherLink": ""
+      }
+    },
+    {
+      "pid": "23",
+      "seededIn": "2020",
+      "shortName": "Automated Trolley",
+      "longName": "",
+      "duration": "Dec 2020 - March 2021",
+      "shortDesc": "An automated system that travels backs to its parking position without any human intervention or task force requiring it to be fetched and brought back.",
+      "longDesc": [
+        {
+          "heading": "",
+          "type": "para",
+          "para": "The availability of trolleys at the right place in airports and shopping centres is a big concern for authorities today. It often requires a substantial human force and energy to have a smooth running system at all times."
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "The automated trolley is a computerised system that returns to its parking point without any human intervention after being used by a customer. This project involves a tensor-based approach with machine learning to predict and track population in an indoor environment to detect locations with lesser population densities across space and time to achieve a more reliable navigation mechanism in a dynamic environment like an airport. "
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "A bird-eye camera is used both during the offline (data collection) and online phases to obtain population distribution at a particular instant in time."
+        }
+      ],
+      "techStack": ["ROS Gazebo", "RRT", "MATLAB", "Python"],
+      "developers": [
+        { "id": "143", "name": "Divya A B" },
+        { "id": "132", "name": "Gaurav Nagotanekar" },
+        { "id": "142", "name": "Abhinav Agrawal" },
+        { "id": "138", "name": "Aravindh Deiva" },
+        { "id": "0", "name": "Sai Ganesh" }
+      ],
+      "cardCoverImage": "https://i.imgur.com/n3SdQLe.png",
+      "backgroundImage": "https://i.imgur.com/E0Gi0yZ.png",
+      "images": [
+        "https://i.imgur.com/n3SdQLe.png",
+        "https://i.imgur.com/MnWKuzf.png",
+        "https://i.imgur.com/wDWU6OV.png"
+      ],
+      "quickLinks": {
+        "youtubeLink": "",
+        "githubLink": "",
+        "otherLink": ""
+      }
+    },
+    {
+      "pid": "22",
+      "seededIn": "2020",
+      "shortName": "CHAOS",
+      "longName": "Crop Harvesting's Automated and Optimal Solution",
+      "duration": "Dec 2020 - March 2021",
+      "shortDesc": "Intelligent and efficient 4-DOF robotic system that utilizes a camera feed to identify ripe crops using Image Processing algorithms and collect the same.",
+      "longDesc": [
+        {
+          "heading": "",
+          "type": "para",
+          "para": "Automation is an important current trend and development in the field of agriculture. Like the manufacturing industry, agriculture also involves routine and monotonous tasks."
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "CHAOS is an intelligent and efficient robotic system that uses a camera feed to identify ripe crops using Image Processing algorithms. A Robotic manipulator (4DOF) with a soft gripper as its end effector is then used to pluck the crop using Inverse Kinematics."
+        }
+      ],
+      "techStack": ["Deep Learning", "MATLAB", "ROS Gazebo", "Fusion 360"],
+      "developers": [
+        { "id": "137", "name": "K Girish" },
+        { "id": "147", "name": "Rishivanthiya G R" },
+        { "id": "148", "name": "Shrushti Khairkar" },
+        { "id": "145", "name": "Jai Kesav K R" },
+        { "id": "144", "name": "Greeshwar R S" }
+      ],
+      "cardCoverImage": "https://i.imgur.com/eqxIs0I.png",
+      "backgroundImage": "https://i.imgur.com/FMX9P5c.png",
+      "images": [
+        "https://i.imgur.com/eqxIs0I.png",
+        "https://i.imgur.com/nGZocVD.png",
+        "https://i.imgur.com/M1j1PWt.png",
+        "https://i.imgur.com/8p49Olk.png"
+      ],
+      "quickLinks": {
+        "youtubeLink": "https://www.youtube.com/watch?v=ZmmrQpT5dJo",
+        "githubLink": "",
+        "otherLink": ""
+      }
+    },
+    {
+      "pid": "21",
+      "seededIn": "2020",
+      "shortName": "HIDQ",
+      "longName": "Hybrid Inspection Drive Quadcopter",
+      "duration": "Dec 2020 - April 2021",
+      "shortDesc": "A convertible quadcopter, manually controlled to move across inaccessible places as a drone or a 4-wheeler bot, equipped with a camera to inspect industrial systems.",
+      "longDesc": [
+        {
+          "heading": "",
+          "type": "para",
+          "para": "Maintenance and inspection form a crucial part of an industry’s operation. Proper checks and inspections are essential for efficient operation, avoiding lethal consequences, ensuring safety and avoiding physical damage. Human physical examination has constraints such as narrow spaces and dangerous environments and does not always ensure precision and dependable results."
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "This project focuses on building an efficient and innovative solution to this inspection problem."
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "A convertible hybrid drive quadcopter is manually controlled to move across inaccessible places as a drone or a 4-wheeler convertible using a self-transforming mechanism. It is equipped with a camera to inspect various industrial systems and check for defects and anomalies using Machine Learning and Image Processing algorithms on the controller side. BLDC motors are used to power both the wheels and the propellers in each mode."
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "Variable sprawl angles using self-locking gears are put to use to change the dimension of the bot to the required arena/space. Automated crack and rust detection is also performed using integrated Image processing and Deep Learning using Convolutional Neural Networks."
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "The convertible bot can be used to inspect various systems of industries like a chimney, ventilation systems, HVAC, pressurized tanks, boilers, or any confined space to detect leakage, corrosion, cracks and other structural defects and anomalies."
+        }
+      ],
+      "techStack": ["Fusion360", "Flight dynamics", "IP CAM", "OpenCV"],
+      "developers": [
+        { "id": "141", "name": "Aswin Sreekumar" },
+        { "id": "139", "name": "Sivvani M" },
+        { "id": "140", "name": "Satish Kumar L" },
+        { "id": "146", "name": "Lokesh Keshav S" }
+      ],
+      "cardCoverImage": "https://i.imgur.com/lcA2PjS.png",
+      "backgroundImage": "https://i.imgur.com/rxJrC4L.png",
+      "images": [
+        "https://i.imgur.com/lcA2PjS.png",
+        "https://i.imgur.com/7eXm1R7.png",
+        "https://i.imgur.com/SLQFBN4.png",
+        "https://i.imgur.com/Zo0aOI3.png",
+        "https://i.imgur.com/uQT7iiw.png",
+        "https://i.imgur.com/oJWZdwK.png"
+      ],
+      "quickLinks": {
+        "youtubeLink": "",
+        "githubLink": "https://github.com/RMI-NITT/Project_HIDQ",
+        "otherLink": "https://digital-library.theiet.org/content/conferences/10.1049/icp.2022.0620"
+      },
+      "publications": [
+        {
+          "title": "International Conference on Computing in Engineering and Technology 2022",
+          "subtitle": "Pipeline inspection using self-transforming hybrid drive quad-copter",
+          "link": "https://digital-library.theiet.org/content/conferences/10.1049/icp.2022.0620"
+        }
+      ]
+    },
+    {
+      "pid": "20",
+      "seededIn": "2019",
+      "shortName": "MARKO",
+      "longName": "Machine Assisted Rehabilitation for Knee Osteoarthritis",
+      "duration": "Dec 2019 - April 2020",
+      "shortDesc": "A bio-inspired solution for Rehabilitation of patients suffering from Knee Osteoarthritis.",
+      "longDesc": [
+        {
+          "heading": "",
+          "type": "para",
+          "para": "Knee-osteoarthritis is one of the most common forms of arthritis that people above age 45 suffer from. Physiotherapy and post-surgery rehabilitation are essential stages of the treatment to gain control over the knees and strengthen muscles around the knees. These are conducted under the guidance of therapists and physicians."
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "Robotic therapeutic tools such as CPM machines reduce the massive expenditure of frequent consultations with physicians. However, the available devices in the market are passive as they do not dynamically adapt to a patient's needs as it follows pre-set functions."
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "In this project, a novel approach is presented to control and actuate a CPM machine by integrating a Deep Learning based control strategy using CNNs. EMG and IMU sensors are interfaced with the patient's thigh muscles to classify the patient's intent as three states: forward, backward and rest. A low-cost, eco-friendly alpha prototyped CPM machine is developed to implement the algorithms."
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "Dataset is collected by performing experiments on three healthy subjects under different conditions. Experimental performance shows the feasibility of this home rehabilitation device and accurate intuitive motion predictions with CNN."
+        }
+      ],
+      "techStack": ["Deep Learning", "MATLAB", "SolidWorks", "Blender"],
+      "developers": [
+        { "id": "124", "name": "Viekash V K" },
+        { "id": "132", "name": "Gaurav Nagotanekar" },
+        { "id": "134", "name": "S Manimozhi" }
+      ],
+      "cardCoverImage": "https://i.imgur.com/6jkOi44.png",
+      "backgroundImage": "https://i.imgur.com/iLhRTRE.png",
+      "images": [
+        "https://i.imgur.com/6jkOi44.png",
+        "https://i.imgur.com/1tZgJRw.png",
+        "https://i.imgur.com/Le4RUd5.png",
+        "https://i.imgur.com/Ul2Q16F.png"
+      ],
+      "quickLinks": {
+        "youtubeLink": "",
+        "githubLink": "https://github.com/RMI-NITT/MARKO",
+        "otherLink": "https://ieeexplore.ieee.org/document/9563370"
+      },
+      "publications": [
+        {
+          "title": "IEEE Madras section conference 2021",
+          "subtitle": "Deep Learning Based Muscle Intent Classification in Continuous Passive Motion Machine for Knee Osteoarthritis Rehabilitation",
+          "link": "https://ieeexplore.ieee.org/document/9563370"
+        }
+      ]
+    },
+    {
+      "pid": "19",
+      "seededIn": "2019",
+      "shortName": "PAB",
+      "longName": "Precision Agriculture Bot",
+      "duration": "Dec 2019 - April 2020",
+      "shortDesc": "Robot to detect weeds through camera feed using Deep Learning and Computer Vision models and precise spraying of weedicides  over the same.",
+      "longDesc": [
+        {
+          "heading": "",
+          "type": "para",
+          "para": "Farmers are heavily affected by weeds damaging their crops by absorbing the nutrients meant for them, thereby inhibiting the crop's growth. This leads to enormous losses for the farmer; thus, they resort to spraying the whole field with enormous weedicides. This practice leads to the contamination of local water bodies due to the runoff of the weedicides. With increasing weedicides, the cost has become a significant burden for farmers."
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "With the advancements in Computer Vision and Robotics, we aim to solve this issue by developing an autonomous robot. The robot is designed to detect weeds apart from crops from its camera feed using the latest Deep Learning and Computer Vision models. Once the weed is detected, microdoses of weedicides are sprayed precisely over the weeds alone. This reduces the amount of weedicide used, thereby reducing cost and environmental damage."
+        }
+      ],
+      "techStack": ["ROS Gazebo", "PyTorch", "Raspberry Pi", "Arduino"],
+      "developers": [
+        { "id": "123", "name": "Shrikumaran P B" },
+        { "id": "128", "name": " Loahit K" },
+        { "id": "131", "name": "Akesh M" },
+        { "id": "135", "name": "Sathya Prakash" },
+        { "id": "125", "name": "Akshat Khandelwal" }
+      ],
+      "cardCoverImage": "https://i.imgur.com/AUVpw58.png",
+      "backgroundImage": "https://i.imgur.com/7IMb8c4.png",
+      "images": [
+        "https://i.imgur.com/AUVpw58.png",
+        "https://i.imgur.com/0wwhNV0.png",
+        "https://i.imgur.com/2Te3k4m.png",
+        "https://i.imgur.com/6H31fhj.png"
+      ],
+      "quickLinks": {
+        "youtubeLink": "",
+        "githubLink": "",
+        "otherLink": ""
+      }
+    },
+    {
+      "pid": "18",
+      "seededIn": "2019",
+      "shortName": "SRF",
+      "longName": "Supernumary fingers",
+      "duration": "Dec 2019 - April 2020",
+      "shortDesc": "A wearable rehabilitative robot for hemiparetic patients aiding in performing bi-manual tasks single-handedly.",
+      "longDesc": [
+        {
+          "heading": "",
+          "type": "para",
+          "para": "Supernumerary Robotic Fingers is a wearable robot developed to augment the capabilities of the human hand that can help perform a variety of prehensile, bimanual, and mnaipulation tasks single-handedly. The patients can use the fingers to recover their grasping abilities presenting an active compensatory tool in the initial phases of therapeutic recovery and rehabilitation to promote the use of the arm even if the hand grasp function is not recovered. "
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "The patients can intuitively control the two robotic fingers using the flex sensors attached to their fingers through a hand glove and IMU. These robotic fingers may provide chronic hemiparetic patients with assistance to lead independent and productive lives. The proposed solution is intended as a rehabilitation device to assist the hands in bimanual tasks like grasping and manipulating objects."
+        }
+      ],
+      "techStack": [
+        "Machine learning",
+        "Control systems",
+        "Rehabilitative robotics",
+        "Dynamics"
+      ],
+      "developers": [
+        { "id": "126", "name": "Kailash Jagadeesh" },
+        { "id": "127", "name": "Hemangani N" }
+      ],
+      "cardCoverImage": "https://i.imgur.com/rVrzhpN.png",
+      "backgroundImage": "https://i.imgur.com/wxKmOHG.png",
+      "images": [
+        "https://i.imgur.com/rVrzhpN.png",
+        "https://i.imgur.com/7qySpPS.png",
+        "https://i.imgur.com/z0pNkE3.png",
+        "https://i.imgur.com/BjaCaag.png",
+        "https://i.imgur.com/8vMVYhx.png"
+      ],
+      "quickLinks": {
+        "youtubeLink": "",
+        "githubLink": "https://github.com/RMI-NITT/SRF",
+        "otherLink": "https://ieeexplore.ieee.org/document/9800689"
+      },
+      "publications": [
+        {
+          "title": "International Conference on Computing in Engineering and Technology 2022",
+          "subtitle": "SR (Supernumerary Robotic) Fingers",
+          "link": "https://ieeexplore.ieee.org/document/9800689"
+        }
+      ]
+    },
+    {
+      "pid": "17",
+      "seededIn": "2019",
+      "shortName": "Ballbot",
+      "longName": "",
+      "duration": "2019",
+      "shortDesc": "A dynamically-stable, omni-directional mobile robot designed to balance on a spherical ball through its single contact point.",
+      "longDesc": [
+        {
+          "heading": "",
+          "type": "para",
+          "para": "The initial problem statement is to build a stable and robust platform that can be used for further research in the navigation domain using spherically structured bots. A real-time simulation of the ball-bot has been developed to serve the purpose of a testing platform for various control algorithms, different motors and shapes of the ball-bot."
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "Some parts of the robot were designed in Autodesk Inventor and simulated using Gazebo and ROS, on which the control algorithms were implemented. In this simulation, the robot is assumed to be on a flat surface throughout its motion. Specially designed wheels called omni-wheels have been used for this robot to allow the ball to rotate freely without affecting the other wheels. The motors are held together by custom-built motor mounts."
+        }
+      ],
+      "techStack": ["ROS Gazebo", "AutoDesk Inventor", "Omni wheels", "Python"],
+      "developers": [
+        { "id": "102", "name": "Aswin Gururaj" },
+        { "id": "106", "name": "Harinaathgobi C" },
+        { "id": "101", "name": "R Hari Shankar" },
+        { "id": "109", "name": "Rishab Balasubramanian" },
+        { "id": "116", "name": "Dharun Chargarlamudi" }
+      ],
+      "cardCoverImage": "https://i.imgur.com/1XBSOd1.png",
+      "backgroundImage": "https://i.imgur.com/DccM52V.png",
+      "images": [
+        "https://i.imgur.com/1XBSOd1.png",
+        "https://i.imgur.com/7Fl826a.png"
+      ],
+      "quickLinks": {
+        "youtubeLink": "",
+        "githubLink": "https://github.com/RMI-NITT/Ballbot",
+        "otherLink": ""
+      }
+    },
+    {
+      "pid": "16",
+      "seededIn": "2018",
+      "shortName": "UXO",
+      "longName": "UXO-The Minesweeper",
+      "duration": "2018 - 2019",
+      "shortDesc": "Robotic system designed and aimed to achieve semi-autonomous humanitarian demining at higher accuracies and minimal cost",
+      "longDesc": [
+        {
+          "heading": "",
+          "type": "para",
+          "para": "The robot implements thermography for landmine detection and a tree transplanter mechanism for demining. It avoids detonating the mines while traversing over them thanks to its lightweight design and foam track that reduces pressure on the mine. The bot is made to navigate the selected area using a remote control. The mine is then detected by image processing using the fact that the thermal signature of the mine is different compared to the surrounding soil. Once detected, the mine is dug out by three spades (automated by linear actuators), forming a triangular prism inside the ground."
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "The robot can be improvised by using a thermographic camera and improved actuators. This will extend the soil profiles and mine varieties compatible with this detection process. The design can also be applied in archaeology to detect artefacts and in mining to detect metal deposits again based on thermal signatures."
+        }
+      ],
+      "techStack": ["Python", "Image Processing", "Arduino", "Thermography"],
+      "developers": [
+        { "id": "105", "name": "Akshaya K S" },
+        { "id": "0", "name": "Swatthi" },
+        { "id": "103", "name": "Vidyaa K" }
+      ],
+      "cardCoverImage": "https://i.imgur.com/mC9pbEY.png",
+      "backgroundImage": "https://i.imgur.com/H4cq5y1.png",
+      "images": [
+        "https://i.imgur.com/mC9pbEY.png",
+        "https://i.imgur.com/jKjeU9u.png",
+        "https://i.imgur.com/uwAwHrS.png",
+        "https://i.imgur.com/slficTm.png"
+      ],
+      "quickLinks": {
+        "youtubeLink": "",
+        "githubLink": "",
+        "otherLink": ""
+      },
+      "publications": [
+        {
+          "title": "Advances in Robotics 2019",
+          "subtitle": "Semi-autonomous robot for landmine detection and removal",
+          "link": ""
+        },
+        {
+          "title": "Presented at Festival of Innovation and Entrepreneurship (FINE)",
+          "subtitle": "Rashtrapati Bhavan",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "pid": "15",
+      "seededIn": "2018",
+      "shortName": "RoBoat",
+      "longName": "Unmanned Surface Vehicle",
+      "duration": "2018",
+      "shortDesc": "An autonomous floating robot capable of utilizing mesh networks formed by a swarm of similar robots aiding rescue operations.",
+      "longDesc": [
+        {
+          "heading": "",
+          "type": "para",
+          "para": "The Roboat, is an autonomous, floating robot. This robot can be sent into areas prone to high flooding to determine regions where people require help. The robot can send SOS messages in case of a shout for help or a loud sound. The system works even in cases of low to zero network connectivity with the support of a mesh network formed by a swarm of such robots by sending information about each robot across its network. This is similar to the blockchain technology that we see today in cryptocurrency."
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "If the robot of this swarm gets a momentary connection, all the information is transferred to a database. The robot's onboard GPS module enables waypoint travel in flooded streets. Upon button press, the GPS info is transmitted to the mesh network. The robot's path and stability are controlled using an IMU to get accelerometer and gyroscope data."
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "Additionally, ultrasonic sensors on the sides can detect obstacles, and the robot can avoid them. The Roboat has omnidirectional capabilities for better mobility."
+        }
+      ],
+      "techStack": ["Python", "Arduino", "GPS", "MPU6050"],
+      "developers": [
+        { "id": "108", "name": "Ananda Rangan N" },
+        { "id": "102", "name": "Aswin Gururaj" },
+        { "id": "106", "name": "Harinaathgobi C" },
+        { "id": "107", "name": "S Srikrishna" }
+      ],
+      "cardCoverImage": "https://i.imgur.com/JsZePQA.png",
+      "backgroundImage": "https://i.imgur.com/u0BFMJm.png",
+      "images": [
+        "https://i.imgur.com/JsZePQA.png",
+        "https://i.imgur.com/uF84qwN.png",
+        "https://i.imgur.com/YLBEdk2.png"
+      ],
+      "quickLinks": {
+        "youtubeLink": "https://youtu.be/gJLD88WDmVQ?list=PL44ElmNkyTvAOAaKOyxxh6-qOBxQdbjUt",
+        "githubLink": "https://github.com/RMI-NITT/roBoat-resQQ",
+        "otherLink": ""
+      },
+      "publications": [
+        {
+          "title": "Presented at Festival of Innovation and Entrepreneurship (FINE)",
+          "subtitle": "Rashtrapati Bhavan",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "pid": "14",
+      "seededIn": "2018",
+      "shortName": "Snakebot",
+      "longName": "",
+      "duration": "2018",
+      "shortDesc": "Snake-like robot capable of passing through small holes and cracks and reach areas inaccessible or dangerous to humans using various gaits of a snake.",
+      "longDesc": [
+        {
+          "heading": "",
+          "type": "para",
+          "para": "Over the past few years, various threats have significantly increased the need for surveillance and security. We plan to help improve safety and ease the burden in compromised areas with our snakebot."
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "The robot can be used on all terrains of land. Since the robot slithers its way, it would be undetected from a distance."
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "India has been suffering from many natural and man-caused catastrophic disasters during the past few decades, such as massive earthquakes, fire breakouts, floods, etc. Considering the frequency of such disasters, the snakebot can be deployed to search for trapped survivors. The multi-jointed snakebot provides rescue workers with a video feed as it passes through the rubble."
+        }
+      ],
+      "techStack": [
+        "Image processing",
+        "Servo control",
+        "Actuator synchronisation",
+        "Head stabilization"
+      ],
+      "developers": [
+        { "id": "0", "name": "Dhanavel" },
+        { "id": "0", "name": "Monalisa" },
+        { "id": "109", "name": "Rishab Balasubramanian" },
+        { "id": "110", "name": "Soumyarup Lahiri" },
+        { "id": "53", "name": "Vimalesh Muralidharan" }
+      ],
+      "cardCoverImage": "https://i.imgur.com/GGYAKgS.png",
+      "backgroundImage": "https://i.imgur.com/brO4w51.png",
+      "images": [
+        "https://i.imgur.com/GGYAKgS.png",
+        "https://i.imgur.com/FAgIMCa.png ",
+        "https://i.imgur.com/wV4vLzE.png "
+      ],
+      "quickLinks": {
+        "youtubeLink": "",
+        "githubLink": "",
+        "otherLink": ""
+      }
+    },
+    {
+      "pid": "13",
+      "seededIn": "2018",
+      "shortName": "SPEAR",
+      "longName": "Soft Pneumatic EMG-Assisted Rehabilitation",
+      "duration": "2018-2019",
+      "shortDesc": "An Active Ankle-Foot Orthosis (AFO) for rehabilitation of post stroke foot drop actuated using pneumatically driven McKibben Muscles and controlled using surface Electromyography (EMG) signals.",
+      "longDesc": [
+        {
+          "heading": "",
+          "type": "para",
+          "para": "Stroke patients often suffer from foot drop - a gait abnormality caused due to the paralysis of the anterior portion muscles of the lower leg, causing an inability or impaired ability to raise the foot at the ankle joint. This condition leads to the extremities of the foot being dragged along the ground while walking, causing tripping and other accidents. Braces or splints that fit into shoes are prescribed to help hold the foot in a normal position."
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "Most patients are trained to walk with canes for rehabilitation, and therapists prescribe physiotherapy for a series of short, intensive sessions. These solutions are expensive and slow processes as they require the presence of skilled personnel."
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "Utilizing advancements in robotics, we aim to aid in combating this difficulty by developing a Soft Robotic Active Ankle-Foot Orthosis (AFO). The AFO is designed to augment the human musculoskeletal system. It is actuated using pneumatically driven McKibben Muscles (Pneumatic Artificial Muscles) which are cost-effective and lightweight, offering a significant advantage over Motor Driven orthoses."
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "The orthosis is controlled using Electromyography (EMG) signals from the muscles involved in the motion of the ankle. We aim to integrate Machine Learning and utilize Artificial Neural Networks to provide a more accurate and personalized response of the assistive system as a future implementation."
+        }
+      ],
+      "techStack": [
+        "Machine Learning",
+        "EMG Signals",
+        "Arduino",
+        "Statistical Signal processing"
+      ],
+      "developers": [
+        { "id": "111", "name": "Nitish Gudapati" },
+        { "id": "118", "name": "Koushik Kumaran" },
+        { "id": "112", "name": "Deepak S V" },
+        { "id": "113", "name": "R Mukesh Kanna" },
+        { "id": "114", "name": "Jinesh R" }
+      ],
+      "cardCoverImage": "https://i.imgur.com/jkigVp8.png",
+      "backgroundImage": "https://i.imgur.com/Ch4K7wM.png",
+      "images": [
+        "https://i.imgur.com/jkigVp8.png",
+        "https://i.imgur.com/SrScXSa.png",
+        "https://i.imgur.com/Fld7c4t.png",
+        "https://i.imgur.com/WL4EaVa.png ",
+        "https://i.imgur.com/4kXH5PY.png",
+        "https://i.imgur.com/tDjKP3G.png"
+      ],
+      "quickLinks": {
+        "youtubeLink": "https://www.youtube.com/watch?list=PL44ElmNkyTvCRuWAIcXDtp5S97rujg1kM&v=9IeZ1yYYh7A",
+        "githubLink": "https://github.com/RMI-NITT/SPEAR",
+        "otherLink": ""
+      },
+      "publications": [
+        {
+          "title": "4th International and 19th National Conference on Machines and Mechanisms(iNaCoMM 2019)",
+          "subtitle": "Design and Control of a Low-cost EMG-based Soft Robotic Ankle-Foot Orthosis for Foot Drop Rehabilitation",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "pid": "12",
+      "seededIn": "2018",
+      "shortName": "SRR",
+      "longName": "Search and Reconnaissance Robot",
+      "duration": "2018 - 2019",
+      "shortDesc": "All terrain robot with active articulating chassis to overcome obstacles of greater size than its wheels.",
+
+      "longDesc": [
+        {
+          "heading": "",
+          "type": "para",
+          "para": "Natural disasters like earthquakes/landslides are sudden events that cause widespread destruction and significant collateral damage, including loss of life. Even though we cannot eliminate the loss, we can still reduce it. People stuck in rubble/debris from collapsed buildings can be rescued; however, this operation must be performed in a short time and requires the intervention of skilled personnel to avoid further risking the lives of the victims trapped underneath."
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "We have developed the SRR - Search and Reconnaissance Robot as a solution. This robot aims at traversing across various terrains and locating the position of survivors inside the debris for quick rescue operations and cutting down on the necessity of a trained workforce. The standout feature of SRR from other existing ATVs is the active articulating chassis to allow climbing and overcoming obstacles of size much more significant than its wheel diameter."
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "Module separation allows the robot to go into tight spaces where the whole body doesn't fit. The design of the active articulating chassis, modularity with a locking mechanism, the complete control of the vehicle and the various modes of operation are presented."
+        }
+      ],
+      "techStack": ["Arduino", "Modular Chassis", "ROS Gazebo", "Raspberry pi"],
+
+      "developers": [
+        { "id": "119", "name": "Abdur Rahman Kalim" },
+        { "id": "116", "name": "Dharun Chagarlamudi" },
+        { "id": "115", "name": "Harshith Vignesh" },
+        { "id": "0", "name": "Mohd Aquif" },
+        { "id": "122", "name": "Sarthak Narayan" }
+      ],
+
+      "cardCoverImage": "https://i.imgur.com/hkJpLRQ.png",
+      "backgroundImage": "https://i.imgur.com/Cvy9JFh.png",
+      "images": [
+        "https://i.imgur.com/hkJpLRQ.png",
+        "https://i.imgur.com/9YhlE5B.png",
+        "https://i.imgur.com/vPG6may.png"
+      ],
+      "quickLinks": {
+        "githubLink": "",
+        "otherLink": ""
+      },
+      "publications": [
+        {
+          "title": "4th International and 19th National Conference on Machines and Mechanisms(iNaCoMM 2019)",
+          "subtitle": "Search and Reconnaissance Robot for Disaster Management",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "pid": "11",
+      "seededIn": "2017",
+      "shortName": "ARES",
+      "longName": "Assistive Rehabilitation Exoskeleton",
+      "duration": "2017 - 2018",
+      "shortDesc": "Bot designed for rehabilitation of patients recovering from post-stroke trauma and degenerated muscles due to old age or other neuro-muscular disorders.",
+      "longDesc": [
+        {
+          "heading": "",
+          "type": "para",
+          "para": "Most patients with neuro-muscular disorders lose muscle strength which degrades their grasping and lifting capabilities causing severe hindrance to the person’s day-to-day activities. Such individuals are in constant need of additional care and support."
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "Utilizing advancements in robotics, we aim to aid in combating this difficulty by developing a wearable 3 DoF upper body exoskeleton for patients, empowering them to help themselves so that they may lead an everyday life without needing extensive assistance. We use EMG (Electromyograph) signals as the control mechanism for the exoskeleton. All the patient needs to do is to start contracting their muscles, and the exoskeleton immediately begins to assist them, aided with faster response times, for a more natural experience. "
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "Integration of Machine Learning utilizing Artificial Neural Networks aims to provide a more accurate and personalized response of the assistive system."
+        }
+      ],
+      "techStack": [
+        "3 DOF Exoskeleton",
+        "Machine Learning",
+        "EMG Signals",
+        "Python"
+      ],
+
+      "developers": [
+        { "id": "89", "name": "Anand Asokan" },
+        { "id": "92", "name": "Anirudh Swaminathan" },
+        { "id": "90", "name": "Hari Prasanth P" },
+        { "id": "93", "name": "Madhan S" },
+        { "id": "94", "name": "Vigneshwar Mohanam" }
+      ],
+
+      "cardCoverImage": "https://i.imgur.com/wv9ZDyF.png",
+      "backgroundImage": "https://i.imgur.com/MIqS7Dt.png",
+      "images": [
+        "https://i.imgur.com/wv9ZDyF.png",
+        "https://i.imgur.com/YVDVgLC.png",
+        "https://i.imgur.com/15BGoBM.png",
+        "https://i.imgur.com/2lTfxvg.png",
+        "https://i.imgur.com/dvyOuV2.png"
+      ],
+      "quickLinks": {
+        "youtubeLink": "https://www.youtube.com/watch?v=poLY6zQyu8U&list=PL44ElmNkyTvBEUzKNem82jqLcwXWyOYtB",
+        "githubLink": "https://github.com/RMI-NITT/ARES",
+        "otherLink": ""
+      },
+      "publications": [
+        {
+          "title": "Fifth Indian Control Conference",
+          "subtitle": "",
+          "link": ""
+        },
+        {
+          "title": "Presented at Festival of Innovation and Entrepreneurship (FINE)",
+          "subtitle": "Rashtrapati Bhavan",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "pid": "10",
+      "seededIn": "2017",
+      "shortName": "ASCON",
+      "longName": "American Sign Language to Speech Converter",
+      "duration": "2017-2018",
+      "shortDesc": "The hand gestures, as defined in the American Sign language, are converted to speech based on the input from the IMU and flex sensors.",
+      "longDesc": [
+        {
+          "heading": "",
+          "type": "para",
+          "para": "We believe that communication is a fundamental right. The better we communicate and share our ideas, the faster we progress as a society. ASCON aims to bridge the gap between people with speech impairment and those without sign language knowledge."
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "The hand gestures, as defined in the American Sign Language (ASL), are converted to speech output based on the input from the Inertial Measurement Unit and the flex sensors."
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "A three-layered Artificial Neural Network has been implemented with Keras as the front end and theano as the back end for classifying gestures. The processing has been done on a BeagleBone Black."
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "The project aims to try and assist the 70 million people who face difficulty in vocal communication."
+        }
+      ],
+      "techStack": ["BeagleBone Black", "Machine Learning", "Keras", "Theano"],
+
+      "developers": [
+        { "id": "97", "name": "Chinari Subhechha Subudhi" },
+        { "id": "98", "name": "Nikhil Jonnavidhula" },
+        { "id": "95", "name": "Subramanian Krishnan" },
+        { "id": "91", "name": "Venkatesh Prasad V" }
+      ],
+
+      "cardCoverImage": "https://i.imgur.com/w5w0Tx1.png",
+      "backgroundImage": "https://i.imgur.com/STNG3vL.jpg",
+      "images": [
+        "https://i.imgur.com/w5w0Tx1.png",
+        "https://i.imgur.com/tBimCch.png",
+        "https://i.imgur.com/o2XU8wi.png",
+        "https://i.imgur.com/c9t8fzY.png",
+        "https://i.imgur.com/iOITf42.png"
+      ],
+      "quickLinks": {
+        "youtubeLink": "",
+        "githubLink": "https://github.com/RMI-NITT/ASCON---Wearable-Glove",
+        "otherLink": ""
+      }
+    },
+    {
+      "pid": "9",
+      "seededIn": "2017",
+      "shortName": "HuRos",
+      "longName": "Humanoid Robotic System",
+      "duration": "2017-present",
+      "shortDesc": "Long-term project aimed at developing a 10-DOF stable, static walking Bipedal robot capable of traversing on plane surfaces and tolerant to external disturbances.",
+      "longDesc": [
+        {
+          "heading": "",
+          "type": "para",
+          "para": "A real-time simulation of the walking gaits of the robot has been developed to serve the purpose of a testing platform for various gaits, mechanisms and control algorithms."
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "The robot was designed in PTC Creo and simulated in MATLAB-SimMechanics, on which motion planning and control algorithms were implemented for developing the static walking gait. In this gait, the robot is in static equilibrium throughout its motion. Mechanisms such as parallelogram linkages, belts and gear drives were developed to actuate the 2 DOF joints at the ankle and hip. The fabrication of the real-life prototype based on the simulation results is completed. Currently, we are developing the trajectories for the gait of the bipedal robot."
+        }
+      ],
+      "techStack": [
+        "MATLAB - SimMechanics",
+        "PTC Creo",
+        "Python",
+        "Kinematics"
+      ],
+      "developers": [
+        { "id": "89", "name": "Anand Asokan" },
+        { "id": "90", "name": "Hari Prasanth P" },
+        { "id": "98", "name": "Nikhil Jonnavidhula" },
+        { "id": "96", "name": "P S V S Sai Kumar" },
+        { "id": "91", "name": "Venkatesh Prasad V" },
+        { "id": "94", "name": "Vigneshwar Mohanam" },
+        { "id": "108", "name": "Ananda Rangan N" },
+        { "id": "111", "name": "Nitish Gudapati" },
+        { "id": "114", "name": "Jinesh R" },
+        { "id": "120", "name": "Athithya Kumar N B" },
+        { "id": "124", "name": "V K Viekash" },
+        { "id": "133", "name": "Nilendu Ganguli" }
+      ],
+      "cardCoverImage": "https://i.imgur.com/YHkP6Ip.png",
+      "backgroundImage": "https://i.imgur.com/dkIP5Ms.png",
+      "images": [
+        "https://i.imgur.com/YHkP6Ip.png",
+        "https://i.imgur.com/WDm0H8M.png",
+        "https://i.imgur.com/5Gn637T.png",
+        "https://i.imgur.com/mzK7HKV.png",
+        "https://i.imgur.com/kdltuJb.png",
+        "https://i.imgur.com/jrgpNgS.png"
+      ],
+      "quickLinks": {
+        "youtubeLink": "https://youtu.be/KEZAagrPsK8?list=PL44ElmNkyTvDE6TNGxojuFG-B6DDnvIzQ",
+        "githubLink": "https://github.com/RMI-NITT/HuRoS",
+        "otherLink": ""
+      }
+    },
+    {
+      "pid": "8",
+      "seededIn": "2017",
+      "shortName": "Pepper",
+      "longName": "Robotic Autonomous Mobile Assistant",
+      "duration": "2017 - 2021",
+      "shortDesc": "A differential drive robot capable of mapping an indoor environment and navigating through it using SLAM algorithms.",
+      "longDesc": [
+        {
+          "heading": "",
+          "type": "para",
+          "para": "Pepper is aimed at being a personal assistant for the user using various artificial intelligent algorithms. Few of the employed algorithms can perform speech recognition, object detection and recognition. A gripper is also present on the robot's chassis that serves object grasping. The robot uses a ROS network to communicate between the sensors, actuators, and the onboard computer (ROS master)."
+        },
+        {
+          "heading": "Robot Design",
+          "type": "para",
+          "para": "The robot's chassis was designed using Autocad, and the design was fabricated using acrylic. The chassis can be broadly classified into three layers - the bottom layer contains the battery and driver, the middle layer has the gripper arm, and the top layer includes the onboard computer. Microsoft Kinect is attached to the topmost pedestal. Two high-torque motors with internal rotary encoders are used to move the robot, and a castor wheel provides stability."
+        },
+        {
+          "heading": "Mapping",
+          "type": "para",
+          "para": "To navigate an environment optimally, its map is required. Pepper achieves this using the onboard Kinect sensor and the gmapping ROS package. The package uses the Simultaneous Localisation and Mapping Algorithm (SLAM) to generate the map."
+        },
+        {
+          "heading": "Localisation",
+          "type": "para",
+          "para": "As the robot's size increases, the drift in the wheels also increases. We use more than one sensor to tackle this problem and put the Kalman filter algorithm to use. The inbuilt encoder performs dead reckoning and obtains the robot's pose. A gyroscope is also used to get the robot's yaw orientation, and these sensor values are used in the Kalman filter to estimate the pose."
+        },
+        {
+          "heading": "Speech Recognition",
+          "type": "para",
+          "para": "When the robot detects a voice command from a user, it must first identify the speaker before responding to him. A machine learning algorithm was developed to identify the speaker of a voice sample. The algorithm used was text-independent and was created as a real-time application. The voice samples of the speaker were first trained using the Mel Frequency Cepstral Coefficient (MFCC) Vectors extracted from the training voice data. The voice model of the speaker was thus developed, and the corresponding parameters were saved in the database. This was done for all speakers. When a real-time test sample is detected, the machine extracts the MFCC vectors and compares them with the already saved voice samples. The closest match in the existing database is found; hence, the speaker is recognised."
+        },
+        {
+          "heading": "Object Recognition and Pick up",
+          "type": "para",
+          "para": "The bot is trained with 1000 classes of objects using a Convolutional Neural Network (CNN). CNN is a bio-inspired machine learning algorithm whose functions are similar to the eye. The input image is captured using Kinect, and its depth is measured. A robotic arm is mounted on the base of the robot. If the depth is greater than the workspace of the robotic arm, then the robot moves closer to the object. The robotic arm has 3 degrees of freedom, with the gripper possessing 1 DoF. Once the object is recognised, the robot picks it up."
+        }
+      ],
+      "techStack": ["SLAM", "Microsoft Kinect", "ROS Gazebo", "Deep Learning"],
+      "developers": [
+        { "id": "75", "name": "Adarsh Jagan S" },
+        { "id": "74", "name": "Prakash Baskaran" },
+        { "id": "0", "name": "Sriharish S" },
+        { "id": "84", "name": "Arvind Nataraj" },
+        { "id": "86", "name": "Ruthrash Hari" },
+        { "id": "81", "name": "Nithin Shrivatsav S" },
+        { "id": "88", "name": "Venkata Subramanian Srinivasan" },
+        { "id": "100", "name": "Surya M" },
+        { "id": "92", "name": "Anirudh Swaminathan" },
+        { "id": "95", "name": "Subramanian Krishnan" },
+        { "id": "103", "name": "Vidyaa K" },
+        { "id": "112", "name": "Deepak S V" },
+        { "id": "128", "name": "Loahit K" },
+        { "id": "121", "name": "Avinash S" },
+        { "id": "126", "name": "Kailash Jagadeesh" },
+        { "id": "127", "name": "Hemangani N" },
+        { "id": "123", "name": "Shrikumaran P B" }
+      ],
+      "cardCoverImage": "https://i.imgur.com/QS5TQaF.png",
+      "backgroundImage": "https://i.imgur.com/p5bEAmV.png",
+      "images": [
+        "https://i.imgur.com/QS5TQaF.png",
+        "https://i.imgur.com/sXIzEMM.png",
+        "https://i.imgur.com/nwmNWUM.png",
+        "https://i.imgur.com/rWqcXIM.png"
+      ],
+      "quickLinks": {
+        "youtubeLink": "https://github.com/RMI-NITT/project_pepper",
+        "githubLink": "https://youtube.com/playlist?list=PL44ElmNkyTvBqNAVxaPmKnhxJGcgDSsyj",
+        "otherLink": ""
+      }
+    },
+    {
+      "pid": "7",
+      "seededIn": "2017",
+      "shortName": "Quadcopter",
+      "longName": "",
+      "duration": "2017-2020",
+      "shortDesc": "Drone to detect and recognize criminals in large crowds using image processing algorithms and perform necessary actions including surveillance and tracking",
+      "longDesc": [
+        {
+          "heading": "",
+          "type": "para",
+          "para": "Quadcop is fundamentally a quadcopter with an HD camera and GPS controlled by a BeagleBone Black. The objective of our quadcop is to detect and recognize criminals in large crowds using image processing algorithms and then acquire permission to follow the criminal autonomously."
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "The quadcop replaces conventional stationary CCTV cameras as it gives us the exact position of a criminal using GPS when in pursuit."
+        }
+      ],
+      "techStack": [
+        "BeagleBone Black",
+        "Raspberry Pi",
+        "Image Processing",
+        "MATLAB"
+      ],
+      "developers": [
+        { "id": "75", "name": "Adarsh Jagan S" },
+        { "id": "74", "name": "Prakash Baskaran" },
+        { "id": "71", "name": "Sabhari Natarajan" },
+        { "id": "0", "name": "Sriharish S" },
+        { "id": "82", "name": "Aarthy Ramesh" },
+        { "id": "97", "name": "Chinari Subhechha Subudhi" },
+        { "id": "110", "name": "Soumyarup Lahiri" },
+        { "id": "125", "name": "Akshat Khandelwal" },
+        { "id": "126", "name": "Kailash Jagadeesh" }
+      ],
+      "cardCoverImage": "https://i.imgur.com/f8xtpg4.png",
+      "backgroundImage": "https://i.imgur.com/szKvJSa.png",
+      "images": [
+        "https://i.imgur.com/f8xtpg4.png",
+        "https://i.imgur.com/8q7PWtc.png"
+      ],
+      "quickLinks": {
+        "youtubeLink": "https://youtu.be/UeuH5BPP0Es?list=PL44ElmNkyTvB_1MNKltBobiBRVqcphoj3",
+        "githubLink": "",
+        "otherLink": ""
+      },
+      "publications": [
+        {
+          "title": "International Conference on Robotics and Smart Manufacturing (RoSMa 2018)",
+          "subtitle": "",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "pid": "6",
+      "seededIn": "2017",
+      "shortName": "Soccer Bots",
+      "longName": "",
+      "duration": "2017-2020",
+      "shortDesc": "A set of four omnidirectional mobile robots, endowed with the ability to play soccer including various functions like passing, shooting, dribbling and goalkeeping.\n",
+      "longDesc": [
+        {
+          "heading": "",
+          "type": "para",
+          "para": "The bots are equipped with indigenous mechanisms for shooting and dribbling which enhance their ability to play the game. The master computer localizes the robots using feedback from an overhead camera. The master communicates the control variables to its slaves using wifi. This multi agent system is used to test algorithms in path planning and artificial intelligence."
+        },
+        {
+          "heading": "Robot Design:",
+          "type": "para",
+          "para": "The robot is a 3 wheel omnidirectional robot. The chassis is made up of acrylic, with aluminum L clamps to couple different parts."
+        },
+        {
+          "heading": "Shooting and Dribbling Mechanism:",
+          "type": "para",
+          "para": "The shooting mechanism is actuated using a solenoid kicker powered using a boost converter. The dribbling mechanism consists of a dribbler actuated using a 200 RPM DC motor through a gear system. The dribbler induces a backspin on the ball, so that the ball is within the robot’s control."
+        },
+        {
+          "heading": "Control:",
+          "type": "para",
+          "para": "The kinematic model of the robot was found from existing literature and was used to control the robot.The system is partly autonomous - one robot autonomously goalkeeps whereas the other is manually controlled."
+        },
+        {
+          "heading": "Robot and Ball Localisation:",
+          "type": "para",
+          "para": "To find the present location of the robots and the ball, image processing was done in OpenCV. A wide angle camera was mounted at a height of 2.3m from the ground. A pattern was fixed on top of every robot to uniquely identify it. The image from the camera is first converted to a gray image, thresholded and the required contours are chosen based on area.\nBall localisation is done by converting the image from the camera to a HSV image and finding the position of the ball using HSV value of the ball’s colour (The ball used is lemon yellowish and its HSV value is first calculated and given to the algorithm for it to detect the ball from the full image). Ball’s trajectory is also needed for autonomous goal keeping. The trajectory is found by finding the position of the ball in 2 consecutive frames and extending the line formed by it."
+        }
+      ],
+      "techStack": ["ROS Gazebo", "Python", "Omni-wheels", "Image Processing"],
+      "developers": [
+        { "id": "78", "name": "Baladhurgesh Balagurusamy Paramasivan" },
+        { "id": "93", "name": "Madhan S" },
+        { "id": "76", "name": "Mohamed Naveed G" },
+        { "id": "77", "name": "Nanda Kishore V" },
+        { "id": "99", "name": "Rajiv Vaidyanathan N" },
+        { "id": "80", "name": "Muhammad Suhail S" },
+        { "id": "107", "name": "S Srikrishna" },
+        { "id": "104", "name": "Naveen S" },
+        { "id": "105", "name": "Akshaya K S" },
+        { "id": "115", "name": "Harshith Vignesh" },
+        { "id": "118", "name": "Koushik Kumaran" },
+        { "id": "113", "name": "R Mukesh Kanna" },
+        { "id": "116", "name": "Pranav Dharun Chagarlamudi" },
+        { "id": "129", "name": "Pramoth Arun" }
+      ],
+      "cardCoverImage": "https://i.imgur.com/PM2oBxP.png",
+      "backgroundImage": "https://i.imgur.com/vGqQoRr.png",
+      "images": [
+        "https://i.imgur.com/PM2oBxP.png",
+        "https://i.imgur.com/ecruS1L.png",
+        "https://i.imgur.com/ND29ODI.png",
+        "https://i.imgur.com/m28gEEB.png",
+        "https://i.imgur.com/pea7gNx.png"
+      ],
+      "quickLinks": {
+        "youtubeLink": "",
+        "githubLink": "https://github.com/RMI-NITT/soccer_robots",
+        "otherLink": ""
+      }
+    },
+    {
+      "pid": "5",
+      "seededIn": "2016",
+      "shortName": "Air Hockey",
+      "longName": "",
+      "duration": "2016-2018",
+      "shortDesc": "An autonomous  platform involving a serial manipulator capable of playing air hockey against a human competitor.",
+      "longDesc": [
+        {
+          "heading": "",
+          "type": "para",
+          "para": "The autonomous air hockey platform involves design and fabrication of an air hockey table and a 2 link serial manipulator to control the mallet. The table consists of 2 levels, the lower one to host the blower fans and the upper one acts as the table surface to play the game The location and movement of the puck is perceived using image processing algorithms from the real time video feedback from a camera placed above the table. Based on the obtained values, the precise trajectory of the puck is found. Based on the calculated position at the given time, the motors actuating the links are given predetermined angles and speeds using inverse kinematics algorithms. Thus, the end effector hits the puck with the required force."
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "The future prospects include using machine learning algorithms to improve tracking of the puck in diverse conditions and to reduce the error in trajectory calculations and inverse kinematics algorithms and faster response times."
+        }
+      ],
+      "techStack": [
+        "Mathematica",
+        "Image Processing",
+        "Inverse Kinematics",
+        "ROS Gazebo"
+      ],
+      "developers": [
+        { "id": "71", "name": "Sabhari Natarajan" },
+        { "id": "85", "name": "Harish Kumar K R" },
+        { "id": "95", "name": "Subramanian Krishnan" },
+        { "id": "53", "name": "Vimalesh Muralidharan" }
+      ],
+      "cardCoverImage": "https://i.imgur.com/g8q4bpH.png",
+      "backgroundImage": "https://i.imgur.com/vxoxqf9.png",
+      "images": [
+        "https://i.imgur.com/g8q4bpH.png",
+        "https://i.imgur.com/KO9SYyB.png",
+        "https://i.imgur.com/pTmzsZ1.png",
+        "https://i.imgur.com/KcinO1l.png"
+      ],
+      "quickLinks": {
+        "youtubeLink": "https://youtu.be/qzviFZL8F9c?list=PL44ElmNkyTvB4IeyesQDqDp1FKzhX20f5",
+        "githubLink": "",
+        "otherLink": ""
+      }
+    },
+    {
+      "pid": "4",
+      "seededIn": "2016",
+      "shortName": "EXOS",
+      "longName": "ExoSkeleton",
+      "duration": "2016-2017",
+      "shortDesc": "Novel design of an exoskeleton which amplifies normal hand actions for rehabilitation of stroke patients and for power grasp in military and industrial purpose.",
+      "longDesc": [
+        {
+          "heading": "",
+          "type": "para",
+          "para": "The project consists of a design which allows maximum dexterity of the fingers by analyzing the trajectory of the fingers and creating a closed-loop control system for accuracy and fast response. It detects the smallest kinetic stimulus by the human palm and actuate those, externally using high torque servos."
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "Our hypothesis was that with this project we could create a breakthrough in the field of medical robotics by providing better medical assistance at lower cost.\n"
+        }
+      ],
+      "techStack": ["Arduino", "Modular Chassis", "ROS Gazebo", "Raspberry pi"],
+      "developers": [
+        { "id": "83", "name": "Ajay Asai" },
+        { "id": "81", "name": "Nithin Shrivatsav S" },
+        { "id": "86", "name": "Ruthrash Hari" },
+        { "id": "88", "name": "Venkata Subramanian Srinivasan" }
+      ],
+      "cardCoverImage": "https://i.imgur.com/3f5QGOP.png",
+      "backgroundImage": "https://i.imgur.com/p4cgjHl.png",
+      "images": [
+        "https://i.imgur.com/3f5QGOP.png",
+        "https://i.imgur.com/k16F8WD.png"
+      ],
+      "quickLinks": {
+        "youtubeLink": "https://youtu.be/6PbY1M8Hmxo?list=PL44ElmNkyTvDx50X635sewgpntd8AD2oA",
+        "githubLink": "",
+        "otherLink": ""
+      }
+    },
+    {
+      "pid": "3",
+      "seededIn": "2016",
+      "shortName": "Mind Over Matter",
+      "longName": "Mind Over Matter",
+      "duration": "2016",
+      "shortDesc": "Controlling a web interface for various applications using mere eye movements by advanced signal processing of associated EOG signals.",
+      "longDesc": [
+        {
+          "heading": "",
+          "type": "para",
+          "para": "Bio-signal detection and processing is a field whose myriad applications are as yet unexplored. We developed an easily usable electrode frame and demonstrated two of its uses in particular."
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "Firstly, EOG signals associated with eye movements were acquired, processed and further used to control a web interface where the user can select the required function by mere eye movements. The functions available iincludes controlling basic appliances, sending emergency mails, controlling a helper bot.etc. This is specifically intended to help patients with Locked In Syndrome(LIS) attain a degree of independence."
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "Secondly, mental fatigue of a user is judged based on the: 1.Frequency and duration of eye blinks detected by EOG signalS 2.Power spectrum analysis of EEG signals"
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "This is designed to help people in jobs that require long durations of concentration, like driving."
+        }
+      ],
+      "techStack": [
+        "EoG signals",
+        "Arduino",
+        "Signal processing",
+        "Wireless communication"
+      ],
+      "developers": [
+        { "id": "82", "name": "Aarthy Ramesh" },
+        { "id": "79", "name": "Sundaravalli Aravazhi" },
+        { "id": "87", "name": "Varsha Suresh" }
+      ],
+      "cardCoverImage": "https://i.imgur.com/7ZVTnUu.png",
+      "backgroundImage": "https://i.imgur.com/6p112xm.jpg",
+      "images": [
+        "https://i.imgur.com/7ZVTnUu.png",
+        "https://i.imgur.com/P51QKa3.png",
+        "https://i.imgur.com/R44jCu7.png",
+        "https://i.imgur.com/uw5ZYKQ.png"
+      ],
+      "quickLinks": {
+        "youtubeLink": "https://youtu.be/92KMaPneoys?list=PL44ElmNkyTvC27UvaMHGESDpqqbbxIu2n",
+        "githubLink": "",
+        "otherLink": ""
+      }
+    },
+    {
+      "pid": "2",
+      "seededIn": "2016",
+      "shortName": "SLAT HEX",
+      "longName": "Sound Source Localising All Terrain Hexapod",
+      "duration": "2016",
+      "shortDesc": "All-terrain vehicle capable of ramp climbing, inverted operation and step climbing for search and rescue operations.\n",
+      "longDesc": [
+        {
+          "heading": "",
+          "type": "para",
+          "para": "As humans, we are capable of walking, jumping, climbing and moving through difficult terrain. But there will come a situation, when we, as a human, are helpless. We would need assistance from someone or from something. And that is exactly what our bot is going to be capable of doing. It is going to traverse through the difficult terrain to unreachable places and act as a portable eye."
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "Having six actuators and a three point contact, SLAT-HEX acts as the ideal all-terrain vehicle. It acts as a platform, capable of performing special operations which separates it from its competitors, and these features include ramp climbing, inverted operation (capable of functioning normally, even when toppled) and even step climbing. Thus this platform could be extended to perform these operations if fabricated according to the correct specifications."
+        }
+      ],
+      "techStack": [
+        "Sound localisation",
+        "Micro gear motors",
+        "Visual streaming",
+        "Chassis symmetry"
+      ],
+      "developers": [
+        { "id": "84", "name": "Arvind Nataraj" },
+        { "id": "78", "name": "Baladhurgesh Balagurusamy Paramasivan" },
+        { "id": "76", "name": "Mohamed Naveed G" },
+        { "id": "77", "name": "Nanda Kishore V" },
+        { "id": "80", "name": "Muhammad Suhail S" }
+      ],
+      "cardCoverImage": "https://i.imgur.com/tabADuW.png",
+      "backgroundImage": "https://i.imgur.com/2xHLi91.png",
+      "images": [
+        "https://i.imgur.com/tabADuW.png",
+        "https://i.imgur.com/uE3L9lP.png",
+        "https://i.imgur.com/blLk1l3.png",
+        "https://i.imgur.com/TzuoJgJ.png",
+        "https://i.imgur.com/x2YJLbV.png"
+      ],
+      "quickLinks": {
+        "youtubeLink": "https://youtu.be/vtBr4nC57y8?list=PL44ElmNkyTvByLaUUUky_qaFcQAMwWZVb",
+        "githubLink": "",
+        "otherLink": ""
+      }
+    },
+    {
+      "pid": "1",
+      "seededIn": "2015",
+      "shortName": "3D Printer",
+      "longName": "",
+      "duration": "2015-2016",
+      "shortDesc": "Self fabricated in-house 3D printer for rapid prototyping and design.",
+      "longDesc": [
+        {
+          "heading": "",
+          "type": "para",
+          "para": "3D printing or additive manufacturing is a process of creating a three-dimensional solid object of virtually any shape from a digital model. It is achieved using an additive process, where successive layers of material are laid down in different shapes."
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "Started as a educational project and as a aid for future projects, this has grown into a 3D printer startup - “bolt3d” (https://www.bolt3dprinters.com/) . Reprap Prusa i3 was taken as the base and improvements were made from there on. Close to 80% of the new design was indigenous and made in house."
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "From a builder's perspective it has a rigid structure made out of metal. Rigidity plays a major role in determining the accuracy of a print. Even the slightest disturbance can be a problem. High torque stepper motors ensure there is nothing stopping it from doing its job."
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "With SD card support and a LCD display this makes sure this is a stand alone. Just plug it in and power it up and insert the SD card, you will see the printer in action. With a fast printing speed, high build volume of 8000cm3 ,60 micron layer thickness and a 0.4mm nozzle it plays its role to perfection."
+        },
+        {
+          "heading": "",
+          "type": "para",
+          "para": "Auto bed leveling, metal hot end and heated build plate and few of its notable features. It supports any spool (PLA/ABS) and is compatible with WIndows/Mac/Linux."
+        }
+      ],
+      "techStack": [
+        "Stepper motors",
+        "Reprap Prusa i3",
+        "CNC controls",
+        "Solid modelling"
+      ],
+      "developers": [
+        { "id": "63", "name": "Adarsh Simon" },
+        { "id": "60", "name": "Mohan Chandrasekharan" },
+        { "id": "54", "name": "Akshay Pramod Roy" },
+        { "id": "53", "name": "Vimalesh Muralidharan" }
+      ],
+      "cardCoverImage": "https://i.imgur.com/BE21rfe.png",
+      "backgroundImage": "https://i.imgur.com/uBp9Lhk.png",
+      "images": [
+        "https://i.imgur.com/BE21rfe.png",
+        "https://i.imgur.com/MZQeP7J.png",
+        "https://i.imgur.com/GgOlJYI.png",
+        "https://i.imgur.com/bMyVGys.png",
+        "https://i.imgur.com/nPlPGVA.png"
+      ],
+      "quickLinks": {
+        "youtubeLink": "https://youtu.be/UJexlYXb2OY",
+        "githubLink": "",
+        "otherLink": ""
+      }
+    }
+  ]
+}

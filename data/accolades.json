@@ -1,0 +1,257 @@
+{
+  "topHonours": [
+    {
+      "prizeIndex": "1",
+      "title": "Winners of Smart India Hackathon 2022",
+      "organisers": "MHRD India"
+    },
+    {
+      "prizeIndex": "0",
+      "title": "Represented NIT Trichy at EXCON 2021, Bangalore",
+      "organisers": "AI, IoT and Automation pavillion"
+    },
+    {
+      "prizeIndex": "2",
+      "title": "Runner up at eYantra Robotics Competition 2021-2022",
+      "organisers": "eYantra labs, IIT Bombay"
+    },
+    {
+      "prizeIndex": "0",
+      "title": "Presented two papers at ICCET 2021",
+      "organisers": "Project HIDQ | Project SRF"
+    },
+    {
+      "prizeIndex": "1",
+      "title": "Winners of Amrita Smart City Hackathon 2021",
+      "organisers": "Amrita Coimbatore | Honeywell Technologies | BCIC"
+    },
+    {
+      "prizeIndex": "1",
+      "title": "Winners of eYantra Robotics Competition 2020-2021",
+      "organisers": "eYantra labs, IIT Bombay"
+    },
+    {
+      "prizeIndex": "0",
+      "title": "Presented two papers at iNaCoMM 2019",
+      "organisers": "International Conference on Machines and Mechanisms"
+    },
+    {
+      "prizeIndex": "0",
+      "title": "Represented NIT Trichy at FINE 2018, Rashtrapathi Bhavan",
+      "organisers": "Festival of Innovation and Entrepreneurship"
+    }
+  ],
+  "accolades": [
+    {
+      "title": "1st place in Smart India Hackathon 2022",
+      "subtitle": "MHRD India",
+      "project": "Project ANVI | Aug 2022"
+    },
+    {
+      "title": "2 prizes in Scient Open House Contest 2022",
+      "subtitle": "Scient labs, NIT Trichy",
+      "project": "Project ANVI, ARIBOT | April 2022"
+    },
+    {
+      "title": "1st place in Sangam'22 - Defence and Industrial",
+      "subtitle": "Pragyan'22, NIT Trichy",
+      "project": "Project LEWI | March 2022"
+    },
+    {
+      "title": "1st place in Sangam'22 - Healthcare and Agriculture",
+      "subtitle": "Pragyan'22, NIT Trichy",
+      "project": "Project SSC | March 2022"
+    },
+    {
+      "title": "2nd place in Sangam'22 - Defence and Industrial",
+      "subtitle": "Pragyan'22, NIT Trichy",
+      "project": "Project ARIBOT | March 2022"
+    },
+    {
+      "title": "3rd place in Sangam'22 - Healthcare and Agriculture",
+      "subtitle": "Pragyan'22, NIT Trichy",
+      "project": "Project ANVI | March 2022"
+    },
+    {
+      "title": "1st place in GitHub Ideathon 2022",
+      "subtitle": "GitHub developers community, IIT Madras",
+      "project": "Project SPS | March 2022"
+    },
+    {
+      "title": "1st place in WIN-NITT Ideathon'22",
+      "subtitle": "WIN NITT - ConclaveX",
+      "project": "Project ANVI | March 2022"
+    },
+    {
+      "title": "Presented paper at ICCET 2021",
+      "subtitle": "SR (Supernumerary Robotic) Fingers",
+      "project": "Project SRF | Feb 2022"
+    },
+    {
+      "title": "Presented paper at ICCET 2021",
+      "subtitle": "Pipeline inspection using self-transforming hybrid drive quad-copter",
+      "project": "Project HIDQ | Feb 2022"
+    },
+    {
+      "title": "2nd place in Colloquium'22",
+      "subtitle": "Currents'22, NIT Trichy",
+      "project": "Project SPS | Feb 2022"
+    },
+    {
+      "title": "1st place in Project Presentation",
+      "subtitle": "CBIT, Hyderabad",
+      "project": "Project SPS | Dec 2021"
+    },
+    {
+      "title": "3rd place in Ideavation’21",
+      "subtitle": "AISSMS, Pune",
+      "project": "Project SPS | Dec 2021"
+    },
+    {
+      "title": "1st place in Amrita Smart City Hackathon 2021",
+      "subtitle": "Amrita Coimbatore - Honeywell Technologies",
+      "project": "Project SPS | Oct 2021"
+    },
+    {
+      "title": "15+ prizes at SSN Invente 6.0",
+      "subtitle": "SSN college of engineering",
+      "project": "Oct 2021"
+    },
+    {
+      "title": "Presented paper at IEEE Madras section conference",
+      "subtitle": "Deep Learning Based Muscle Intent Classification in Continuous Passive Motion Machine for Knee Osteoarthritis Rehabilitation",
+      "project": "Project MARKO | March 2021"
+    },
+    {
+      "title": "Semi-finalists at Samvedan 2021",
+      "subtitle": "Sony - IIT Madras",
+      "project": "Project SSC | Sept 2021"
+    },
+    {
+      "title": "2nd place in eYantra Robotics Competition 2021-2022",
+      "subtitle": "eYantra labs, IIT Bombay",
+      "project": "Sept 2021"
+    },
+    {
+      "title": "1st place in Wissensire Paper Presentation",
+      "subtitle": " IIT Bhubaneswar",
+      "project": "Project SRF | April 2021"
+    },
+    {
+      "title": "2nd place in APOGEE Project exhibition",
+      "subtitle": "BITS Pilani",
+      "project": "Project SRF | April 2021"
+    },
+    {
+      "title": "3rd place in idEEaVolt 2.0",
+      "subtitle": "IIT Roorkee",
+      "project": "Project SRF | April 2021"
+    },
+    {
+      "title": "2 prizes at Cognizance",
+      "subtitle": "IIT Roorkee",
+      "project": "Project SRF | March 2021"
+    },
+    {
+      "title": "2 prizes at Xion'21",
+      "subtitle": "SRM University",
+      "project": "March 2021"
+    },
+    {
+      "title": "2 prizes at Elan and ηvision 2021",
+      "subtitle": "IIT Hyderabad",
+      "project": "Project SRF | March 2021"
+    },
+    {
+      "title": "2nd place in Sangam'21 - Healthcare and Agriculture",
+      "subtitle": "Pragyan'21, NIT Trichy",
+      "project": "Project MARKO | March 2021"
+    },
+    {
+      "title": "3rd place in Sangam'21 - Healthcare and Agriculture",
+      "subtitle": "Pragyan'21, NIT Trichy",
+      "project": "Project CHAOS | March 2021"
+    },
+    {
+      "title": "2 prizes at Probe'21",
+      "subtitle": "NIT Trichy",
+      "project": "Feb 2021"
+    },
+    {
+      "title": "1st place in Synergy'21 Paper presentation",
+      "subtitle": "NIT Trichy",
+      "project": "Project SRF | Jan 2021"
+    },
+    {
+      "title": "1st place in Ardrillo",
+      "subtitle": "Shaastra'21, IIT Madras",
+      "project": "Jan 2021"
+    },
+    {
+      "title": "7+ prizes at SSN Invente 5.0",
+      "subtitle": "SSN college of engineering",
+      "project": "Oct 2020"
+    },
+    {
+      "title": "1st place in eYantra Robotics Competition 2020-2021",
+      "subtitle": "eYantra labs, IIT Bombay",
+      "project": "Sept 2020"
+    },
+    {
+      "title": "1st place in Transfinitte'20",
+      "subtitle": "NIT Trichy",
+      "project": "Feb 2020"
+    },
+    {
+      "title": "1st place in Colloquium'20",
+      "subtitle": "Currents'20, NIT Trichy",
+      "project": "Project SRF | Feb 2020"
+    },
+    {
+      "title": "Presented paper at iNaCoMM 2019",
+      "subtitle": "Search and Reconnaissance Robot for Disaster Management",
+      "project": "Project SSR | Dec 2019"
+    },
+    {
+      "title": "Presented paper at iNaCoMM 2019",
+      "subtitle": "Design and Control of a Low-cost EMG-based Soft Robotic Ankle-Foot Orthosis for Foot Drop Rehabilitation",
+      "project": "Project SPEAR | Dec 2019"
+    },
+    {
+      "title": "3rd place in eYantra Robotics Competition 2019-2020",
+      "subtitle": "eYantra labs, IIT Bombay",
+      "project": "Sept 2019"
+    },
+    {
+      "title": "Presented paper at Advances in Robotics 2019",
+      "subtitle": "Semi-autonomous robot for landmine detection and removal",
+      "project": "Project EXO | July 2019"
+    },
+    {
+      "title": "3rd place in Sangam'19 - Healthcare and Agriculture",
+      "subtitle": "Pragyan'19, NIT Trichy",
+      "project": "Project SPEAR | March 2019"
+    },
+    {
+      "title": "Presented paper at Fifth Indian Control Conference",
+      "project": "Project ARES | Dec 2018"
+    },
+    {
+      "title": "Presented paper at RoSMa 2018",
+      "project": "Project Quadcopter | July 2018"
+    },
+    {
+      "title": "1st place in Sangam'18 - Defence and Industrial",
+      "subtitle": "Pragyan'18, NIT Trichy",
+      "project": "Project UXO March 2018"
+    },
+    {
+      "title": "Presented 4 projects at FINE",
+      "subtitle": "Rashtrapati Bhavan",
+      "project": "Project ARES, UXO, RoBoat, Snake Bot | March 2018"
+    },
+    {
+      "title": "and more . . ."
+    }
+  ]
+}

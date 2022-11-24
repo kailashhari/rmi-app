@@ -1,0 +1,79 @@
+{
+  "mainArchitects": [
+    {
+      "name": "Aswin Sreekumar",
+      "imageLink": "https://i.imgur.com/u8NyVGp.png",
+      "position": "Creative Director",
+      "additional": ["Head, Design and Publicity", "2022-2023"],
+      "github": "https://github.com/aswin-sreekumar/",
+      "linkedIn": "https://www.linkedin.com/in/aswin-sreekumar",
+      "email": "aswinsreekumar123@gmail.com"
+    },
+    {
+      "name": "H Kailash",
+      "imageLink": "https://i.imgur.com/47WtxrX.png",
+      "position": "Associate lead developer",
+      "additional": ["Web design", "UI/UX", "Front-End"],
+      "github": "https://github.com/kailashhari",
+      "linkedIn": "https://www.linkedin.com/in/kailash-hari-hara-krishnan-418458199/",
+      "email": "h.kailash1501@gmail.com"
+    },
+    {
+      "name": "Indresh P",
+      "imageLink": "https://i.imgur.com/fW4zHWm.jpg",
+      "position": "Associate developer",
+      "additional": ["SysAd", "Front-End"],
+      "github": "https://github.com/indreshp135/",
+      "linkedIn": "https://www.linkedin.com/in/indresh-p-21b2581b6/",
+      "email": "indreshp135@gmail.com",
+      "personalPage": "https://indreshp135.github.io/"
+    },
+    {
+      "name": "Muhesh K",
+      "imageLink": "https://i.imgur.com/eFokmcA.png",
+      "position": "Associate developer",
+      "additional": ["Front-End", "Mobile Development"],
+      "github": "https://github.com/Muhesh7/",
+      "linkedIn": "https://www.linkedin.com/in/muhesh/",
+      "email": "vmspride7@gmail.com",
+      "personalPage": "https://muhesh7.github.io/"
+    }
+  ],
+  "addnArchitects": [
+    {
+      "name": "Vakula Venkatesh",
+      "imageLink": "https://i.imgur.com/BqDVMAE.png",
+      "position": "Coordinator",
+      "github": "https://github.com/Vakula289",
+      "linkedIn": "https://www.linkedin.com/in/vakula-v",
+      "email": "vakulaven280@gmail.com"
+    },
+    {
+      "name": "Shyaam Pon Sundar S",
+      "imageLink": "https://i.imgur.com/GpqrRoS.png",
+      "position": "Coordinator",
+      "github": "https://github.com/shyaam-963",
+      "linkedIn": "https://www.linkedin.com/in/shyaam-pon-sundar-s-3166b51a7",
+      "email": "shyaam.pon@gmail.com"
+    },
+    {
+      "name": "Madhav R",
+      "imageLink": "https://i.imgur.com/nGe4tKM.png",
+      "position": "Coordinator",
+      "github": "https://github.com/madE03",
+      "linkedIn": "https://www.linkedin.com/in/madhav-r-2867b920b",
+      "email": "madspace49@gmail.com"
+    }
+  ],
+  "webops": [
+    {
+      "name": "Rahul Raaghav A",
+      "imageLink": "https://i.imgur.com/zMTydOw.png",
+      "position": "Head, Web-ops",
+      "additional": ["2022 - 2023"],
+      "github": "https://github.com/RahulraaghavA1308",
+      "linkedIn": "https://www.linkedin.com/in/rahul-raaghav-a-308446202/",
+      "email": "rahulgksvv@gmail.com"
+    }
+  ]
+}

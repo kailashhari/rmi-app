@@ -1,0 +1,107 @@
+{
+  "facultyAdvisor": {
+    "name": "Dr. K. Pannirselvam",
+    "imageLink": "https://i.imgur.com/naEQZI1.png",
+    "position": "Associate Professor",
+    "department": "Department of Mechanical Engineering",
+    "email": "pannir@nitt.edu",
+    "personalPage": "hhttps://www.nitt.edu/home/academics/departments/mech/faculty/kpannir/",
+    "linkedIn": "",
+    "details": [
+      {
+        "header": "Qualification",
+        "type": "bullets",
+        "subdata": [
+          {
+            "subheading": "",
+            "data": [
+              "B.E. in Mechanical Engineering (CIT, Coimbatore)1989.",
+              "M.E. in Manufacturing Technology (REC, Tiruchirappalli) 1992.",
+              "PhD in Mechanical (NIT, Tiruchirappalli) 2009."
+            ]
+          }
+        ]
+      },
+      {
+        "header": "Experience",
+        "type": "bullets",
+        "subdata": [
+          {
+            "subheading": "",
+            "data": [
+              "Serving as faculty member since 1992, in Mechanical Engineering Department, NIT, Tiruchirappalli-15,",
+              "Presently Associate Professor."
+            ]
+          }
+        ]
+      },
+      {
+        "header": "Industrial Consultancy and Training",
+        "type": "bullets",
+        "subdata": [
+          {
+            "subheading": "Consultancy project",
+            "data": [
+              "Mechanization of the ringing of Church bell at M/s St. Joseph College Church, Trichy-2 in the year 2000 using ABB DTC drive.",
+              "Performance evaluation of reciprocating compressors installed at SSTP, BHEL, Trichy-14.in the year 2004."
+            ]
+          },
+          {
+            "subheading": "Center of Excellence Scheme",
+            "data": [
+              "Under the center of excellence scheme established calibration facilities for calibration of temperature, pressure, voltage, current and speed. The calibration facilities are established using state of the art instrumentation and traceable to national standards."
+            ]
+          }
+        ]
+      },
+      {
+        "header": "Conference papers",
+        "type": "para",
+        "subdata": [
+          {
+            "subheading": "A New Device to Measure Instantaneous Swept Volume of Reciprocating Machines/Compressors,",
+            "data": [
+              "International Compressor Technology Conference at Purdue University, USA. July 12-15 2004, Pannir Selvam.K, Udyakumar.M, Nageswara Rao.C."
+            ]
+          },
+          {
+            "subheading": "In Situ Performance Evaluation of Industrial Reciprocating Air Compressors,",
+            "data": [
+              "In Spanish Journal Frio-Calor-Aire Acondicionado , May 2009. Originally Paper No;1422 in Proc. 19th Itl. Compressor Engineering Conf., Purdue Univ.U.S.A., July 2008, M.Udayakumar, K.Pannirselvam, and T.Suthakar."
+            ]
+          }
+        ]
+      },
+      {
+        "header": "Sponsored Research Project",
+        "type": "para",
+        "subdata": [
+          {
+            "subheading": "",
+            "data": [
+              "Theoretical and Experimental Investigations on Performance Influencing Parameters on Industrial Air Compressors. Project sponsored by MHRD, budget allocation: 6 lakhs. Principal Investigator: Dr.M.Udyakumar, Co-investigator: K.Pannir Selvam."
+            ]
+          }
+        ]
+      },
+      {
+        "header": "Patents granted",
+        "type": "bullets",
+        "subdata": [
+          {
+            "subheading": "An auxiliary starter and controller assembly for a compressor system",
+            "data": ["Patent application No. 1608/CHE/2006."]
+          },
+          {
+            "subheading": "Non-return valve for the pneumatic tube of a vehicle tyre",
+            "data": ["Patent granted on 6/02/2006, Patent No. 196266."]
+          },
+          {
+            "subheading": "Instantaneous swept volume measuring device for reciprocating machines",
+            "data": ["Patent granted on 29/12/2003, Patent No.201897."]
+          }
+        ]
+      }
+    ]
+  }
+}
