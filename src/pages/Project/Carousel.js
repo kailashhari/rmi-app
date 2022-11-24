@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { colors } from "../../constants";
 import "./styles.css";
+import leftArrow from "../../assets/leftarrow.svg";
+import rightArrow from "../../assets/rightarrow.svg";
 
 const MAX_VISIBILITY = 3;
 
@@ -11,7 +12,6 @@ const Card = ({ src }) => (
 );
 
 export const Carousel = ({ contents }) => {
-  console.log(contents.length / 2);
   const [active, setActive] = useState(contents.length / 2);
   const count = contents.length;
 
@@ -22,16 +22,13 @@ export const Carousel = ({ contents }) => {
           className="nav left"
           onClick={() => setActive((i) => i - 1)}
           type="button"
-          style={{
-            writingMode: "vertical-rl",
-            color: colors.grey,
-            transform: "rotate(180deg) translate(50%, 47%)",
-            "&:hover": {
-              color: colors.light,
-            },
-          }}
         >
-          &#x27A4;
+          <img
+            src={leftArrow}
+            style={{
+              height: "90px",
+            }}
+          />
         </button>
       )}
       {contents.map((image, i) => (
@@ -56,11 +53,13 @@ export const Carousel = ({ contents }) => {
           className="nav right"
           onClick={() => setActive((i) => i + 1)}
           type="button"
-          style={{
-            color: colors.grey,
-          }}
         >
-          &#x27A4;
+          <img
+            src={rightArrow}
+            style={{
+              height: "90px",
+            }}
+          />
         </button>
       )}
     </div>

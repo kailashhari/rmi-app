@@ -149,7 +149,7 @@ const Timeline = ({ setObserver }) => {
   return (
     <Wrapper>
       {messages.map((message, i) => (
-        <>
+        <React.Fragment key={i}>
           <Line
             id={`timeline${i + 1}`}
             ref={(el) => {
@@ -199,7 +199,7 @@ const Timeline = ({ setObserver }) => {
               </Message>
             )}
           </CircleWrapper>
-        </>
+        </React.Fragment>
       ))}
     </Wrapper>
   );

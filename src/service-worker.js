@@ -53,7 +53,11 @@ registerRoute(
 // precache, in this case same-origin .png requests like those from in public/
 registerRoute(
   // Add in any other file extensions or routing criteria as needed.
-  ({ url }) => url.pathname.endsWith(".webp"), // Customize this strategy as needed, e.g., by changing to CacheFirst.
+  ({ url }) =>
+    url.pathname.endsWith(".webp") ||
+    url.pathname.endsWith(".png") ||
+    url.pathname.endsWith(".jpg") ||
+    url.pathname.endsWith(".jpeg"),
   new StaleWhileRevalidate({
     cacheName: "images",
     plugins: [
@@ -61,6 +65,13 @@ registerRoute(
       // least-recently used images are removed.
       new ExpirationPlugin({ maxEntries: 2000 }),
     ],
+  })
+);
+
+registerRoute(
+  /^https:\/\/fonts/,
+  new StaleWhileRevalidate({
+    cacheName: "fonts",
   })
 );
 

@@ -97,14 +97,13 @@ const IconWrapper = (props) => {
         setHover(false);
       }}
     >
-      <a href={props.link}>{props.children}</a>
+      {props.children}
       {hover && <Tooltip>{props.tooltip}</Tooltip>}
     </IconWrapperLayout>
   );
 };
 
 const ProjectStats = (props) => {
-  console.log("Project", props.project);
   return (
     <Container maxWidth="md">
       {props.project.duration && (

@@ -161,7 +161,6 @@ const Index = ({ title }) => {
     }
     setProject(proj);
     const mapData = {};
-    // console.log(proj);
     [...currentMembers, ...alumni].forEach((member) => {
       mapData[member.id] = member;
     });
@@ -191,7 +190,7 @@ const Index = ({ title }) => {
       >
         {project.longDesc &&
           project.longDesc.map((desc, index) => (
-            <>
+            <React.Fragment key={index}>
               {desc.heading && <h4>{desc.heading}</h4>}
               {desc.type === "para" && <p>{desc.para}</p>}
               {desc.type === "bullets" && (
@@ -201,7 +200,7 @@ const Index = ({ title }) => {
                   ))}
                 </ul>
               )}
-            </>
+            </React.Fragment>
           ))}
       </Container>
       <ProjectStats project={project} />

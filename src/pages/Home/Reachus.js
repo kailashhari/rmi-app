@@ -29,7 +29,7 @@ const SectionContent = styled("div")({
   alignItems: "center",
   justifyContent: "space-between",
   gap: "4rem",
-  "@media (max-width: 767px)": {
+  "@media (max-width: 1124px)": {
     flexDirection: "column",
     gap: "2.5rem",
   },

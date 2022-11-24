@@ -68,7 +68,7 @@ const ProjectsPageHolder = ({ title }) => {
         }}
       >
         {filteredProjects(val).map((project) => (
-          <ProjectCard key={project.id} project={project} />
+          <ProjectCard key={project.pid} project={project} />
         ))}
       </ProjectCards>
     </PageWrapper>

@@ -7,13 +7,12 @@ import Projects from "./pages/Projects";
 import Accolades from "./pages/Accolades";
 import Events from "./pages/Events";
 import Project from "./pages/Project";
-import WebTeam from "./pages/Webteam";
 import NotFound from "./pages/NotFound";
+import ErrorFetching from "./pages/ErrorFetching";
 import React, { useEffect, useState } from "react";
 import { AppContext } from "./store/context";
 import Webteam from "./pages/Webteam";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
-import ScopedCssBaseline from "@mui/material/ScopedCssBaseline";
 
 const AppLayout = styled("div")({
   ...defaultStyles,
@@ -61,13 +60,15 @@ function App() {
   const [data, setData] = useState(null);
 
   const fetchData = async () => {
-    fetch("https://kailash2point0.github.io/data/data.json")
+    fetch("https://rmi-nitt.github.io/rmi-website-data/data/data.json")
       .then((response) => {
         return response.json();
       })
       .then((responseData) => {
-        console.log(responseData);
         setData(responseData);
+      })
+      .catch((err) => {
+        setData("error");
       });
   };
 
@@ -75,24 +76,21 @@ function App() {
     fetchData();
   }, []);
 
-  // useEffect(() => {
-  //   console.log(data);
-  //   const flyers = document.getElementsByClassName("flyer");
-  //   Array.prototype.forEach.call(flyers, (element) => {
-  //     element.style.animationDuration = "1s";
-  //   });
-  //   const loadingElement = document.getElementById("loading");
-  //   loadingElement.style.animation = "fade 2s forwards";
-  //   loadingElement.style.animationDelay = "2s";
-  //   setTimeout(() => {
-  //     const loader = document.getElementById("loading");
-  //     if (loader) {
-  //       loader.remove();
-  //     }
-  //   }, 4000);
-  //   // flyers.forEach(element => {
-  //   // });
-  // }, [data !== null]);
+  useEffect(() => {
+    const flyers = document.getElementsByClassName("flyer");
+    Array.prototype.forEach.call(flyers, (element) => {
+      element.style.animationDuration = "1s";
+    });
+    const loadingElement = document.getElementById("loading");
+    loadingElement.style.animation = "fade 2s forwards";
+    loadingElement.style.animationDelay = "2s";
+    setTimeout(() => {
+      const loader = document.getElementById("loading");
+      if (loader) {
+        loader.remove();
+      }
+    }, 4000);
+  }, [data !== null]);
   const darkTheme = createTheme({
     palette: {
       mode: "dark",
@@ -103,7 +101,11 @@ function App() {
       {data !== null && (
         <AppContext.Provider value={data}>
           <AppLayout>
-            <RouterProvider router={router} />
+            {data === "error" ? (
+              <ErrorFetching title="Error" />
+            ) : (
+              <RouterProvider router={router} />
+            )}
           </AppLayout>
         </AppContext.Provider>
       )}

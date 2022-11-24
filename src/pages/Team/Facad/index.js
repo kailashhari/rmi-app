@@ -186,23 +186,22 @@ const BulletContent = styled("div")({
 });
 
 const Content = ({ data }) => {
-  console.log(data);
   return (
     <ContentLayout>
       <Container maxWidth="lg">
         <ContentHeading>{data.header}</ContentHeading>
         <ContentContent>
           {data.type === "para"
-            ? data.subdata.map((para) => (
-                <Paragraph key={para.data}>
+            ? data.subdata.map((para, id) => (
+                <Paragraph key={id}>
                   {para.subheading !== "" && (
                     <ParagraphTitle>{para.subheading}</ParagraphTitle>
                   )}
                   <ParagraphContent>{para.data}</ParagraphContent>
                 </Paragraph>
               ))
-            : data.subdata.map((bull) => (
-                <Paragraph key={bull.data}>
+            : data.subdata.map((bull, id) => (
+                <Paragraph key={id}>
                   {bull.subheading !== "" && (
                     <ParagraphTitle>{bull.subheading}</ParagraphTitle>
                   )}
@@ -224,7 +223,6 @@ const Content = ({ data }) => {
 
 const index = () => {
   const { facultyAdvisor } = useContext(AppContext);
-  console.log(facultyAdvisor);
   return (
     <FacadLayout>
       <Main>
@@ -265,8 +263,8 @@ const index = () => {
         </ProfHeading>
       </Main>
       <Contents>
-        {facultyAdvisor.details.map((content) => (
-          <Content data={content} key={content.heading} />
+        {facultyAdvisor.details.map((content, id) => (
+          <Content data={content} key={id} />
         ))}
       </Contents>
     </FacadLayout>

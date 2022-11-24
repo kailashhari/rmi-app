@@ -15,28 +15,25 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
     <title>RMI</title>
     <!-- Font imports -->
-    <link href="http://fonts.cdnfonts.com/css/gotham" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.cdnfonts.com/css/gotham" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!-- <div id="loading">
+    <div id="loading">
       <div id="outerbox">
         <div class="flyer"></div>
         <div class="flyer"></div>
@@ -51,7 +48,7 @@
         <div class="flyer"></div>
         <div class="flyer"></div>
       </div>
-    </div> -->
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -62,5 +59,13 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      console.log(
+        "\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n@@@@@@@@@@@@@@@@@@@@@@@& @@,@@@@@@@@@@@@@@@@@@@@@\n@@@@@@@@@@@@@@@@@@@@%   @@,,,,,@%@@@@@@@@@@@@@@@@\n@@@@@@@@@@@@@@@@@@#     @@,,,,,,,,#%@@@@@@@@@@@@@\n@@@@@@@@@@@@@@@&(      @@,,,,,,,,,,,,@@@@@@@@@@@@\n@@@@@@@@@@@@%  @     @@@@@@,,,,,,,,,/@,,,@@@@@@@@\n@@@@@@@@@@#   @   %@@@//////@@@,,,,,@@,,,,,,&%@@@\n@@@@@@@@     (@,@@@////////////#@@@,@@,,,,,,,,,%@\n@@@@@@@(     @@@///////////////////@@@,,,,,,,,,&@\n@@@@@@#   @#@@,,@@@(////////////@@@*@@,@@@,,,,,@@\n@@@@@@ @@  .@@,,,,//@@@@////@@@///  @@,,,,,@@@,@@\n@@@@@@     @@,,,,,,,/////@@(/////   @@,,,,,,,,,@@\n@@@@#     @@#,,,,,,,,,*//@@///*    @@%,,,,,,,,,@@\n@@@#      @@,,,,,,,,,,,,*@@        @@,,,,,,,,,,@@\n@@@    @@@%@@@@,,,,,,,,,@@      @@@@@@@@@,,,,,,@@\n@@  @@@/////////@@@@&,,,@@  @@@@/////////@@@@,,@@\n@@@&/////////////////&@@@@@(/////////////////@@@@\n@@@@@@&@////////////@@@////@@@(///////////#@&@@@@\n@@@@@@@@@@@@%@//@@@/////////////@@@@/%&@@@@@@@@@@\n@@@@@@@@@@@@@@@@@@#@(///////////@&@@@@@@@@@@@@@@@\n@@@@@@@@@@@@@@@@@@@@@@@@@&%@%@@@@@@@@@@@@@@@@@@@\n"
+      );
+      console.log = function () {};
+      console.warn = function () {};
+      console.error = function () {};
+    </script>
   </body>
 </html>

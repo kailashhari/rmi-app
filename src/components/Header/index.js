@@ -95,16 +95,16 @@ const StyledBurger = styled("button")((props) => ({
     position: "relative",
     transformOrigin: "1px",
 
-    [":first-child"]: {
+    [":first-of-type"]: {
       transform: props.open ? "rotate(45deg)" : "rotate(0)",
     },
 
-    [":nth-child(2)"]: {
+    [":nth-of-type(2)"]: {
       opacity: props.open ? "0" : "1",
       transform: props.open ? "translateX(20px)" : "translateX(0)",
     },
 
-    [":nth-child(3)"]: {
+    [":nth-of-type(3)"]: {
       transform: props.open ? "rotate(-45deg)" : "rotate(0)",
     },
   },
@@ -130,7 +130,6 @@ function ResponsiveAppBar() {
     logoAnim = "zoomIn 0.4s reverse";
   }
   // (location.state?.prevPath === '/' && location.pathname !== '/') ? 'zoomIn 0.4s forwards' : 'none';
-  console.log(location.state?.prevPath, location.pathname);
 
   return (
     <>
@@ -202,6 +201,7 @@ function ResponsiveAppBar() {
                 sx={{
                   display: { xs: "block", md: "none" },
                 }}
+                open={false}
               >
                 {pages.map((page) => (
                   <MenuItem key={page.text}>

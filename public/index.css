@@ -4,9 +4,11 @@
   padding: 0;
   /* z-index: inherit; */
 }
+
 body {
   height: 100vh;
 }
+
 #root {
   position: absolute;
   margin: 0;

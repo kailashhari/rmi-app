@@ -9,7 +9,6 @@ import { ReactComponent as FlipOne } from "../../../../assets/memberCardSvgs/fli
 import { ReactComponent as FlipTwo } from "../../../../assets/memberCardSvgs/flipsvg2.svg";
 import noprofile from "../../../../assets/noprofile.png";
 import { Link } from "react-router-dom";
-import useMediaQuery from "@mui/material/useMediaQuery";
 import ScopedCssBaseline from "@mui/material/ScopedCssBaseline";
 
 export const nameModder = (name) => {
@@ -248,7 +247,6 @@ const Card = (props) => {
             setFlip((flip) => !flip);
             setTapCount(0);
           }
-          console.log(tapCount);
         } else {
           setFlip((flip) => !flip);
         }
@@ -371,9 +369,9 @@ const Card = (props) => {
           </NameContainer>
           <SubtitleFlip>Projects</SubtitleFlip>
           {props.member.projects &&
-            props.member.projects.map((project) => {
+            props.member.projects.map((project, id) => {
               if (project.pid === "0") {
-                return <Project key={project.pid}>{project.pname}</Project>;
+                return <Project key={id}>{project.pname}</Project>;
               } else {
                 return (
                   <Link

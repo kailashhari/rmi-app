@@ -63,7 +63,6 @@ const Webops = styled("div")({
 const Selector = () => {
   const { mainArchitects, addnArchitects, webops } =
     useContext(AppContext).webTeam;
-  console.log(mainArchitects);
   const [tab, setTab] = useState(0);
   const developmentRef = useRef(null);
   const webopsRef = useRef(null);
@@ -78,7 +77,6 @@ const Selector = () => {
     } else if (tab === 1) {
       coords = webopsRef.current.getBoundingClientRect();
     }
-    console.log(coords);
     indicatorRef.current.style.width = `${coords.width * 0.7}px`;
     indicatorRef.current.style.left = `${
       coords.left - tabsCoords.left + coords.width * 0.15

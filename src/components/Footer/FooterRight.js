@@ -25,6 +25,7 @@ const footerData = [
     ],
   },
   {
+    columnTitle: "",
     columnItems: [
       { itemName: "InHoTTs", itemLink: "/events/#InHoTTs" },
       { itemName: "RoboVigyan", itemLink: "/events/#RoboVigyan" },
@@ -46,9 +47,6 @@ const FooterColumn = styled("div")({
   flexDirection: "column",
   gap: "0.6rem",
   marginTop: "0.6rem",
-  "@media (max-width: 767px)": {
-    alignItems: "center",
-  },
 });
 
 const FooterColumnTitle = styled("div")({

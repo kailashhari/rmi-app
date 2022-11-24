@@ -221,7 +221,6 @@ const getNameAndYear = (nameAndYear) => {
   const name = nameAndYear.replace(/\(.*?\)/g, "");
   // match all text in simple brackets
   const year = nameAndYear.match(/\((.*?)\)/g);
-  console.log(name, year);
   return { name: name, year: year };
 };
 
@@ -234,7 +233,6 @@ const Card = (props) => {
     );
   const namesplit = nameModder(props.member.name.toUpperCase());
   const [tapCount, setTapCount] = React.useState(0);
-  console.log(namesplit);
   return (
     <CardLayout
       onMouseEnter={() => {
@@ -260,7 +258,6 @@ const Card = (props) => {
             setFlip((flip) => !flip);
             setTapCount(0);
           }
-          console.log(tapCount);
         } else {
           setFlip((flip) => !flip);
         }

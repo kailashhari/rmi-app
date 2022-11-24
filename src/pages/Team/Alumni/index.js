@@ -21,7 +21,6 @@ const Index = () => {
   const recentYear = [
     ...new Set(alumniMembers.map((member) => member.batchTag)),
   ][0];
-  console.log(recentYear);
   const options = [
     "All",
     ...new Set(alumniMembers.map((member) => member.batchTag)),
