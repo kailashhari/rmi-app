@@ -177,11 +177,11 @@ const Index = ({ title }) => {
       <Hero project={project} />
       <Carousel contents={project.images} />
       <Container
-        maxWidth="lg"
+        maxWidth="md"
         sx={{
           textAlign: "justify",
-          marginBlock: { xs: "5rem", md: "6rem" },
-          paddingInline: { xs: "3rem", md: "0rem" },
+          marginBlock: { xs: "5rem", md: "8rem" },
+          paddingInline: { xs: "3rem", md: "3rem" },
           fontSize: { xs: "0.95rem", md: "1.2rem" },
           display: "flex",
           flexDirection: "column",
