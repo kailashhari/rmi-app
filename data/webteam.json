@@ -2,7 +2,7 @@
   "mainArchitects": [
     {
       "name": "Aswin Sreekumar",
-      "imageLink": "https://i.imgur.com/u8NyVGp.png",
+      "imageLink": "https://i.imgur.com/u8NyVGp.webp",
       "position": "Creative Director",
       "additional": ["Head, Design and Publicity", "2022-2023"],
       "github": "https://github.com/aswin-sreekumar/",
@@ -11,7 +11,7 @@
     },
     {
       "name": "H Kailash",
-      "imageLink": "https://i.imgur.com/47WtxrX.png",
+      "imageLink": "https://i.imgur.com/47WtxrX.webp",
       "position": "Associate lead developer",
       "additional": ["Web design", "UI/UX", "Front-End"],
       "github": "https://github.com/kailashhari",
@@ -30,7 +30,7 @@
     },
     {
       "name": "Muhesh K",
-      "imageLink": "https://i.imgur.com/eFokmcA.png",
+      "imageLink": "https://i.imgur.com/eFokmcA.webp",
       "position": "Associate developer",
       "additional": ["Front-End", "Mobile Development"],
       "github": "https://github.com/Muhesh7/",
@@ -42,7 +42,7 @@
   "addnArchitects": [
     {
       "name": "Vakula Venkatesh",
-      "imageLink": "https://i.imgur.com/BqDVMAE.png",
+      "imageLink": "https://i.imgur.com/BqDVMAE.webp",
       "position": "Coordinator",
       "github": "https://github.com/Vakula289",
       "linkedIn": "https://www.linkedin.com/in/vakula-v",
@@ -50,7 +50,7 @@
     },
     {
       "name": "Shyaam Pon Sundar S",
-      "imageLink": "https://i.imgur.com/GpqrRoS.png",
+      "imageLink": "https://i.imgur.com/GpqrRoS.webp",
       "position": "Coordinator",
       "github": "https://github.com/shyaam-963",
       "linkedIn": "https://www.linkedin.com/in/shyaam-pon-sundar-s-3166b51a7",
@@ -58,7 +58,7 @@
     },
     {
       "name": "Madhav R",
-      "imageLink": "https://i.imgur.com/nGe4tKM.png",
+      "imageLink": "https://i.imgur.com/nGe4tKM.webp",
       "position": "Coordinator",
       "github": "https://github.com/madE03",
       "linkedIn": "https://www.linkedin.com/in/madhav-r-2867b920b",
@@ -68,7 +68,7 @@
   "webops": [
     {
       "name": "Rahul Raaghav A",
-      "imageLink": "https://i.imgur.com/zMTydOw.png",
+      "imageLink": "https://i.imgur.com/zMTydOw.webp",
       "position": "Head, Web-ops",
       "additional": ["2022 - 2023"],
       "github": "https://github.com/RahulraaghavA1308",
