@@ -256,8 +256,7 @@ const Index = ({ title }) => {
                       sm={4}
                       md={3}
                       lg={3}
-                      align="center"
-                      padding={0}
+                      sx={{ margin: { xs: 0, md: "auto" } }}
                     >
                       <Publication key={index}>
                         <Avatar
