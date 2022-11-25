@@ -23,7 +23,6 @@ const Section = styled("div")({
   flexDirection: "column",
   width: "100%",
   alignItems: "center",
-  // border: "1px solid red",
   height: "fit-content",
   marginBlock: "4rem",
   gap: "2rem",

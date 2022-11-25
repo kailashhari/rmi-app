@@ -185,6 +185,13 @@ const Reachus = (props) => {
               <LinkLink>rmi_nitt</LinkLink>
               <LinkLinks>
                 <a
+                  href="https://linktr.ee/rmi_nitt"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <LinkTree />
+                </a>
+                <a
                   href="https://www.facebook.com/RmiNitt"
                   target="_blank"
                   rel="noreferrer"
@@ -197,13 +204,6 @@ const Reachus = (props) => {
                   rel="noreferrer"
                 >
                   <Instagram />
-                </a>
-                <a
-                  href="https://linktr.ee/rmi_nitt"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <LinkTree />
                 </a>
               </LinkLinks>
             </LinkColumn>

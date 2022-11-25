@@ -116,7 +116,6 @@ const Back = styled("div")({
   top: 0,
   display: "flex",
   flexDirection: "row",
-  // justifyContent: "space-evenly",
   transform: "rotateY(180deg)",
   borderRadius: "0.8rem",
   transformStyle: "preserve-3d",

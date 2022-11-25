@@ -25,12 +25,6 @@ const Img = styled("img")({
   opacity: 0.15,
 });
 
-// const fadeImages = [
-//   "https://picsum.photos/1920/1080",
-//   "https://picsum.photos/1920/1081",
-//   "https://picsum.photos/1920/1082",
-// ];
-
 const index = ({ images }) => {
   return (
     <ImageFaderLayout sx={{ zIndex: 99 }}>

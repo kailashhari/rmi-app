@@ -11,7 +11,6 @@ const Section = styled("div")({
   alignItems: "center",
   justifyContent: "center",
   height: "90vh",
-  // paddingTop: '10vh',
   backgroundColor: `${colors.dark}55`,
   backgroundBlendMode: "darken",
   overflow: "hidden",
@@ -131,6 +130,7 @@ const LeftArrow = styled("div")({
   height: "0.8rem",
   clipPath: "polygon(100% 0, 0 50%, 100% 100%)",
 });
+
 const RightArrowContainer = styled("div")({
   position: "absolute",
   right: "0",
@@ -169,7 +169,6 @@ const Index = (props) => {
           xs: "null",
           md: "polygon(0 0, 80% 0, 100% 20%, 100% 100%, 20% 100%, 0 80%)",
         },
-        // border: `3px solid ${colors.primary}`,
       }}
     >
       {props.bg !== "" && (
@@ -193,17 +192,12 @@ const Index = (props) => {
           <Column>
             <CarouselHolder>
               <Carousel
-                autoPlay={false} // true
+                autoPlay={false}
                 showArrows={false}
                 infiniteLoop={true}
                 showThumbs={false}
                 showStatus={false}
                 showIndicators={false}
-                // renderArrowNext={
-                //   <RightArrowContainer>
-                //     <RightArrow />
-                //   </RightArrowContainer>
-                // }
                 renderArrowPrev={(clickHandler) => {
                   return (
                     <LeftArrowContainer

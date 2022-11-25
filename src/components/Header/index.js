@@ -2,10 +2,8 @@ import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
-import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import MenuItem from "@mui/material/MenuItem";
 import { styled, Zoom } from "@mui/material";
@@ -20,8 +18,7 @@ import Groups2Icon from "@mui/icons-material/Groups2";
 import PrecisionManufacturingIcon from "@mui/icons-material/PrecisionManufacturing";
 import EventIcon from "@mui/icons-material/Event";
 import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
-// const pages = [
-//   'Home', 'Our Team', 'Projects', 'Events', 'Accolades', 'Reach Us'];
+
 export const pages = [
   {
     text: "Home",
@@ -138,7 +135,7 @@ function ResponsiveAppBar() {
         sx={{
           background: `linear-gradient(0deg, ${colors.dark}00 0%, ${colors.dark}FF 30%)`,
           height: "6rem",
-          zIndex: 1000,
+          zIndex: 20001,
           boxShadow: "none",
         }}
       >
