@@ -66,6 +66,10 @@
       "email": "aravindhdeiva456@gmail.com",
       "projects": [
         {
+          "pid": "9",
+          "pname": "HuRoS"
+        },
+        {
           "pid": "29",
           "pname": "ARIBOT"
         },
@@ -228,6 +232,10 @@
       "linkedIn": "https://www.linkedin.com/in/jai-kesav-k-r-400870195/",
       "email": "krjaikesav05@gmail.com",
       "projects": [
+        {
+          "pid": "9",
+          "pname": "HuRoS"
+        },
         {
           "pid": "22",
           "pname": "CHAOS"
@@ -552,7 +560,13 @@
       "domains": ["Computer Vision"],
       "github": "https://github.com/glucosesupremacy",
       "linkedIn": "https://www.linkedin.com/in/aditya-singh-386151224",
-      "email": "aditya64748@gmail.com"
+      "email": "aditya64748@gmail.com",
+      "projects": [
+        {
+          "pid": "0",
+          "pname": "Sentinel Drone"
+        }
+      ]
     },
     {
       "batchTag": "2025",
@@ -563,7 +577,13 @@
       "domains": ["Mechanics", "Image Processing", "Electronics"],
       "github": "https://github.com/Kasyap27",
       "linkedIn": "https://www.linkedin.com/in/akhil-kasyap-284ab824a",
-      "email": "akhilkasyap.007@gmail.com"
+      "email": "akhilkasyap.007@gmail.com",
+      "projects": [
+        {
+          "pid": "0",
+          "pname": "Sentinel Drone"
+        }
+      ]
     },
     {
       "batchTag": "2025",
@@ -574,7 +594,13 @@
       "domains": ["Embeded Systems", "Electronics", "Machine Learning"],
       "github": "https://github.com/Anas-120",
       "linkedIn": "https://www.linkedin.com/in/anas-khalid-682889246",
-      "email": "askanasadfia1@gmail.com"
+      "email": "askanasadfia1@gmail.com",
+      "projects": [
+        {
+          "pid": "0",
+          "pname": "Sentinel Drone"
+        }
+      ]
     },
     {
       "batchTag": "2025",
@@ -585,7 +611,13 @@
       "domains": ["Mechanics", "Electronics", "Control Systems"],
       "github": "https://github.com/Ganishk",
       "linkedIn": "https://www.linkedin.com/ganishk",
-      "email": "ganishk1@gmail.com"
+      "email": "ganishk1@gmail.com",
+      "projects": [
+        {
+          "pid": "0",
+          "pname": "HolA Bot"
+        }
+      ]
     },
     {
       "batchTag": "2025",
@@ -596,7 +628,13 @@
       "domains": ["Computer Vision", "Embedded systems"],
       "github": "https://github.com/Janam-001",
       "linkedIn": "https://www.linkedin.com/in/janam-khandelwal-520524223/",
-      "email": "janamkhandelwal1700@gmail.com"
+      "email": "janamkhandelwal1700@gmail.com",
+      "projects": [
+        {
+          "pid": "0",
+          "pname": "HolA Bot"
+        }
+      ]
     },
     {
       "batchTag": "2025",
@@ -607,7 +645,13 @@
       "domains": ["Embedded Systems", "Computer Vision"],
       "github": "https://github.com/rusheek7",
       "linkedIn": "https://www.linkedin.com/in/rusheek-b-3b9872231/",
-      "email": "rusheek7@gmail.com"
+      "email": "rusheek7@gmail.com",
+      "projects": [
+        {
+          "pid": "0",
+          "pname": "Sentinel Drone"
+        }
+      ]
     },
     {
       "batchTag": "2025",
@@ -618,7 +662,13 @@
       "domains": ["Embedded systems", "Computer Vision", "Verilog and FPGA"],
       "github": "https://github.com/SouravSelvaraj",
       "linkedIn": "www.linkedin.com/in/sourav-selvaraj",
-      "email": "krssourav@gmail.com"
+      "email": "krssourav@gmail.com",
+      "projects": [
+        {
+          "pid": "0",
+          "pname": "Sentinel Drone"
+        }
+      ]
     },
     {
       "batchTag": "2025",
@@ -633,7 +683,13 @@
       ],
       "github": "https://github.com/B-G-SREENIDHI",
       "linkedIn": "https://www.linkedin.com/in/sreenidhi-b-b949bb227",
-      "email": "sreenidhisundaram@gmail.com"
+      "email": "sreenidhisundaram@gmail.com",
+      "projects": [
+        {
+          "pid": "0",
+          "pname": "Sentinel Drone"
+        }
+      ]
     },
     {
       "batchTag": "2025",
@@ -644,7 +700,13 @@
       "domains": ["Machine Learning", "Computer Vision", "ROS"],
       "github": "github.com/Vattsan37",
       "linkedIn": "https://www.linkedin.com/in/srivattsan-s-147a5b22a",
-      "email": "srivattsan37@gmail.com"
+      "email": "srivattsan37@gmail.com",
+      "projects": [
+        {
+          "pid": "0",
+          "pname": "HolA Bot"
+        }
+      ]
     },
     {
       "batchTag": "2025",
@@ -655,7 +717,13 @@
       "domains": ["Machine learning", "Electronics"],
       "github": "https://github.com/Susmitha-03",
       "linkedIn": "https://www.linkedin.com/in/susmitha-s-a01961248",
-      "email": "meetsusmitha.er@gmail.com"
+      "email": "meetsusmitha.er@gmail.com",
+      "projects": [
+        {
+          "pid": "0",
+          "pname": "HolA Bot"
+        }
+      ]
     },
     {
       "batchTag": "2025",
@@ -666,7 +734,13 @@
       "domains": ["Computer vision", "Machine Learning", "Embedded systems"],
       "github": "https://github.com/Vallimayl",
       "linkedIn": "https://www.linkedin.com/in/vallimayl-v-619b96240",
-      "email": "spvalliappan73@gmail.com"
+      "email": "spvalliappan73@gmail.com",
+      "projects": [
+        {
+          "pid": "0",
+          "pname": "Sentinel Drone"
+        }
+      ]
     }
   ],
   "alumni": [
