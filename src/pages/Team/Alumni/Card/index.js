@@ -81,7 +81,6 @@ const Back = styled("div")({
   top: 0,
   display: "flex",
   flexDirection: "column",
-  // justifyContent: "space-evenly",
   transform: "rotateY(180deg)",
   borderRadius: "0.8rem",
   transformStyle: "preserve-3d",
@@ -217,9 +216,7 @@ const Subsubtitle = styled("div")({
 });
 
 const getNameAndYear = (nameAndYear) => {
-  // match all text not in simple brackets
   const name = nameAndYear.replace(/\(.*?\)/g, "");
-  // match all text in simple brackets
   const year = nameAndYear.match(/\((.*?)\)/g);
   return { name: name, year: year };
 };

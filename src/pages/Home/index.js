@@ -155,12 +155,13 @@ const index = ({ title }) => {
         <Hero>
           <ImageFader images={landingPageImages} />
           <HeroSection sx={{ zIndex: 100 }}>
-            <img
+            <Box
+              component="img"
               src={logo}
               alt="Logo big"
-              style={{
+              sx={{
                 width: "auto",
-                height: "24rem",
+                height: { xs: "18rem", md: "24rem" },
                 margin: "auto",
               }}
             />
@@ -186,9 +187,6 @@ const index = ({ title }) => {
               <HeroLineContainer>
                 <HeroText>MACHINE INTELLIGENCE</HeroText>
               </HeroLineContainer>
-              {/* <HeroLineContainer>
-              <HeroText>INTELLIGENCE</HeroText>
-            </HeroLineContainer> */}
               <HeroLineContainer>
                 <HeroTag>The Official Robotics Club of NIT Trichy</HeroTag>
               </HeroLineContainer>

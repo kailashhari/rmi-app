@@ -1,13 +1,7 @@
 import { styled } from "@mui/material";
 import React, { useEffect, useState } from "react";
-// import InputLabel from "@mui/material/InputLabel";
-// import MenuItem from "@mui/material/MenuItem";
-// import FormControl from "@mui/material/FormControl";
-// import Select from "@mui/material/Select";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { ClickAwayListener } from "@mui/material";
-// import useMinimalSelectStyles from "./minimalSelect.styles";
-// import { FormHelperText } from "@mui/material";
 import { colors } from "../../constants";
 
 const SelectorContainer = styled("div")({
@@ -90,31 +84,10 @@ export default function BasicSelect(props) {
               {props.options.map((option) => (
                 <Option value={option} val={val} setVal={setVal} key={option} />
               ))}
-              {/* <Option value={"All"} val={val} setVal={setVal} />
-            <Option value={"2022"} val={val} setVal={setVal} />
-            <Option value={"2021"} val={val} setVal={setVal} /> */}
-              {/* <Option>{"2022"}</Option>
-          <Option>{"2021"}</Option> */}
             </Options>
           </ClickAwayListener>
         )}
       </Selector>
     </SelectorContainer>
   );
-}
-{
-  /* <FormControl>
-      <Select
-        classes={{ root: useMinimalSelectStyles.select }}
-        IconComponent={iconComponent}
-        value={val}
-        MenuProps={menuProps}
-        onChange={handleChange}
-      >
-        <MenuItem value={0}>Principle</MenuItem>
-        <MenuItem value={1}>Sketch</MenuItem>
-        <MenuItem value={2}>Photoshop</MenuItem>
-        <MenuItem value={3}>Framer</MenuItem>
-      </Select>
-    </FormControl> */
 }

@@ -1,11 +1,10 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
-import SwipeableDrawer from "@mui/material/Drawer";
 import { Indicator, pages } from ".";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
-import { Divider, Grow, IconButton } from "@mui/material";
+import { Divider, Grow } from "@mui/material";
 import { ReactComponent as YoutubeSvg } from "../../assets/youtubeHeader.svg";
 import { ReactComponent as GithubSvg } from "../../assets/githubHeader.svg";
 import { colors, fontStyles } from "../../constants";
@@ -125,7 +124,7 @@ export default function TemporaryDrawer({ state, toggleDrawer, location }) {
       component="div"
       sx={{
         display: { xs: state ? "inline" : "none", md: "none" },
-        zIndex: 200,
+        zIndex: 20000,
         height: "100%",
         width: "100%",
         position: "fixed",

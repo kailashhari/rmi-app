@@ -8,7 +8,7 @@ import { AppContext } from "../../store/context";
 import "./styles.css";
 
 const Line = styled("div")({
-  height: "200px",
+  height: "20rem",
   width: "5px",
   marginTop: "-0.52rem",
   marginBottom: "-0.2rem",
@@ -17,7 +17,7 @@ const Line = styled("div")({
     marginTop: "-0.4rem",
     marginBottom: "0rem",
     marginLeft: "0.45rem",
-    height: "180px",
+    height: "18rem",
   },
 });
 

@@ -99,7 +99,6 @@ const Slider = styled("div")(({ hover }) => ({
   position: "absolute",
   display: "flex",
   flexDirection: "column",
-  // paddingTop: hover ? "1.2rem" : "0.6rem",
   top: hover ? "0" : "15.5rem",
   transition: "all 0.3s ease-in-out",
 }));
