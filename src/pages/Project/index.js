@@ -48,7 +48,7 @@ const HeroBg = styled("img")({
 const HeroTitle = styled("div")({
   ...fontStyles.heading,
   zIndex: 101,
-  "@media (max-width: 767px)": {
+  "@media (max-width: 900px)": {
     fontSize: "2.2rem",
   },
 });
@@ -56,7 +56,7 @@ const HeroSubtitle = styled("div")({
   ...fontStyles.content,
   color: colors.grey,
   zIndex: 101,
-  "@media (max-width: 767px)": {
+  "@media (max-width: 900px)": {
     fontSize: "1.2rem",
     textAlign: "center",
   },
@@ -68,7 +68,7 @@ const PubTitle = styled("div")({
   color: colors.black,
   lineHeight: "100%",
   fontWeight: 700,
-  "@media (max-width: 767px)": {
+  "@media (max-width: 900px)": {
     fontSize: "1.1rem",
   },
 });
@@ -78,7 +78,7 @@ const PubSubtitle = styled("div")({
   color: colors.grey,
   fontSize: "1.3rem",
   fontWeight: 400,
-  "@media (max-width: 767px)": {
+  "@media (max-width: 900px)": {
     fontSize: "1rem",
   },
 });
@@ -90,8 +90,9 @@ const Publication = styled("div")({
   marginBlock: "1rem",
   display: "flex",
   flexDirection: "column",
-  "@media (max-width: 767px)": {
+  "@media (max-width: 900px)": {
     margin: "auto",
+    padding: "0.4rem",
   },
 });
 
@@ -101,7 +102,7 @@ const HeroContent = styled("div")({
   textAlign: "center",
   marginTop: "1.5rem",
   zIndex: 201,
-  "@media (max-width: 767px)": {
+  "@media (max-width: 900px)": {
     width: "100%",
     fontSize: "1rem",
   },
@@ -110,7 +111,7 @@ const HeroContent = styled("div")({
 const Title = styled("div")({
   ...fontStyles.heading,
   fontSize: "2rem",
-  "@media (max-width: 767px)": {
+  "@media (max-width: 900px)": {
     alignItems: "center",
     fontSize: "1.5rem",
   },
@@ -256,14 +257,14 @@ const Index = ({ title }) => {
                       sm={4}
                       md={3}
                       lg={3}
-                      sx={{ margin: { xs: 0, md: "auto" } }}
+                      sx={{ marginInline: { xs: 0, md: "auto" } }}
                     >
                       <Publication key={index}>
                         <Avatar
                           src={dev.imageLink ? dev.imageLink : noprofile}
                           sx={{
-                            width: { xs: "4rem", md: "8rem" },
-                            height: { xs: "4rem", md: "8rem" },
+                            width: { xs: "6rem", md: "8rem" },
+                            height: { xs: "6rem", md: "8rem" },
                           }}
                         />
                         <DevTitle>{dev.name}</DevTitle>

@@ -56,18 +56,25 @@ const CardLayout = styled("div")({
   boxShadow: `0 0 16px ${colors.primary}BB`,
   borderRadius: "0.8rem",
   transformStyle: "preserve-3d",
-  perspective: "1000px",
+  WebkitTransformStyle: "preserve-3d",
   cursor: "pointer",
 });
 
 const Front = styled("div")({
   height: "100%",
   width: "100%",
+  zIndex: 100,
   overflow: "hidden",
-  position: "relative",
-  webkitBackfaceVisibility: "hidden",
-  backfaceVisibility: "hidden",
+  position: "absolute",
   transformStyle: "preserve-3d",
+  WebkitTransformStyle: "preserve-3d",
+  WebkitFontSmoothing: "antialiased",
+  WebkitBackfaceVisibility: "hidden",
+  OBackfaceVisibility: "hidden",
+  MozBackfaceVisibility: "hidden",
+  backfaceVisibility: "hidden",
+  WebkitTransform: "rotateY(0deg)",
+  transform: "rotateY(0deg)",
 });
 
 const Back = styled("div")({
@@ -76,14 +83,16 @@ const Back = styled("div")({
   width: "100%",
   overflow: "hidden",
   position: "absolute",
-  webkitBackfaceVisibility: "hidden",
-  backfaceVisibility: "hidden",
-  top: 0,
-  display: "flex",
-  flexDirection: "column",
-  transform: "rotateY(180deg)",
-  borderRadius: "0.8rem",
   transformStyle: "preserve-3d",
+  WebkitTransformStyle: "preserve-3d",
+  WebkitFontSmoothing: "antialiased",
+  WebkitBackfaceVisibility: "hidden",
+  OBackfaceVisibility: "hidden",
+  MozBackfaceVisibility: "hidden",
+  backfaceVisibility: "hidden",
+  borderRadius: "0.8rem",
+  WebkitTransform: "rotateY(-180deg)",
+  transform: "rotateY(-180deg)",
 });
 
 const ImgHolder = styled("div")({
@@ -107,7 +116,6 @@ const Slide = styled("div")(({ hover }) => ({
   position: "absolute",
   backgroundColor: colors.dark,
   top: hover ? "0" : "16rem",
-  zIndex: 2,
   borderRadius: hover ? "0.8rem" : "0",
 }));
 
@@ -115,7 +123,6 @@ const Slider = styled("div")(({ hover }) => ({
   width: "100%",
   borderRadius: "0.6rem",
   height: "100%",
-  zIndex: 3,
   position: "absolute",
   display: "flex",
   flexDirection: "column",
@@ -138,7 +145,6 @@ const NameContainer = styled("div")(({ hover }) => ({
 const FirstName = styled("div")({
   fontFamily: "Poppins",
   fontSize: "1.2rem",
-  zIndex: 3,
   fontWeight: 1000,
   width: "100%",
   textAlign: "center",
@@ -148,7 +154,6 @@ const FirstName = styled("div")({
 const SingleName = styled("div")({
   fontFamily: "Poppins",
   fontSize: "1.2rem",
-  zIndex: 3,
   fontWeight: 1000,
   width: "100%",
   textAlign: "center",
@@ -222,41 +227,41 @@ const Card = (props) => {
   const namesplit = nameModder(props.member.name.toUpperCase());
   const [tapCount, setTapCount] = React.useState(0);
   return (
-    <CardLayout
-      onMouseEnter={() => {
-        if (!isMobile) {
-          setHover(true);
-        }
-      }}
-      onMouseLeave={() => {
-        if (!isMobile) {
-          setHover(false);
-        }
-      }}
-      onClick={() => {
-        if (isMobile) {
-          if (tapCount === 0) {
+    <ScopedCssBaseline sx={{ background: "transparent" }}>
+      <CardLayout
+        onMouseEnter={() => {
+          if (!isMobile) {
             setHover(true);
-            setTapCount(1);
-          } else if (tapCount === 1) {
-            setFlip((flip) => !flip);
-            setTapCount(2);
-          } else if (tapCount === 2) {
-            setHover(false);
-            setFlip((flip) => !flip);
-            setTapCount(0);
           }
-        } else {
-          setFlip((flip) => !flip);
-        }
-      }}
-      sx={{
-        transition: "transform 0.4s",
-        transform: flip ? "rotateY(180deg)" : "rotateY(0)",
-      }}
-    >
-      <Front>
-        <ScopedCssBaseline>
+        }}
+        onMouseLeave={() => {
+          if (!isMobile) {
+            setHover(false);
+          }
+        }}
+        onClick={() => {
+          if (isMobile) {
+            if (tapCount === 0) {
+              setHover(true);
+              setTapCount(1);
+            } else if (tapCount === 1) {
+              setFlip((flip) => !flip);
+              setTapCount(2);
+            } else if (tapCount === 2) {
+              setHover(false);
+              setFlip((flip) => !flip);
+              setTapCount(0);
+            }
+          } else {
+            setFlip((flip) => !flip);
+          }
+        }}
+        sx={{
+          transition: "transform 0.4s",
+          transform: flip ? "rotateY(180deg)" : "rotateY(0)",
+        }}
+      >
+        <Front>
           <ImgHolder>
             {props.member.imageLink ? (
               <Img src={props.member.imageLink} loading="lazy" />
@@ -330,14 +335,11 @@ const Card = (props) => {
                 position: "absolute",
                 bottom: 0,
                 right: 0,
-                zIndex: 2,
               }}
             />
           </Slider>
-        </ScopedCssBaseline>
-      </Front>
-      <Back>
-        <ScopedCssBaseline sx={{ background: "transparent" }}>
+        </Front>
+        <Back>
           <NameContainer hover={true}>
             {namesplit.lname === "" ? (
               <SingleName
@@ -390,12 +392,11 @@ const Card = (props) => {
               position: "absolute",
               bottom: 0,
               right: 0,
-              zIndex: 2,
             }}
           />
-        </ScopedCssBaseline>
-      </Back>
-    </CardLayout>
+        </Back>
+      </CardLayout>
+    </ScopedCssBaseline>
   );
 };
 
