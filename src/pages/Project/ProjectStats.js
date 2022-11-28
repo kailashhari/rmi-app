@@ -14,7 +14,7 @@ const Column = styled("div")({
   flexDirection: "column",
   width: "fit-content",
   gap: "2rem",
-  "@media (max-width: 767px)": {
+  "@media (max-width: 900px)": {
     width: "100%",
     marginTop: "1rem",
     alignItems: "center",
@@ -32,8 +32,8 @@ const IconSection = styled("div")({
   flexDirection: "row",
   gap: "1rem",
   width: "fit-content",
-  "@media (max-width: 767px)": {
-    width: "80%",
+  "@media (max-width: 900px)": {
+    width: "90%",
   },
 });
 
@@ -41,7 +41,7 @@ const IconTitle = styled("div")({
   ...fontStyles.heading,
   fontSize: "1.4rem",
   marginTop: "0.2rem",
-  "@media (max-width: 767px)": {
+  "@media (max-width: 900px)": {
     fontSize: "1.4rem",
   },
 });
@@ -49,7 +49,7 @@ const IconTitle = styled("div")({
 const TechStacks = styled("div")({
   display: "flex",
   flexDirection: "column",
-  "@media (max-width: 767px)": {
+  "@media (max-width: 900px)": {
     marginBottom: "2rem",
   },
 });
@@ -59,7 +59,7 @@ const TechStack = styled("div")({
   color: colors.grey,
   fontSize: "1.3rem",
   fontWeight: 500,
-  "@media (max-width: 767px)": {
+  "@media (max-width: 900px)": {
     fontSize: "1rem",
   },
 });
@@ -111,8 +111,8 @@ const ProjectStats = (props) => {
           sx={{
             display: "flex",
             width: "100%",
-            flexDirection: { xs: "column", md: "row" },
-            justifyContent: { xs: "center", md: "space-between" },
+            flexDirection: { xs: "column", sm: "row" },
+            justifyContent: { xs: "center", sm: "space-between" },
           }}
         >
           <Column>

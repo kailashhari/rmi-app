@@ -63,7 +63,7 @@ const SectionContent = styled("div")({
   zIndex: 11,
   textAlign: "justify",
   ["@media (max-width:990px)"]: {
-    fontSize: "0.96rem",
+    fontSize: "0.9rem",
     marginBottom: "2rem",
   },
 });
@@ -94,12 +94,16 @@ const Column = styled("div")({
 const CarouselHolder = styled("div")({
   width: "32rem",
   height: "18rem",
-  ["@media (max-width:990px)"]: {
-    width: "100%",
-    height: "14rem",
-  },
   position: "relative",
   overflow: "hidden",
+  ["@media (max-width:990px)"]: {
+    width: "100%",
+    height: "100%",
+  },
+  ["@media (max-width:787px)"]: {
+    width: "100%",
+    height: "15rem",
+  },
 });
 
 const LeftArrowContainer = styled("div")({

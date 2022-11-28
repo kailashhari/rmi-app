@@ -52,7 +52,9 @@ const CoverExpansion = styled("div")({
   fontSize: "1rem",
   fontWeight: "bold",
   color: colors.grey,
-  height: "3rem",
+  lineHeight: "1.5em",
+  height: "3em",
+  textOverflow: "ellipsis",
   overflow: "hidden",
   "@media (max-width: 767px)": {
     fontSize: "0.8rem",
@@ -66,7 +68,6 @@ const CoverDesc = styled("div")({
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
-  textAlign: "justify",
   "@media (max-width: 767px)": {
     fontSize: "0.8rem",
   },

@@ -23,7 +23,7 @@ export const fontStyles = {
     fontSize: "2.4rem",
     color: colors.primary,
     "@media (max-width: 767px)": {
-      fontSize: "2rem",
+      fontSize: "1.6rem",
     },
   },
   content: {
@@ -32,7 +32,7 @@ export const fontStyles = {
     fontSize: "1.3rem",
     color: colors.light,
     "@media (max-width: 767px)": {
-      fontSize: "1rem",
+      fontSize: "0.9rem",
     },
   },
   navlinks: {

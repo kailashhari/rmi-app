@@ -17,7 +17,7 @@ const Line = styled("div")({
     marginTop: "-0.4rem",
     marginBottom: "0rem",
     marginLeft: "0.45rem",
-    height: "18rem",
+    height: "15rem",
   },
 });
 

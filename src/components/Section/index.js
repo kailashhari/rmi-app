@@ -22,18 +22,11 @@ const Section = styled("div")({
 const SectionTitle = styled("div")({
   ...fontStyles.heading,
   margin: "1.5rem",
-  "@media (max-width: 767px)": {
-    margin: "1.5rem",
-    fontSize: "1.6rem",
-  },
 });
 
 const SectionContent = styled("div")({
   ...fontStyles.content,
   textAlign: "center",
-  "@media (max-width: 767px)": {
-    fontSize: "0.9rem",
-  },
 });
 
 const index = (props) => {
