@@ -15,7 +15,7 @@ const Section = styled("div")({
   overflow: "hidden",
   position: "relative",
   paddingInline: "10%",
-  ["@media (max-width:780px)"]: {
+  ["@media (max-width:900px)"]: {
     flexDirection: "column",
     width: "100%",
     height: "100%",
@@ -28,18 +28,12 @@ const SectionTitle = styled("div")({
   ...fontStyles.heading,
   marginBottom: "1rem",
   textAlign: "center",
-  "@media (max-width: 767px)": {
-    fontSize: "1.6rem",
-  },
 });
 
 const SectionContent = styled("div")({
   ...fontStyles.content,
   textAlign: "justify",
-  "@media (max-width: 767px)": {
-    marginTop: "2rem",
-    fontSize: "1rem",
-  },
+  marginTop: "2rem",
 });
 
 const Subsection = styled("div")({

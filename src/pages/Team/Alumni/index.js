@@ -46,7 +46,7 @@ const Index = () => {
         val={year}
         setVal={setYear}
       />
-      <Container maxWidth="md" sx={{ marginTop: "3rem" }}>
+      <Container sx={{ marginTop: "3rem", maxWidth: { sm: "sm", md: "md" } }}>
         <Grid
           container
           alignItems="center"

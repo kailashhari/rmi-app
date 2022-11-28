@@ -29,12 +29,11 @@ const Index = () => {
   return (
     <>
       <YearSelector options={options} year={year} setYear={setYear} />
-      <Container maxWidth="md" sx={{ marginTop: "3rem" }}>
+      <Container sx={{ marginTop: "3rem", maxWidth: { sm: "sm", md: "md" } }}>
         <Grid
           container
-          alignItems="center"
           justifyContent="center"
-          width="fit-content"
+          alignItems="center"
           spacing={{ xs: 8.5, md: 10 }}
         >
           {filteredMembers(year).map((member) => (

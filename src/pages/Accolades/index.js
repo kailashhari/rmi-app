@@ -93,13 +93,16 @@ const FameItem = styled("div")({
 
 const FameIcon = styled("div")({
   height: "3.5rem",
-  width: "5rem",
+  width: "3.5rem",
+  display: "flex",
+  justifyContent: "center",
 });
 
 const FameText = styled("div")({
   display: "flex",
   flexDirection: "column",
   paddingBlock: "1rem",
+  flex: 1,
   ["@media (max-width:780px)"]: {
     paddingBlock: "0.2rem",
   },

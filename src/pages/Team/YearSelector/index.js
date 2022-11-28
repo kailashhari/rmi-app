@@ -10,20 +10,22 @@ const YearSelector = styled("div")({
   border: `2px solid ${colors.primary}`,
   margin: "2rem auto",
   width: "fit-content",
-  padding: "0.65rem 20px",
+  padding: "0.65rem 1.25rem",
   borderRadius: "0.8rem",
   gap: "2rem",
   position: "relative",
+  ["@media (max-width:780px)"]: {
+    gap: "1.5rem",
+  },
 });
 
 const Option = styled("div")({
-  ...fontStyles.content,
   zIndex: 1,
   fontSize: "1.2rem",
   transition: "all 0.2s ease-in-out",
   cursor: "pointer",
   ["@media (max-width:780px)"]: {
-    fontSize: "0.69rem",
+    fontSize: "0.67rem",
   },
 });
 
