@@ -264,15 +264,15 @@
         "subtitle": "The annual RMI workshop for freshmen at NIT Trichy",
         "content": "Our annual workshop for the freshmen that serves as a platform to kindle their interest in Robotics. Various topics in Robotics are introduced that build a foundation for them to explore further. The workshop is structured for students to learn through hands-on-experience by building a bot combining multiple domains of Robotics.",
         "images": [
-          "https://github.com/RMI-webteam/rmi-web-data/images/LApayYO.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/OgKyEVy.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/lt7viOo.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/4Mx0mzy.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/pSD6Cti.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/K4T6zHs.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/tgdzU6G.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/rBpYc6N.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/mWynqXN.webp"
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/LApayYO.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/OgKyEVy.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/lt7viOo.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/4Mx0mzy.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/pSD6Cti.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/K4T6zHs.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/tgdzU6G.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/rBpYc6N.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/mWynqXN.webp?alt=media"
         ]
       },
       {
@@ -281,12 +281,12 @@
         "subtitle": "Inter-hostel technical tournament",
         "content": "The annual inter-hostel technical tournament held in collaboration with Pragyan that provides an intellectual challenge and is a source of healthy competition between hostels. Participating teams build robots specific to problem statements and complete a set of tasks within predefined constraints, exhibiting technical prowess.",
         "images": [
-          "https://github.com/RMI-webteam/rmi-web-data/images/bo3yQcs.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/tPgsDKH.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/M4CuiEU.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/8Q9bMAw.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/9sPlpWP.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/fhxBJc0.webp"
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/bo3yQcs.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/tPgsDKH.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/M4CuiEU.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/8Q9bMAw.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/9sPlpWP.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/fhxBJc0.webp?alt=media"
         ]
       },
       {
@@ -295,10 +295,10 @@
         "subtitle": "The annual flagship Robotics competition from RMI",
         "content": "Our annual Robotics competition that tests a variety of technical domains, providing an opportunity for the freshmen to innovate and build complex systems with a mix of twists and additional challenges, making the competition a huge dive into the world of line-followers and autonomous bots.",
         "images": [
-          "https://github.com/RMI-webteam/rmi-web-data/images/QLpcpf3.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/Y7MaJbT.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/ZaKpaDF.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/7hP99Vd.webp"
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/QLpcpf3.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/Y7MaJbT.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/ZaKpaDF.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/7hP99Vd.webp?alt=media"
         ]
       },
       {
@@ -307,14 +307,14 @@
         "subtitle": "An inter-disciplinary hackathon series from RMI",
         "content": "A 24-hour hackathon,  held consecutive to  Following,  where participants work and build on solutions to problem statements with  hardware available from our inventory, within the short time-frame. The platform aims to prove that, sometimes Beauty lies in simplicity !",
         "images": [
-          "https://github.com/RMI-webteam/rmi-web-data/images/jWvB7x9.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/YKTg0EN.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/BXvHuYM.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/Gbn7MgX.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/ZnYDAgH.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/tm76xWE.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/SPEi0e8.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/NCeSx5r.webp"
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/jWvB7x9.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/YKTg0EN.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/BXvHuYM.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/Gbn7MgX.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/ZnYDAgH.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/tm76xWE.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/SPEi0e8.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/NCeSx5r.webp?alt=media"
         ]
       },
       {
@@ -323,14 +323,14 @@
         "subtitle": "The RMI x Pragyan robotics event",
         "content": "Conducted in collaboration with Pragyan, the annual technical fest of NIT Trichy,  this consists of a plethora of events for Robotics enthusiasts from various institutions to showcase their technical skills by competing against each other and proving their prowess in each of their desired domains.",
         "images": [
-          "https://github.com/RMI-webteam/rmi-web-data/images/oQVdDic.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/f25UL4z.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/AO0G6t5.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/yBfazBS.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/ECJ2Hzs.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/JavbhIS.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/LoXlvI1.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/LoXlvI1.webp"
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/oQVdDic.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/f25UL4z.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/AO0G6t5.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/yBfazBS.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/ECJ2Hzs.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/JavbhIS.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/LoXlvI1.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/LoXlvI1.webp?alt=media"
         ]
       },
       {
@@ -339,15 +339,15 @@
         "subtitle": "The grand display of innovation and technology",
         "content": "Visit our stalls during Pragyan to take a peek at the exciting projects and get to know what  we have been building over the years.  Get mesmerized at what the future of technology holds for humanity !",
         "images": [
-          "https://github.com/RMI-webteam/rmi-web-data/images/pIMoUku.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/QB4L7nZ.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/N362RbP.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/HQDY06y.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/OtEJFE3.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/TnbNQWz.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/GDMXFwS.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/9Ivb9rz.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/zAAlhxm.webp"
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/pIMoUku.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/QB4L7nZ.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/N362RbP.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/HQDY06y.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/OtEJFE3.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/TnbNQWz.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/GDMXFwS.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/9Ivb9rz.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/zAAlhxm.webp?alt=media"
         ]
       }
     ]
@@ -358,7 +358,7 @@
         "batchTag": "2023",
         "id": "136",
         "name": "Rigved Sanku",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/cAmnVx1.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/cAmnVx1.webp?alt=media",
         "position": "President",
         "domains": [
           "Deep Learning",
@@ -379,7 +379,7 @@
         "batchTag": "2023",
         "id": "137",
         "name": "K Girish",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/sJLS7Ti.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/sJLS7Ti.webp?alt=media",
         "position": "Vice President",
         "domains": [
           "Electronics and Embedded Systems",
@@ -412,7 +412,7 @@
         "batchTag": "2023",
         "id": "138",
         "name": "Aravindh Deiva G",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/nuu3y15.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/nuu3y15.webp?alt=media",
         "position": "Treasurer",
         "domains": ["Mechanics", "Photogrammetry", "ROS"],
         "github": "https://github.com/AravindhDeivaG",
@@ -433,7 +433,7 @@
         "batchTag": "2023",
         "id": "139",
         "name": "M Sivvani",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/OAyu7qr.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/OAyu7qr.webp?alt=media",
         "position": "Treasurer",
         "domains": ["Image processing", "controls and dynamics"],
         "github": "https://github.com/Msivvani",
@@ -454,7 +454,7 @@
         "batchTag": "2023",
         "id": "140",
         "name": "Satish Kumar L",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/xZ2jvIw.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/xZ2jvIw.webp?alt=media",
         "position": "Head, Workshops and Events",
         "domains": ["Embedded Systems", "Control Systems"],
         "github": "https://github.com/Satish-Kumar-L",
@@ -479,7 +479,7 @@
         "batchTag": "2023",
         "id": "141",
         "name": "Aswin Sreekumar",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/u8NyVGp.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/u8NyVGp.webp?alt=media",
         "position": "Head, Design and Publicity",
         "domains": ["Embedded systems", "Mobile robotics", "Quadcopters"],
         "github": "https://github.com/aswin-sreekumar/",
@@ -508,7 +508,7 @@
         "batchTag": "2023",
         "id": "142",
         "name": "Abhinav Agrawal",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/CGs49Hc.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/CGs49Hc.webp?alt=media",
         "position": "Member",
         "domains": ["Computer Vision", "Deep Learning", "Path Planning"],
         "github": "https://github.com/nevermess",
@@ -525,7 +525,7 @@
         "batchTag": "2023",
         "id": "143",
         "name": "Divya A B",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/rY2Cr2I.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/rY2Cr2I.webp?alt=media",
         "position": "Member",
         "domains": [
           "Image processing",
@@ -550,7 +550,7 @@
         "batchTag": "2023",
         "id": "144",
         "name": "Greeshwar R S",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/JM7ZKMj.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/JM7ZKMj.webp?alt=media",
         "position": "Member",
         "domains": ["Computer Vision", "Deep learning", "Machine learning"],
         "github": "https://github.com/greesh02",
@@ -575,7 +575,7 @@
         "batchTag": "2023",
         "id": "145",
         "name": "Jai Kesav K R",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/riGsty3.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/riGsty3.webp?alt=media",
         "position": "Member",
         "domains": ["Mechanics", "Control"],
         "github": "https://github.com/nice-boi-jk",
@@ -592,7 +592,7 @@
         "batchTag": "2023",
         "id": "146",
         "name": "Lokesh Keshav S",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/z2WISUt.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/z2WISUt.webp?alt=media",
         "position": "Member",
         "domains": [
           "Image Processing",
@@ -617,7 +617,7 @@
         "batchTag": "2023",
         "id": "147",
         "name": "Rishivanthiya G R",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/MMo6NcO.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/MMo6NcO.webp?alt=media",
         "position": "Member",
         "domains": ["Embedded systems"],
         "github": "https://github.com/DarkRiya",
@@ -634,7 +634,7 @@
         "batchTag": "2023",
         "id": "148",
         "name": "Shrushti Khairkar",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/23Veahm.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/23Veahm.webp?alt=media",
         "position": "Member",
         "domains": ["Image processing", "Electronics"],
         "github": "https://github.com/shrushti24",
@@ -655,7 +655,7 @@
         "batchTag": "2024",
         "id": "149",
         "name": "Adithya Venkata Narayanan",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/QX7x8qC.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/QX7x8qC.webp?alt=media",
         "position": "Member",
         "domains": ["Mechatronics", "Controls", "Computer Vision"],
         "github": "https://github.com/Adithya-187326",
@@ -680,7 +680,7 @@
         "batchTag": "2024",
         "id": "150",
         "name": "Farhan Abid Seliya",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/D6pLrkY.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/D6pLrkY.webp?alt=media",
         "position": "Member",
         "domains": [
           "Computer Vision",
@@ -702,7 +702,7 @@
         "batchTag": "2024",
         "id": "151",
         "name": "Guru Vishnu M",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/A2SNodL.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/A2SNodL.webp?alt=media",
         "position": "SAC coordinator",
         "domains": ["Mechanics", "Electronics"],
         "github": "https://github.com/Guru-Vishnu",
@@ -719,7 +719,7 @@
         "batchTag": "2024",
         "id": "152",
         "name": "Krishna Kishore V S",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/tAO3hUC.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/tAO3hUC.webp?alt=media",
         "position": "Member",
         "domains": [
           "Reinforcement learning",
@@ -740,7 +740,7 @@
         "batchTag": "2024",
         "id": "153",
         "name": "Madhav R",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/2OZ9GJ3.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/2OZ9GJ3.webp?alt=media",
         "position": "SAC coordinator",
         "domains": ["Electronics", "IoT", "Mechanics", "Control Systems"],
         "github": "https://github.com/madE03",
@@ -761,7 +761,7 @@
         "batchTag": "2024",
         "id": "154",
         "name": "Mukilan K",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/CpAGbkf.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/CpAGbkf.webp?alt=media",
         "position": "Member",
         "domains": ["Computer Vision", "Deep Learning", "Signal Processing"],
         "github": "https://github.com/Mukil07",
@@ -778,7 +778,7 @@
         "batchTag": "2024",
         "id": "155",
         "name": "P N Kalaimani",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/lfYGRmL.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/lfYGRmL.webp?alt=media",
         "position": "Member",
         "domains": [
           "Embedded Systems",
@@ -800,7 +800,7 @@
         "batchTag": "2024",
         "id": "156",
         "name": "R Charan Bhardhwaj",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/r2B8usn.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/r2B8usn.webp?alt=media",
         "position": "Member",
         "domains": ["Machine Learning", "Computer Vision"],
         "github": "https://github.com/R-Charan",
@@ -829,7 +829,7 @@
         "batchTag": "2024",
         "id": "157",
         "name": "Rahul Raaghav A",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/zMTydOw.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/zMTydOw.webp?alt=media",
         "position": "Head, Web-ops",
         "domains": ["Robotics", "Machine learning", "Embedded systems"],
         "github": "https://github.com/RahulraaghavA1308",
@@ -846,7 +846,7 @@
         "batchTag": "2024",
         "id": "158",
         "name": "Shyaam Pon Sundar S",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/GpqrRoS.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/GpqrRoS.webp?alt=media",
         "position": "Member",
         "domains": ["CV", "Machine learning", "Mechanics"],
         "github": "https://github.com/shyaam-963",
@@ -863,7 +863,7 @@
         "batchTag": "2024",
         "id": "159",
         "name": "Sunkara Vikash",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/EKHHTfq.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/EKHHTfq.webp?alt=media",
         "position": "Member",
         "domains": ["Machine learning", "Deep learning"],
         "github": "https://github.com/Vikash2024",
@@ -884,7 +884,7 @@
         "batchTag": "2024",
         "id": "160",
         "name": "Vakula Venkatesh",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/BqDVMAE.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/BqDVMAE.webp?alt=media",
         "position": "Member",
         "domains": ["Computer Vision", "Mechatronics", "Assistive Tech"],
         "github": "https://github.com/Vakula289",
@@ -901,7 +901,7 @@
         "batchTag": "2025",
         "id": "161",
         "name": "Aditya Singh ",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/II9SEiW.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/II9SEiW.webp?alt=media",
         "position": "Member",
         "domains": ["Computer Vision"],
         "github": "https://github.com/glucosesupremacy",
@@ -918,7 +918,7 @@
         "batchTag": "2025",
         "id": "162",
         "name": "Akhil Kasyap",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/pxhnGPd.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/pxhnGPd.webp?alt=media",
         "position": "Member",
         "domains": ["Mechanics", "Image Processing", "Electronics"],
         "github": "https://github.com/Kasyap27",
@@ -935,7 +935,7 @@
         "batchTag": "2025",
         "id": "163",
         "name": "Anas Khalid",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/42Izplm.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/42Izplm.webp?alt=media",
         "position": "Member",
         "domains": ["Embeded Systems", "Electronics", "Machine Learning"],
         "github": "https://github.com/Anas-120",
@@ -952,7 +952,7 @@
         "batchTag": "2025",
         "id": "164",
         "name": "Ganishk D",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/ZopihbY.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/ZopihbY.webp?alt=media",
         "position": "Member",
         "domains": ["Mechanics", "Electronics", "Control Systems"],
         "github": "https://github.com/Ganishk",
@@ -969,7 +969,7 @@
         "batchTag": "2025",
         "id": "165",
         "name": "Janam Khandelwal ",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/bSbxlNi.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/bSbxlNi.webp?alt=media",
         "position": "Member",
         "domains": ["Computer Vision", "Embedded systems"],
         "github": "https://github.com/Janam-001",
@@ -986,7 +986,7 @@
         "batchTag": "2025",
         "id": "166",
         "name": "Rusheek B",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/xjC0rTU.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/xjC0rTU.webp?alt=media",
         "position": "Member",
         "domains": ["Embedded Systems", "Computer Vision"],
         "github": "https://github.com/rusheek7",
@@ -1003,7 +1003,7 @@
         "batchTag": "2025",
         "id": "167",
         "name": "Sourav S",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/Q3ZccZJ.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/Q3ZccZJ.webp?alt=media",
         "position": "Member",
         "domains": ["Embedded systems", "Computer Vision", "Verilog and FPGA"],
         "github": "https://github.com/SouravSelvaraj",
@@ -1020,7 +1020,7 @@
         "batchTag": "2025",
         "id": "168",
         "name": "Sreenidhi Balachandran ",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/1IwxTts.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/1IwxTts.webp?alt=media",
         "position": "Member",
         "domains": [
           "Embedded electronics",
@@ -1041,7 +1041,7 @@
         "batchTag": "2025",
         "id": "169",
         "name": "Srivattsan S",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/Sxc1FZi.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/Sxc1FZi.webp?alt=media",
         "position": "Member",
         "domains": ["Machine Learning", "Computer Vision", "ROS"],
         "github": "github.com/Vattsan37",
@@ -1058,7 +1058,7 @@
         "batchTag": "2025",
         "id": "170",
         "name": "Susmitha S ",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/Rsrji9t.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/Rsrji9t.webp?alt=media",
         "position": "Member",
         "domains": ["Machine learning", "Electronics"],
         "github": "https://github.com/Susmitha-03",
@@ -1075,7 +1075,7 @@
         "batchTag": "2025",
         "id": "171",
         "name": "Vallimayl V",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/VouCMlm.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/VouCMlm.webp?alt=media",
         "position": "Member",
         "domains": ["Computer vision", "Machine Learning", "Embedded systems"],
         "github": "https://github.com/Vallimayl",
@@ -1094,7 +1094,7 @@
         "batchTag": "2022",
         "id": "123",
         "name": "Shrikumaran P B",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/cZNAfX5.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/cZNAfX5.webp?alt=media",
         "position": "President (2021-2022)",
         "github": "https://github.com/shrikumaran",
         "linkedIn": "https://www.linkedin.com/in/shrikumaran-p-b-7b2820173/",
@@ -1114,7 +1114,7 @@
         "batchTag": "2022",
         "id": "124",
         "name": "V K Viekash",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/PHiTq3x.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/PHiTq3x.webp?alt=media",
         "position": "Vice President (2021-2022)",
         "github": "https://github.com/VIEKASH2001",
         "linkedIn": "https://www.linkedin.com/in/viekash-v-6bb868131/",
@@ -1134,7 +1134,7 @@
         "batchTag": "2022",
         "id": "125",
         "name": "Akshat Khandelwal",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/s0xBgI0.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/s0xBgI0.webp?alt=media",
         "position": "Vice President (2021-2022)",
         "github": "https://github.com/kakshat1205",
         "linkedIn": "www.linkedin.com/in/kakshat1205",
@@ -1158,7 +1158,7 @@
         "batchTag": "2022",
         "id": "126",
         "name": "Kailash Jagadeesh",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/4m60S5i.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/4m60S5i.webp?alt=media",
         "position": "Treasurer (2021-2022)",
         "github": "https://github.com/kailash-jagadeesh",
         "linkedIn": "https://www.linkedin.com/in/kailash-j-b01223150",
@@ -1186,7 +1186,7 @@
         "batchTag": "2022",
         "id": "127",
         "name": "Hemangani N",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/DcBCofO.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/DcBCofO.webp?alt=media",
         "position": "Treasurer (2021-2022)",
         "github": "https://github.com/HEMANGANI",
         "linkedIn": "https://www.linkedin.com/in/hemangani-n-910a3716b/",
@@ -1206,7 +1206,7 @@
         "batchTag": "2022",
         "id": "128",
         "name": "Loahit K",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/Uazeflo.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/Uazeflo.webp?alt=media",
         "position": "Head, Workshops and Events (2021-2022)",
         "github": "https://github.com/Loahit5101",
         "email": "loahit5101@gmail.com",
@@ -1225,7 +1225,7 @@
         "batchTag": "2022",
         "id": "129",
         "name": "Pramoth Arun",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/e5FJVpo.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/e5FJVpo.webp?alt=media",
         "position": "Head, Design and Publicity (2021-2022)",
         "github": "https://github.com/pramotharun",
         "linkedIn": "https://www.linkedin.com/in/pramotharun/",
@@ -1241,7 +1241,7 @@
         "batchTag": "2022",
         "id": "130",
         "name": "Shubham Aggarwal",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/1d4ePhL.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/1d4ePhL.webp?alt=media",
         "position": "Head, Alumni Relations (2021-2022)",
         "github": "https://github.com/Demigod2808",
         "linkedIn": "https://www.linkedin.com/in/shubham-aggarwal-01343719b/",
@@ -1251,7 +1251,7 @@
         "batchTag": "2022",
         "id": "131",
         "name": "Akesh M",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/zBOwoEH.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/zBOwoEH.webp?alt=media",
         "position": "Member",
         "github": "https://github.com/Akesh-M",
         "email": "akeshnevergiveup@gmail.com",
@@ -1266,7 +1266,7 @@
         "batchTag": "2022",
         "id": "132",
         "name": "Gaurav Nagotanekar",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/N1En2hU.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/N1En2hU.webp?alt=media",
         "position": "Member",
         "github": "https://github.com/Gaurav4857",
         "linkedIn": "https://www.linkedin.com/in/gaurav-n-58622aab/",
@@ -1286,7 +1286,7 @@
         "batchTag": "2022",
         "id": "133",
         "name": "Nilendu Ganguli",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/1Lx7bjo.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/1Lx7bjo.webp?alt=media",
         "position": "Member",
         "github": "https://github.com/Nilendu999",
         "linkedIn": "https://www.linkedin.com/in/nilendu-ganguli-017879122",
@@ -1306,7 +1306,7 @@
         "batchTag": "2022",
         "id": "134",
         "name": "S Manimozhi",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/DL7zKse.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/DL7zKse.webp?alt=media",
         "position": "Member",
         "github": "https://github.com/ManimozhiS/Mani.git",
         "email": "manimozhisekar4@gmail.com",
@@ -1325,7 +1325,7 @@
         "batchTag": "2022",
         "id": "135",
         "name": "Sathya Prakash",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/4LxLz4y.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/4LxLz4y.webp?alt=media",
         "position": "Member",
         "github": "https://github.com/KingArthur000",
         "email": "sathyaprakashelango@gmail.com",
@@ -1340,7 +1340,7 @@
         "batchTag": "2021",
         "id": "111",
         "name": "Nitish Gudapati",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/cuMXx98.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/cuMXx98.webp?alt=media",
         "position": "President (2020-2021)",
         "github": "https://github.com/gnitish18",
         "linkedIn": "https://www.linkedin.com/in/gudapatinitish9/",
@@ -1360,7 +1360,7 @@
         "batchTag": "2021",
         "id": "112",
         "name": "Deepak S V",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/ltPCvSN.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/ltPCvSN.webp?alt=media",
         "position": "Vice President (2020-2021)",
         "github": "https://github.com/svdeepak999",
         "linkedIn": "https://www.linkedin.com/in/deepak-s-v-358b50170",
@@ -1380,7 +1380,7 @@
         "batchTag": "2021",
         "id": "113",
         "name": "R Mukesh Kanna",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/U1kCB9F.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/U1kCB9F.webp?alt=media",
         "position": "Vice President (2020-2021)",
         "github": "https://github.com/Mukeshkanna19",
         "email": "kanna.r1999@gmail.com",
@@ -1399,7 +1399,7 @@
         "batchTag": "2021",
         "id": "114",
         "name": "Jinesh R",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/p5IbDHq.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/p5IbDHq.webp?alt=media",
         "position": "Treasurer (2020-2021)",
         "github": "https://github.com/jineshrs2398",
         "linkedIn": "https://www.linkedin.com/in/jinesh-r-38a24a172",
@@ -1419,7 +1419,7 @@
         "batchTag": "2021",
         "id": "115",
         "name": "Harshith Vignesh",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/3HB8niS.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/3HB8niS.webp?alt=media",
         "position": "Treasurer (2020-2021)",
         "github": "https://github.com/harry-124",
         "linkedIn": "https://www.linkedin.com/in/harshith-vignesh-70817615b",
@@ -1439,7 +1439,7 @@
         "batchTag": "2021",
         "id": "116",
         "name": "Dharun Chagarlamudi",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/7nskBHe.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/7nskBHe.webp?alt=media",
         "position": "Head, Workshops and Events (2020-2021)",
         "github": "https://github.com/chagd",
         "linkedIn": "https://www.linkedin.com/in/dharun-chagarlamudi-7a6568170/",
@@ -1463,7 +1463,7 @@
         "batchTag": "2021",
         "id": "117",
         "name": "Pranav M",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/FLWD518.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/FLWD518.webp?alt=media",
         "position": "Head, Alumni Relations (2020-2021)",
         "github": "https://github.com/Pranav-99",
         "linkedIn": "https://www.linkedin.com/in/pranav-mani-09782a185",
@@ -1479,7 +1479,7 @@
         "batchTag": "2021",
         "id": "118",
         "name": "Koushik Kumaran",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/z0eL1DE.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/z0eL1DE.webp?alt=media",
         "position": "Member",
         "github": "https://github.com/bubblydiddles",
         "email": "koushikkumaran52@gmail.com",
@@ -1498,7 +1498,7 @@
         "batchTag": "2021",
         "id": "119",
         "name": "Abdur Rahman Kalim",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/jcobrru.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/jcobrru.webp?alt=media",
         "position": "Member",
         "github": "https://www.github.com/arkalim",
         "linkedIn": "https://www.linkedin.com/in/abdur-rahman-kalim-876899118",
@@ -1514,7 +1514,7 @@
         "batchTag": "2021",
         "id": "120",
         "name": "Athithiya Kumar N B",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/UWiimPv.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/UWiimPv.webp?alt=media",
         "position": "Member",
         "github": "https://github.com/athithyakumar",
         "linkedIn": "https://www.linkedin.com/in/athithya-kumar-a17828185/",
@@ -1530,7 +1530,7 @@
         "batchTag": "2021",
         "id": "121",
         "name": "Avinash S",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/brNyx3z.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/brNyx3z.webp?alt=media",
         "position": "Member",
         "github": "https://github.com/avinashrox",
         "email": "avinashsenthil029@gmail.com",
@@ -1545,7 +1545,7 @@
         "batchTag": "2021",
         "id": "122",
         "name": "Sarthak Narayan",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/G7jDB8L.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/G7jDB8L.webp?alt=media",
         "position": "Member",
         "github": "https://github.com/SarthakNarayan",
         "linkedIn": "https://www.linkedin.com/in/sarthak-narayan-40b927164/",
@@ -1561,7 +1561,7 @@
         "batchTag": "2020",
         "id": "101",
         "name": "R Hari shankar",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/zOO7XmW.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/zOO7XmW.webp?alt=media",
         "position": "President (2019-2020)",
         "github": "https://github.com/hari2181998",
         "email": "harishankar2181998@gmail.com",
@@ -1576,7 +1576,7 @@
         "batchTag": "2020",
         "id": "102",
         "name": "Aswin Gururaj",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/jYDIJrG.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/jYDIJrG.webp?alt=media",
         "position": "Vice President (2019-2020)",
         "github": "https://github.com/aswingururaj",
         "email": "aswingururaj1998@yahoo.com",
@@ -1595,7 +1595,7 @@
         "batchTag": "2020",
         "id": "103",
         "name": "Vidyaa K",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/o6JjnMA.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/o6JjnMA.webp?alt=media",
         "position": "Treasurer  (2019-2020)",
         "github": "https://github.com/vidyaa29",
         "linkedIn": "https://www.linkedin.com/in/vidyaa-krishnan-97923316a",
@@ -1615,7 +1615,7 @@
         "batchTag": "2020",
         "id": "104",
         "name": "Naveen S",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/5UzZ44W.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/5UzZ44W.webp?alt=media",
         "position": "Treasurer (2019-2020)",
         "github": "https://github.com/Naveen50525",
         "linkedIn": "https://www.linkedin.com/in/naveen-santhanam-36b44514a",
@@ -1631,7 +1631,7 @@
         "batchTag": "2020",
         "id": "105",
         "name": "Akshaya K S",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/kq7ZaBy.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/kq7ZaBy.webp?alt=media",
         "position": "Head, Workshops and Events(2019-2020)",
         "github": "https://github.com/Akshayaks",
         "linkedIn": "https://www.linkedin.com/in/akshaya-srinivasan-47a92b13a/",
@@ -1651,7 +1651,7 @@
         "batchTag": "2020",
         "id": "106",
         "name": "Harinaathgobi C",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/E4nRYxt.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/E4nRYxt.webp?alt=media",
         "position": "Member",
         "github": "https://github.com/Harinaathgobi",
         "email": "harinaathgobi@gmail.com",
@@ -1670,7 +1670,7 @@
         "batchTag": "2020",
         "id": "107",
         "name": "S Srikrishna",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/B7v4GOZ.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/B7v4GOZ.webp?alt=media",
         "position": "Member",
         "github": "https://github.com/srike27",
         "linkedIn": "https://www.linkedin.com/in/srikrishna-s-2228b4136",
@@ -1690,7 +1690,7 @@
         "batchTag": "2020",
         "id": "108",
         "name": "Ananda Rangan N",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/tFcm1zD.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/tFcm1zD.webp?alt=media",
         "position": "Member",
         "github": "https://github.com/anandarangan249",
         "email": "anandarangan249@gmail.com",
@@ -1709,7 +1709,7 @@
         "batchTag": "2020",
         "id": "109",
         "name": "Rishab Balasubramanian",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/ueowTaP.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/ueowTaP.webp?alt=media",
         "position": "Member",
         "github": "https://github.com/rishab26201",
         "email": "rishab.edu@gmail.com",
@@ -1747,7 +1747,7 @@
         "batchTag": "2019",
         "id": "89",
         "name": "Anand Asokan",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/U7wtavF.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/U7wtavF.webp?alt=media",
         "position": "President  (2018-2019)",
         "github": "https://github.com/anand97",
         "linkedIn": "https://www.linkedin.com/in/anand-asokan-750972126/",
@@ -1768,7 +1768,7 @@
         "batchTag": "2019",
         "id": "90",
         "name": "Hari Prasanth P",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/r5EXOjm.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/r5EXOjm.webp?alt=media",
         "position": "Vice President (2018-2019)",
         "linkedIn": "https://www.linkedin.com/in/hariprasanth19",
         "email": "hari.191197@gmail.com",
@@ -1788,7 +1788,7 @@
         "batchTag": "2019",
         "id": "91",
         "name": "Venkatesh Prasad V",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/OQfTWUr.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/OQfTWUr.webp?alt=media",
         "position": "Vice President (2018-2019)",
         "github": "https://github.com/venkateshprasad23",
         "linkedIn": "https://www.linkedin.com/in/venkatesh-prasad-7686a2134/",
@@ -1808,7 +1808,7 @@
         "batchTag": "2019",
         "id": "92",
         "name": "Anirudh Swaminathan",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/nHIgwfO.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/nHIgwfO.webp?alt=media",
         "position": "Treasurer (2018-2019)",
         "github": "https://github.com/Anirudh-Swaminathan",
         "linkedIn": "https://www.linkedin.com/in/anirudh-swaminathan",
@@ -1829,7 +1829,7 @@
         "batchTag": "2019",
         "id": "93",
         "name": "Madhan S",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/fRDVfwD.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/fRDVfwD.webp?alt=media",
         "position": "Treasurer (2018-2019)",
         "github": "https://github.com/Madhan-Suresh",
         "linkedIn": "https://www.linkedin.com/in/madhan-s-85855713a/",
@@ -1849,7 +1849,7 @@
         "batchTag": "2019",
         "id": "94",
         "name": "Vigneshwar Mohanam",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/sKpdqRn.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/sKpdqRn.webp?alt=media",
         "position": "Head, Workshops and Inductions  (2018-2019)",
         "linkedIn": "https://www.linkedin.com/in/vignesh-war/",
         "email": "vigneshwar235@gmail.com",
@@ -1868,7 +1868,7 @@
         "batchTag": "2019",
         "id": "95",
         "name": "Subramanian Krishnan",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/uQanbMt.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/uQanbMt.webp?alt=media",
         "position": "Head, External Affairs  (2018-2019)",
         "github": "https://github.com/SubramanianKrish",
         "linkedIn": "https://www.linkedin.com/in/subramaniankrish/",
@@ -1892,7 +1892,7 @@
         "batchTag": "2019",
         "id": "96",
         "name": "PSVS Sai Kumar",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/hTY6Xra.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/hTY6Xra.webp?alt=media",
         "position": "Head, External Affairs  (2018-2019)",
         "github": "https://github.com/psvssaikumar",
         "linkedIn": "https://www.linkedin.com/mwlite/me",
@@ -1908,7 +1908,7 @@
         "batchTag": "2019",
         "id": "97",
         "name": "Chinari Subhechha Subudhi",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/Cgc5EOj.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/Cgc5EOj.webp?alt=media",
         "position": "Member",
         "github": "https://github.com/SubhechhaSubudhi",
         "linkedIn": "https://www.linkedin.com/in/subhechha-subudhi-825006139/",
@@ -1924,7 +1924,7 @@
         "batchTag": "2019",
         "id": "98",
         "name": "Nikhil Jonnavithula",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/eglrgGx.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/eglrgGx.webp?alt=media",
         "position": "Member",
         "linkedIn": "https://in.linkedin.com/in/nikhil-jonnavithula-0762b4118",
         "email": "jnikhil321@gmail.com",
@@ -1943,7 +1943,7 @@
         "batchTag": "2019",
         "id": "99",
         "name": "Rajiv Vaidyanathan N",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/p32VEO8.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/p32VEO8.webp?alt=media",
         "position": "Member",
         "github": "https://github.com/Rajiv2605",
         "email": "rajivvaidyanathan4@gmail.com",
@@ -1958,7 +1958,7 @@
         "batchTag": "2019",
         "id": "100",
         "name": "Surya M",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/wsJYL3b.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/wsJYL3b.webp?alt=media",
         "position": "Member",
         "github": "https://github.com/Surya-98",
         "linkedIn": "https://www.linkedin.com/in/surya-ravishankar-751a93152",
@@ -1973,7 +1973,7 @@
         "batchTag": "2018",
         "id": "76",
         "name": "Mohamed Naveed G",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/1ASOA64.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/1ASOA64.webp?alt=media",
         "position": "President (2017-2018)",
         "github": "https://github.com/MohamedNaveed",
         "linkedIn": "https://www.linkedin.com/in/mohamed-naveed-gul-mohamed-674b74a9",
@@ -1994,7 +1994,7 @@
         "batchTag": "2018",
         "id": "77",
         "name": "Nanda Kishore V",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/ZEvAZmm.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/ZEvAZmm.webp?alt=media",
         "position": "Vice President (2017-2018)",
         "github": "https://github.com/Nanda-Kishore-V",
         "linkedIn": "https://www.linkedin.com/in/nanda-kishore-vasudevan/",
@@ -2014,7 +2014,7 @@
         "batchTag": "2018",
         "id": "78",
         "name": "Baladhurgesh Balagurusamy Paramasivan",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/JJI5fxV.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/JJI5fxV.webp?alt=media",
         "position": "Treasurer (2017-2018)",
         "github": "https://github.com/Baladhurgesh",
         "linkedIn": "https://www.linkedin.com/in/baladhurgesh-balagurusamy-paramasivan-67057a57",
@@ -2034,7 +2034,7 @@
         "batchTag": "2018",
         "id": "79",
         "name": "Sundaravalli Aravazhi",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/cZhFy3h.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/cZhFy3h.webp?alt=media",
         "position": "Treasurer (2017-2018)",
         "linkedIn": "https://www.linkedin.com/in/sundaravalli-aravazhi",
         "email": "sundaravalli.aravazhi@gmail.com",
@@ -2049,7 +2049,7 @@
         "batchTag": "2018",
         "id": "80",
         "name": "Muhammad Suhail S",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/00u4XMS.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/00u4XMS.webp?alt=media",
         "position": "Head, Workshops and Events (2017-2018)",
         "email": "muhammadsuhail441@gmail.com",
         "projects": [
@@ -2067,7 +2067,7 @@
         "batchTag": "2018",
         "id": "81",
         "name": "Nithin Shrivastav S",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/rCJmrfR.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/rCJmrfR.webp?alt=media",
         "position": "Head, Workshops and Events(2017-2018)",
         "github": "https://github.com/NithinShrivatsav",
         "linkedIn": "https://www.linkedin.com/in/nithin-shrivatsav-s-70805bb3/",
@@ -2087,7 +2087,7 @@
         "batchTag": "2018",
         "id": "82",
         "name": "Aarthy Ramesh",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/mSJMSnn.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/mSJMSnn.webp?alt=media",
         "position": "Project Manager (2017 -2018)",
         "linkedIn": "https://www.linkedin.com/in/aarthy-ramesh-a6070b13b",
         "email": "raarthy22@gmail.com",
@@ -2106,7 +2106,7 @@
         "batchTag": "2018",
         "id": "83",
         "name": "Ajay Asai",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/jU4x2kk.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/jU4x2kk.webp?alt=media",
         "position": "Member",
         "email": "ajaiasai@gmail.com",
         "projects": [
@@ -2120,7 +2120,7 @@
         "batchTag": "2018",
         "id": "84",
         "name": "Arvind Nataraj",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/M2mZt57.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/M2mZt57.webp?alt=media",
         "position": "Member",
         "linkedIn": "https://www.linkedin.com/in/arvind-nataraj-s-b16b1b11a",
         "email": "arvindnata123@gmail.com",
@@ -2135,7 +2135,7 @@
         "batchTag": "2018",
         "id": "85",
         "name": "Harish Kumar K R",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/KlLoFQY.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/KlLoFQY.webp?alt=media",
         "position": "Member",
         "linkedIn": "https://www.linkedin.com/in/harishkumarkr/",
         "email": "harishkumarkr97@gmail.com",
@@ -2150,7 +2150,7 @@
         "batchTag": "2018",
         "id": "86",
         "name": "Ruthrash Hari",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/ApxU0ES.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/ApxU0ES.webp?alt=media",
         "position": "Member",
         "github": "https://github.com/Ruthrash",
         "linkedIn": "https://www.linkedin.com/in/h-ruthrash-b5b790112/",
@@ -2171,7 +2171,7 @@
         "batchTag": "2018",
         "id": "87",
         "name": "Varsha Suresh",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/M9cpMj2.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/M9cpMj2.webp?alt=media",
         "position": "Member",
         "email": "varshasuresh2706@gmail.com",
         "projects": [
@@ -2185,7 +2185,7 @@
         "batchTag": "2018",
         "id": "88",
         "name": "Venkata Subramanian Srinivasan",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/sjVAv5X.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/sjVAv5X.webp?alt=media",
         "position": "Member",
         "github": "https://github.com/VenkataSubramania",
         "linkedIn": "https://www.linkedin.com/in/vs-s",
@@ -2205,7 +2205,7 @@
         "batchTag": "2017",
         "id": "71",
         "name": "Sabhari Natarajan",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/Mkp3Lbl.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/Mkp3Lbl.webp?alt=media",
         "position": "President (2016-2017)",
         "github": "https://github.com/nsabhari",
         "linkedIn": "https://www.linkedin.com/in/nsabhari1995/",
@@ -2225,7 +2225,7 @@
         "batchTag": "2017",
         "id": "72",
         "name": "Sarada Krithivasan",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/UQrrH82.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/UQrrH82.webp?alt=media",
         "position": "Vice President (2016-2017)",
         "github": "https://www.bitbucket.org/Sarada_K/",
         "linkedIn": "https://www.linkedin.com/in/sarada-krithivasan-07534a140/",
@@ -2235,7 +2235,7 @@
         "batchTag": "2017",
         "id": "73",
         "name": "Sidhaarth Murugan",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/e82Zyt6.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/e82Zyt6.webp?alt=media",
         "position": "Vice President (2016-2017)",
         "linkedIn": "https://www.linkedin.com/in/sidhaarth-murugan-b30293101/",
         "email": "mur.sidhaarth@gmail.com"
@@ -2244,7 +2244,7 @@
         "batchTag": "2017",
         "id": "74",
         "name": "Prakash Baskaran",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/BWT3gW8.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/BWT3gW8.webp?alt=media",
         "position": "Treasurer (2016-2017)",
         "github": "https://github.com/prakash1895",
         "linkedIn": "https://www.linkedin.com/in/prakash1895/",
@@ -2264,7 +2264,7 @@
         "batchTag": "2017",
         "id": "75",
         "name": "Adarsh Jagan S",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/c5rhPBg.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/c5rhPBg.webp?alt=media",
         "position": "Project Manager (2016-2017)",
         "email": "adarshjagan3895@gmail.com",
         "projects": [
@@ -2282,7 +2282,7 @@
         "batchTag": "2016",
         "id": "53",
         "name": "Vimalesh Muralidharan",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/8ufXdoY.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/8ufXdoY.webp?alt=media",
         "position": "President (2015-2016)",
         "email": "vimalesh_m@yahoo.co.in",
         "projects": [
@@ -2304,7 +2304,7 @@
         "batchTag": "2016",
         "id": "54",
         "name": "Akshay Pramod Roy",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/KQy7d2t.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/KQy7d2t.webp?alt=media",
         "position": "Vice President (2015-2016)",
         "github": "https://github.com/apr8",
         "linkedIn": "https://www.linkedin.com/in/akshaypramodroy",
@@ -2320,7 +2320,7 @@
         "batchTag": "2016",
         "id": "55",
         "name": "Devalla Sripad Krishna",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/kUNFm1s.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/kUNFm1s.webp?alt=media",
         "position": "Vice President (2015-2016)",
         "linkedIn": "https://www.linkedin.com/in/sripaddevalla",
         "email": "devalla2603@gmail.com"
@@ -2329,7 +2329,7 @@
         "batchTag": "2016",
         "id": "56",
         "name": "Shravan Muralidharan",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/VeDhnDT.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/VeDhnDT.webp?alt=media",
         "position": "Treasurer (2015-2016)",
         "github": "https://github.com/shravan1394",
         "linkedIn": "https://www.linkedin.com/in/shravan-murlidaran/",
@@ -2425,7 +2425,7 @@
         "batchTag": "2016",
         "id": "68",
         "name": "Harish Karunakaran",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/d2ZAfpC.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/d2ZAfpC.webp?alt=media",
         "position": "Member"
       },
       {
@@ -2533,7 +2533,7 @@
         "batchTag": "2014",
         "id": "27",
         "name": "Manikandan Ananth",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/JyFsV6c.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/JyFsV6c.webp?alt=media",
         "position": "Vice President (2013-2014)",
         "linkedIn": "https://www.linkedin.com/in/manikandanananth50",
         "email": "manikandan.ananth50@gmail.com"
@@ -2586,7 +2586,7 @@
         "batchTag": "2014",
         "id": "35",
         "name": "Gibin Joe Zachariah",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/Rwex8nu.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/Rwex8nu.webp?alt=media",
         "position": "Member",
         "linkedIn": "https://www.linkedin.com/in/gibinjoe/",
         "email": "gibinjoezach@gmail.com"
@@ -2622,7 +2622,7 @@
         "batchTag": "2013",
         "id": "19",
         "name": "Atif Nabil",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/2EXaR4F.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/2EXaR4F.webp?alt=media",
         "position": "President (2012-2013)",
         "email": "contact.atifnabil@gmail.com"
       },
@@ -2836,15 +2836,15 @@
           { "id": "156", "name": " R Charan Bhardhwaj" },
           { "id": "143", "name": "Divya A B" }
         ],
-        "cardCoverImage": "https://github.com/RMI-webteam/rmi-web-data/images/3mLEFJE.webp",
-        "backgroundImage": "https://github.com/RMI-webteam/rmi-web-data/images/dIgQ8d0.webp",
+        "cardCoverImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/3mLEFJE.webp?alt=media",
+        "backgroundImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/dIgQ8d0.webp?alt=media",
         "images": [
-          "https://github.com/RMI-webteam/rmi-web-data/images/3mLEFJE.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/gR6XL9i.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/jxdM3Vo.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/gPznDcL.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/75ONACO.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/4j2fgSU.webp"
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/3mLEFJE.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/gR6XL9i.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/jxdM3Vo.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/gPznDcL.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/75ONACO.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/4j2fgSU.webp?alt=media"
         ],
         "quickLinks": {
           "youtubeLink": "https://youtu.be/qKCRdq6o9OM",
@@ -2892,13 +2892,13 @@
           { "id": "150", "name": "Farhan Abid Seliya" },
           { "id": "156", "name": "R Charan Bhardhwaj" }
         ],
-        "cardCoverImage": "https://github.com/RMI-webteam/rmi-web-data/images/aF1mgjo.webp",
-        "backgroundImage": "https://github.com/RMI-webteam/rmi-web-data/images/R3UTsmj.webp",
+        "cardCoverImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/aF1mgjo.webp?alt=media",
+        "backgroundImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/R3UTsmj.webp?alt=media",
         "images": [
-          "https://github.com/RMI-webteam/rmi-web-data/images/aF1mgjo.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/ZlgW5oP.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/GSxbx0V.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/i7txSMR.webp"
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/aF1mgjo.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/ZlgW5oP.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/GSxbx0V.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/i7txSMR.webp?alt=media"
         ],
         "quickLinks": {
           "youtubeLink": "https://www.youtube.com/watch?v=xe1oSxpRqOU",
@@ -2950,15 +2950,15 @@
           { "id": "137", "name": "K Girish" },
           { "id": "159", "name": "Sunkara Vikash" }
         ],
-        "cardCoverImage": "https://github.com/RMI-webteam/rmi-web-data/images/HTUys5d.webp",
-        "backgroundImage": "https://github.com/RMI-webteam/rmi-web-data/images/v8S5BNK.webp",
+        "cardCoverImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/HTUys5d.webp?alt=media",
+        "backgroundImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/v8S5BNK.webp?alt=media",
         "images": [
-          "https://github.com/RMI-webteam/rmi-web-data/images/HTUys5d.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/BmlwPkz.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/wag0lQ5.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/I4AEK1P.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/mKmVQ0J.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/VNqYVwK.webp"
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/HTUys5d.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/BmlwPkz.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/wag0lQ5.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/I4AEK1P.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/mKmVQ0J.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/VNqYVwK.webp?alt=media"
         ],
         "quickLinks": {
           "youtubeLink": "https://youtu.be/gD48fRKOrWo",
@@ -2992,15 +2992,15 @@
           { "id": "139", "name": "Sivvani M" },
           { "id": "148", "name": "Shrushti Khairkar" }
         ],
-        "cardCoverImage": "https://github.com/RMI-webteam/rmi-web-data/images/gOC2rt2.webp",
-        "backgroundImage": "https://github.com/RMI-webteam/rmi-web-data/images/IwpIPVM.webp",
+        "cardCoverImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/gOC2rt2.webp?alt=media",
+        "backgroundImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/IwpIPVM.webp?alt=media",
         "images": [
-          "https://github.com/RMI-webteam/rmi-web-data/images/gOC2rt2.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/f20UdkD.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/Jo2yv1b.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/z3CRsye.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/mQdmlJW.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/qOf71UB.webp"
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/gOC2rt2.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/f20UdkD.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/Jo2yv1b.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/z3CRsye.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/mQdmlJW.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/qOf71UB.webp?alt=media"
         ],
         "quickLinks": {
           "youtubeLink": "https://youtu.be/If1SxSkwnWg",
@@ -3039,18 +3039,18 @@
           { "id": "144", "name": "Greeshwar R S" },
           { "id": "0", "name": "H Kailash (Associate)" }
         ],
-        "cardCoverImage": "https://github.com/RMI-webteam/rmi-web-data/images/qMuOW2n.webp",
-        "backgroundImage": "https://github.com/RMI-webteam/rmi-web-data/images/W2fmJUJ.webp",
+        "cardCoverImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/qMuOW2n.webp?alt=media",
+        "backgroundImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/W2fmJUJ.webp?alt=media",
         "images": [
-          "https://github.com/RMI-webteam/rmi-web-data/images/qMuOW2n.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/D4bgomy.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/dLfFv2I.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/rKWoQWb.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/pZ2mWGT.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/HKPX33z.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/gxk1akO.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/rTP26Ix.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/SkCQuLk.webp"
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/qMuOW2n.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/D4bgomy.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/dLfFv2I.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/rKWoQWb.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/pZ2mWGT.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/HKPX33z.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/gxk1akO.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/rTP26Ix.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/SkCQuLk.webp?alt=media"
         ],
         "quickLinks": {
           "youtubeLink": "",
@@ -3100,17 +3100,17 @@
           { "id": "140", "name": "Satish Kumar L" },
           { "id": "144", "name": "Greeshwar R S" }
         ],
-        "cardCoverImage": "https://github.com/RMI-webteam/rmi-web-data/images/vAmCSBg.webp",
-        "backgroundImage": "https://github.com/RMI-webteam/rmi-web-data/images/6MMhsUX.webp",
+        "cardCoverImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/vAmCSBg.webp?alt=media",
+        "backgroundImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/6MMhsUX.webp?alt=media",
         "images": [
-          "https://github.com/RMI-webteam/rmi-web-data/images/vAmCSBg.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/mvLd9Hu.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/m9ZuGaZ.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/pdhvGSN.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/0W31fRy.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/kkKVtku.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/KgazGNB.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/T2LyjyV.webp"
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/vAmCSBg.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/mvLd9Hu.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/m9ZuGaZ.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/pdhvGSN.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/0W31fRy.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/kkKVtku.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/KgazGNB.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/T2LyjyV.webp?alt=media"
         ],
         "quickLinks": {
           "youtubeLink": "https://youtu.be/oq0OR4O_MMM",
@@ -3177,13 +3177,13 @@
           { "id": "159", "name": "Sunkara Vikash" },
           { "id": "137", "name": "Girish K" }
         ],
-        "cardCoverImage": "https://github.com/RMI-webteam/rmi-web-data/images/UcMR3nk.webp",
-        "backgroundImage": "https://github.com/RMI-webteam/rmi-web-data/images/nwj5rDP.webp",
+        "cardCoverImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/UcMR3nk.webp?alt=media",
+        "backgroundImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/nwj5rDP.webp?alt=media",
         "images": [
-          "https://github.com/RMI-webteam/rmi-web-data/images/UcMR3nk.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/ZhDzmvK.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/UUFZMmj.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/tGZzJKf.webp"
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/UcMR3nk.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/ZhDzmvK.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/UUFZMmj.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/tGZzJKf.webp?alt=media"
         ],
         "quickLinks": {
           "youtubeLink": "https://youtu.be/zlh-tLXnrtc",
@@ -3223,12 +3223,12 @@
           { "id": "138", "name": "Aravindh Deiva" },
           { "id": "0", "name": "Sai Ganesh" }
         ],
-        "cardCoverImage": "https://github.com/RMI-webteam/rmi-web-data/images/n3SdQLe.webp",
-        "backgroundImage": "https://github.com/RMI-webteam/rmi-web-data/images/E0Gi0yZ.webp",
+        "cardCoverImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/n3SdQLe.webp?alt=media",
+        "backgroundImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/E0Gi0yZ.webp?alt=media",
         "images": [
-          "https://github.com/RMI-webteam/rmi-web-data/images/n3SdQLe.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/MnWKuzf.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/wDWU6OV.webp"
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/n3SdQLe.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/MnWKuzf.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/wDWU6OV.webp?alt=media"
         ],
         "quickLinks": {
           "youtubeLink": "",
@@ -3263,13 +3263,13 @@
           { "id": "145", "name": "Jai Kesav K R" },
           { "id": "144", "name": "Greeshwar R S" }
         ],
-        "cardCoverImage": "https://github.com/RMI-webteam/rmi-web-data/images/eqxIs0I.webp",
-        "backgroundImage": "https://github.com/RMI-webteam/rmi-web-data/images/FMX9P5c.webp",
+        "cardCoverImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/eqxIs0I.webp?alt=media",
+        "backgroundImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/FMX9P5c.webp?alt=media",
         "images": [
-          "https://github.com/RMI-webteam/rmi-web-data/images/eqxIs0I.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/nGZocVD.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/M1j1PWt.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/8p49Olk.webp"
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/eqxIs0I.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/nGZocVD.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/M1j1PWt.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/8p49Olk.webp?alt=media"
         ],
         "quickLinks": {
           "youtubeLink": "https://www.youtube.com/watch?v=ZmmrQpT5dJo",
@@ -3318,15 +3318,15 @@
           { "id": "140", "name": "Satish Kumar L" },
           { "id": "146", "name": "Lokesh Keshav S" }
         ],
-        "cardCoverImage": "https://github.com/RMI-webteam/rmi-web-data/images/lcA2PjS.webp",
-        "backgroundImage": "https://github.com/RMI-webteam/rmi-web-data/images/rxJrC4L.webp",
+        "cardCoverImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/lcA2PjS.webp?alt=media",
+        "backgroundImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/rxJrC4L.webp?alt=media",
         "images": [
-          "https://github.com/RMI-webteam/rmi-web-data/images/lcA2PjS.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/7eXm1R7.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/SLQFBN4.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/Zo0aOI3.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/uQT7iiw.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/oJWZdwK.webp"
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/lcA2PjS.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/7eXm1R7.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/SLQFBN4.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/Zo0aOI3.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/uQT7iiw.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/oJWZdwK.webp?alt=media"
         ],
         "quickLinks": {
           "youtubeLink": "",
@@ -3376,13 +3376,13 @@
           { "id": "132", "name": "Gaurav Nagotanekar" },
           { "id": "134", "name": "S Manimozhi" }
         ],
-        "cardCoverImage": "https://github.com/RMI-webteam/rmi-web-data/images/6jkOi44.webp",
-        "backgroundImage": "https://github.com/RMI-webteam/rmi-web-data/images/iLhRTRE.webp",
+        "cardCoverImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/6jkOi44.webp?alt=media",
+        "backgroundImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/iLhRTRE.webp?alt=media",
         "images": [
-          "https://github.com/RMI-webteam/rmi-web-data/images/6jkOi44.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/1tZgJRw.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/Le4RUd5.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/Ul2Q16F.webp"
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/6jkOi44.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/1tZgJRw.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/Le4RUd5.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/Ul2Q16F.webp?alt=media"
         ],
         "quickLinks": {
           "youtubeLink": "",
@@ -3424,13 +3424,13 @@
           { "id": "135", "name": "Sathya Prakash" },
           { "id": "125", "name": "Akshat Khandelwal" }
         ],
-        "cardCoverImage": "https://github.com/RMI-webteam/rmi-web-data/images/AUVpw58.webp",
-        "backgroundImage": "https://github.com/RMI-webteam/rmi-web-data/images/7IMb8c4.webp",
+        "cardCoverImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/AUVpw58.webp?alt=media",
+        "backgroundImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/7IMb8c4.webp?alt=media",
         "images": [
-          "https://github.com/RMI-webteam/rmi-web-data/images/AUVpw58.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/0wwhNV0.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/2Te3k4m.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/6H31fhj.webp"
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/AUVpw58.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/0wwhNV0.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/2Te3k4m.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/6H31fhj.webp?alt=media"
         ],
         "quickLinks": {
           "youtubeLink": "",
@@ -3467,14 +3467,14 @@
           { "id": "126", "name": "Kailash Jagadeesh" },
           { "id": "127", "name": "Hemangani N" }
         ],
-        "cardCoverImage": "https://github.com/RMI-webteam/rmi-web-data/images/rVrzhpN.webp",
-        "backgroundImage": "https://github.com/RMI-webteam/rmi-web-data/images/wxKmOHG.webp",
+        "cardCoverImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/rVrzhpN.webp?alt=media",
+        "backgroundImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/wxKmOHG.webp?alt=media",
         "images": [
-          "https://github.com/RMI-webteam/rmi-web-data/images/rVrzhpN.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/7qySpPS.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/z0pNkE3.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/BjaCaag.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/8vMVYhx.webp"
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/rVrzhpN.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/7qySpPS.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/z0pNkE3.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/BjaCaag.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/8vMVYhx.webp?alt=media"
         ],
         "quickLinks": {
           "youtubeLink": "",
@@ -3521,11 +3521,11 @@
           { "id": "109", "name": "Rishab Balasubramanian" },
           { "id": "116", "name": "Dharun Chargarlamudi" }
         ],
-        "cardCoverImage": "https://github.com/RMI-webteam/rmi-web-data/images/1XBSOd1.webp",
-        "backgroundImage": "https://github.com/RMI-webteam/rmi-web-data/images/DccM52V.webp",
+        "cardCoverImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/1XBSOd1.webp?alt=media",
+        "backgroundImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/DccM52V.webp?alt=media",
         "images": [
-          "https://github.com/RMI-webteam/rmi-web-data/images/1XBSOd1.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/7Fl826a.webp"
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/1XBSOd1.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/7Fl826a.webp?alt=media"
         ],
         "quickLinks": {
           "youtubeLink": "",
@@ -3558,13 +3558,13 @@
           { "id": "0", "name": "Swatthi" },
           { "id": "103", "name": "Vidyaa K" }
         ],
-        "cardCoverImage": "https://github.com/RMI-webteam/rmi-web-data/images/mC9pbEY.webp",
-        "backgroundImage": "https://github.com/RMI-webteam/rmi-web-data/images/H4cq5y1.webp",
+        "cardCoverImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/mC9pbEY.webp?alt=media",
+        "backgroundImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/H4cq5y1.webp?alt=media",
         "images": [
-          "https://github.com/RMI-webteam/rmi-web-data/images/mC9pbEY.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/jKjeU9u.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/uwAwHrS.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/slficTm.webp"
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/mC9pbEY.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/jKjeU9u.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/uwAwHrS.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/slficTm.webp?alt=media"
         ],
         "quickLinks": {
           "youtubeLink": "",
@@ -3615,12 +3615,12 @@
           { "id": "106", "name": "Harinaathgobi C" },
           { "id": "107", "name": "S Srikrishna" }
         ],
-        "cardCoverImage": "https://github.com/RMI-webteam/rmi-web-data/images/JsZePQA.webp",
-        "backgroundImage": "https://github.com/RMI-webteam/rmi-web-data/images/u0BFMJm.webp",
+        "cardCoverImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/JsZePQA.webp?alt=media",
+        "backgroundImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/u0BFMJm.webp?alt=media",
         "images": [
-          "https://github.com/RMI-webteam/rmi-web-data/images/JsZePQA.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/uF84qwN.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/YLBEdk2.webp"
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/JsZePQA.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/uF84qwN.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/YLBEdk2.webp?alt=media"
         ],
         "quickLinks": {
           "youtubeLink": "https://youtu.be/gJLD88WDmVQ?list=PL44ElmNkyTvAOAaKOyxxh6-qOBxQdbjUt",
@@ -3672,12 +3672,12 @@
           { "id": "110", "name": "Soumyarup Lahiri" },
           { "id": "53", "name": "Vimalesh Muralidharan" }
         ],
-        "cardCoverImage": "https://github.com/RMI-webteam/rmi-web-data/images/GGYAKgS.webp",
-        "backgroundImage": "https://github.com/RMI-webteam/rmi-web-data/images/brO4w51.webp",
+        "cardCoverImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/GGYAKgS.webp?alt=media",
+        "backgroundImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/brO4w51.webp?alt=media",
         "images": [
-          "https://github.com/RMI-webteam/rmi-web-data/images/GGYAKgS.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/FAgIMCa.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/wV4vLzE.webp"
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/GGYAKgS.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/FAgIMCa.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/wV4vLzE.webp?alt=media"
         ],
         "quickLinks": {
           "youtubeLink": "",
@@ -3727,15 +3727,15 @@
           { "id": "113", "name": "R Mukesh Kanna" },
           { "id": "114", "name": "Jinesh R" }
         ],
-        "cardCoverImage": "https://github.com/RMI-webteam/rmi-web-data/images/jkigVp8.webp",
-        "backgroundImage": "https://github.com/RMI-webteam/rmi-web-data/images/Ch4K7wM.webp",
+        "cardCoverImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/jkigVp8.webp?alt=media",
+        "backgroundImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/Ch4K7wM.webp?alt=media",
         "images": [
-          "https://github.com/RMI-webteam/rmi-web-data/images/jkigVp8.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/SrScXSa.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/Fld7c4t.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/WL4EaVa.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/4kXH5PY.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/tDjKP3G.webp"
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/jkigVp8.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/SrScXSa.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/Fld7c4t.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/WL4EaVa.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/4kXH5PY.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/tDjKP3G.webp?alt=media"
         ],
         "quickLinks": {
           "youtubeLink": "https://www.youtube.com/watch?list=PL44ElmNkyTvCRuWAIcXDtp5S97rujg1kM&v=9IeZ1yYYh7A",
@@ -3790,12 +3790,12 @@
           { "id": "122", "name": "Sarthak Narayan" }
         ],
 
-        "cardCoverImage": "https://github.com/RMI-webteam/rmi-web-data/images/hkJpLRQ.webp",
-        "backgroundImage": "https://github.com/RMI-webteam/rmi-web-data/images/Cvy9JFh.webp",
+        "cardCoverImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/hkJpLRQ.webp?alt=media",
+        "backgroundImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/Cvy9JFh.webp?alt=media",
         "images": [
-          "https://github.com/RMI-webteam/rmi-web-data/images/hkJpLRQ.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/9YhlE5B.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/vPG6may.webp"
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/hkJpLRQ.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/9YhlE5B.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/vPG6may.webp?alt=media"
         ],
         "quickLinks": {
           "githubLink": "",
@@ -3848,14 +3848,14 @@
           { "id": "94", "name": "Vigneshwar Mohanam" }
         ],
 
-        "cardCoverImage": "https://github.com/RMI-webteam/rmi-web-data/images/wv9ZDyF.webp",
-        "backgroundImage": "https://github.com/RMI-webteam/rmi-web-data/images/MIqS7Dt.webp",
+        "cardCoverImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/wv9ZDyF.webp?alt=media",
+        "backgroundImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/MIqS7Dt.webp?alt=media",
         "images": [
-          "https://github.com/RMI-webteam/rmi-web-data/images/wv9ZDyF.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/YVDVgLC.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/15BGoBM.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/2lTfxvg.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/dvyOuV2.webp"
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/wv9ZDyF.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/YVDVgLC.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/15BGoBM.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/2lTfxvg.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/dvyOuV2.webp?alt=media"
         ],
         "quickLinks": {
           "youtubeLink": "https://www.youtube.com/watch?v=poLY6zQyu8U&list=PL44ElmNkyTvBEUzKNem82jqLcwXWyOYtB",
@@ -3918,14 +3918,14 @@
           { "id": "91", "name": "Venkatesh Prasad V" }
         ],
 
-        "cardCoverImage": "https://github.com/RMI-webteam/rmi-web-data/images/w5w0Tx1.webp",
-        "backgroundImage": "https://github.com/RMI-webteam/rmi-web-data/images/STNG3vL.jpg",
+        "cardCoverImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/w5w0Tx1.webp?alt=media",
+        "backgroundImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/STNG3vL.jpg?alt=media",
         "images": [
-          "https://github.com/RMI-webteam/rmi-web-data/images/w5w0Tx1.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/tBimCch.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/o2XU8wi.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/c9t8fzY.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/iOITf42.webp"
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/w5w0Tx1.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/tBimCch.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/o2XU8wi.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/c9t8fzY.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/iOITf42.webp?alt=media"
         ],
         "quickLinks": {
           "youtubeLink": "",
@@ -3975,15 +3975,15 @@
           { "id": "145", "name": "Jai Kesav K R" },
           { "id": "149", "name": "Adithya Venkata Narayanan" }
         ],
-        "cardCoverImage": "https://github.com/RMI-webteam/rmi-web-data/images/YHkP6Ip.webp",
-        "backgroundImage": "https://github.com/RMI-webteam/rmi-web-data/images/dkIP5Ms.webp",
+        "cardCoverImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/YHkP6Ip.webp?alt=media",
+        "backgroundImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/dkIP5Ms.webp?alt=media",
         "images": [
-          "https://github.com/RMI-webteam/rmi-web-data/images/YHkP6Ip.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/WDm0H8M.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/5Gn637T.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/mzK7HKV.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/kdltuJb.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/jrgpNgS.webp"
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/YHkP6Ip.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/WDm0H8M.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/5Gn637T.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/mzK7HKV.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/kdltuJb.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/jrgpNgS.webp?alt=media"
         ],
         "quickLinks": {
           "youtubeLink": "https://youtu.be/KEZAagrPsK8?list=PL44ElmNkyTvDE6TNGxojuFG-B6DDnvIzQ",
@@ -4055,13 +4055,13 @@
           { "id": "127", "name": "Hemangani N" },
           { "id": "123", "name": "Shrikumaran P B" }
         ],
-        "cardCoverImage": "https://github.com/RMI-webteam/rmi-web-data/images/QS5TQaF.webp",
-        "backgroundImage": "https://github.com/RMI-webteam/rmi-web-data/images/p5bEAmV.webp",
+        "cardCoverImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/QS5TQaF.webp?alt=media",
+        "backgroundImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/p5bEAmV.webp?alt=media",
         "images": [
-          "https://github.com/RMI-webteam/rmi-web-data/images/QS5TQaF.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/sXIzEMM.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/nwmNWUM.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/rWqcXIM.webp"
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/QS5TQaF.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/sXIzEMM.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/nwmNWUM.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/rWqcXIM.webp?alt=media"
         ],
         "quickLinks": {
           "youtubeLink": "https://github.com/RMI-NITT/project_pepper",
@@ -4105,11 +4105,11 @@
           { "id": "125", "name": "Akshat Khandelwal" },
           { "id": "126", "name": "Kailash Jagadeesh" }
         ],
-        "cardCoverImage": "https://github.com/RMI-webteam/rmi-web-data/images/f8xtpg4.webp",
-        "backgroundImage": "https://github.com/RMI-webteam/rmi-web-data/images/szKvJSa.webp",
+        "cardCoverImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/f8xtpg4.webp?alt=media",
+        "backgroundImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/szKvJSa.webp?alt=media",
         "images": [
-          "https://github.com/RMI-webteam/rmi-web-data/images/f8xtpg4.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/8q7PWtc.webp"
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/f8xtpg4.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/8q7PWtc.webp?alt=media"
         ],
         "quickLinks": {
           "youtubeLink": "https://youtu.be/UeuH5BPP0Es?list=PL44ElmNkyTvB_1MNKltBobiBRVqcphoj3",
@@ -4180,14 +4180,14 @@
           { "id": "116", "name": "Pranav Dharun Chagarlamudi" },
           { "id": "129", "name": "Pramoth Arun" }
         ],
-        "cardCoverImage": "https://github.com/RMI-webteam/rmi-web-data/images/PM2oBxP.webp",
-        "backgroundImage": "https://github.com/RMI-webteam/rmi-web-data/images/vGqQoRr.webp",
+        "cardCoverImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/PM2oBxP.webp?alt=media",
+        "backgroundImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/vGqQoRr.webp?alt=media",
         "images": [
-          "https://github.com/RMI-webteam/rmi-web-data/images/PM2oBxP.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/ecruS1L.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/ND29ODI.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/m28gEEB.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/pea7gNx.webp"
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/PM2oBxP.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/ecruS1L.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/ND29ODI.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/m28gEEB.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/pea7gNx.webp?alt=media"
         ],
         "quickLinks": {
           "youtubeLink": "",
@@ -4226,13 +4226,13 @@
           { "id": "95", "name": "Subramanian Krishnan" },
           { "id": "53", "name": "Vimalesh Muralidharan" }
         ],
-        "cardCoverImage": "https://github.com/RMI-webteam/rmi-web-data/images/g8q4bpH.webp",
-        "backgroundImage": "https://github.com/RMI-webteam/rmi-web-data/images/vxoxqf9.webp",
+        "cardCoverImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/g8q4bpH.webp?alt=media",
+        "backgroundImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/vxoxqf9.webp?alt=media",
         "images": [
-          "https://github.com/RMI-webteam/rmi-web-data/images/g8q4bpH.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/KO9SYyB.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/pTmzsZ1.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/KcinO1l.webp"
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/g8q4bpH.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/KO9SYyB.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/pTmzsZ1.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/KcinO1l.webp?alt=media"
         ],
         "quickLinks": {
           "youtubeLink": "https://youtu.be/qzviFZL8F9c?list=PL44ElmNkyTvB4IeyesQDqDp1FKzhX20f5",
@@ -4271,11 +4271,11 @@
           { "id": "86", "name": "Ruthrash Hari" },
           { "id": "88", "name": "Venkata Subramanian Srinivasan" }
         ],
-        "cardCoverImage": "https://github.com/RMI-webteam/rmi-web-data/images/3f5QGOP.webp",
-        "backgroundImage": "https://github.com/RMI-webteam/rmi-web-data/images/p4cgjHl.webp",
+        "cardCoverImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/3f5QGOP.webp?alt=media",
+        "backgroundImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/p4cgjHl.webp?alt=media",
         "images": [
-          "https://github.com/RMI-webteam/rmi-web-data/images/3f5QGOP.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/k16F8WD.webp"
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/3f5QGOP.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/k16F8WD.webp?alt=media"
         ],
         "quickLinks": {
           "youtubeLink": "https://youtu.be/6PbY1M8Hmxo?list=PL44ElmNkyTvDx50X635sewgpntd8AD2oA",
@@ -4323,13 +4323,13 @@
           { "id": "79", "name": "Sundaravalli Aravazhi" },
           { "id": "87", "name": "Varsha Suresh" }
         ],
-        "cardCoverImage": "https://github.com/RMI-webteam/rmi-web-data/images/7ZVTnUu.webp",
-        "backgroundImage": "https://github.com/RMI-webteam/rmi-web-data/images/6p112xm.jpg",
+        "cardCoverImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/7ZVTnUu.webp?alt=media",
+        "backgroundImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/6p112xm.jpg?alt=media",
         "images": [
-          "https://github.com/RMI-webteam/rmi-web-data/images/7ZVTnUu.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/P51QKa3.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/R44jCu7.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/uw5ZYKQ.webp"
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/7ZVTnUu.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/P51QKa3.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/R44jCu7.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/uw5ZYKQ.webp?alt=media"
         ],
         "quickLinks": {
           "youtubeLink": "https://youtu.be/92KMaPneoys?list=PL44ElmNkyTvC27UvaMHGESDpqqbbxIu2n",
@@ -4369,14 +4369,14 @@
           { "id": "77", "name": "Nanda Kishore V" },
           { "id": "80", "name": "Muhammad Suhail S" }
         ],
-        "cardCoverImage": "https://github.com/RMI-webteam/rmi-web-data/images/tabADuW.webp",
-        "backgroundImage": "https://github.com/RMI-webteam/rmi-web-data/images/2xHLi91.webp",
+        "cardCoverImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/tabADuW.webp?alt=media",
+        "backgroundImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/2xHLi91.webp?alt=media",
         "images": [
-          "https://github.com/RMI-webteam/rmi-web-data/images/tabADuW.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/uE3L9lP.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/blLk1l3.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/TzuoJgJ.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/x2YJLbV.webp"
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/tabADuW.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/uE3L9lP.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/blLk1l3.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/TzuoJgJ.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/x2YJLbV.webp?alt=media"
         ],
         "quickLinks": {
           "youtubeLink": "https://youtu.be/vtBr4nC57y8?list=PL44ElmNkyTvByLaUUUky_qaFcQAMwWZVb",
@@ -4430,14 +4430,14 @@
           { "id": "54", "name": "Akshay Pramod Roy" },
           { "id": "53", "name": "Vimalesh Muralidharan" }
         ],
-        "cardCoverImage": "https://github.com/RMI-webteam/rmi-web-data/images/BE21rfe.webp",
-        "backgroundImage": "https://github.com/RMI-webteam/rmi-web-data/images/uBp9Lhk.webp",
+        "cardCoverImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/BE21rfe.webp?alt=media",
+        "backgroundImage": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/uBp9Lhk.webp?alt=media",
         "images": [
-          "https://github.com/RMI-webteam/rmi-web-data/images/BE21rfe.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/MZQeP7J.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/GgOlJYI.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/bMyVGys.webp",
-          "https://github.com/RMI-webteam/rmi-web-data/images/nPlPGVA.webp"
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/BE21rfe.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/MZQeP7J.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/GgOlJYI.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/bMyVGys.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/nPlPGVA.webp?alt=media"
         ],
         "quickLinks": {
           "youtubeLink": "https://youtu.be/UJexlYXb2OY",
@@ -4449,7 +4449,7 @@
   },
   "facultyAdvisor": {
     "name": "Dr. K. Pannirselvam",
-    "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/naEQZI1.webp",
+    "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/naEQZI1.webp?alt=media",
     "position": "Associate Professor",
     "department": "Department of Mechanical Engineering",
     "email": "pannir@nitt.edu",
@@ -4556,7 +4556,7 @@
     "mainArchitects": [
       {
         "name": "Aswin Sreekumar",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/u8NyVGp.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/u8NyVGp.webp?alt=media",
         "position": "Creative Director",
         "additional": ["Head, Design and Publicity", "2022-2023"],
         "github": "https://github.com/aswin-sreekumar/",
@@ -4565,7 +4565,7 @@
       },
       {
         "name": "H Kailash",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/47WtxrX.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/47WtxrX.webp?alt=media",
         "position": "Associate lead developer",
         "additional": ["Web design", "UI/UX", "Front-End"],
         "github": "https://github.com/kailashhari",
@@ -4574,7 +4574,7 @@
       },
       {
         "name": "Indresh P",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/fW4zHWm.jpg",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/fW4zHWm.jpg?alt=media",
         "position": "Associate developer",
         "additional": ["SysAd", "Front-End"],
         "github": "https://github.com/indreshp135/",
@@ -4584,7 +4584,7 @@
       },
       {
         "name": "Muhesh K",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/eFokmcA.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/eFokmcA.webp?alt=media",
         "position": "Associate developer",
         "additional": ["Front-End", "Mobile Development"],
         "github": "https://github.com/Muhesh7/",
@@ -4596,7 +4596,7 @@
     "addnArchitects": [
       {
         "name": "Vakula Venkatesh",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/BqDVMAE.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/BqDVMAE.webp?alt=media",
         "position": "Coordinator",
         "github": "https://github.com/Vakula289",
         "linkedIn": "https://www.linkedin.com/in/vakula-v",
@@ -4604,7 +4604,7 @@
       },
       {
         "name": "Shyaam Pon Sundar S",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/GpqrRoS.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/GpqrRoS.webp?alt=media",
         "position": "Coordinator",
         "github": "https://github.com/shyaam-963",
         "linkedIn": "https://www.linkedin.com/in/shyaam-pon-sundar-s-3166b51a7",
@@ -4612,7 +4612,7 @@
       },
       {
         "name": "Madhav R",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/2OZ9GJ3.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/2OZ9GJ3.webp?alt=media",
         "position": "Coordinator",
         "github": "https://github.com/madE03",
         "linkedIn": "https://www.linkedin.com/in/madhav-r-2867b920b",
@@ -4622,7 +4622,7 @@
     "webops": [
       {
         "name": "Rahul Raaghav A",
-        "imageLink": "https://github.com/RMI-webteam/rmi-web-data/images/zMTydOw.webp",
+        "imageLink": "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/zMTydOw.webp?alt=media",
         "position": "Head, Web-ops",
         "additional": ["2022 - 2023"],
         "github": "https://github.com/RahulraaghavA1308",
@@ -4633,26 +4633,26 @@
   },
   "miscellaneous": {
     "landingPageImages": [
-      "https://github.com/RMI-webteam/rmi-web-data/images/xY0SHFJ.webp",
-      "https://github.com/RMI-webteam/rmi-web-data/images/L2Dty3R.webp",
-      "https://github.com/RMI-webteam/rmi-web-data/images/BGJ6FbF.webp",
-      "https://github.com/RMI-webteam/rmi-web-data/images/KtCZ4mp.webp",
-      "https://github.com/RMI-webteam/rmi-web-data/images/UTMup5K.webp"
+      "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/xY0SHFJ.webp?alt=media",
+      "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/L2Dty3R.webp?alt=media",
+      "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/BGJ6FbF.webp?alt=media",
+      "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/KtCZ4mp.webp?alt=media",
+      "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/UTMup5K.webp?alt=media"
     ],
     "ourTeamImages": [
-      "https://github.com/RMI-webteam/rmi-web-data/images/hB8Izmm.webp",
-      "https://github.com/RMI-webteam/rmi-web-data/images/H60te2a.webp",
-      "https://github.com/RMI-webteam/rmi-web-data/images/jagaDTa.webp"
+      "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/hB8Izmm.webp?alt=media",
+      "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/H60te2a.webp?alt=media",
+      "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/jagaDTa.webp?alt=media"
     ],
     "projectsPageImages": [
-      "https://github.com/RMI-webteam/rmi-web-data/images/VaaUbiK.webp",
-      "https://github.com/RMI-webteam/rmi-web-data/images/dPpT5ET.webp",
-      "https://github.com/RMI-webteam/rmi-web-data/images/ilWW3kr.webp"
+      "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/VaaUbiK.webp?alt=media",
+      "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/dPpT5ET.webp?alt=media",
+      "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/ilWW3kr.webp?alt=media"
     ],
     "accoladesImages": [
-      "https://github.com/RMI-webteam/rmi-web-data/images/BpFJEbt.webp",
-      "https://github.com/RMI-webteam/rmi-web-data/images/f9v5oyz.webp",
-      "https://github.com/RMI-webteam/rmi-web-data/images/e3EIRRD.webp"
+      "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/BpFJEbt.webp?alt=media",
+      "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/f9v5oyz.webp?alt=media",
+      "https://firebasestorage.googleapis.com/v0/b/rmi-web-team.appspot.com/o/e3EIRRD.webp?alt=media"
     ],
     "youtubeVideo": "7Qu89cIIiaQ"
   }
