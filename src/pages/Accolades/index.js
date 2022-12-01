@@ -137,7 +137,7 @@ const index = ({ title }) => {
         We believe our drive and passion for what we do has helped us earn
         several accolades over the years. In each event we participate in, we
         try to give our best and bring laurels to our small community. However,
-        we also believe that winning is not what our is all about, and the
+        we also believe that winning is not what our work is all about, and the
         experience and learning are our biggest takeaway in all that we pursue.
       </Section>
       <TopHonors>
