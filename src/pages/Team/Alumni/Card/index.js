@@ -162,7 +162,7 @@ const Subtitle = styled("div")({
   color: colors.primary,
   fontSize: "1rem",
   textAlign: "center",
-  fontFamily: "Gotham",
+  fontFamily: "Poppins",
   fontWeight: 700,
   padding: "0.4rem",
 });
@@ -171,7 +171,7 @@ const SubtitleFlip = styled("div")({
   width: "100%",
   fontSize: "1rem",
   textAlign: "center",
-  fontFamily: "Gotham",
+  fontFamily: "Poppins",
   fontWeight: 700,
   margin: "0.8rem 0 1.2rem",
   padding: "0.4rem",
@@ -183,7 +183,7 @@ const Project = styled("div")({
   width: "100%",
   color: colors.dark,
   fontSize: "1rem",
-  fontFamily: "Gotham",
+  fontFamily: "Poppins",
   fontWeight: 500,
   marginBlock: "0.2rem",
   textAlign: "center",
@@ -211,7 +211,7 @@ const Subsubtitle = styled("div")({
   color: colors.light,
   fontSize: "0.85rem",
   textAlign: "center",
-  fontFamily: "Gotham",
+  fontFamily: "Poppins",
   fontWeight: 700,
 });
 

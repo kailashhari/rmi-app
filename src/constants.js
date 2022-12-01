@@ -9,7 +9,7 @@ export const colors = {
 
 export const fontStyles = {
   title: {
-    fontFamily: "Poppins, Gotham",
+    fontFamily: "Poppins, Poppins",
     fontWeight: "bold",
     fontSize: "2rem",
     color: colors.light,

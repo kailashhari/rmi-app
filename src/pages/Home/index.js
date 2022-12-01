@@ -38,7 +38,7 @@ const HeroText = styled("div")({
 });
 
 const HeroTag = styled("div")({
-  fontFamily: "Gotham",
+  fontFamily: "Poppins",
   fontSize: "1.6rem",
   fontWeight: "400",
   marginTop: "1rem",

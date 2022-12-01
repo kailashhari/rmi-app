@@ -52,7 +52,7 @@ const FooterColumn = styled("div")({
 const FooterColumnTitle = styled("div")({
   color: colors.primary,
   fontSize: "1rem",
-  fontFamily: "Gotham",
+  fontFamily: "Poppins",
   fontWeight: "light",
   "@media (max-width: 767px)": {
     fontSize: "1rem",
